@@ -11,7 +11,9 @@ public class PlayerController : MonoBehaviour
     private Transform body;
     private SpriteRenderer bodySprite;
     private Rigidbody2D rb_body;
-    private Animator rb_anim;
+    private Animator body_anim;
+
+    private Animator head_anim;
 
     public float moveSpeed = 5f;
     Vector2 movement;
@@ -22,7 +24,9 @@ public class PlayerController : MonoBehaviour
         body = transform.Find("Body");
         bodySprite = body.GetComponent<SpriteRenderer>();
         rb_body = body.GetComponent<Rigidbody2D>();
-        rb_anim = body.GetComponent<Animator>();
+        body_anim = body.GetComponent<Animator>();
+
+        head_anim = body.transform.Find("Head").GetComponent<Animator>();
     }
 
     void Update()
@@ -32,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
         if(myState == playerState.Body)
         {
-            rb_anim.SetFloat("Speed", movement.sqrMagnitude);
+            body_anim.SetFloat("Speed", movement.sqrMagnitude);
             if(movement.x < 0)
             {
                 bodySprite.flipX = false;
@@ -42,19 +46,13 @@ public class PlayerController : MonoBehaviour
                 bodySprite.flipX = true;
             }
         }
-
-        if(movement.x != 0 && movement.y != 0) 
-        {
-            movement.x /= 2;
-            movement.y /= 2;
-        }
     }
 
     void FixedUpdate()
     {
         if(myState == playerState.Body)
         {
-            rb_body.MovePosition(rb_body.position + movement * moveSpeed * Time.fixedDeltaTime);
+            rb_body.MovePosition(rb_body.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
         }
     }
 }
