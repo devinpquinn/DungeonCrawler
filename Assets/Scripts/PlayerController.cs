@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private Animator body_anim;
 
     private Animator head_anim;
+    private Transform head_pointer;
 
     public float moveSpeed = 5f;
     Vector2 movement;
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
         body_anim = body.GetComponent<Animator>();
 
         head_anim = body.transform.Find("Head").GetComponent<Animator>();
+        head_pointer = head_anim.gameObject.transform.Find("Pointer");
     }
 
     void Update()
@@ -45,7 +47,15 @@ public class PlayerController : MonoBehaviour
             {
                 bodySprite.flipX = true;
             }
+
+            Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - head_pointer.transform.position;
+            difference.Normalize();
+            float rotation_z = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+            head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, rotation_z);
+            Debug.Log(head_pointer.transform.eulerAngles.z);
         }
+
+        
     }
 
     void FixedUpdate()
