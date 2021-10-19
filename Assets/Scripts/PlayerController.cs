@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public playerState myState;
 
     private Transform body;
+    private SpriteRenderer bodySprite;
     private Rigidbody2D rb_body;
     private Animator rb_anim;
 
@@ -18,7 +19,8 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         myState = playerState.Body;
-        body = transform.Find("BodySprite");
+        body = transform.Find("Body");
+        bodySprite = body.GetComponent<SpriteRenderer>();
         rb_body = body.GetComponent<Rigidbody2D>();
         rb_anim = body.GetComponent<Animator>();
     }
@@ -33,11 +35,11 @@ public class PlayerController : MonoBehaviour
             rb_anim.SetFloat("Speed", movement.sqrMagnitude);
             if(movement.x < 0)
             {
-                body.localScale = new Vector3(1, body.localScale.y, body.localScale.z);
+                bodySprite.flipX = false;
             }
             else if (movement.x > 0)
             {
-                body.localScale = new Vector3(-1, body.localScale.y, body.localScale.z);
+                bodySprite.flipX = true;
             }
         }
 
