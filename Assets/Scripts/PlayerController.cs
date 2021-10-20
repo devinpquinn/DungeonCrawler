@@ -48,14 +48,16 @@ public class PlayerController : MonoBehaviour
                 bodySprite.flipX = true;
             }
 
+            //turn head to face cursor
             Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - head_pointer.transform.position;
             difference.Normalize();
             float rotation_z = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
             head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, rotation_z);
-            Debug.Log(head_pointer.transform.eulerAngles.z);
+
+            float angle = 1 - (head_pointer.transform.localEulerAngles.z / 360);
+            head_anim.SetFloat("Rotation", angle);
         }
 
-        
     }
 
     void FixedUpdate()
