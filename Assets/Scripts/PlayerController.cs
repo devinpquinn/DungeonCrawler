@@ -79,7 +79,6 @@ public class PlayerController : MonoBehaviour
             difference.Normalize();
             float rotation_z = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
             head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, rotation_z);
-            head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
 
             float angle = 1 - (head_pointer.transform.localEulerAngles.z / 360);
             head_anim.SetFloat("Rotation", angle);
@@ -132,7 +131,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator DeactivateLight()
     {
         light_anim.Play("lightDisappear");
-        yield return new WaitForSeconds(light_anim.GetCurrentAnimatorStateInfo(0).length);
+        yield return new WaitUntil(() => lightBall.transform.localScale.x < 0.01);
         lightBall.gameObject.SetActive(false);
     }
 
@@ -146,8 +145,7 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(ReactivateHead());
         lightBall.parent = lightHolder;
         lightBall.localPosition = new Vector3(0, 0, 0);
-        Instantiate(lightRemnant, lightBall.position, lightBall.rotation);
-        yield return new WaitUntil(() => bodySprite.sprite.name == "BodySpriteSheet_5" && !lightBall.gameObject.activeInHierarchy);
+        yield return new WaitUntil(() => bodySprite.sprite.name == "BodySpriteSheet_5" && !lightBall.gameObject.activeInHierarchy && !head_anim.GetCurrentAnimatorStateInfo(0).IsName("headLightIn"));
         myState = playerState.Body;
     }
 
@@ -161,6 +159,7 @@ public class PlayerController : MonoBehaviour
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
         head_anim.Play("headLightIn");
 
-        yield return new WaitForSeconds(head_anim.GetCurrentAnimatorStateInfo(0).length);
+        yield return new WaitUntil(() => !head_anim.GetCurrentAnimatorStateInfo(0).IsName("headLightIn"));
+        head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
     }
 }
