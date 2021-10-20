@@ -153,7 +153,7 @@ public class PlayerController : MonoBehaviour
         lightBall.parent = lightHolder;
         lightBall.localPosition = new Vector3(0, 0, 0);
 
-        yield return new WaitUntil(() => bodySprite.sprite.name == "BodySpriteSheet_5" && !lightBall.gameObject.activeInHierarchy && !head_anim.GetCurrentAnimatorStateInfo(0).IsName("headLightIn"));
+        yield return new WaitUntil(() => bodySprite.sprite.name == "BodySpriteSheet_5" && !lightBall.gameObject.activeInHierarchy);
 
         myState = playerState.Body;
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
@@ -169,6 +169,10 @@ public class PlayerController : MonoBehaviour
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
         head_anim.Play("headLightIn");
 
-        yield return new WaitUntil(() => !head_anim.GetCurrentAnimatorStateInfo(0).IsName("headLightIn"));
+        yield return new WaitUntil(() => head_anim.transform.GetComponent<SpriteRenderer>().sprite.name == "HeadSpriteSheet_2");
+
+        head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+        float angle = 1 - (head_pointer.transform.localEulerAngles.z / 360);
+        head_anim.SetFloat("Rotation", angle);
     }
 }
