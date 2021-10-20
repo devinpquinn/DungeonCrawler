@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb_light;
     private Animator light_anim;
 
+    public GameObject lightRemnant;
+
     private Animator head_anim;
     private Transform head_pointer;
 
@@ -102,6 +104,7 @@ public class PlayerController : MonoBehaviour
                 body_anim.Play("bodyLightIn");
                 head_anim.Play("headLightIn");
                 head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
+                Instantiate(lightRemnant, lightBall.position, lightBall.rotation);
                 light_anim.Play("lightDisappear");
                 lightBall.parent = lightHolder;
                 lightBall.localPosition = new Vector3(0, 0, 0);

@@ -5739,6 +5739,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myState: 0
+  lightRemnant: {fileID: 893507649999962575, guid: b9949658e4c64cf499114bc641b13605,
+    type: 3}
 --- !u!1 &1735000271
 GameObject:
   m_ObjectHideFlags: 0
