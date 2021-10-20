@@ -21,7 +21,8 @@ public class PlayerController : MonoBehaviour
     private Animator head_anim;
     private Transform head_pointer;
 
-    public float moveSpeed = 5f;
+    private float moveSpeed = 3f;
+    private float lightSpeed = 4.5f;
     Vector2 movement;
 
     void Awake()
@@ -83,14 +84,32 @@ public class PlayerController : MonoBehaviour
             //check for mode transition
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                myState = playerState.Swapping;
-                body_anim.Play("bodyLightOut");
-                head_anim.Play("headLightOut");
-                head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
-                StartCoroutine(ActivateLight());
+                if(myState == playerState.Body)
+                {
+                    myState = playerState.Swapping;
+                    body_anim.Play("bodyLightOut");
+                    head_anim.Play("headLightOut");
+                    head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
+                    StartCoroutine(ActivateLight());
+                }
             }
         }
-
+        else if(myState == playerState.Light)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                myState = playerState.Swapping;
+                body_anim.Play("bodyLightIn");
+                head_anim.Play("headLightIn");
+                head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
+                light_anim.Play("lightDisappear");
+                lightBall.parent = lightHolder;
+                lightBall.localPosition = new Vector3(0, 0, 0);
+                StartCoroutine(DeactivateLight());
+                StartCoroutine(ReactivateBody());
+                StartCoroutine(ReactivateHead());
+            }
+        }
     }
 
     void FixedUpdate()
@@ -101,7 +120,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (myState == playerState.Light)
         {
-            rb_light.MovePosition(rb_light.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
+            rb_light.MovePosition(rb_light.position + movement.normalized * lightSpeed * Time.fixedDeltaTime);
         }
     }
 
@@ -109,7 +128,30 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitUntil(() => body_anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.64f);
         lightBall.gameObject.SetActive(true);
+        yield return new WaitUntil(() => head_anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f);
         lightBall.parent = null;
         myState = playerState.Light;
+    }
+
+    IEnumerator DeactivateLight()
+    {
+        yield return new WaitForSeconds(light_anim.GetCurrentAnimatorStateInfo(0).length);
+        lightBall.parent = lightHolder;
+        lightBall.localPosition = new Vector3(0, 0, 0);
+        lightBall.gameObject.SetActive(false);
+    }
+
+    IEnumerator ReactivateBody()
+    {
+        body_anim.SetFloat("Speed", 0);
+        yield return new WaitForSeconds(body_anim.GetCurrentAnimatorStateInfo(0).length);
+        //myState = playerState.Body;
+    }
+
+    IEnumerator ReactivateHead()
+    {
+        yield return new WaitForSeconds(head_anim.GetCurrentAnimatorStateInfo(0).length);
+        head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+        myState = playerState.Body;
     }
 }
