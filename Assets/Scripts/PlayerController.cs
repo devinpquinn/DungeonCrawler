@@ -145,13 +145,18 @@ public class PlayerController : MonoBehaviour
     {
         body_anim.SetFloat("Speed", 0);
         yield return new WaitForSeconds(body_anim.GetCurrentAnimatorStateInfo(0).length);
-        //myState = playerState.Body;
+        myState = playerState.Body;
     }
 
     IEnumerator ReactivateHead()
     {
+        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - head_pointer.transform.position;
+        difference.Normalize();
+        float rotation_z = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+        head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, rotation_z);
+
         yield return new WaitForSeconds(head_anim.GetCurrentAnimatorStateInfo(0).length);
+
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
-        myState = playerState.Body;
     }
 }
