@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     private Transform head_pointer;
 
     private float moveSpeed = 3f;
-    private float lightSpeed = 4.5f;
+    private float lightSpeed = 5f;
     Vector2 movement;
 
     void Awake()
@@ -89,14 +89,17 @@ public class PlayerController : MonoBehaviour
                 if(myState == playerState.Body)
                 {
                     myState = playerState.Swapping;
+                    //start animations to transition back to body mode
                     StartCoroutine(ActivateLight());
                 }
             }
         }
         else if(myState == playerState.Light)
         {
+            //check for mode transition
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                //start animations to transition back to body mode
                 myState = playerState.Swapping;
                 StartCoroutine(ReactivateBody());
             }
@@ -105,6 +108,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        //player movement
         if(myState == playerState.Body)
         {
             rb_body.MovePosition(rb_body.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
@@ -117,61 +121,90 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator ActivateLight()
     {
+        //start body and head animations
         body_anim.Play("bodyLightOut");
         head_anim.Play("headLightOut");
+
+        //ensure head is facing the same way as the body
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
 
+        //wait until body is snapping fingers
         yield return new WaitUntil(() => bodySprite.sprite.name == "BodySpriteSheet_2");
 
+        //activate light
         lightBall.gameObject.SetActive(true);
 
+        //wait until body's arm is back at side
         yield return new WaitUntil(() => bodySprite.sprite.name == "BodySpriteSheet_5");
 
+        //allow light to roam freely
         lightBall.parent = null;
         myState = playerState.Light;
     }
 
     IEnumerator DeactivateLight()
     {
+        //start light fade
         light_anim.Play("lightDisappear");
 
+        //wait until light has disappeared
         yield return new WaitUntil(() => lightBall.transform.localScale.x < 0.01);
 
+        //deactivate light
         lightBall.gameObject.SetActive(false);
     }
 
     IEnumerator ReactivateBody()
     {
+        //freeze body and start snapping animation
         body_anim.SetFloat("Speed", 0);
         body_anim.Play("bodyLightIn");
 
+        //wait until body is snapping fingers
         yield return new WaitUntil(() => bodySprite.sprite.name == "BodySpriteSheet_2");
 
+        //instantiate light remnant
         Instantiate(lightRemnant, lightBall.position, lightBall.rotation);
+
+        //turn off light
         StartCoroutine(DeactivateLight());
+
+        //start head animation
         StartCoroutine(ReactivateHead());
+
+        //return light to parent
         lightBall.parent = lightHolder;
         lightBall.localPosition = new Vector3(0, 0, 0);
 
+        //wait until arm is back at side and light is deactivated
         yield return new WaitUntil(() => bodySprite.sprite.name == "BodySpriteSheet_5" && !lightBall.gameObject.activeInHierarchy);
 
-        myState = playerState.Body;
+        //allow head to rotate freely
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+
+        //set body mode
+        myState = playerState.Body;
     }
 
     IEnumerator ReactivateHead()
     {
+        //point head light toward mouse
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - head_pointer.transform.position;
         difference.Normalize();
         float rotation_z = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, rotation_z);
 
+        //double check head is flipped to align with body and play head animation
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
         head_anim.Play("headLightIn");
 
+        //wait until head is closed
         yield return new WaitUntil(() => head_anim.transform.GetComponent<SpriteRenderer>().sprite.name == "HeadSpriteSheet_2");
 
+        //unflip head
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+
+        //rotate head sprite toward mouse
         float angle = 1 - (head_pointer.transform.localEulerAngles.z / 360);
         head_anim.SetFloat("Rotation", angle);
     }
