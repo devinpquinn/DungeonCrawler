@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sparks
+  m_Name: Glowy
   m_Shader: {fileID: -6465566751694194690, guid: 48c906a5ad4660d49a43f2f34689ac70,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
@@ -30,4 +30,4 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - Color_F1663385: {r: 191.74902, g: 191.74902, b: 191.74902, a: 0}
+    - Color_F1663385: {r: 8.47419, g: 8.47419, b: 8.47419, a: 0}
