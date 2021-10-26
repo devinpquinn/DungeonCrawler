@@ -134,7 +134,8 @@ GameObject:
   - component: {fileID: 82907722}
   - component: {fileID: 82907724}
   - component: {fileID: 82907725}
-  m_Layer: 0
+  - component: {fileID: 82907726}
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,6 +275,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 0.25}
   m_EdgeRadius: 0
+--- !u!210 &82907726
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82907720}
+  m_Enabled: 1
+  m_SortingLayerID: -307079931
+  m_SortingLayer: 1
+  m_SortingOrder: 0
 --- !u!1 &125623536
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 125623537}
   - component: {fileID: 125623538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GazeLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +335,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 5
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000000555b2ed
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -381,7 +393,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.0075
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 4f5dffc900000000
+  m_ApplyToSortingLayers: 000000000555b2ed
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -432,7 +444,7 @@ GameObject:
   - component: {fileID: 186335010}
   - component: {fileID: 186335012}
   - component: {fileID: 186335013}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LightBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -656,7 +668,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -1.75}
   serializedVersion: 2
-  m_Radius: 0.15
+  m_Radius: 0.25
 --- !u!1 &274452704
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,7 +794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 508714371}
   - component: {fileID: 508714372}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LightAura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -821,7 +833,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000000555b2ed
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -854,7 +866,7 @@ GameObject:
   m_Component:
   - component: {fileID: 558271047}
   - component: {fileID: 558271048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2179,7 +2191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1204657950}
   - component: {fileID: 1204657951}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HeadGlow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2218,7 +2230,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000000555b2ed
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -2322,7 +2334,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1385275762}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LightHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4547,7 +4559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1865255126}
   - component: {fileID: 1865255127}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4629,7 +4641,8 @@ GameObject:
   - component: {fileID: 2065192509}
   - component: {fileID: 2065192510}
   - component: {fileID: 2065192511}
-  m_Layer: 0
+  - component: {fileID: 2065192512}
+  m_Layer: 8
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4722,3 +4735,14 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!210 &2065192512
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065192508}
+  m_Enabled: 1
+  m_SortingLayerID: -307079931
+  m_SortingLayer: 1
+  m_SortingOrder: 0
