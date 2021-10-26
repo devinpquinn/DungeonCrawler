@@ -164,7 +164,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitUntil(() => bodySprite.sprite.name == "BodySpriteSheet_2");
 
         //instantiate light remnant
-        Instantiate(lightRemnant, lightBall.position, lightBall.rotation);
+        Instantiate(lightRemnant, lightBall.position + (Vector3)lightBall.GetComponent<CircleCollider2D>().offset, lightBall.rotation);
 
         //turn off light
         StartCoroutine(DeactivateLight());
