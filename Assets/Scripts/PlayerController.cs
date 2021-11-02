@@ -88,9 +88,10 @@ public class PlayerController : MonoBehaviour
             {
                 if(myState == playerState.Body)
                 {
+                    //start transition to light mode
                     myState = playerState.Swapping;
-                    //start animations to transition back to body mode
-                    StartCoroutine(ActivateLight());
+                    body_anim.SetFloat("Speed", 0);
+                    body_anim.Play("bodyLightOut");
                 }
             }
         }
@@ -101,7 +102,7 @@ public class PlayerController : MonoBehaviour
             {
                 //start animations to transition back to body mode
                 myState = playerState.Swapping;
-                StartCoroutine(ReactivateBody());
+                body_anim.Play("bodyLightIn");
             }
         }
     }
@@ -117,6 +118,57 @@ public class PlayerController : MonoBehaviour
         {
             rb_light.MovePosition(rb_light.position + movement.normalized * lightSpeed * Time.fixedDeltaTime);
         }
+    }
+
+    public void LightOut()
+    {
+        //play head animation
+        head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
+        head_anim.Play("headLightOut");
+
+        //activate light ball
+        lightBall.gameObject.SetActive(true);
+    }
+
+    public void FreeLight()
+    {
+        //allow light to roam freely
+        lightBall.parent = null;
+        myState = playerState.Light;
+    }
+
+    public void LightIn()
+    {
+        //snap!
+        Instantiate(lightRemnant, lightBall.position + (Vector3)lightBall.GetComponent<CircleCollider2D>().offset, lightBall.rotation);
+        light_anim.Play("lightDisappear");
+
+        //return light to parent
+        lightBall.parent = lightHolder;
+        lightBall.localPosition = new Vector3(0, 0, 0);
+
+        //point head light toward mouse
+        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - head_pointer.transform.position;
+        difference.Normalize();
+        float rotation_z = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+        head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, rotation_z);
+        head_anim.Play("headLightIn");
+    }
+
+    public void ActivateHead()
+    {
+        //deactivate light
+        lightBall.gameObject.SetActive(false);
+
+        //unflip head
+        head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+
+        //rotate head sprite toward mouse
+        float angle = 1 - (head_pointer.transform.localEulerAngles.z / 360);
+        head_anim.SetFloat("Rotation", angle);
+
+        //set body mode
+        myState = playerState.Body;
     }
 
     IEnumerator ActivateLight()
