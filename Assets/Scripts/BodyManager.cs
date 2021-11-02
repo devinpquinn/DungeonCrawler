@@ -25,4 +25,9 @@ public class BodyManager : MonoBehaviour
     {
         pc.LightIn();
     }
+
+    public void ActivateBody()
+    {
+        pc.ActivateBody();
+    }
 }

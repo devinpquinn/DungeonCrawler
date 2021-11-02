@@ -165,8 +165,11 @@ public class PlayerController : MonoBehaviour
 
         //rotate head sprite toward mouse
         float angle = 1 - (head_pointer.transform.localEulerAngles.z / 360);
-        head_anim.SetFloat("Rotation", angle);
+        head_anim.SetFloat("Rotation", angle);      
+    }
 
+    public void ActivateBody()
+    {
         //set body mode
         myState = playerState.Body;
     }
