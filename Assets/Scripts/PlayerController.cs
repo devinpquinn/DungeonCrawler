@@ -147,16 +147,19 @@ public class PlayerController : MonoBehaviour
         lightBall.parent = lightHolder;
         lightBall.localPosition = new Vector3(0, 0, 0);
 
-        //point head light toward mouse
-        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - head_pointer.transform.position;
-        difference.Normalize();
-        float rotation_z = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-        head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, rotation_z);
+        //zero out head rotation and play animation
+        head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         head_anim.Play("headLightIn");
     }
 
     public void ActivateHead()
     {
+        //point head light toward mouse
+        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - head_pointer.transform.position;
+        difference.Normalize();
+        float rotation_z = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+        head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, rotation_z);
+
         //deactivate light
         lightBall.gameObject.SetActive(false);
 
