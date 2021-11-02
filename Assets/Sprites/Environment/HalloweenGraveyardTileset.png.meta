@@ -1,0 +1,5054 @@
+fileFormatVersion: 2
+guid: 8b55bb54d02dee84b90e7eee497199cd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2655243586575482026
+    second: HalloweenGraveyardTileset_0
+  - first:
+      213: 4622075833245850295
+    second: HalloweenGraveyardTileset_1
+  - first:
+      213: -9170534429746346436
+    second: HalloweenGraveyardTileset_2
+  - first:
+      213: -6358197249349136102
+    second: HalloweenGraveyardTileset_3
+  - first:
+      213: 4759630049686295535
+    second: HalloweenGraveyardTileset_4
+  - first:
+      213: -3744510071552918486
+    second: HalloweenGraveyardTileset_5
+  - first:
+      213: 5407332829903383365
+    second: HalloweenGraveyardTileset_6
+  - first:
+      213: -3954676555976805862
+    second: HalloweenGraveyardTileset_7
+  - first:
+      213: -7769614156581892210
+    second: HalloweenGraveyardTileset_8
+  - first:
+      213: 6076156129210923466
+    second: HalloweenGraveyardTileset_9
+  - first:
+      213: 2242160502551406435
+    second: HalloweenGraveyardTileset_10
+  - first:
+      213: -994294948016097384
+    second: HalloweenGraveyardTileset_11
+  - first:
+      213: -2831677105587077255
+    second: HalloweenGraveyardTileset_12
+  - first:
+      213: -4090637979055917501
+    second: HalloweenGraveyardTileset_13
+  - first:
+      213: 6196034407196492953
+    second: HalloweenGraveyardTileset_14
+  - first:
+      213: 822546743641280884
+    second: HalloweenGraveyardTileset_15
+  - first:
+      213: 4554591408474988599
+    second: HalloweenGraveyardTileset_16
+  - first:
+      213: 6321887972497376466
+    second: HalloweenGraveyardTileset_17
+  - first:
+      213: 3924401212299856667
+    second: HalloweenGraveyardTileset_18
+  - first:
+      213: -3067448907395364353
+    second: HalloweenGraveyardTileset_19
+  - first:
+      213: 6620770170434846797
+    second: HalloweenGraveyardTileset_20
+  - first:
+      213: -5211910077276345860
+    second: HalloweenGraveyardTileset_21
+  - first:
+      213: 2429496242353789874
+    second: HalloweenGraveyardTileset_22
+  - first:
+      213: 11840689147965866
+    second: HalloweenGraveyardTileset_23
+  - first:
+      213: -3643064016071223848
+    second: HalloweenGraveyardTileset_24
+  - first:
+      213: -3445743142348025273
+    second: HalloweenGraveyardTileset_25
+  - first:
+      213: 8994796974927507644
+    second: HalloweenGraveyardTileset_26
+  - first:
+      213: 5420000417220021572
+    second: HalloweenGraveyardTileset_27
+  - first:
+      213: -9162259198984820379
+    second: HalloweenGraveyardTileset_28
+  - first:
+      213: -8331924237073483727
+    second: HalloweenGraveyardTileset_29
+  - first:
+      213: -2362559179896025452
+    second: HalloweenGraveyardTileset_30
+  - first:
+      213: -1940523838453872508
+    second: HalloweenGraveyardTileset_31
+  - first:
+      213: -6157488273114014014
+    second: HalloweenGraveyardTileset_32
+  - first:
+      213: -6429883654986573749
+    second: HalloweenGraveyardTileset_33
+  - first:
+      213: -7748478198247318500
+    second: HalloweenGraveyardTileset_34
+  - first:
+      213: 1703637065922687374
+    second: HalloweenGraveyardTileset_35
+  - first:
+      213: 4236652172172496140
+    second: HalloweenGraveyardTileset_36
+  - first:
+      213: 6842807754150382292
+    second: HalloweenGraveyardTileset_37
+  - first:
+      213: 3902287745201758718
+    second: HalloweenGraveyardTileset_38
+  - first:
+      213: 7590371306479859081
+    second: HalloweenGraveyardTileset_39
+  - first:
+      213: 9156384774736924941
+    second: HalloweenGraveyardTileset_40
+  - first:
+      213: 8543344627541948349
+    second: HalloweenGraveyardTileset_41
+  - first:
+      213: 7197032677479803423
+    second: HalloweenGraveyardTileset_42
+  - first:
+      213: 3339309607727679420
+    second: HalloweenGraveyardTileset_43
+  - first:
+      213: -5498988390196843932
+    second: HalloweenGraveyardTileset_44
+  - first:
+      213: 9074615558704744314
+    second: HalloweenGraveyardTileset_45
+  - first:
+      213: 3992018032107497331
+    second: HalloweenGraveyardTileset_46
+  - first:
+      213: 3247680813285293176
+    second: HalloweenGraveyardTileset_47
+  - first:
+      213: -7016526868354260249
+    second: HalloweenGraveyardTileset_48
+  - first:
+      213: 867592464356642802
+    second: HalloweenGraveyardTileset_49
+  - first:
+      213: -5940538619295515062
+    second: HalloweenGraveyardTileset_50
+  - first:
+      213: 729508784537184073
+    second: HalloweenGraveyardTileset_51
+  - first:
+      213: -1103870824939804140
+    second: HalloweenGraveyardTileset_52
+  - first:
+      213: -6132420740568390641
+    second: HalloweenGraveyardTileset_53
+  - first:
+      213: -7666871996286480137
+    second: HalloweenGraveyardTileset_54
+  - first:
+      213: -7678621556148124770
+    second: HalloweenGraveyardTileset_55
+  - first:
+      213: -7989329052554637220
+    second: HalloweenGraveyardTileset_56
+  - first:
+      213: 7521404770970149432
+    second: HalloweenGraveyardTileset_57
+  - first:
+      213: 8713515563555760681
+    second: HalloweenGraveyardTileset_58
+  - first:
+      213: 252411826579698821
+    second: HalloweenGraveyardTileset_59
+  - first:
+      213: 3181866776165597613
+    second: HalloweenGraveyardTileset_60
+  - first:
+      213: -6039788199900739006
+    second: HalloweenGraveyardTileset_61
+  - first:
+      213: 1443402447199802517
+    second: HalloweenGraveyardTileset_62
+  - first:
+      213: 5793881594452553845
+    second: HalloweenGraveyardTileset_63
+  - first:
+      213: 5398576353880172100
+    second: HalloweenGraveyardTileset_64
+  - first:
+      213: 3698844374693936289
+    second: HalloweenGraveyardTileset_65
+  - first:
+      213: 7753791945952581917
+    second: HalloweenGraveyardTileset_66
+  - first:
+      213: -231627538475121036
+    second: HalloweenGraveyardTileset_67
+  - first:
+      213: 8152360361080475862
+    second: HalloweenGraveyardTileset_68
+  - first:
+      213: 3966367902411901542
+    second: HalloweenGraveyardTileset_69
+  - first:
+      213: 164143184449585502
+    second: HalloweenGraveyardTileset_70
+  - first:
+      213: 2370253883240499368
+    second: HalloweenGraveyardTileset_71
+  - first:
+      213: -7226626044378220876
+    second: HalloweenGraveyardTileset_72
+  - first:
+      213: 2638262687297111140
+    second: HalloweenGraveyardTileset_73
+  - first:
+      213: 1725370039350896451
+    second: HalloweenGraveyardTileset_74
+  - first:
+      213: -6524761969495346644
+    second: HalloweenGraveyardTileset_75
+  - first:
+      213: 7119826204247538793
+    second: HalloweenGraveyardTileset_76
+  - first:
+      213: -4172078814836688976
+    second: HalloweenGraveyardTileset_77
+  - first:
+      213: 7954020390455771695
+    second: HalloweenGraveyardTileset_78
+  - first:
+      213: -6449540729922707902
+    second: HalloweenGraveyardTileset_79
+  - first:
+      213: 8840001675968252587
+    second: HalloweenGraveyardTileset_80
+  - first:
+      213: -7150041407392090384
+    second: HalloweenGraveyardTileset_81
+  - first:
+      213: -7223324535729224631
+    second: HalloweenGraveyardTileset_82
+  - first:
+      213: -3349399469847999517
+    second: HalloweenGraveyardTileset_83
+  - first:
+      213: 8374019643264680407
+    second: HalloweenGraveyardTileset_84
+  - first:
+      213: -8071483108036265487
+    second: HalloweenGraveyardTileset_85
+  - first:
+      213: -7688759877819105133
+    second: HalloweenGraveyardTileset_86
+  - first:
+      213: -6686025475049696666
+    second: HalloweenGraveyardTileset_87
+  - first:
+      213: -8870958215763863852
+    second: HalloweenGraveyardTileset_88
+  - first:
+      213: 7577594114988523581
+    second: HalloweenGraveyardTileset_89
+  - first:
+      213: 6822063534638782966
+    second: HalloweenGraveyardTileset_90
+  - first:
+      213: 4751547008414066992
+    second: HalloweenGraveyardTileset_91
+  - first:
+      213: -1289623841415597728
+    second: HalloweenGraveyardTileset_92
+  - first:
+      213: 7118895199640515690
+    second: HalloweenGraveyardTileset_93
+  - first:
+      213: -3992608009420020254
+    second: HalloweenGraveyardTileset_94
+  - first:
+      213: 5058719423266684327
+    second: HalloweenGraveyardTileset_95
+  - first:
+      213: 3334315214065901143
+    second: HalloweenGraveyardTileset_96
+  - first:
+      213: -3376980656671356489
+    second: HalloweenGraveyardTileset_97
+  - first:
+      213: 9200854915058994016
+    second: HalloweenGraveyardTileset_98
+  - first:
+      213: 5869205686983088431
+    second: HalloweenGraveyardTileset_99
+  - first:
+      213: -84659139579606604
+    second: HalloweenGraveyardTileset_100
+  - first:
+      213: -5817748506739274167
+    second: HalloweenGraveyardTileset_101
+  - first:
+      213: -2439769869365115442
+    second: HalloweenGraveyardTileset_102
+  - first:
+      213: -865896837581200314
+    second: HalloweenGraveyardTileset_103
+  - first:
+      213: 8818156878755226016
+    second: HalloweenGraveyardTileset_104
+  - first:
+      213: -8107523397461489127
+    second: HalloweenGraveyardTileset_105
+  - first:
+      213: 7422015763850590131
+    second: HalloweenGraveyardTileset_106
+  - first:
+      213: -3166111737635583032
+    second: HalloweenGraveyardTileset_107
+  - first:
+      213: 4759938087605187831
+    second: HalloweenGraveyardTileset_108
+  - first:
+      213: 7253258442190870204
+    second: HalloweenGraveyardTileset_109
+  - first:
+      213: 553828586488751041
+    second: HalloweenGraveyardTileset_110
+  - first:
+      213: -5470738988433584385
+    second: HalloweenGraveyardTileset_111
+  - first:
+      213: -397101824395494922
+    second: HalloweenGraveyardTileset_112
+  - first:
+      213: 328610903799553768
+    second: HalloweenGraveyardTileset_113
+  - first:
+      213: 196924676437949016
+    second: HalloweenGraveyardTileset_114
+  - first:
+      213: -4686067013622539867
+    second: HalloweenGraveyardTileset_115
+  - first:
+      213: 7315576869871297308
+    second: HalloweenGraveyardTileset_116
+  - first:
+      213: -6581049602352284305
+    second: HalloweenGraveyardTileset_117
+  - first:
+      213: 2007815832619256997
+    second: HalloweenGraveyardTileset_118
+  - first:
+      213: 2410093064212892570
+    second: HalloweenGraveyardTileset_119
+  - first:
+      213: -2978451652590686367
+    second: HalloweenGraveyardTileset_120
+  - first:
+      213: -7393841676772971989
+    second: HalloweenGraveyardTileset_121
+  - first:
+      213: 2130882360353748234
+    second: HalloweenGraveyardTileset_122
+  - first:
+      213: -1093828698628624259
+    second: HalloweenGraveyardTileset_123
+  - first:
+      213: 7201915357164036436
+    second: HalloweenGraveyardTileset_124
+  - first:
+      213: -6308299554762766905
+    second: HalloweenGraveyardTileset_125
+  - first:
+      213: 4588660255432410462
+    second: HalloweenGraveyardTileset_126
+  - first:
+      213: -816202304579311223
+    second: HalloweenGraveyardTileset_127
+  - first:
+      213: 1664132385311228400
+    second: HalloweenGraveyardTileset_128
+  - first:
+      213: -4962911871365540917
+    second: HalloweenGraveyardTileset_129
+  - first:
+      213: 2260827365033861877
+    second: HalloweenGraveyardTileset_130
+  - first:
+      213: 8791327751677541650
+    second: HalloweenGraveyardTileset_131
+  - first:
+      213: 2914264490710500442
+    second: HalloweenGraveyardTileset_132
+  - first:
+      213: 1376516661378646023
+    second: HalloweenGraveyardTileset_133
+  - first:
+      213: -2982116519788143593
+    second: HalloweenGraveyardTileset_134
+  - first:
+      213: 616632860206186466
+    second: HalloweenGraveyardTileset_135
+  - first:
+      213: 2676101997660643880
+    second: HalloweenGraveyardTileset_136
+  - first:
+      213: -6928472448687005984
+    second: HalloweenGraveyardTileset_137
+  - first:
+      213: 2229459723454412943
+    second: HalloweenGraveyardTileset_138
+  - first:
+      213: -7818660881493175710
+    second: HalloweenGraveyardTileset_139
+  - first:
+      213: -5233248203667790629
+    second: HalloweenGraveyardTileset_140
+  - first:
+      213: -2300508530910290133
+    second: HalloweenGraveyardTileset_141
+  - first:
+      213: -352022223655486935
+    second: HalloweenGraveyardTileset_142
+  - first:
+      213: -4558728213265789610
+    second: HalloweenGraveyardTileset_143
+  - first:
+      213: 2161890727542591729
+    second: HalloweenGraveyardTileset_144
+  - first:
+      213: 8116333402357530049
+    second: HalloweenGraveyardTileset_145
+  - first:
+      213: 8272400704858073841
+    second: HalloweenGraveyardTileset_146
+  - first:
+      213: -7354720900142308382
+    second: HalloweenGraveyardTileset_147
+  - first:
+      213: 3652547763904878526
+    second: HalloweenGraveyardTileset_148
+  - first:
+      213: 4699679553236034344
+    second: HalloweenGraveyardTileset_149
+  - first:
+      213: -5109880341239682473
+    second: HalloweenGraveyardTileset_150
+  - first:
+      213: -6035561134606438155
+    second: HalloweenGraveyardTileset_151
+  - first:
+      213: -2983095223157252657
+    second: HalloweenGraveyardTileset_152
+  - first:
+      213: -5117323061637846606
+    second: HalloweenGraveyardTileset_153
+  - first:
+      213: 4089040643495946775
+    second: HalloweenGraveyardTileset_154
+  - first:
+      213: -8108081692923008998
+    second: HalloweenGraveyardTileset_155
+  - first:
+      213: 7576145528066103362
+    second: HalloweenGraveyardTileset_156
+  - first:
+      213: 3532079294119981606
+    second: HalloweenGraveyardTileset_157
+  - first:
+      213: 1561416919061568253
+    second: HalloweenGraveyardTileset_158
+  - first:
+      213: 7276174565452610213
+    second: HalloweenGraveyardTileset_159
+  - first:
+      213: 5183714979977316403
+    second: HalloweenGraveyardTileset_160
+  - first:
+      213: -7073193004782483479
+    second: HalloweenGraveyardTileset_161
+  - first:
+      213: -5143475110713594681
+    second: HalloweenGraveyardTileset_162
+  - first:
+      213: 6109450543252623283
+    second: HalloweenGraveyardTileset_163
+  - first:
+      213: 7047924750961933919
+    second: HalloweenGraveyardTileset_164
+  - first:
+      213: 2587248789653323655
+    second: HalloweenGraveyardTileset_165
+  - first:
+      213: -3320549251067430761
+    second: HalloweenGraveyardTileset_166
+  - first:
+      213: 48744433826175003
+    second: HalloweenGraveyardTileset_167
+  - first:
+      213: 5066475700330998532
+    second: HalloweenGraveyardTileset_168
+  - first:
+      213: -70585814842955689
+    second: HalloweenGraveyardTileset_169
+  - first:
+      213: -915186665497081663
+    second: HalloweenGraveyardTileset_170
+  - first:
+      213: -3330665032437765059
+    second: HalloweenGraveyardTileset_171
+  - first:
+      213: 7256292752160557192
+    second: HalloweenGraveyardTileset_172
+  - first:
+      213: -2074320030773451185
+    second: HalloweenGraveyardTileset_173
+  - first:
+      213: 8806123125822036434
+    second: HalloweenGraveyardTileset_174
+  - first:
+      213: -1114241872594453609
+    second: HalloweenGraveyardTileset_175
+  - first:
+      213: 7721845561920979704
+    second: HalloweenGraveyardTileset_176
+  - first:
+      213: -1465915501780608499
+    second: HalloweenGraveyardTileset_177
+  - first:
+      213: -1128847782107236291
+    second: HalloweenGraveyardTileset_178
+  - first:
+      213: -8867147411191402983
+    second: HalloweenGraveyardTileset_179
+  - first:
+      213: 4954399731103807817
+    second: HalloweenGraveyardTileset_180
+  - first:
+      213: 6230639968542156176
+    second: HalloweenGraveyardTileset_181
+  - first:
+      213: 6432803688597958976
+    second: HalloweenGraveyardTileset_0
+  - first:
+      213: -1920978584476638104
+    second: HalloweenGraveyardTileset_1
+  - first:
+      213: -6436174783695818265
+    second: HalloweenGraveyardTileset_2
+  - first:
+      213: -4259396837527839972
+    second: HalloweenGraveyardTileset_3
+  - first:
+      213: -5500453059469304862
+    second: HalloweenGraveyardTileset_4
+  - first:
+      213: -6297256428697457757
+    second: HalloweenGraveyardTileset_5
+  - first:
+      213: 5264072450633758897
+    second: HalloweenGraveyardTileset_6
+  - first:
+      213: 8168273179418712612
+    second: HalloweenGraveyardTileset_7
+  - first:
+      213: 7107874249414176905
+    second: HalloweenGraveyardTileset_8
+  - first:
+      213: 3760822674873290844
+    second: HalloweenGraveyardTileset_9
+  - first:
+      213: -5743723343086170758
+    second: HalloweenGraveyardTileset_10
+  - first:
+      213: -7007164288396157502
+    second: HalloweenGraveyardTileset_11
+  - first:
+      213: 2270359869991163331
+    second: HalloweenGraveyardTileset_12
+  - first:
+      213: 8242527235407267329
+    second: HalloweenGraveyardTileset_13
+  - first:
+      213: 570235353617909436
+    second: HalloweenGraveyardTileset_14
+  - first:
+      213: -1120238688259864853
+    second: HalloweenGraveyardTileset_15
+  - first:
+      213: -714239002574067398
+    second: HalloweenGraveyardTileset_16
+  - first:
+      213: 7917392502817844749
+    second: HalloweenGraveyardTileset_17
+  - first:
+      213: -2947075577545565590
+    second: HalloweenGraveyardTileset_18
+  - first:
+      213: -4498058539736861139
+    second: HalloweenGraveyardTileset_19
+  - first:
+      213: 1508134757571516859
+    second: HalloweenGraveyardTileset_20
+  - first:
+      213: -7719093459277733780
+    second: HalloweenGraveyardTileset_21
+  - first:
+      213: 3845236518254668352
+    second: HalloweenGraveyardTileset_22
+  - first:
+      213: -6269309753379840230
+    second: HalloweenGraveyardTileset_23
+  - first:
+      213: 1611393810111698074
+    second: HalloweenGraveyardTileset_24
+  - first:
+      213: 3453763376293602732
+    second: HalloweenGraveyardTileset_25
+  - first:
+      213: 655912786647191868
+    second: HalloweenGraveyardTileset_26
+  - first:
+      213: -1033899882144843549
+    second: HalloweenGraveyardTileset_27
+  - first:
+      213: -8735191788310272252
+    second: HalloweenGraveyardTileset_28
+  - first:
+      213: -63549224070504085
+    second: HalloweenGraveyardTileset_29
+  - first:
+      213: -1244541574667958172
+    second: HalloweenGraveyardTileset_30
+  - first:
+      213: 9082568120812588705
+    second: HalloweenGraveyardTileset_31
+  - first:
+      213: -7525883307616158509
+    second: HalloweenGraveyardTileset_32
+  - first:
+      213: 6244992233623169626
+    second: HalloweenGraveyardTileset_33
+  - first:
+      213: 5255640098209738734
+    second: HalloweenGraveyardTileset_34
+  - first:
+      213: 1314840038987991176
+    second: HalloweenGraveyardTileset_35
+  - first:
+      213: -178229488899467503
+    second: HalloweenGraveyardTileset_36
+  - first:
+      213: 8558290451864926944
+    second: HalloweenGraveyardTileset_37
+  - first:
+      213: 1108019148701168066
+    second: HalloweenGraveyardTileset_38
+  - first:
+      213: -1173970844129104170
+    second: HalloweenGraveyardTileset_39
+  - first:
+      213: -4012634988264375274
+    second: HalloweenGraveyardTileset_40
+  - first:
+      213: -6501495826096589400
+    second: HalloweenGraveyardTileset_41
+  - first:
+      213: 8738427990550945625
+    second: HalloweenGraveyardTileset_42
+  - first:
+      213: 8071925905402511387
+    second: HalloweenGraveyardTileset_43
+  - first:
+      213: -7657000135046191077
+    second: HalloweenGraveyardTileset_44
+  - first:
+      213: -1879617063365571260
+    second: HalloweenGraveyardTileset_45
+  - first:
+      213: 2005016325415277964
+    second: HalloweenGraveyardTileset_46
+  - first:
+      213: -1952854945042815754
+    second: HalloweenGraveyardTileset_47
+  - first:
+      213: -4166881198176603777
+    second: HalloweenGraveyardTileset_48
+  - first:
+      213: -2427735173822225509
+    second: HalloweenGraveyardTileset_49
+  - first:
+      213: -4115725435942432268
+    second: HalloweenGraveyardTileset_50
+  - first:
+      213: 6699430308410507548
+    second: HalloweenGraveyardTileset_51
+  - first:
+      213: -1529259068514509335
+    second: HalloweenGraveyardTileset_52
+  - first:
+      213: -5986906905181020847
+    second: HalloweenGraveyardTileset_53
+  - first:
+      213: -1460162850029547308
+    second: HalloweenGraveyardTileset_54
+  - first:
+      213: 5903617493314358575
+    second: HalloweenGraveyardTileset_55
+  - first:
+      213: -2758095232189265916
+    second: HalloweenGraveyardTileset_56
+  - first:
+      213: 6369059022491294145
+    second: HalloweenGraveyardTileset_57
+  - first:
+      213: 2631494286865628727
+    second: HalloweenGraveyardTileset_58
+  - first:
+      213: 7840498200569252475
+    second: HalloweenGraveyardTileset_59
+  - first:
+      213: -5675286395684173332
+    second: HalloweenGraveyardTileset_60
+  - first:
+      213: 2366077518994519128
+    second: HalloweenGraveyardTileset_61
+  - first:
+      213: -1313482804093373867
+    second: HalloweenGraveyardTileset_62
+  - first:
+      213: 6428558483731549772
+    second: HalloweenGraveyardTileset_63
+  - first:
+      213: 8888636094414601442
+    second: HalloweenGraveyardTileset_64
+  - first:
+      213: -4101295067790254394
+    second: HalloweenGraveyardTileset_65
+  - first:
+      213: 5251877819350394893
+    second: HalloweenGraveyardTileset_66
+  - first:
+      213: 6982710588632285532
+    second: HalloweenGraveyardTileset_67
+  - first:
+      213: -90256954954249851
+    second: HalloweenGraveyardTileset_68
+  - first:
+      213: -7877165697103314358
+    second: HalloweenGraveyardTileset_69
+  - first:
+      213: 7194946429901332118
+    second: HalloweenGraveyardTileset_70
+  - first:
+      213: -2111259204200625334
+    second: HalloweenGraveyardTileset_71
+  - first:
+      213: 755103471801695861
+    second: HalloweenGraveyardTileset_72
+  - first:
+      213: -1950347325854196944
+    second: HalloweenGraveyardTileset_73
+  - first:
+      213: -1357708554065523578
+    second: HalloweenGraveyardTileset_74
+  - first:
+      213: -2369287772151784967
+    second: HalloweenGraveyardTileset_75
+  - first:
+      213: -2604565848233872428
+    second: HalloweenGraveyardTileset_76
+  - first:
+      213: 4787536515165047298
+    second: HalloweenGraveyardTileset_77
+  - first:
+      213: -6567284200632163902
+    second: HalloweenGraveyardTileset_78
+  - first:
+      213: -5860821326610564726
+    second: HalloweenGraveyardTileset_79
+  - first:
+      213: 6989593181515220562
+    second: HalloweenGraveyardTileset_80
+  - first:
+      213: -3690879228538721556
+    second: HalloweenGraveyardTileset_81
+  - first:
+      213: 1905561561078216653
+    second: HalloweenGraveyardTileset_82
+  - first:
+      213: -6457241335254698439
+    second: HalloweenGraveyardTileset_83
+  - first:
+      213: -5046709922411937265
+    second: HalloweenGraveyardTileset_84
+  - first:
+      213: 7382136483335044883
+    second: HalloweenGraveyardTileset_85
+  - first:
+      213: -5156301186403204104
+    second: HalloweenGraveyardTileset_86
+  - first:
+      213: -1937636942986821056
+    second: HalloweenGraveyardTileset_87
+  - first:
+      213: -3470942579771669936
+    second: HalloweenGraveyardTileset_88
+  - first:
+      213: 7525021919354440417
+    second: HalloweenGraveyardTileset_89
+  - first:
+      213: 7643228905077257895
+    second: HalloweenGraveyardTileset_90
+  - first:
+      213: 7563122030396569202
+    second: HalloweenGraveyardTileset_91
+  - first:
+      213: -6342717415242853154
+    second: HalloweenGraveyardTileset_92
+  - first:
+      213: 3145361832591585355
+    second: HalloweenGraveyardTileset_93
+  - first:
+      213: -6998981013721630673
+    second: HalloweenGraveyardTileset_94
+  - first:
+      213: 7938699523948790839
+    second: HalloweenGraveyardTileset_95
+  - first:
+      213: 1631979942995506130
+    second: HalloweenGraveyardTileset_96
+  - first:
+      213: -9268864321683801
+    second: HalloweenGraveyardTileset_97
+  - first:
+      213: 641216354732538696
+    second: HalloweenGraveyardTileset_98
+  - first:
+      213: -6603378156509939439
+    second: HalloweenGraveyardTileset_99
+  - first:
+      213: 6625597567322195916
+    second: HalloweenGraveyardTileset_100
+  - first:
+      213: -8961946014412835393
+    second: HalloweenGraveyardTileset_101
+  - first:
+      213: -1149580886864743837
+    second: HalloweenGraveyardTileset_102
+  - first:
+      213: 2276661821847548615
+    second: HalloweenGraveyardTileset_103
+  - first:
+      213: -1426687526381928370
+    second: HalloweenGraveyardTileset_104
+  - first:
+      213: 8040868843460058615
+    second: HalloweenGraveyardTileset_105
+  - first:
+      213: 6295041850170429747
+    second: HalloweenGraveyardTileset_106
+  - first:
+      213: -3730406557155441352
+    second: HalloweenGraveyardTileset_107
+  - first:
+      213: -925034226992193653
+    second: HalloweenGraveyardTileset_108
+  - first:
+      213: 4571894799950257915
+    second: HalloweenGraveyardTileset_109
+  - first:
+      213: -2357070904275141259
+    second: HalloweenGraveyardTileset_110
+  - first:
+      213: -2921260070336137447
+    second: HalloweenGraveyardTileset_111
+  - first:
+      213: -6958669950943522091
+    second: HalloweenGraveyardTileset_112
+  - first:
+      213: -968235650972088130
+    second: HalloweenGraveyardTileset_113
+  - first:
+      213: -6172224512834654855
+    second: HalloweenGraveyardTileset_114
+  - first:
+      213: -6217107919011546044
+    second: HalloweenGraveyardTileset_115
+  - first:
+      213: 3239978125061753493
+    second: HalloweenGraveyardTileset_116
+  - first:
+      213: 1550326230767037401
+    second: HalloweenGraveyardTileset_117
+  - first:
+      213: -2607356515328877885
+    second: HalloweenGraveyardTileset_118
+  - first:
+      213: -5785118719445887390
+    second: HalloweenGraveyardTileset_119
+  - first:
+      213: -1598101636603198657
+    second: HalloweenGraveyardTileset_120
+  - first:
+      213: -2771773586602853693
+    second: HalloweenGraveyardTileset_121
+  - first:
+      213: 9086172989912293386
+    second: HalloweenGraveyardTileset_122
+  - first:
+      213: 8754512853379296951
+    second: HalloweenGraveyardTileset_123
+  - first:
+      213: -4177600125592141266
+    second: HalloweenGraveyardTileset_124
+  - first:
+      213: 5645260358280761362
+    second: HalloweenGraveyardTileset_125
+  - first:
+      213: 2055829578974271474
+    second: HalloweenGraveyardTileset_126
+  - first:
+      213: 8510334960163757345
+    second: HalloweenGraveyardTileset_127
+  - first:
+      213: -7782636884757145224
+    second: HalloweenGraveyardTileset_128
+  - first:
+      213: -9215766277584773895
+    second: HalloweenGraveyardTileset_129
+  - first:
+      213: -5892666769077684616
+    second: HalloweenGraveyardTileset_130
+  - first:
+      213: 1747841281575721480
+    second: HalloweenGraveyardTileset_131
+  - first:
+      213: 6884572243904896620
+    second: HalloweenGraveyardTileset_132
+  - first:
+      213: 2159836144185925151
+    second: HalloweenGraveyardTileset_133
+  - first:
+      213: -5157944135188053358
+    second: HalloweenGraveyardTileset_134
+  - first:
+      213: 5834812603823905357
+    second: HalloweenGraveyardTileset_135
+  - first:
+      213: 3242782091275565996
+    second: HalloweenGraveyardTileset_136
+  - first:
+      213: 8991745190618325524
+    second: HalloweenGraveyardTileset_137
+  - first:
+      213: -7251189749446193830
+    second: HalloweenGraveyardTileset_138
+  - first:
+      213: -8995255358706417614
+    second: HalloweenGraveyardTileset_139
+  - first:
+      213: -8967687769931924205
+    second: HalloweenGraveyardTileset_140
+  - first:
+      213: -8857129834414985493
+    second: HalloweenGraveyardTileset_141
+  - first:
+      213: 6087332930668996897
+    second: HalloweenGraveyardTileset_142
+  - first:
+      213: -1706181292888473700
+    second: HalloweenGraveyardTileset_143
+  - first:
+      213: 6257043466686824412
+    second: HalloweenGraveyardTileset_144
+  - first:
+      213: 2393758906604965308
+    second: HalloweenGraveyardTileset_145
+  - first:
+      213: -7979578255613409394
+    second: HalloweenGraveyardTileset_146
+  - first:
+      213: -115056918610594824
+    second: HalloweenGraveyardTileset_147
+  - first:
+      213: -1310984421706674158
+    second: HalloweenGraveyardTileset_148
+  - first:
+      213: -1456081905246511144
+    second: HalloweenGraveyardTileset_149
+  - first:
+      213: 913893525837340277
+    second: HalloweenGraveyardTileset_150
+  - first:
+      213: -4741983164604273404
+    second: HalloweenGraveyardTileset_151
+  - first:
+      213: 3744742376178472144
+    second: HalloweenGraveyardTileset_152
+  - first:
+      213: 421297943634986013
+    second: HalloweenGraveyardTileset_153
+  - first:
+      213: -6363940795324832760
+    second: HalloweenGraveyardTileset_154
+  - first:
+      213: 5885170471366327113
+    second: HalloweenGraveyardTileset_155
+  - first:
+      213: -3962196282262766335
+    second: HalloweenGraveyardTileset_156
+  - first:
+      213: 6077705801738682161
+    second: HalloweenGraveyardTileset_157
+  - first:
+      213: -4786080273522635572
+    second: HalloweenGraveyardTileset_158
+  - first:
+      213: -7646400290353792995
+    second: HalloweenGraveyardTileset_159
+  - first:
+      213: -8072402939862451431
+    second: HalloweenGraveyardTileset_160
+  - first:
+      213: 4237451238521441862
+    second: HalloweenGraveyardTileset_161
+  - first:
+      213: -3068881579944634507
+    second: HalloweenGraveyardTileset_162
+  - first:
+      213: 7392090240239433288
+    second: HalloweenGraveyardTileset_163
+  - first:
+      213: 5015619891269102649
+    second: HalloweenGraveyardTileset_164
+  - first:
+      213: 8788557939265799680
+    second: HalloweenGraveyardTileset_165
+  - first:
+      213: -2371062771631762575
+    second: HalloweenGraveyardTileset_166
+  - first:
+      213: -9014707195493878411
+    second: HalloweenGraveyardTileset_167
+  - first:
+      213: -4995637039540500306
+    second: HalloweenGraveyardTileset_168
+  - first:
+      213: 5006564769789493397
+    second: HalloweenGraveyardTileset_169
+  - first:
+      213: 5636786752629295521
+    second: HalloweenGraveyardTileset_170
+  - first:
+      213: 3598800060991898961
+    second: HalloweenGraveyardTileset_171
+  - first:
+      213: 381113919111881899
+    second: HalloweenGraveyardTileset_172
+  - first:
+      213: -2823084508097144129
+    second: HalloweenGraveyardTileset_173
+  - first:
+      213: -42749380944188344
+    second: HalloweenGraveyardTileset_174
+  - first:
+      213: -9129863114125360827
+    second: HalloweenGraveyardTileset_175
+  - first:
+      213: 5046473946100677712
+    second: HalloweenGraveyardTileset_176
+  - first:
+      213: -7586025496376940822
+    second: HalloweenGraveyardTileset_177
+  - first:
+      213: 2798659721767456562
+    second: HalloweenGraveyardTileset_178
+  - first:
+      213: 8721494822388814202
+    second: HalloweenGraveyardTileset_179
+  - first:
+      213: -3192047352416444872
+    second: HalloweenGraveyardTileset_180
+  - first:
+      213: 8185082809806604145
+    second: HalloweenGraveyardTileset_181
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04134b05fd8e54950800000000000000
+      internalID: 6432803688597958976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864232bb7205755e0800000000000000
+      internalID: -1920978584476638104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1fb71722d1ea6a0800000000000000
+      internalID: -6436174783695818265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b1bbdb42593e4c0800000000000000
+      internalID: -4259396837527839972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb1f96c5177aa3b0800000000000000
+      internalID: -5500453059469304862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab61f374a6ab98a0800000000000000
+      internalID: -6297256428697457757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8f1fbe00ebd0940800000000000000
+      internalID: 5264072450633758897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a5a97ed298b5170800000000000000
+      internalID: 8168273179418712612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9807a7088fd34a260800000000000000
+      internalID: 7107874249414176905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c509e0f0c40213430800000000000000
+      internalID: 3760822674873290844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7dca3f0d023a40b0800000000000000
+      internalID: -5743723343086170758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd185b843d81ce90800000000000000
+      internalID: -7007164288396157502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5102bd540f18f10800000000000000
+      internalID: 2270359869991163331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106ceed89d6536270800000000000000
+      internalID: 8242527235407267329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6c3ca6802e9e700800000000000000
+      internalID: 570235353617909436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_15
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be60f9a29dc1470f0800000000000000
+      internalID: -1120238688259864853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39e7de49638616f0800000000000000
+      internalID: -714239002574067398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e6ccd788a30ed60800000000000000
+      internalID: 7917392502817844749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ada226062e917d0800000000000000
+      internalID: -2947075577545565590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d267210079fa391c0800000000000000
+      internalID: -4498058539736861139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb958725298fde410800000000000000
+      internalID: 1508134757571516859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_21
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60a5b3756540e490800000000000000
+      internalID: -7719093459277733780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04aedeb8d360d5530800000000000000
+      internalID: 3845236518254668352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_23
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f17eadeffeef8a0800000000000000
+      internalID: -6269309753379840230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9498fcf122dc5610800000000000000
+      internalID: 1611393810111698074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_25
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5eb3eed7b3eef20800000000000000
+      internalID: 3453763376293602732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c311ebb44354a1900800000000000000
+      internalID: 655912786647191868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_27
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e83077f889d6a1f0800000000000000
+      internalID: -1033899882144843549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4076bdc795d56c680800000000000000
+      internalID: -8735191788310272252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61a681415a3e1ff0800000000000000
+      internalID: -63549224070504085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46806bd18008abee0800000000000000
+      internalID: -1244541574667958172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae42599593cb0e70800000000000000
+      internalID: 9082568120812588705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc3f7c6101be8790800000000000000
+      internalID: -7525883307616158509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_33
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5aae2e595baaa650800000000000000
+      internalID: 6244992233623169626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef2711e2d8cfe840800000000000000
+      internalID: 5255640098209738734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_35
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88807549c004f3210800000000000000
+      internalID: 1314840038987991176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117d5a1693dc68df0800000000000000
+      internalID: -178229488899467503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_37
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eab60c72d725c670800000000000000
+      internalID: 8558290451864926944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_38
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1f9a29b89706f00800000000000000
+      internalID: 1108019148701168066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_39
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dee40bbcb735bfe0800000000000000
+      internalID: -1173970844129104170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61cb23fecb14058c0800000000000000
+      internalID: -4012634988264375274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_41
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5f3d81efb06c5a0800000000000000
+      internalID: -6501495826096589400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f9e1095f1254970800000000000000
+      internalID: 8738427990550945625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_43
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b104ac418dd350070800000000000000
+      internalID: 8071925905402511387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_44
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18247912fedcb590800000000000000
+      internalID: -7657000135046191077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_45
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d05505d324ae5e0800000000000000
+      internalID: -1879617063365571260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_46
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c859c3599bf33db10800000000000000
+      internalID: 2005016325415277964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_47
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4abde26c016e4e0800000000000000
+      internalID: -1952854945042815754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_48
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71fd6990a34c26c0800000000000000
+      internalID: -4166881198176603777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_49
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93ea9bd8b3fe4ed0800000000000000
+      internalID: -2427735173822225509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_50
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f19c95a58102e6c0800000000000000
+      internalID: -4115725435942432268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_51
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c114b42de5829fc50800000000000000
+      internalID: 6699430308410507548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_52
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9edd5a3cafaf6cae0800000000000000
+      internalID: -1529259068514509335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_53
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d1a55c3eb3aeca0800000000000000
+      internalID: -5986906905181020847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d054c9cf957cbbe0800000000000000
+      internalID: -1460162850029547308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_55
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2dc8cad4dcdde150800000000000000
+      internalID: 5903617493314358575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40809a4dff649b9d0800000000000000
+      internalID: -2758095232189265916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_57
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9171daf61736850800000000000000
+      internalID: 6369059022491294145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_58
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e78159c12f48420800000000000000
+      internalID: 2631494286865628727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_59
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a050b929b0fcc60800000000000000
+      internalID: 7840498200569252475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_60
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce943a297155d31b0800000000000000
+      internalID: -5675286395684173332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_61
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854b4bea7fef5d020800000000000000
+      internalID: 2366077518994519128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_62
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5523e6b495295cde0800000000000000
+      internalID: -1313482804093373867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_63
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e84a881e3d63950800000000000000
+      internalID: 6428558483731549772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec3c411f67ca5b70800000000000000
+      internalID: 8888636094414601442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_65
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cedc4d8dd54517c0800000000000000
+      internalID: -4101295067790254394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_66
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0822221d0b62e840800000000000000
+      internalID: 5251877819350394893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_67
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5149ccc84297e060800000000000000
+      internalID: 6982710588632285532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_68
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589817517c75fbef0800000000000000
+      internalID: -90256954954249851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_69
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42c343988faea290800000000000000
+      internalID: -7877165697103314358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69edb3458a599d360800000000000000
+      internalID: 7194946429901332118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_71
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b09d090fc43b2e0800000000000000
+      internalID: -2111259204200625334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_72
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e776d5b9aaa7a00800000000000000
+      internalID: 755103471801695861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_73
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03bd3d5c079fee4e0800000000000000
+      internalID: -1950347325854196944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_74
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c4a667343782de0800000000000000
+      internalID: -1357708554065523578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_75
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9573203599e1fd0800000000000000
+      internalID: -2369287772151784967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_76
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3f7ed1929badbd0800000000000000
+      internalID: -2604565848233872428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_77
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20acf97581fb07240800000000000000
+      internalID: 4787536515165047298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_78
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1e84280d15cd4a0800000000000000
+      internalID: -6567284200632163902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_79
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89f75f2e0e2aaea0800000000000000
+      internalID: -5860821326610564726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_80
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25605b457f5000160800000000000000
+      internalID: 6989593181515220562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_81
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceae41295ec57ccc0800000000000000
+      internalID: -3690879228538721556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_82
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7b4b9c42ae17a10800000000000000
+      internalID: 1905561561078216653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_83
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936bc2fa7354366a0800000000000000
+      internalID: -6457241335254698439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02823e601c76f9b0800000000000000
+      internalID: -5046709922411937265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_85
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ff2a4f40e927660800000000000000
+      internalID: 7382136483335044883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_86
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f30385e3632178b0800000000000000
+      internalID: -5156301186403204104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_87
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042c89567712c15e0800000000000000
+      internalID: -1937636942986821056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_88
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0528ee01d1cb4dfc0800000000000000
+      internalID: -3470942579771669936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_89
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea462ef09f3e6860800000000000000
+      internalID: 7525021919354440417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_90
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6b0209134321a60800000000000000
+      internalID: 7643228905077257895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_91
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276f7be5a6b95f860800000000000000
+      internalID: 7563122030396569202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_92
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed414c1bd142af7a0800000000000000
+      internalID: -6342717415242853154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_93
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4071b10ce196ab20800000000000000
+      internalID: 3145361832591585355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_94
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f283b67a9df9ede90800000000000000
+      internalID: -6998981013721630673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_95
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734c78fe72deb2e60800000000000000
+      internalID: 7938699523948790839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_96
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d33fce8c15f5a610800000000000000
+      internalID: 1631979942995506130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_97
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae72aa54021fdff0800000000000000
+      internalID: -9268864321683801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84bf00890ee06e800800000000000000
+      internalID: 641216354732538696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_99
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119b6a78d861c54a0800000000000000
+      internalID: -6603378156509939439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_100
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc78ee032e9d2fb50800000000000000
+      internalID: 6625597567322195916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_101
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5f1b21595c0a380800000000000000
+      internalID: -8961946014412835393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_102
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36239dd264edb00f0800000000000000
+      internalID: -1149580886864743837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_103
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2baec5dd3589f10800000000000000
+      internalID: 2276661821847548615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_104
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e404680f043633ce0800000000000000
+      internalID: -1426687526381928370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_105
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd51fb5c97e69f60800000000000000
+      internalID: 8040868843460058615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_106
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33150adc53b7c5750800000000000000
+      internalID: 6295041850170429747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_107
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83546f4300fea3cc0800000000000000
+      internalID: -3730406557155441352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_108
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f5d07854e9923f0800000000000000
+      internalID: -925034226992193653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_109
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe9d7df812a27f30800000000000000
+      internalID: 4571894799950257915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_110
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d754830800a4fd0800000000000000
+      internalID: -2357070904275141259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_111
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917f41b81799577d0800000000000000
+      internalID: -2921260070336137447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d293d85c86dd6f90800000000000000
+      internalID: -6958669950943522091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_113
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb880fc2ec22092f0800000000000000
+      internalID: -968235650972088130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_114
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d2886e18ad75aa0800000000000000
+      internalID: -6172224512834654855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_115
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c7c0d894568b9a0800000000000000
+      internalID: -6217107919011546044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_116
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a875840f6b6fc20800000000000000
+      internalID: 3239978125061753493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_117
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbe6de2e7dd38510800000000000000
+      internalID: 1550326230767037401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_118
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca950d401fc0dbd0800000000000000
+      internalID: -2607356515328877885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_119
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26617ffec2127bfa0800000000000000
+      internalID: -5785118719445887390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_120
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33cb43570762d9e0800000000000000
+      internalID: -1598101636603198657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_121
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3caf9b4cb9ea889d0800000000000000
+      internalID: -2771773586602853693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_122
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00a8779132981e70800000000000000
+      internalID: 9086172989912293386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_123
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bea3478e074e7970800000000000000
+      internalID: 8754512853379296951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_124
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e220474d1de2606c0800000000000000
+      internalID: -4177600125592141266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_125
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2105befc26ef75e40800000000000000
+      internalID: 5645260358280761362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7908d1c16c78c10800000000000000
+      internalID: 2055829578974271474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_127
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d162c7e88ca1670800000000000000
+      internalID: 8510334960163757345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_128
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879923cccf48ef390800000000000000
+      internalID: -7782636884757145224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_129
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc1983d5650b1080800000000000000
+      internalID: -9215766277584773895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_130
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87630615bca093ea0800000000000000
+      internalID: -5892666769077684616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_131
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a95189264914810800000000000000
+      internalID: 1747841281575721480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_132
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e1774daf9ea8f50800000000000000
+      internalID: 6884572243904896620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_133
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e5043a78749fd10800000000000000
+      internalID: 2159836144185925151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_134
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2928ec2132d4b68b0800000000000000
+      internalID: -5157944135188053358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_135
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a55e5262b69f050800000000000000
+      internalID: 5834812603823905357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_136
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab7a7a812da00d20800000000000000
+      internalID: 3242782091275565996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_137
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412e1ad4c9819cc70800000000000000
+      internalID: 8991745190618325524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_138
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d4e4167599e5b90800000000000000
+      internalID: -7251189749446193830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_139
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230006009ee6a2380800000000000000
+      internalID: -8995255358706417614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31db7907c7f5c8380800000000000000
+      internalID: -8967687769931924205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_141
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee2e2ab757251580800000000000000
+      internalID: -8857129834414985493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_142
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12920126c0d8a7450800000000000000
+      internalID: 6087332930668996897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_143
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f37f2672d6258e0800000000000000
+      internalID: -1706181292888473700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_144
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdffb08b1eb75d650800000000000000
+      internalID: 6257043466686824412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_145
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbdcd1afa07583120800000000000000
+      internalID: 2393758906604965308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_146
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e874bb8aad7d24190800000000000000
+      internalID: -7979578255613409394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_147
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3b345975c376ef0800000000000000
+      internalID: -115056918610594824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_148
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2105a164d927ecde0800000000000000
+      internalID: -1310984421706674158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_149
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df58e9c835facbe0800000000000000
+      internalID: -1456081905246511144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_150
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e501ad15dceac00800000000000000
+      internalID: 913893525837340277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_151
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d21e69f67113eb0800000000000000
+      internalID: -4741983164604273404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_152
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d45873c95ff7f330800000000000000
+      internalID: 3744742376178472144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_153
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1447f26f30c8d500800000000000000
+      internalID: 421297943634986013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_154
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804eb03709dbea7a0800000000000000
+      internalID: -6363940795324832760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_155
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b786cdc535ca150800000000000000
+      internalID: 5885170471366327113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_156
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10dba5159737309c0800000000000000
+      internalID: -3962196282262766335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_157
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ff6f1c939585450800000000000000
+      internalID: 6077705801738682161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_158
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccccd26595d649db0800000000000000
+      internalID: -4786080273522635572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_159
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18b403c27782e590800000000000000
+      internalID: -7646400290353792995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_160
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91bfdadab4019ff80800000000000000
+      internalID: -8072402939862451431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_161
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e0c1153737eca30800000000000000
+      internalID: 4237451238521441862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_162
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57719a176742965d0800000000000000
+      internalID: -3068881579944634507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_163
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8467a1598eaf59660800000000000000
+      internalID: 7392090240239433288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_164
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c6a7b97bf0b9540800000000000000
+      internalID: 5015619891269102649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_165
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00680e9c1ea37f970800000000000000
+      internalID: 8788557939265799680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_166
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1735cbcb8fa481fd0800000000000000
+      internalID: -2371062771631762575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_167
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575fd62519355e280800000000000000
+      internalID: -9014707195493878411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_168
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8876f949eebaab0800000000000000
+      internalID: -4995637039540500306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_169
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590c948d124ea7540800000000000000
+      internalID: 5006564769789493397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_170
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9c811cfa3e93e40800000000000000
+      internalID: 5636786752629295521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_171
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1558315969181f130800000000000000
+      internalID: 3598800060991898961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_172
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4ee97171df94500800000000000000
+      internalID: 381113919111881899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_173
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba16f3e89362d8d0800000000000000
+      internalID: -2823084508097144129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_174
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c247e1aaf186ff0800000000000000
+      internalID: -42749380944188344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_175
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541cd9aaed53c4180800000000000000
+      internalID: -9129863114125360827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_176
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c389d015da80640800000000000000
+      internalID: 5046473946100677712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_177
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae66567e00609b690800000000000000
+      internalID: -7586025496376940822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_178
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f84236036d6d620800000000000000
+      internalID: 2798659721767456562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_179
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71d4ee1559f80970800000000000000
+      internalID: 8721494822388814202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_180
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83eddfc58d193b3d0800000000000000
+      internalID: -3192047352416444872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenGraveyardTileset_181
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177cda7f271479170800000000000000
+      internalID: 8185082809806604145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 640836ad86734ae4e85900bcdbee3382
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
