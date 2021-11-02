@@ -146,9 +146,18 @@ public class PlayerController : MonoBehaviour
         //return light to parent
         lightBall.parent = lightHolder;
         lightBall.localPosition = new Vector3(0, 0, 0);
+        lightBall.GetComponent<TrailRenderer>().enabled = false;
 
         //zero out head rotation and play animation
-        head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        if (bodySprite.flipX)
+        {
+            head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        }
+        else
+        {
+            head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, 180f);
+        }
+        head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
         head_anim.Play("headLightIn");
     }
 
