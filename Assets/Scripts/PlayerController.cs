@@ -151,11 +151,11 @@ public class PlayerController : MonoBehaviour
         //zero out head rotation and play animation
         if (bodySprite.flipX)
         {
-            head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+            head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, -45f);
         }
         else
         {
-            head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, 180f);
+            head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, -135f);
         }
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
         head_anim.Play("headLightIn");
