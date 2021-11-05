@@ -75,6 +75,17 @@ public class PlayerController : MonoBehaviour
                 bodySprite.flipX = true;
             }
 
+            //turn head to face cursor
+            Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - head_pointer.transform.position;
+            difference.Normalize();
+            float rotation_z = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+            Quaternion headRot = Quaternion.Lerp(head_pointer.transform.rotation, Quaternion.Euler(0f, 0f, rotation_z), Time.deltaTime * rotationSpeed);
+            head_pointer.transform.rotation = headRot;
+
+            //set head sprite to face cursor
+            float angle = 1 - (headRot.eulerAngles.z / 360);
+            head_anim.SetFloat("Rotation", angle);
+
             //check for mode transition
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -105,16 +116,6 @@ public class PlayerController : MonoBehaviour
         if(myState == playerState.Body)
         {
             rb_body.MovePosition(rb_body.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
-
-            //turn head to face cursor
-            Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - head_pointer.transform.position;
-            difference.Normalize();
-            float rotation_z = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-            head_pointer.transform.rotation = Quaternion.Lerp(head_pointer.transform.rotation, Quaternion.Euler(0f, 0f, rotation_z), Time.deltaTime * rotationSpeed);
-
-            //set head sprite to face cursor
-            float angle = 1 - (head_pointer.transform.localEulerAngles.z / 360);
-            head_anim.SetFloat("Rotation", angle);
         }
         else if (myState == playerState.Light)
         {
@@ -165,25 +166,12 @@ public class PlayerController : MonoBehaviour
 
     public void ActivateHead()
     {
-        //point head light toward mouse
-        /*
-        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - head_pointer.transform.position;
-        difference.Normalize();
-        float rotation_z = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-        head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, rotation_z);
-        */
 
         //deactivate light
         lightBall.gameObject.SetActive(false);
 
         //unflip head
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
-
-        //rotate head sprite toward mouse
-        /*
-        float angle = 1 - (head_pointer.transform.localEulerAngles.z / 360);
-        head_anim.SetFloat("Rotation", angle);   
-        */
     }
 
     public void ActivateBody()
