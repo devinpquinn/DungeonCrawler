@@ -166,12 +166,15 @@ public class PlayerController : MonoBehaviour
 
     public void ActivateHead()
     {
-
         //deactivate light
         lightBall.gameObject.SetActive(false);
 
         //unflip head
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+
+        //set head sprite animation to correct starting point
+        float angle = 1 - (head_pointer.rotation.eulerAngles.z / 360);
+        head_anim.SetFloat("Rotation", angle);
     }
 
     public void ActivateBody()
