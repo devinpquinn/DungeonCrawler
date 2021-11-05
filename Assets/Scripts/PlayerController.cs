@@ -173,8 +173,14 @@ public class PlayerController : MonoBehaviour
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
 
         //set head sprite animation to correct starting point
-        float angle = 1 - (head_pointer.rotation.eulerAngles.z / 360);
-        head_anim.SetFloat("Rotation", angle);
+        if (bodySprite.flipX)
+        {
+            head_anim.SetFloat("Rotation", 0.125f);
+        }
+        else
+        {
+            head_anim.SetFloat("Rotation", 0.375f);
+        }
     }
 
     public void ActivateBody()
