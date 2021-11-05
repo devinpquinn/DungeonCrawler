@@ -158,7 +158,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, -135f);
+            head_pointer.transform.rotation = Quaternion.Euler(0f, 0f, 225f);
         }
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
         head_anim.Play("headLightIn");
@@ -168,24 +168,15 @@ public class PlayerController : MonoBehaviour
     {
         //deactivate light
         lightBall.gameObject.SetActive(false);
-
-        //unflip head
-        head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
-
-        //set head sprite animation to correct starting point
-        if (bodySprite.flipX)
-        {
-            head_anim.SetFloat("Rotation", 0.125f);
-        }
-        else
-        {
-            head_anim.SetFloat("Rotation", 0.375f);
-        }
     }
 
     public void ActivateBody()
     {
         //set body mode
         myState = playerState.Body;
+
+        //free head to turn
+        head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+        head_anim.Play("headSpin");
     }
 }
