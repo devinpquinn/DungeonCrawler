@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
 
         lightHolder = body.Find("LightHolder");
         lightBall = lightHolder.Find("LightBall");
+        lightBall.localScale = new Vector3(0, 0, 0);
         rb_light = lightBall.GetComponent<Rigidbody2D>();
         light_anim = lightBall.GetComponent<Animator>();
 
@@ -148,6 +149,7 @@ public class PlayerController : MonoBehaviour
         //return light to parent
         lightBall.parent = lightHolder;
         lightBall.localPosition = new Vector3(0, 0, 0);
+        lightBall.localScale = new Vector3(0, 0, 0);
         lightBall.gameObject.SetActive(false);
 
         //zero out head rotation and play animation
