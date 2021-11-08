@@ -30,16 +30,16 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.33333334
+        time: 0.16666667
         value: 1
-        inSlope: 4
-        outSlope: 4
+        inSlope: 8
+        outSlope: 8
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.5
+        time: 0.25
         value: 2
         inSlope: 0
         outSlope: 0
@@ -67,25 +67,25 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.16666667
+        time: 0.083333336
         value: 1.25
-        inSlope: 7.5
-        outSlope: 7.5
+        inSlope: 15
+        outSlope: 15
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.33333334
+        time: 0.16666667
         value: 2.5
-        inSlope: 11.250001
-        outSlope: 11.250001
+        inSlope: 22.500002
+        outSlope: 22.500002
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.5
+        time: 0.25
         value: 5
         inSlope: 0
         outSlope: 0
@@ -105,10 +105,10 @@ AnimationClip:
     - time: 0
       value: {fileID: 4782721644575076258, guid: 6942371d92f40754e8b746c1878507b8,
         type: 3}
-    - time: 0.16666667
+    - time: 0.083333336
       value: {fileID: 4429855407957599959, guid: 6942371d92f40754e8b746c1878507b8,
         type: 3}
-    - time: 0.33333334
+    - time: 0.16666667
       value: {fileID: 9165341996882705270, guid: 6942371d92f40754e8b746c1878507b8,
         type: 3}
     attribute: m_Sprite
@@ -118,13 +118,13 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-    - time: 0.33333334
+    - time: 0.16666667
       value: {fileID: 2100000, guid: dd503ff7be653594ab509d552ea065e6, type: 2}
     attribute: m_Materials.Array.data[0]
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 6
+  m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -170,7 +170,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.5
+    m_StopTime: 0.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -199,16 +199,16 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.33333334
+        time: 0.16666667
         value: 1
-        inSlope: 4
-        outSlope: 4
+        inSlope: 8
+        outSlope: 8
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.5
+        time: 0.25
         value: 2
         inSlope: 0
         outSlope: 0
@@ -236,25 +236,25 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.16666667
+        time: 0.083333336
         value: 1.25
-        inSlope: 7.5
-        outSlope: 7.5
+        inSlope: 15
+        outSlope: 15
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.33333334
+        time: 0.16666667
         value: 2.5
-        inSlope: 11.250001
-        outSlope: 11.250001
+        inSlope: 22.500002
+        outSlope: 22.500002
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.5
+        time: 0.25
         value: 5
         inSlope: 0
         outSlope: 0
@@ -273,7 +273,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.5
+  - time: 0.25
     functionName: ActivateHead
     data: 
     objectReferenceParameter: {fileID: 0}

@@ -144,12 +144,11 @@ public class PlayerController : MonoBehaviour
     {
         //snap!
         Instantiate(lightRemnant, lightBall.position + (Vector3)lightBall.GetComponent<CircleCollider2D>().offset, lightBall.rotation);
-        light_anim.Play("lightDisappear");
 
         //return light to parent
         lightBall.parent = lightHolder;
         lightBall.localPosition = new Vector3(0, 0, 0);
-        lightBall.GetComponent<TrailRenderer>().enabled = false;
+        lightBall.gameObject.SetActive(false);
 
         //zero out head rotation and play animation
         if (bodySprite.flipX)
