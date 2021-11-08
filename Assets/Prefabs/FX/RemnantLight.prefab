@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003573523}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.75, z: 0}
+  m_LocalPosition: {x: 0, y: 1.75, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4403944064740069300}
@@ -660,14 +660,14 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 0
+    type: 10
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 90, y: 0, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
@@ -4824,6 +4824,7 @@ GameObject:
   - component: {fileID: 893507649999962570}
   - component: {fileID: 893507649999962573}
   - component: {fileID: 893507649999962572}
+  - component: {fileID: 3132549254856121386}
   m_Layer: 0
   m_Name: RemnantLight
   m_TagString: Untagged
@@ -4900,6 +4901,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeDuration: 1
+--- !u!210 &3132549254856121386
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893507649999962575}
+  m_Enabled: 1
+  m_SortingLayerID: -307079931
+  m_SortingLayer: 1
+  m_SortingOrder: 1
 --- !u!1 &4188321251109205402
 GameObject:
   m_ObjectHideFlags: 0
