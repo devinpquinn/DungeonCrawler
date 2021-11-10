@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
     public float rotationSpeed = 10f;
     Vector2 movement;
 
+    public Texture2D cursorDefault;
+
     void Awake()
     {
         myState = playerState.Body;
@@ -46,6 +48,8 @@ public class PlayerController : MonoBehaviour
 
         head_anim = body.transform.Find("Head").GetComponent<Animator>();
         head_pointer = head_anim.gameObject.transform.Find("Pointer");
+
+        Cursor.SetCursor(cursorDefault, new Vector2(0, 0), CursorMode.Auto);
     }
 
     void Update()
