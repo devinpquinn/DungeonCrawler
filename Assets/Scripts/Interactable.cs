@@ -5,8 +5,6 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
     [HideInInspector]
-    public PlayerController player;
-    [HideInInspector]
     public bool inRange = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,11 +20,7 @@ public class Interactable : MonoBehaviour
         if (collision.CompareTag("Detector"))
         {
             inRange = false;
-            if(player.currentInteractable == this)
-            {
-                player.SetCursor("default");
-                player.currentInteractable = null;
-            }
+            PlayerController.LeavingInteractable(this);
         }
     }
 }

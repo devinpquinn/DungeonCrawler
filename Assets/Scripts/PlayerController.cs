@@ -110,7 +110,6 @@ public class PlayerController : MonoBehaviour
                 Interactable i = interactHit.collider.GetComponent<Interactable>();
                 if (i.inRange)
                 {
-                    i.player = this;
                     SetCursor("interact");
                     currentInteractable = i;
                     TooltipUI.ShowTooltip_Static(i.gameObject.name);
@@ -122,19 +121,6 @@ public class PlayerController : MonoBehaviour
                 currentInteractable = null;
                 TooltipUI.HideTooltip_Static();
             }
-
-            /*
-            //turn head to face cursor
-            Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - head_pointer.transform.position;
-            difference.Normalize();
-            float rotation_z = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-            Quaternion headRot = Quaternion.Lerp(head_pointer.transform.rotation, Quaternion.Euler(0f, 0f, rotation_z), Time.deltaTime * rotationSpeed);
-            head_pointer.transform.rotation = headRot;
-
-            //set head sprite to face cursor
-            float angle = 1 - (headRot.eulerAngles.z / 360);
-            head_anim.SetFloat("Rotation", angle);
-            */
 
             //check for mode transition
             if (Input.GetKeyDown(KeyCode.Mouse1))
@@ -195,6 +181,16 @@ public class PlayerController : MonoBehaviour
         else if (state == "interact")
         {
             Cursor.SetCursor(cursorInteract, new Vector2(0, 0), CursorMode.Auto);
+        }
+    }
+
+    public static void LeavingInteractable(Interactable i)
+    {
+        if(_player.currentInteractable == i)
+        {
+            _player.SetCursor("default");
+            _player.currentInteractable = null;
+            TooltipUI.HideTooltip_Static();
         }
     }
 
