@@ -121,6 +121,7 @@ public class PlayerController : MonoBehaviour
                 currentInteractable = null;
             }
 
+            /*
             //turn head to face cursor
             Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - head_pointer.transform.position;
             difference.Normalize();
@@ -131,9 +132,10 @@ public class PlayerController : MonoBehaviour
             //set head sprite to face cursor
             float angle = 1 - (headRot.eulerAngles.z / 360);
             head_anim.SetFloat("Rotation", angle);
+            */
 
             //check for mode transition
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Mouse1))
             {
                 if(myState == playerState.Body)
                 {
@@ -141,13 +143,14 @@ public class PlayerController : MonoBehaviour
                     myState = playerState.Swapping;
                     body_anim.SetFloat("Speed", 0);
                     body_anim.Play("bodyLightOut");
+                    SetCursor("default");
                 }
             }
         }
         else if(myState == playerState.Light)
         {
             //check for mode transition
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Mouse1))
             {
                 //start animations to transition back to body mode
                 myState = playerState.Swapping;
@@ -162,6 +165,17 @@ public class PlayerController : MonoBehaviour
         if(myState == playerState.Body)
         {
             rb_body.MovePosition(rb_body.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
+
+            //turn head to face cursor
+            Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - head_pointer.transform.position;
+            difference.Normalize();
+            float rotation_z = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+            Quaternion headRot = Quaternion.Lerp(head_pointer.transform.rotation, Quaternion.Euler(0f, 0f, rotation_z), Time.deltaTime * rotationSpeed);
+            head_pointer.transform.rotation = headRot;
+
+            //set head sprite to face cursor
+            float angle = 1 - (headRot.eulerAngles.z / 360);
+            head_anim.SetFloat("Rotation", angle);
         }
         else if (myState == playerState.Light)
         {
