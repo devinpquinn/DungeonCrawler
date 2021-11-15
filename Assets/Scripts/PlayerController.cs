@@ -34,7 +34,8 @@ public class PlayerController : MonoBehaviour
     public Texture2D cursorDefault;
     public Texture2D cursorInteract;
 
-    public List<Interactable> interactables;
+    private int interactablesMask = 0;
+
     public Interactable currentInteractable;
 
     void Awake()
@@ -68,6 +69,8 @@ public class PlayerController : MonoBehaviour
         head_pointer = head_anim.gameObject.transform.Find("Pointer");
 
         SetCursor("default");
+
+        interactablesMask = LayerMask.GetMask("Interactable");
     }
 
     void Update()
@@ -96,6 +99,26 @@ public class PlayerController : MonoBehaviour
                     lightHolder.localPosition = new Vector3(lightHolder.localPosition.x * -1, lightHolder.localPosition.y, lightHolder.localPosition.z);
                 }
                 bodySprite.flipX = true;
+            }
+
+            //check mouse position for interactable
+            Vector2 interactRay = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            RaycastHit2D interactHit = Physics2D.Raycast(interactRay, Vector2.zero, Mathf.Infinity, interactablesMask);
+
+            if (interactHit)
+            {
+                Interactable i = interactHit.collider.GetComponent<Interactable>();
+                if (i.inRange)
+                {
+                    i.player = this;
+                    SetCursor("interact");
+                    currentInteractable = i;
+                }
+            }
+            else
+            {
+                SetCursor("default");
+                currentInteractable = null;
             }
 
             //turn head to face cursor
