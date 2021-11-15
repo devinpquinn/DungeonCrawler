@@ -28,10 +28,25 @@ public class PlayerController : MonoBehaviour
     public float rotationSpeed = 10f;
     Vector2 movement;
 
+    private static PlayerController _player;
+
+    public static PlayerController Instance { get { return _player; } }
+
     public Texture2D cursorDefault;
 
     void Awake()
     {
+        //singleton
+        if (_player != null && _player != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _player = this;
+        }
+
+        //variable fetching
         myState = playerState.Body;
         body = transform.Find("Body");
         bodySprite = body.GetComponent<SpriteRenderer>();

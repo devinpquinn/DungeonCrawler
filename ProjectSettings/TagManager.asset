@@ -16,8 +16,8 @@ TagManager:
   - Player
   - Light
   - Walls
-  - 
-  - 
+  - Detector
+  - Interactable
   - 
   - 
   - 
