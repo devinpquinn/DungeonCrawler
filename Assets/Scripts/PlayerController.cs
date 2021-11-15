@@ -67,10 +67,7 @@ public class PlayerController : MonoBehaviour
         head_anim = body.transform.Find("Head").GetComponent<Animator>();
         head_pointer = head_anim.gameObject.transform.Find("Pointer");
 
-        bodySprite.gameObject.transform.Find("Detector").GetComponent<Detector>().player = this;
-        lightBall.Find("Detector").GetComponent<Detector>().player = this;
-
-        SetCursor(0);
+        SetCursor("default");
     }
 
     void Update()
@@ -149,13 +146,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void SetCursor(int state)
+    //set the mouse indicator
+    public void SetCursor(string state)
     {
-        if(state == 0)
+        if(state == "default")
         {
             Cursor.SetCursor(cursorDefault, new Vector2(0, 0), CursorMode.Auto);
         }
-        else if (state == 1)
+        else if (state == "interact")
         {
             Cursor.SetCursor(cursorInteract, new Vector2(0, 0), CursorMode.Auto);
         }

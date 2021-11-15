@@ -3705,7 +3705,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1036686327}
   - component: {fileID: 1036686328}
-  - component: {fileID: 1036686329}
   m_Layer: 11
   m_Name: Detector
   m_TagString: Untagged
@@ -3743,19 +3742,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2
---- !u!114 &1036686329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036686326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f3f8c4038a763345b470d7916b89c2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!1 &1146337660
 GameObject:
   m_ObjectHideFlags: 0
@@ -3766,7 +3752,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1146337661}
   - component: {fileID: 1146337663}
-  - component: {fileID: 1146337662}
   m_Layer: 11
   m_Name: Detector
   m_TagString: Untagged
@@ -3788,19 +3773,6 @@ Transform:
   m_Father: {fileID: 186335008}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1146337662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1146337660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f3f8c4038a763345b470d7916b89c2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!58 &1146337663
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3962,7 +3934,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.8123414}
@@ -4153,7 +4125,7 @@ GameObject:
   - component: {fileID: 1699121007}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
