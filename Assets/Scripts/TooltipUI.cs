@@ -56,6 +56,21 @@ public class TooltipUI : MonoBehaviour
 
     private void ShowTooltip(string tooltiptext)
     {
+        Vector2 anchoredPosition = (Input.mousePosition / canvasRectTransform.localScale.x) + (offset / canvasRectTransform.localScale.x);
+
+        if (anchoredPosition.x + backgroundRectTransform.rect.width > canvasRectTransform.rect.width)
+        {
+            //going off screen to the right
+            anchoredPosition.x = canvasRectTransform.rect.width - backgroundRectTransform.rect.width;
+        }
+        if (anchoredPosition.y - backgroundRectTransform.rect.height < 0)
+        {
+            //going off screen at the bottom
+            anchoredPosition.y = backgroundRectTransform.rect.height;
+        }
+
+        rectTransform.anchoredPosition = anchoredPosition;
+
         gameObject.SetActive(true);
         SetText(tooltiptext);
     }
