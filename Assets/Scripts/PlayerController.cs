@@ -29,11 +29,13 @@ public class PlayerController : MonoBehaviour
     Vector2 movement;
 
     private static PlayerController _player;
-
     public static PlayerController Instance { get { return _player; } }
+    
     public Texture2D cursorDefault;
+    public Texture2D cursorInteract;
 
     public List<Interactable> interactables;
+    public Interactable currentInteractable;
 
     void Awake()
     {
@@ -68,7 +70,7 @@ public class PlayerController : MonoBehaviour
         bodySprite.gameObject.transform.Find("Detector").GetComponent<Detector>().player = this;
         lightBall.Find("Detector").GetComponent<Detector>().player = this;
 
-        Cursor.SetCursor(cursorDefault, new Vector2(0, 0), CursorMode.Auto);
+        SetCursor(0);
     }
 
     void Update()
@@ -144,6 +146,18 @@ public class PlayerController : MonoBehaviour
         else if (myState == playerState.Light)
         {
             rb_light.MovePosition(rb_light.position + movement.normalized * lightSpeed * Time.fixedDeltaTime);
+        }
+    }
+
+    public void SetCursor(int state)
+    {
+        if(state == 0)
+        {
+            Cursor.SetCursor(cursorDefault, new Vector2(0, 0), CursorMode.Auto);
+        }
+        else if (state == 1)
+        {
+            Cursor.SetCursor(cursorInteract, new Vector2(0, 0), CursorMode.Auto);
         }
     }
 

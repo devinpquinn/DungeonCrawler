@@ -11,7 +11,7 @@ public class Detector : MonoBehaviour
     {
         if (collision.CompareTag("Interactable"))
         {
-            player.interactables.Add(collision.gameObject.GetComponent<Interactable>());
+            
         }
     }
 
@@ -19,7 +19,7 @@ public class Detector : MonoBehaviour
     {
         if (collision.CompareTag("Interactable"))
         {
-            player.interactables.Remove(collision.gameObject.GetComponent<Interactable>());
+            
         }
     }
 }
