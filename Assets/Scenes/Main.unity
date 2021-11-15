@@ -4192,7 +4192,9 @@ MonoBehaviour:
   lightSpeed: 6
   rotationSpeed: 10
   cursorDefault: {fileID: 2800000, guid: aff6fba59c022424cb7cf4bd61b8c9d9, type: 3}
+  cursorInteract: {fileID: 2800000, guid: 77b2e2d8bfb3f5647841617bfbed047b, type: 3}
   interactables: []
+  currentInteractable: {fileID: 0}
 --- !u!1 &1735000271
 GameObject:
   m_ObjectHideFlags: 0
