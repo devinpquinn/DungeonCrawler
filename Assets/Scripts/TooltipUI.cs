@@ -5,6 +5,8 @@ using TMPro;
 
 public class TooltipUI : MonoBehaviour
 {
+    public static TooltipUI Instance { get; private set; }
+
     private RectTransform canvasRectTransform;
     private RectTransform backgroundRectTransform;
     private RectTransform rectTransform;
@@ -13,11 +15,14 @@ public class TooltipUI : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
+
         canvasRectTransform = transform.parent.GetComponent<RectTransform>();
         backgroundRectTransform = transform.Find("Background").GetComponent<RectTransform>();
         rectTransform = transform.GetComponent<RectTransform>();
         tmp = transform.Find("Text").GetComponent<TextMeshProUGUI>();
-        SetText("Wooden Door");
+
+        HideTooltip();
     }
 
     private void SetText(string tooltipText)
@@ -33,7 +38,7 @@ public class TooltipUI : MonoBehaviour
 
     private void Update()
     {
-        Vector2 anchoredPosition = (Input.mousePosition + offset ) / canvasRectTransform.localScale.x;
+        Vector2 anchoredPosition = (Input.mousePosition / canvasRectTransform.localScale.x) + (offset / canvasRectTransform.localScale.x);
 
         if(anchoredPosition.x + backgroundRectTransform.rect.width > canvasRectTransform.rect.width)
         {
@@ -47,5 +52,26 @@ public class TooltipUI : MonoBehaviour
         }
 
         rectTransform.anchoredPosition = anchoredPosition;
+    }
+
+    private void ShowTooltip(string tooltiptext)
+    {
+        gameObject.SetActive(true);
+        SetText(tooltiptext);
+    }
+
+    private void HideTooltip()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public static void ShowTooltip_Static(string tooltipText)
+    {
+        Instance.ShowTooltip(tooltipText);
+    }
+
+    public static void HideTooltip_Static()
+    {
+        Instance.HideTooltip();
     }
 }

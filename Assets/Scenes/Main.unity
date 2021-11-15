@@ -1126,7 +1126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6556f5cc737904f47ad4f73f7e454e81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 65, y: -120, z: 0}
+  offset: {x: 32.5, y: -60, z: 0}
 --- !u!1 &506183487
 GameObject:
   m_ObjectHideFlags: 0
@@ -3119,8 +3119,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4106,7 +4106,7 @@ GameObject:
   - component: {fileID: 1247771849}
   - component: {fileID: 1247771850}
   m_Layer: 12
-  m_Name: _Barrel
+  m_Name: Unobtrusive Barrel
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

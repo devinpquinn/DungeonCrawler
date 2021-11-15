@@ -113,12 +113,14 @@ public class PlayerController : MonoBehaviour
                     i.player = this;
                     SetCursor("interact");
                     currentInteractable = i;
+                    TooltipUI.ShowTooltip_Static(i.gameObject.name);
                 }
             }
             else
             {
                 SetCursor("default");
                 currentInteractable = null;
+                TooltipUI.HideTooltip_Static();
             }
 
             /*
