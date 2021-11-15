@@ -31,8 +31,9 @@ public class PlayerController : MonoBehaviour
     private static PlayerController _player;
 
     public static PlayerController Instance { get { return _player; } }
-
     public Texture2D cursorDefault;
+
+    public List<Interactable> interactables;
 
     void Awake()
     {
@@ -63,6 +64,9 @@ public class PlayerController : MonoBehaviour
 
         head_anim = body.transform.Find("Head").GetComponent<Animator>();
         head_pointer = head_anim.gameObject.transform.Find("Pointer");
+
+        bodySprite.gameObject.transform.Find("Detector").GetComponent<Detector>().player = this;
+        lightBall.Find("Detector").GetComponent<Detector>().player = this;
 
         Cursor.SetCursor(cursorDefault, new Vector2(0, 0), CursorMode.Auto);
     }
