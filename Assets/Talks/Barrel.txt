@@ -1,7 +1,7 @@
 [title=1-start]
 A lonely wooden barrel. It seems conspicuously out of place here, as if it were some sort of test object dropped carelessly into an unfinished environment.
 Player:Fear not, forlorn barrel. I am here now.
-Player:[question=q]
+Player:[question=q][expression=?]
 [choice]1. Give the barrel a reassuring pat.
 [choice]2. Leave the barrel be.
 [title=1-end]
