@@ -735,8 +735,6 @@ public class RPGTalk : MonoBehaviour
         //Check if and who the elements should follow
         CheckWhoToFollow(rpgtalkElements[0]);
 
-
-
         //check if there should be any dubs in this line
         CheckDubsInThisLine();
 
@@ -752,6 +750,57 @@ public class RPGTalk : MonoBehaviour
         enableQuickSkip = true; //added by devin
         isPlaying = true;
         isAnimating = true;
+
+        //Check if this text was a question
+        if (questions.Count > 0)
+        {
+            if (choicePrefab == null)
+            {
+                Debug.LogError("There was a question here, but no object was set in choicePrefab to be the answer");
+                return;
+            }
+
+            foreach (RPGTalkQuestion q in questions)
+            {
+                if (q.lineWithQuestion == cutscenePosition - 1 && !q.alreadyHappen)
+                {
+                    //This line was a question! Put the correct answers here
+                    textUI.ChangeTextTo("");
+                    enablePass = false;
+                    for (int i = 0; i < q.choices.Count; i++)
+                    {
+                        GameObject newChoice = (GameObject)Instantiate(choicePrefab, choicesParent);
+                        Button newChoiceBtn = newChoice.GetComponent<Button>();
+                        if (newChoiceBtn)
+                        {
+                            string thisText = q.choices[i];
+                            string correctText = thisText;
+                            //make sure we will not want to make it to a new talk
+                            correctText = LookForNewTalk(correctText);
+
+                            //newChoice.GetComponentInChildren<Text>().text = correctText;
+                            newChoice.transform.Find("Text").GetComponent<TextMeshProUGUI>().SetText(correctText);
+                            int choiceNumber = i;
+                            newChoiceBtn.onClick.AddListener(delegate { MadeAChoice(q.questionID, choiceNumber, thisText); });
+
+                            //check to see if that darn duplication bug is happening
+                            if (CheckForDuplicateChoice(correctText, i))
+                            {
+                                newChoice.SetActive(false);
+                            }
+
+                        }
+                        else
+                        {
+                            Debug.LogWarning("RPGTalk can only put the choice's text correctly if choicePrefab is a button with a child of type Text.");
+                        }
+
+                    }
+                    break;
+                }
+            }
+
+        }
     }
 
     #endregion
@@ -1863,6 +1912,7 @@ public class RPGTalk : MonoBehaviour
             actualAnimator.SetBool(animatorBooleanName, false);
         }
 
+        /*
         //Check if this text was a question
         if (questions.Count > 0)
         {
@@ -1912,6 +1962,7 @@ public class RPGTalk : MonoBehaviour
             }
 
         }
+        */
     }
 
     bool CheckForDuplicateChoice(string choiceText, int num)
@@ -2277,8 +2328,6 @@ public class RPGTalk : MonoBehaviour
             return;
         }
 
-        bool alreadyFound = false; //if we've already set the question text object
-
         //We won't be able to pass if you have to answer a question
         foreach (RPGTalkQuestion q in questions)
         {
@@ -2322,10 +2371,6 @@ public class RPGTalk : MonoBehaviour
             StopCoroutine(jitterRoutine);
             jitterRoutine = null;
         }
-
-
-
-
 
         // increment the cutscene counter
         cutscenePosition++;
@@ -2408,12 +2453,61 @@ public class RPGTalk : MonoBehaviour
             //check if after this line we should start another talk
             currentRpgtalkElement.dialogText = LookForNewTalk(currentRpgtalkElement.dialogText);
 
+            //Check if this text was a question
+            if (questions.Count > 0)
+            {
+                if (choicePrefab == null)
+                {
+                    Debug.LogError("There was a question here, but no object was set in choicePrefab to be the answer");
+                    return;
+                }
+
+                foreach (RPGTalkQuestion q in questions)
+                {
+                    if (q.lineWithQuestion == cutscenePosition - 1 && !q.alreadyHappen)
+                    {
+                        //This line was a question! Put the correct answers here
+                        textUI.ChangeTextTo("");
+                        enablePass = false;
+                        for (int i = 0; i < q.choices.Count; i++)
+                        {
+                            GameObject newChoice = (GameObject)Instantiate(choicePrefab, choicesParent);
+                            Button newChoiceBtn = newChoice.GetComponent<Button>();
+                            if (newChoiceBtn)
+                            {
+                                string thisText = q.choices[i];
+                                string correctText = thisText;
+                                //make sure we will not want to make it to a new talk
+                                correctText = LookForNewTalk(correctText);
+
+                                //newChoice.GetComponentInChildren<Text>().text = correctText;
+                                newChoice.transform.Find("Text").GetComponent<TextMeshProUGUI>().SetText(correctText);
+                                int choiceNumber = i;
+                                newChoiceBtn.onClick.AddListener(delegate { MadeAChoice(q.questionID, choiceNumber, thisText); });
+
+                                //check to see if that darn duplication bug is happening
+                                if (CheckForDuplicateChoice(correctText, i))
+                                {
+                                    newChoice.SetActive(false);
+                                }
+
+                            }
+                            else
+                            {
+                                Debug.LogWarning("RPGTalk can only put the choice's text correctly if choicePrefab is a button with a child of type Text.");
+                            }
+
+                        }
+                        break;
+                    }
+                }
+
+            }
 
         }
         else
         {
             //The talk has finished
-
 
             //check if we are supposed to be playing another talk
             if (!string.IsNullOrEmpty(changeToStart) && !string.IsNullOrEmpty(changeToBreak))
@@ -2422,6 +2516,7 @@ public class RPGTalk : MonoBehaviour
                 return;
             }
 
+            /*
             //added by devin
             if(choicesParent != null)
             {
@@ -2430,6 +2525,7 @@ public class RPGTalk : MonoBehaviour
                     return;
                 }
             }
+            */
 
             //check if we are saved something that should take me to another talk
             foreach (RPGtalkSaveStatement saved in saves)
