@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Interactable
   - Detector
+  - DialogueManager
   layers:
   - Default
   - TransparentFX

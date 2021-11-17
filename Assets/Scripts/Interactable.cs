@@ -12,6 +12,11 @@ public class Interactable : MonoBehaviour
     private RPGTalk myTalk;
     private string startKey = "1";
 
+    private void Awake()
+    {
+        myTalk = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<RPGTalk>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Detector"))
@@ -31,6 +36,7 @@ public class Interactable : MonoBehaviour
 
     public void Interact()
     {
-
+        myTalk.txtToParse = myText;
+        myTalk.NewTalk(startKey);
     }
 }

@@ -413,8 +413,7 @@ public class RPGTalk : MonoBehaviour
     /// <summary>
     /// Before start a New Talk, change the values
     /// </summary>
-    /// <param name="_lineToStart">Line to start reading the text.</param>
-    /// <param name="_lineToBreak">Line to stop reading the text.</param>
+    /// <param name="_lineToStartAndBreak">Line to start reading the text.</param>
     public void NewTalk(string _lineToStartAndBreak)
     {
         lineToStart = _lineToStartAndBreak + "-start";
@@ -2477,14 +2476,7 @@ public class RPGTalk : MonoBehaviour
                 }
                 for (int i = 0; i < showWithDialog.Length; i++)
                 {
-                    if(showWithDialog[i].name == "DialogueCanvas")
-                    {
-                        StartCoroutine(HideDialogueCanvas());
-                    }
-                    else
-                    {
-                        showWithDialog[i].SetActive(false);
-                    }
+                    showWithDialog[i].SetActive(false);
                 }
             }
             if (callback != null)
@@ -2505,21 +2497,6 @@ public class RPGTalk : MonoBehaviour
         }
 
 
-    }
-
-    IEnumerator HideDialogueCanvas()
-    {
-        yield return new WaitForEndOfFrame();
-        if(isPlaying || isAnimating)
-        {
-            yield break;
-        }
-        GameObject dialogueDisplay = showWithDialog[0];
-        dialogueDisplay.GetComponent<Animator>().Play("dialogueOut");
-        dialogueDisplay.transform.Find("Speaker").transform.Find("SpeakerImage").GetComponent<Animator>().Play("pretenderDisappear");
-        dialogueDisplay.transform.Find("Listener").transform.Find("ListenerImage").GetComponent<Animator>().Play("pretenderDisappear");
-        yield return new WaitForSeconds(0.5f);
-        dialogueDisplay.SetActive(false);
     }
 
     //Wait a frame to make the isPlaying false, so we try not to play a area and pass a talk at the same time
