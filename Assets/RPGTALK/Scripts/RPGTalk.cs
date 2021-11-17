@@ -9,6 +9,7 @@ using RPGTALK.Helper;
 using RPGTALK.Localization;
 using RPGTALK.Dub;
 using RPGTALK.Snippets;
+using TMPro;
 
 
 
@@ -528,7 +529,6 @@ public class RPGTalk : MonoBehaviour
         cutscenePosition = 1;
         currentChar = 0;
 
-
         //create a new CutsCeneElement
         rpgtalkElements = new List<RpgtalkElement>();
 
@@ -688,7 +688,7 @@ public class RPGTalk : MonoBehaviour
         //Set the speaker name and photo
         if (dialoger)
         {
-            dialogerObj.transform.parent.gameObject.SetActive(true);
+            dialogerObj.gameObject.SetActive(true);
             if (dialogerObj)
             {
                 dialogerUI.ChangeTextTo(rpgtalkElements[0].speakerName);
@@ -698,7 +698,7 @@ public class RPGTalk : MonoBehaviour
             if (rpgtalkElements[0].speakerName == null)
             {
                 UIPhoto.gameObject.SetActive(false);
-                dialogerObj.transform.parent.gameObject.SetActive(false);
+                dialogerObj.gameObject.SetActive(false);
             }
             if (shouldUsePhotos)
             {
@@ -827,9 +827,6 @@ public class RPGTalk : MonoBehaviour
         //Finally apply the text to the new element
         newElement.dialogText = line;
         newElement.hasDialog = true;
-
-
-
 
         return newElement;
 
@@ -1893,7 +1890,7 @@ public class RPGTalk : MonoBehaviour
                             correctText = LookForNewTalk(correctText);
 
                             //newChoice.GetComponentInChildren<Text>().text = correctText;
-                            newChoice.transform.Find("Text").GetComponent<Text>().text = correctText;
+                            newChoice.transform.Find("Text").GetComponent<TextMeshProUGUI>().SetText(correctText);
                             int choiceNumber = i;
                             newChoiceBtn.onClick.AddListener(delegate { MadeAChoice(q.questionID, choiceNumber, thisText); });
 
@@ -1921,7 +1918,7 @@ public class RPGTalk : MonoBehaviour
     {
         for (int i = 0; i < choicesParent.childCount; i++)
             {
-                if (choicesParent.GetChild(i).transform.Find("Text").GetComponent<Text>().text == choiceText && i != num)
+                if (choicesParent.GetChild(i).transform.Find("Text").GetComponent<TextMeshProUGUI>().text == choiceText && i != num)
                 {
                     return true;
                 }
@@ -2352,7 +2349,7 @@ public class RPGTalk : MonoBehaviour
 
             if (dialoger)
             {
-                dialogerObj.transform.parent.gameObject.SetActive(true);
+                dialogerObj.gameObject.SetActive(true);
                 if (dialogerObj)
                 {
                     dialogerUI.Enabled(true);
@@ -2364,7 +2361,7 @@ public class RPGTalk : MonoBehaviour
                 if (rpgtalkElements[cutscenePosition - 1].speakerName == null)
                 {
                     UIPhoto.gameObject.SetActive(false);
-                    dialogerObj.transform.parent.gameObject.SetActive(false);
+                    dialogerObj.gameObject.SetActive(false);
                 }
                 if (shouldUsePhotos)
                 {
