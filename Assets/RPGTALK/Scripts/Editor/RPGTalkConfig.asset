@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logo: {fileID: 21300000, guid: ff9acc7e4a75e4593a9ef3a2451edf86, type: 3}
   alreadyConfigured: 1
-  usingTMP: 0
+  usingTMP: 1
