@@ -203,9 +203,6 @@ public class RPGTalkEditor : Editor
             EditorGUILayout.HelpBox("The object must be a Text or a Text Mesh Pro UGUI Type", MessageType.Error, true);
         }
 
-        EditorGUILayout.LabelField("Put below the UI for question text:");
-        EditorGUILayout.PropertyField(serializedObject.FindProperty("questionUIObj"));
-
         if (rpgTalk.dialoger) {
 			EditorGUILayout.LabelField("Put below the UI for the name of the talker:");
             EditorGUILayout.PropertyField(serializedObject.FindProperty("dialogerObj"));
