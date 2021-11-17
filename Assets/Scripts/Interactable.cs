@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Interactable : MonoBehaviour
 {
@@ -38,5 +39,7 @@ public class Interactable : MonoBehaviour
     {
         myTalk.txtToParse = myText;
         myTalk.NewTalk(startKey);
+
+        myTalk.callback.AddListener(PlayerController.EndInteraction);
     }
 }
