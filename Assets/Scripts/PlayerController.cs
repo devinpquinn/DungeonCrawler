@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public enum playerState {Body, Light, Swapping};
+    public enum playerState {Body, Light, Swapping, Interacting};
 
     public playerState myState;
 
@@ -122,6 +122,16 @@ public class PlayerController : MonoBehaviour
                 TooltipUI.HideTooltip_Static();
             }
 
+            //on click, check for interactable
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                if(currentInteractable != null)
+                {
+                    //we found an interactable!
+                    StartInteraction();
+                }
+            }
+
             //check for mode transition
             if (Input.GetKeyDown(KeyCode.Mouse1))
             {
@@ -171,28 +181,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    //set the mouse indicator
-    public void SetCursor(string state)
-    {
-        if(state == "default")
-        {
-            Cursor.SetCursor(cursorDefault, new Vector2(0, 0), CursorMode.Auto);
-        }
-        else if (state == "interact")
-        {
-            Cursor.SetCursor(cursorInteract, new Vector2(0, 0), CursorMode.Auto);
-        }
-    }
-
-    public static void LeavingInteractable(Interactable i)
-    {
-        if(_player.currentInteractable == i)
-        {
-            _player.SetCursor("default");
-            _player.currentInteractable = null;
-            TooltipUI.HideTooltip_Static();
-        }
-    }
+    #region Transition
 
     public void LightOut()
     {
@@ -250,4 +239,49 @@ public class PlayerController : MonoBehaviour
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
         head_anim.Play("headSpin");
     }
+
+    #endregion
+
+    #region Interaction
+
+    //set the mouse indicator
+    public void SetCursor(string state)
+    {
+        if(state == "default")
+        {
+            Cursor.SetCursor(cursorDefault, new Vector2(0, 0), CursorMode.Auto);
+        }
+        else if (state == "interact")
+        {
+            Cursor.SetCursor(cursorInteract, new Vector2(0, 0), CursorMode.Auto);
+        }
+    }
+
+    public static void LeavingInteractable(Interactable i)
+    {
+        if(_player.currentInteractable == i)
+        {
+            _player.SetCursor("default");
+            _player.currentInteractable = null;
+            TooltipUI.HideTooltip_Static();
+        }
+    }
+
+    //start talking
+    public void StartInteraction()
+    {
+        myState = playerState.Interacting;
+        SetCursor("default");
+        TooltipUI.HideTooltip_Static();
+    }
+
+    //done talking
+    public static void EndInteraction()
+    {
+        _player.myState = playerState.Body;
+    }
+
+    #endregion
+
+    
 }

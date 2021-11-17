@@ -7,6 +7,11 @@ public class Interactable : MonoBehaviour
     [HideInInspector]
     public bool inRange = false;
 
+    //dialogue assets
+    public TextAsset myText;
+    private RPGTalk myTalk;
+    private string startKey = "1";
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Detector"))
@@ -22,5 +27,10 @@ public class Interactable : MonoBehaviour
             inRange = false;
             PlayerController.LeavingInteractable(this);
         }
+    }
+
+    public void Interact()
+    {
+
     }
 }
