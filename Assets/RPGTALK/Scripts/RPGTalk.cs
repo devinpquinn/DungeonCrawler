@@ -702,6 +702,7 @@ public class RPGTalk : MonoBehaviour
             }
             UIPhoto.gameObject.SetActive(true);
             textRect.sizeDelta = new Vector2(widthWithPortrait, textRect.sizeDelta.y);
+            textUI.ChangeTextTo("");
             if (rpgtalkElements[0].speakerName == null)
             {
                 UIPhoto.gameObject.SetActive(false);
@@ -2414,6 +2415,7 @@ public class RPGTalk : MonoBehaviour
                 }
                 UIPhoto.gameObject.SetActive(true);
                 textRect.sizeDelta = new Vector2(widthWithPortrait, textRect.sizeDelta.y);
+                textUI.ChangeTextTo("");
                 if (rpgtalkElements[cutscenePosition - 1].speakerName == null)
                 {
                     UIPhoto.gameObject.SetActive(false);
