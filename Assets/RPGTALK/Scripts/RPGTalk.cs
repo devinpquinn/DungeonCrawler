@@ -708,6 +708,22 @@ public class RPGTalk : MonoBehaviour
                 UIPhoto.gameObject.SetActive(false);
                 textRect.sizeDelta = new Vector2(widthWithoutPortrait, textRect.sizeDelta.y);
                 dialogerObj.gameObject.SetActive(false);
+
+                textUI.TMPText.fontStyle = FontStyles.Normal;
+            }
+            else
+            {
+                //check for special text cases
+                textUI.TMPText.fontStyle = FontStyles.Normal;
+
+                string thisName = rpgtalkElements[0].speakerName;
+                switch(thisName)
+                {
+                    case "Player":
+                        textUI.TMPText.fontStyle = FontStyles.UpperCase;
+                        break;
+                }
+
             }
             if (shouldUsePhotos)
             {
@@ -2421,6 +2437,21 @@ public class RPGTalk : MonoBehaviour
                     UIPhoto.gameObject.SetActive(false);
                     textRect.sizeDelta = new Vector2(widthWithoutPortrait, textRect.sizeDelta.y);
                     dialogerObj.gameObject.SetActive(false);
+
+                    textUI.TMPText.fontStyle = FontStyles.Normal;
+                }
+                else
+                {
+                    //check for special text cases
+                    textUI.TMPText.fontStyle = FontStyles.Normal;
+
+                    string thisName = currentRpgtalkElement.speakerName;
+                    switch (thisName)
+                    {
+                        case "Player":
+                            textUI.TMPText.fontStyle = FontStyles.UpperCase;
+                            break;
+                    }
                 }
                 if (shouldUsePhotos)
                 {
