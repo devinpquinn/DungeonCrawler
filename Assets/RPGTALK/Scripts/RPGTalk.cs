@@ -346,6 +346,10 @@ public class RPGTalk : MonoBehaviour
 
     string lastText = "";
 
+    private RectTransform textRect;
+    private float widthWithoutPortrait = 1200f;
+    private float widthWithPortrait = 1000f;
+
     void Start()
     {
 
@@ -360,6 +364,8 @@ public class RPGTalk : MonoBehaviour
         {
             dialogerUI = new TMP_Translator(dialogerObj);
         }
+
+        textRect = textUIObj.GetComponent<RectTransform>();
 
         //If it is set to start on awake, start it! If not, make sure that we hide anything that shouldn't be there
         if (startOnAwake)
@@ -695,9 +701,11 @@ public class RPGTalk : MonoBehaviour
                 string thisName = rpgtalkElements[0].speakerName;
             }
             UIPhoto.gameObject.SetActive(true);
+            textRect.sizeDelta = new Vector2(widthWithPortrait, textRect.sizeDelta.y);
             if (rpgtalkElements[0].speakerName == null)
             {
                 UIPhoto.gameObject.SetActive(false);
+                textRect.sizeDelta = new Vector2(widthWithoutPortrait, textRect.sizeDelta.y);
                 dialogerObj.gameObject.SetActive(false);
             }
             if (shouldUsePhotos)
@@ -750,6 +758,8 @@ public class RPGTalk : MonoBehaviour
         enableQuickSkip = true; //added by devin
         isPlaying = true;
         isAnimating = true;
+
+
 
         //Check if this text was a question
         if (questions.Count > 0)
@@ -2403,9 +2413,11 @@ public class RPGTalk : MonoBehaviour
                     string thisName = currentRpgtalkElement.speakerName;
                 }
                 UIPhoto.gameObject.SetActive(true);
+                textRect.sizeDelta = new Vector2(widthWithPortrait, textRect.sizeDelta.y);
                 if (rpgtalkElements[cutscenePosition - 1].speakerName == null)
                 {
                     UIPhoto.gameObject.SetActive(false);
+                    textRect.sizeDelta = new Vector2(widthWithoutPortrait, textRect.sizeDelta.y);
                     dialogerObj.gameObject.SetActive(false);
                 }
                 if (shouldUsePhotos)
