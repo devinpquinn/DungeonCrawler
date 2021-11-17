@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d46921e71e9f04ccb83ec685be24573c, type: 3}
+  m_Name: Inner Circle
+  m_EditorClassIdentifier: 
+  dialoger: Inner Circle
+  photo: {fileID: 21300000, guid: f1b317db784773c4688dbf150e19a615, type: 3}
+  expressions:
+  - name: Rowan
+    photo: {fileID: 21300000, guid: f1b317db784773c4688dbf150e19a615, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 72b02176994360d43893987b5879bf7c, type: 3}
+  - name: Adaro
+    photo: {fileID: 21300000, guid: d7849ede91781b94abd10a03d0550398, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 1c03e13c82dc8aa47bb76da98dc4327f, type: 3}
+  - name: Borrum
+    photo: {fileID: 21300000, guid: 63d65d00492518f438710d9e5a951285, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 83963e9a13f9d034e8be34c22c81344e, type: 3}
+  - name: Elsinore
+    photo: {fileID: 21300000, guid: a3ebab56a5fe0004fb89b8b80e374075, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 9c8f50a436328b749b56c4acc39e6d2a, type: 3}
+  - name: Thorn
+    photo: {fileID: 21300000, guid: 22834320412f2064ea9cd38cca650d22, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 94d19addaa3eea640ba05b665f58185a, type: 3}

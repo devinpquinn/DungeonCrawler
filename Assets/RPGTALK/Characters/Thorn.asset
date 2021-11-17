@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d46921e71e9f04ccb83ec685be24573c, type: 3}
+  m_Name: Thorn
+  m_EditorClassIdentifier: 
+  dialoger: Thorn
+  photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+  expressions:
+  - name: Loved
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 4ffce93fbf5fbff4091aa5b8638d13f3, type: 3}
+  - name: Loved-Return
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: e785c5437d56fc345abd003f4ca53aa5, type: 3}
+  - name: Liked
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 63d3e40e1f569b14c94c3437554faa15, type: 3}
+  - name: Liked-Return
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 2abc4f176fb001e439f05ba073aaaabe, type: 3}
+  - name: Neutral
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 685cf189cfb10024ea1d1d3fc0807a9a, type: 3}
+  - name: Neutral-Return
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 12349b2cb0affd842b78b17b4c08a1f8, type: 3}
+  - name: Disliked
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: ba9cb41680bbc0840b4d946e47f4a1a4, type: 3}
+  - name: Disliked-Return
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 9f10a3eae78025a45bee681235906994, type: 3}
+  - name: Hated
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 403a322d3f7b53146a664ea59ccb256d, type: 3}
+  - name: Hated-Return
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 2853cc0c875e9d842946940b1b8919ab, type: 3}
+  - name: First
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: e1e53a211473ecb40ad8e760dd4243b3, type: 3}
+  - name: Goodbye-A
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: eb11370d37bc51a43b57a757b3d0f80b, type: 3}
+  - name: Goodbye-B
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 523d923a6b84db741a123d5c4cc44e19, type: 3}
+  - name: Goodbye-C
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 043d5ca798d378e4cadc5a5a57cac9a8, type: 3}
+  - name: You-Accepted
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 1521762b90d224449af0cc962104d319, type: 3}
+  - name: I-Accepted
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 67081192441291e458d95e1602d78e40, type: 3}
+  - name: Already
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 5e734dc5926305446a24722fe7b0b4ed, type: 3}
+  - name: Final-Liked
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: d48fcffe815304a47b31972524417080, type: 3}
+  - name: Final-Neutral
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: f1ae55557beb2e043a46cd708fa7818e, type: 3}
+  - name: Final-Disliked
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 8816e1c2a8cb2d94295c69f99e5e2c5e, type: 3}
+  - name: Goodnight
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 64df101cf427126468f2fa8d7f2f4d42, type: 3}
+  - name: Jury-Voted
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 68ec863e2ff49154998073b781d7afc6, type: 3}
+  - name: Jury-DidntVote
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: bac95e2cbfa9fa54dae2e1e341c7f699, type: 3}
+  - name: Dismissal
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 09ff2193f67a695498510be76c8365a1, type: 3}
+  - name: King
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 31044311aaec78f42b20dd1ed9d21a1d, type: 3}
+  - name: Queen
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 39ca9cb642ad2344cb18d7a5f15a9d43, type: 3}
+  - name: Grunt-Good
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: d48fcffe815304a47b31972524417080, type: 3}
+  - name: Grunt-Neutral
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: f1ae55557beb2e043a46cd708fa7818e, type: 3}
+  - name: Grunt-Bad
+    photo: {fileID: 21300000, guid: 5b6a0969906f64d4aa1413d629ab1a5a, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 8300000, guid: 8816e1c2a8cb2d94295c69f99e5e2c5e, type: 3}
