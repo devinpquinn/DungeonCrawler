@@ -271,7 +271,7 @@ public class PlayerController : MonoBehaviour
     public void StartInteraction()
     {
         myState = playerState.Interacting;
-        SetCursor("default");
+        SetCursor("interact");
         TooltipUI.HideTooltip_Static();
 
         currentInteractable.Interact();
