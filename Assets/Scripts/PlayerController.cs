@@ -159,7 +159,10 @@ public class PlayerController : MonoBehaviour
                     myState = playerState.Swapping;
                     body_anim.SetFloat("Speed", 0);
                     body_anim.Play("bodyLightOut");
+
+                    //reset cursor and tooltip
                     SetCursor("default");
+                    TooltipUI.HideTooltip_Static();
                 }
             }
         }
