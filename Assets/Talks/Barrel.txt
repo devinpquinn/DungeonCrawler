@@ -5,3 +5,7 @@ Player:[question=q][expression=?]
 [choice]1. Give the barrel a reassuring pat.
 [choice]2. Leave the barrel be.
 [title=1-end]
+
+[title=2-start]
+The barrel blushes bashfully.
+[title=2-end]
