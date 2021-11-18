@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -153,6 +154,38 @@ public class PlayerController : MonoBehaviour
                 //start animations to transition back to body mode
                 myState = playerState.Swapping;
                 body_anim.Play("bodyLightIn");
+            }
+        }
+        else if(myState == playerState.Interacting)
+        {
+            //check for button select with number keys
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                if (currentInteractable != null && currentInteractable.myTalk.choicesParent.childCount > 0)
+                {
+                    currentInteractable.myTalk.choicesParent.GetChild(0).GetComponent<Button>().onClick.Invoke();
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                if (currentInteractable != null && currentInteractable.myTalk.choicesParent.childCount > 0)
+                {
+                    currentInteractable.myTalk.choicesParent.GetChild(1).GetComponent<Button>().onClick.Invoke();
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                if (currentInteractable != null && currentInteractable.myTalk.choicesParent.childCount > 0)
+                {
+                    currentInteractable.myTalk.choicesParent.GetChild(2).GetComponent<Button>().onClick.Invoke();
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                if (currentInteractable != null && currentInteractable.myTalk.choicesParent.childCount > 0)
+                {
+                    currentInteractable.myTalk.choicesParent.GetChild(3).GetComponent<Button>().onClick.Invoke();
+                }
             }
         }
     }

@@ -10,7 +10,8 @@ public class Interactable : MonoBehaviour
 
     //dialogue assets
     public TextAsset myText;
-    private RPGTalk myTalk;
+    [HideInInspector]
+    public RPGTalk myTalk;
     private string startKey = "1";
 
     private void Awake()

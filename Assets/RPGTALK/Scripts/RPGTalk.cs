@@ -805,7 +805,6 @@ public class RPGTalk : MonoBehaviour
                             //make sure we will not want to make it to a new talk
                             correctText = LookForNewTalk(correctText);
 
-                            //newChoice.GetComponentInChildren<Text>().text = correctText;
                             newChoice.transform.Find("Text").GetComponent<TextMeshProUGUI>().SetText(correctText);
                             int choiceNumber = i;
                             newChoiceBtn.onClick.AddListener(delegate { MadeAChoice(q.questionID, choiceNumber, thisText); });
