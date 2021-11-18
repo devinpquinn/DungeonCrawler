@@ -4677,6 +4677,7 @@ MonoBehaviour:
   inRange: 0
   myText: {fileID: 4900000, guid: 6b733225d67b2ce45ade2e2fe06a1ae5, type: 3}
   myTalk: {fileID: 0}
+  myEvents: []
 --- !u!1 &1332733634
 GameObject:
   m_ObjectHideFlags: 0

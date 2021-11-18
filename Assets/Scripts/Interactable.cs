@@ -14,6 +14,9 @@ public class Interactable : MonoBehaviour
     public RPGTalk myTalk;
     private string startKey = "1";
 
+    //events
+    public List<UnityEvent> myEvents;
+
     private void Awake()
     {
         myTalk = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<RPGTalk>();
