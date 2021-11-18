@@ -1502,15 +1502,15 @@ public class RPGTalk : MonoBehaviour
 
 
         //check if the user have some newtalk and the line asks for one
-        if (line.IndexOf("[newtalk") != -1 && line.IndexOf("]") != -1)
+        if (line.IndexOf("<") != -1 && line.IndexOf(">") != -1)
         {
             //We do have one!
             showListenerPhoto = true;
-            int initialBracket = line.IndexOf("[newtalk");
+            int initialBracket = line.IndexOf("<");
             int finalBracket = -1;
             if (initialBracket != -1)
             {
-                finalBracket = line.IndexOf("]", initialBracket);
+                finalBracket = line.IndexOf(">", initialBracket);
             }
 
             //There still are any '[newtalk' and it is before a ']'?
@@ -1518,30 +1518,21 @@ public class RPGTalk : MonoBehaviour
             {
 
                 //Everything fine until now. Now let's check the start and break variables
-                int indexOfStart = line.IndexOf("start=", initialBracket + 8);
-                int endOfStart = line.IndexOf(" ", indexOfStart);
+                int indexOfStart = line.IndexOf("<", initialBracket) + 1;
+                int endOfStart = line.IndexOf(">", indexOfStart);
                 if (endOfStart == -1)
                 {
-                    endOfStart = line.IndexOf("]", indexOfStart);
-                }
-                int indexOfBreak = line.IndexOf("break=", initialBracket + 8);
-                int endOfBreak = line.IndexOf(" ", indexOfBreak);
-                if (endOfBreak == -1)
-                {
-                    endOfBreak = line.IndexOf("]", indexOfBreak);
+                    endOfStart = line.IndexOf(">", indexOfStart);
                 }
 
-
-
-                if (indexOfStart != -1 && indexOfBreak != -1 && endOfBreak != -1 && endOfStart != -1)
+                if (indexOfStart != -1 && endOfStart != -1)
                 {
-                    string newLineToStart = line.Substring(indexOfStart + 6, endOfStart - (indexOfStart + 6));
-                    string newLineToBreak = line.Substring(indexOfBreak + 6, endOfBreak - (indexOfBreak + 6));
+                    string newLineToStart = line.Substring(indexOfStart, endOfStart - (indexOfStart));
 
-                    if (newLineToStart.Length > 0 && newLineToBreak.Length > 0)
+                    if (newLineToStart.Length > 0)
                     {
-                        changeToStart = newLineToStart;
-                        changeToBreak = newLineToBreak;
+                        changeToStart = newLineToStart + "-start";
+                        changeToBreak = newLineToStart + "-end";
 
                         return line.Substring(0, initialBracket) +
                             line.Substring(finalBracket + 1);
