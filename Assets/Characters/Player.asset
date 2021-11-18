@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoger: Player
   photo: {fileID: 21300000, guid: 225406945afee5f44877bf5c18e0f23a, type: 3}
-  expressions: []
+  expressions:
+  - name: '?'
+    photo: {fileID: 21300000, guid: b72ba2a40d6288c4d9f13584a04338ed, type: 3}
+    boolInAnimator: 
+    audio: {fileID: 0}
