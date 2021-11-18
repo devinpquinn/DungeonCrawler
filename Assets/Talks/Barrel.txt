@@ -2,7 +2,7 @@
 A lonely wooden barrel sits in the center of the room. It seems conspicuously out of place here, as if it were some sort of test object dropped carelessly into an unfinished environment.
 Player:Fear not, forlorn barrel. I am here now.
 Player:[question=q][expression=?]
-[choice]1. Give the barrel a reassuring pat.
+[choice]1. Give the barrel a reassuring pat.[newtalk start=2-start break=2-end]
 [choice]2. Leave the barrel be.
 [title=1-end]
 
