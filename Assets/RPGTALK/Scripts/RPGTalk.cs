@@ -1812,6 +1812,7 @@ public class RPGTalk : MonoBehaviour
                     if (callback.GetPersistentEventCount() > 0)
                     {
                         callback.Invoke();
+                        //remove callback listeners here?
                     }
                     lookForClick = false;
 
@@ -2619,6 +2620,7 @@ public class RPGTalk : MonoBehaviour
             if (callback != null)
             {
                 callback.Invoke();
+                //remove callback listeners here?
             }
 
 

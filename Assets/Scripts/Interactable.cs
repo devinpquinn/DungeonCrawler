@@ -15,6 +15,7 @@ public class Interactable : MonoBehaviour
     private string startKey = "1";
 
     //events
+    public UnityEvent myCallback;
     public List<UnityEvent> myEvents;
 
     private void Awake()
@@ -45,5 +46,10 @@ public class Interactable : MonoBehaviour
         myTalk.NewTalk(startKey);
 
         myTalk.callback.AddListener(PlayerController.EndInteraction);
+
+        if(myCallback != null)
+        {
+            myTalk.callback.AddListener(myCallback.Invoke);
+        }
     }
 }
