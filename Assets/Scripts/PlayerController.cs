@@ -39,6 +39,12 @@ public class PlayerController : MonoBehaviour
 
     public Interactable currentInteractable;
 
+    public RectTransform dialoguePanelRect;
+
+    //anchor points for the dialogue panel
+    public RectTransform topPosition;
+    public RectTransform bottomPosition;
+
     void Awake()
     {
         //singleton
@@ -130,6 +136,17 @@ public class PlayerController : MonoBehaviour
                 {
                     //we found an interactable!
                     StartInteraction();
+
+                    if(Camera.main.WorldToScreenPoint(body.position).y > Camera.main.scaledPixelHeight / 2)
+                    {
+                        //move dialogue panel to bottom
+                        MoveDialoguePanelToBottom();
+                    }
+                    else
+                    {
+                        //move dialogue panel to top
+                        MoveDialoguePanelToTop();
+                    }
                 }
             }
 
@@ -212,6 +229,22 @@ public class PlayerController : MonoBehaviour
         {
             rb_light.MovePosition(rb_light.position + movement.normalized * lightSpeed * Time.fixedDeltaTime);
         }
+    }
+
+    public void MoveDialoguePanelToTop()
+    {
+        dialoguePanelRect.pivot = topPosition.pivot;
+        dialoguePanelRect.anchorMax = topPosition.anchorMax;
+        dialoguePanelRect.anchorMin = topPosition.anchorMin;
+        dialoguePanelRect.anchoredPosition = topPosition.anchoredPosition;
+    }
+
+    public void MoveDialoguePanelToBottom()
+    {
+        dialoguePanelRect.pivot = bottomPosition.pivot;
+        dialoguePanelRect.anchorMax = bottomPosition.anchorMax;
+        dialoguePanelRect.anchorMin = bottomPosition.anchorMin;
+        dialoguePanelRect.anchoredPosition = bottomPosition.anchoredPosition;
     }
 
     #region Transition
