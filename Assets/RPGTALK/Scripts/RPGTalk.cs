@@ -771,6 +771,10 @@ public class RPGTalk : MonoBehaviour
         //check if after this line we should start another talk
         rpgtalkElements[0].dialogText = LookForNewTalk(rpgtalkElements[0].dialogText);
 
+        //check for event
+        LookForEvent(rpgtalkElements[0].dialogText);
+        rpgtalkElements[0].dialogText = PruneEventTag(rpgtalkElements[0].dialogText);
+
         enableQuickSkip = true; //added by devin
         isPlaying = true;
         isAnimating = true;
@@ -2603,6 +2607,10 @@ public class RPGTalk : MonoBehaviour
 
             //check if after this line we should start another talk
             currentRpgtalkElement.dialogText = LookForNewTalk(currentRpgtalkElement.dialogText);
+
+            //check for event
+            LookForEvent(currentRpgtalkElement.dialogText);
+            currentRpgtalkElement.dialogText = PruneEventTag(currentRpgtalkElement.dialogText);
 
             //Check if this text was a question
             if (questions.Count > 0)
