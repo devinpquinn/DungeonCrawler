@@ -148,7 +148,6 @@ public class RPGTalk : MonoBehaviour
     /// Should there be photos of the dialogers?
     /// </summary>
     public bool shouldUsePhotos;
-    public bool showListenerPhoto = true;
 
     /// <summary>
     /// A list of all Characters available in the talks with settings of stuff that should be on the scene
@@ -804,6 +803,8 @@ public class RPGTalk : MonoBehaviour
                             string correctText = thisText;
                             //make sure we will not want to make it to a new talk
                             correctText = LookForNewTalk(correctText);
+                            //remove event tag
+                            correctText = PruneEventTag(correctText);
 
                             newChoice.transform.Find("Text").GetComponent<TextMeshProUGUI>().SetText(correctText);
                             int choiceNumber = i;
@@ -1505,7 +1506,6 @@ public class RPGTalk : MonoBehaviour
         if (line.IndexOf("<") != -1 && line.IndexOf(">") != -1)
         {
             //We do have one!
-            showListenerPhoto = true;
             int initialBracket = line.IndexOf("<");
             int finalBracket = -1;
             if (initialBracket != -1)
@@ -1554,6 +1554,120 @@ public class RPGTalk : MonoBehaviour
             }
 
 
+        }
+
+        return line;
+
+    }
+
+    private void LookForEvent(string line)
+    {
+        //check if the user have some newtalk and the line asks for one
+        if (line.IndexOf("{") != -1 && line.IndexOf("}") != -1)
+        {
+            //We do have one!
+            int initialBracket = line.IndexOf("{");
+            int finalBracket = -1;
+            if (initialBracket != -1)
+            {
+                finalBracket = line.IndexOf("}", initialBracket);
+            }
+
+            //There still are any '[newtalk' and it is before a ']'?
+            if (initialBracket < finalBracket)
+            {
+
+                //Everything fine until now. Now let's check the start and break variables
+                int indexOfStart = line.IndexOf("{", initialBracket) + 1;
+                int endOfStart = line.IndexOf("}", indexOfStart);
+                if (endOfStart == -1)
+                {
+                    endOfStart = line.IndexOf("}", indexOfStart);
+                }
+
+                if (indexOfStart != -1 && endOfStart != -1)
+                {
+                    string eventKeyString = line.Substring(indexOfStart, endOfStart - (indexOfStart));
+
+                    if (eventKeyString.Length > 0)
+                    {
+                        int eventKeyNum = 0;
+                        int.TryParse(eventKeyString, out eventKeyNum);
+
+                        //call the event?
+                        if(PlayerController.GetInteractable() != null)
+                        {
+                            Interactable i = PlayerController.GetInteractable();
+                            if(i.myEvents.Count > eventKeyNum && i.myEvents[eventKeyNum] != null)
+                            {
+                                i.myEvents[eventKeyNum].Invoke();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogWarning("There was a problem in your start=x or break=y. Check The spelling");
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning("Found a [newtalk] variable in the text but it didn't had start=x or break=y. Check The spelling");
+                }
+
+
+
+
+
+            }
+
+
+        }
+
+    }
+
+    private string PruneEventTag(string line)
+    {
+        //check if the user have some newtalk and the line asks for one
+        if (line.IndexOf("{") != -1 && line.IndexOf("}") != -1)
+        {
+            //We do have one!
+            int initialBracket = line.IndexOf("{");
+            int finalBracket = -1;
+            if (initialBracket != -1)
+            {
+                finalBracket = line.IndexOf("}", initialBracket);
+            }
+
+            //There still are any '[newtalk' and it is before a ']'?
+            if (initialBracket < finalBracket)
+            {
+                //Everything fine until now. Now let's check the start and break variables
+                int indexOfStart = line.IndexOf("{", initialBracket) + 1;
+                int endOfStart = line.IndexOf("}", indexOfStart);
+                if (endOfStart == -1)
+                {
+                    endOfStart = line.IndexOf("}", indexOfStart);
+                }
+
+                if (indexOfStart != -1 && endOfStart != -1)
+                {
+                    string eventKeyString = line.Substring(indexOfStart, endOfStart - (indexOfStart));
+
+                    if (eventKeyString.Length > 0)
+                    {
+                        return line.Substring(0, initialBracket) +
+                            line.Substring(finalBracket + 1);
+                    }
+                    else
+                    {
+                        Debug.LogWarning("There was a problem in your start=x or break=y. Check The spelling");
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning("Found a [newtalk] variable in the text but it didn't had start=x or break=y. Check The spelling");
+                }
+            }
         }
 
         return line;
@@ -2028,6 +2142,7 @@ public class RPGTalk : MonoBehaviour
             {
                 q.alreadyHappen = true;
                 LookForNewTalk(text);
+                LookForEvent(text);
                 break;
             }
         }
@@ -2515,6 +2630,8 @@ public class RPGTalk : MonoBehaviour
                                 string correctText = thisText;
                                 //make sure we will not want to make it to a new talk
                                 correctText = LookForNewTalk(correctText);
+                                //remove event tag
+                                correctText = PruneEventTag(correctText);
 
                                 //newChoice.GetComponentInChildren<Text>().text = correctText;
                                 newChoice.transform.Find("Text").GetComponent<TextMeshProUGUI>().SetText(correctText);
@@ -2587,9 +2704,6 @@ public class RPGTalk : MonoBehaviour
             {
                 OnEndTalk();
             }
-
-            showListenerPhoto = true;
-
 
             StartCoroutine(GoBackIsPlaying());
 

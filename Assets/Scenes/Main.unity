@@ -2566,7 +2566,7 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!43 &973220945
+--- !u!43 &940777728
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4677,7 +4677,21 @@ MonoBehaviour:
   inRange: 0
   myText: {fileID: 4900000, guid: 6b733225d67b2ce45ade2e2fe06a1ae5, type: 3}
   myTalk: {fileID: 0}
-  myEvents: []
+  myEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1876982276}
+        m_MethodName: set_sprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -347783942955619289, guid: 05ef6f8a2a7dce14085a4f5f903efa5b,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1332733634
 GameObject:
   m_ObjectHideFlags: 0
@@ -7486,8 +7500,8 @@ MonoBehaviour:
   - {x: -0.4367962, y: 0.31508517, z: 0}
   - {x: -0.372612, y: 0.25211978, z: 0}
   m_ShapePathHash: 1140657943
-  m_Mesh: {fileID: 973220945}
-  m_InstanceId: 15786
+  m_Mesh: {fileID: 940777728}
+  m_InstanceId: 15798
 --- !u!1 &2065192508
 GameObject:
   m_ObjectHideFlags: 0

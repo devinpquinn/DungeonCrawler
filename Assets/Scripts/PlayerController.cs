@@ -326,6 +326,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public static Interactable GetInteractable()
+    {
+        return _player.currentInteractable;
+    }
+
     public static void LeavingInteractable(Interactable i)
     {
         if(_player.currentInteractable == i)
