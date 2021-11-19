@@ -15,7 +15,7 @@ public class Interactable : MonoBehaviour
 
     //state management
     public bool advanceStateAutomatically = false;
-    public string[] startKeys;
+    public string[] stateKeys;
     [HideInInspector]
     public int stateIndex = 0;
 
@@ -47,7 +47,7 @@ public class Interactable : MonoBehaviour
     public void Interact()
     {
         myTalk.txtToParse = myText;
-        myTalk.NewTalk(startKeys[stateIndex]);
+        myTalk.NewTalk(stateKeys[stateIndex]);
 
         myTalk.callback.AddListener(PlayerController.EndInteraction);
 

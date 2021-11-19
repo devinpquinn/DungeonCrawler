@@ -4677,7 +4677,7 @@ MonoBehaviour:
   myText: {fileID: 4900000, guid: 6b733225d67b2ce45ade2e2fe06a1ae5, type: 3}
   myTalk: {fileID: 0}
   advanceStateAutomatically: 0
-  startKeys:
+  stateKeys:
   - 1
   - 2n
   - 2y
