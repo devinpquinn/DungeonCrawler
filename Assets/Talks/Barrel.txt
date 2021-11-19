@@ -2,11 +2,22 @@
 A lonely wooden barrel sits in the center of the room. It seems conspicuously out of place here, as if it were some sort of test object dropped carelessly into an unfinished environment.
 Player:Fear not, forlorn barrel. I am here now.
 Player:[question=q][expression=?]
-[choice]1. Give the barrel a reassuring pat.<2>
-[choice]2. Leave the barrel be.
+[choice]1. Give the barrel a reassuring pat.<1a>
+[choice]{1}2. Leave the barrel be.
 [title=1-end]
 
-[title=2-start]
+[title=1a-start]
 Player:There, there, my cylindrical comrade.
 {0}The barrel doffs its lid to you.
-[title=2-end]
+[title=1a-end]
+
+[title=2n-start]
+The barrel waits expectantly.
+Player:[question=q][expression=?]
+[choice]1. Give the barrel a reassuring pat.<1a>
+[choice]2. Leave the barrel be.
+[title=2n-end]
+
+[title=2y-start]
+The barrel wishes you the best of luck.
+[title=2y-end]

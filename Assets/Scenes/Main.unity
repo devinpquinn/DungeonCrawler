@@ -2804,7 +2804,6 @@ MonoBehaviour:
   variables: []
   speaker: 
   shouldUsePhotos: 1
-  showListenerPhoto: 1
   characters:
   - character: {fileID: 11400000, guid: 0ea1c2864e271934eabe0557552d7e82, type: 2}
     follow: {fileID: 0}
@@ -4677,6 +4676,12 @@ MonoBehaviour:
   inRange: 0
   myText: {fileID: 4900000, guid: 6b733225d67b2ce45ade2e2fe06a1ae5, type: 3}
   myTalk: {fileID: 0}
+  advanceStateAutomatically: 0
+  startKeys:
+  - 1
+  - 2n
+  - 2y
+  stateIndex: 0
   myEvents:
   - m_PersistentCalls:
       m_Calls:
@@ -4688,6 +4693,30 @@ MonoBehaviour:
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1247771850}
+        m_MethodName: SetState
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1247771850}
+        m_MethodName: SetState
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

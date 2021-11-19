@@ -12,7 +12,12 @@ public class Interactable : MonoBehaviour
     public TextAsset myText;
     [HideInInspector]
     public RPGTalk myTalk;
-    private string startKey = "1";
+
+    //state management
+    public bool advanceStateAutomatically = false;
+    public string[] startKeys;
+    [HideInInspector]
+    public int stateIndex = 0;
 
     //events
     public List<UnityEvent> myEvents;
@@ -42,8 +47,23 @@ public class Interactable : MonoBehaviour
     public void Interact()
     {
         myTalk.txtToParse = myText;
-        myTalk.NewTalk(startKey);
+        myTalk.NewTalk(startKeys[stateIndex]);
 
         myTalk.callback.AddListener(PlayerController.EndInteraction);
+
+        if (advanceStateAutomatically)
+        {
+            IncrementState();
+        } 
+    }
+
+    public void SetState(int stateKey)
+    {
+        stateIndex = stateKey;
+    }
+
+    public void IncrementState()
+    {
+        stateIndex++;
     }
 }
