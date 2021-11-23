@@ -8,4 +8,14 @@ public class Item : MonoBehaviour
     public string itemName;
     [TextArea]
     public string itemDescription;
+
+    public void ShowItemTooltip()
+    {
+        TooltipUI.ShowTooltip_Static(itemDescription);
+    }
+
+    public void HideItemTooltip()
+    {
+        TooltipUI.HideTooltip_Static();
+    }
 }

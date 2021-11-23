@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    public enum playerState {Body, Light, Swapping, Interacting};
+    public enum playerState {Body, Light, Swapping, Interacting, Inventory};
 
     public playerState myState;
 
@@ -36,14 +36,21 @@ public class PlayerController : MonoBehaviour
     public Texture2D cursorInteract;
 
     private int interactablesMask = 0;
+    private int inventoryMask = 0;
 
     public Interactable currentInteractable;
 
+    //dialogue
     public RectTransform dialoguePanelRect;
 
-    //anchor points for the dialogue panel
     public RectTransform topPosition;
     public RectTransform bottomPosition;
+
+    //inventory
+    public RectTransform inventoryPanelRect;
+
+    public RectTransform leftPosition;
+    public RectTransform rightPosition;
 
     void Awake()
     {
@@ -78,6 +85,9 @@ public class PlayerController : MonoBehaviour
         SetCursor("default");
 
         interactablesMask = LayerMask.GetMask("Interactable");
+        inventoryMask = LayerMask.GetMask("Inventory");
+
+        inventoryPanelRect.gameObject.SetActive(false);
     }
 
     void Update()
@@ -153,17 +163,25 @@ public class PlayerController : MonoBehaviour
             //check for mode transition
             if (Input.GetKeyDown(KeyCode.Mouse1))
             {
-                if(myState == playerState.Body)
-                {
-                    //start transition to light mode
-                    myState = playerState.Swapping;
-                    body_anim.SetFloat("Speed", 0);
-                    body_anim.Play("bodyLightOut");
+                //start transition to light mode
+                myState = playerState.Swapping;
+                body_anim.SetFloat("Speed", 0);
+                body_anim.Play("bodyLightOut");
 
-                    //reset cursor and tooltip
-                    SetCursor("default");
-                    TooltipUI.HideTooltip_Static();
-                }
+                //reset cursor and tooltip
+                SetCursor("default");
+                TooltipUI.HideTooltip_Static();
+            }
+
+            //check for opening inventory
+            else if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                myState = playerState.Inventory;
+                inventoryPanelRect.gameObject.SetActive(true);
+
+                //reset cursor and tooltip
+                SetCursor("default");
+                TooltipUI.HideTooltip_Static();
             }
         }
         else if(myState == playerState.Light)
@@ -206,6 +224,14 @@ public class PlayerController : MonoBehaviour
                 {
                     currentInteractable.myTalk.choicesParent.GetChild(3).GetComponent<Button>().onClick.Invoke();
                 }
+            }
+        }
+        else if (myState == playerState.Inventory)
+        {
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                myState = playerState.Body;
+                inventoryPanelRect.gameObject.SetActive(false);
             }
         }
     }
