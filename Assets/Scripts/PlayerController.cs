@@ -234,6 +234,8 @@ public class PlayerController : MonoBehaviour
             {
                 myState = playerState.Body;
                 inventoryPanelRect.gameObject.SetActive(false);
+
+                //freeze body
             }
         }
     }
@@ -377,6 +379,8 @@ public class PlayerController : MonoBehaviour
         TooltipUI.HideTooltip_Static();
 
         currentInteractable.Interact();
+
+        //freeze body
     }
 
     //done talking

@@ -12,12 +12,6 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(Item thisItem)
     {
-        GameObject thisPrefab = Instantiate(itemPrefab, contentHolder);
-        thisPrefab.transform.Find("Image").GetComponent<Image>().sprite = thisItem.itemSprite;
-        thisPrefab.transform.Find("Name").GetComponent<TextMeshProUGUI>().SetText(thisItem.itemName);
-        Item newItem = thisPrefab.AddComponent<Item>();
-        newItem = thisItem;
-        Destroy(thisItem.gameObject);
-        items.Add(newItem);
+        
     }
 }
