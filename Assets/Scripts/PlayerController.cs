@@ -181,18 +181,7 @@ public class PlayerController : MonoBehaviour
             //check for opening inventory
             else if (Input.GetKeyDown(KeyCode.Tab))
             {
-                //set state
-                myState = playerState.Inventory;
-                inventoryPanelRect.gameObject.SetActive(true);
-
-                //populate inventory
-
-                //reset cursor and tooltip
-                SetCursor("default");
-                TooltipUI.HideTooltip_Static();
-
-                //freeze body
-                body_anim.SetFloat("Speed", 0);
+                ShowInventory();
             }
         }
         else if(myState == playerState.Light)
@@ -241,9 +230,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Tab))
             {
-                //set state
-                myState = playerState.Body;
-                inventoryPanelRect.gameObject.SetActive(false);
+                HideInventory();
             }
         }
     }
@@ -402,9 +389,39 @@ public class PlayerController : MonoBehaviour
 
     #region Inventory
 
+    public void ShowInventory()
+    {
+        //set state
+        myState = playerState.Inventory;
+        inventoryPanelRect.gameObject.SetActive(true);
+
+        //set position of inventory panel
+
+        //populate inventory
+
+        //reset cursor and tooltip
+        SetCursor("default");
+        TooltipUI.HideTooltip_Static();
+
+        //freeze body
+        body_anim.SetFloat("Speed", 0);
+    }
+
+    public void HideInventory()
+    {
+        //set state
+        myState = playerState.Body;
+        inventoryPanelRect.gameObject.SetActive(false);
+    }
+
     public static void AddItem(Item i)
     {
         //add item to inventory
+    }
+
+    public static bool FindItem(Item i)
+    {
+        return false;
     }
 
     #endregion
