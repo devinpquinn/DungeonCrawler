@@ -52,6 +52,8 @@ public class PlayerController : MonoBehaviour
     public RectTransform leftPosition;
     public RectTransform rightPosition;
 
+    public Inventory playerInventory;
+
     void Awake()
     {
         //singleton
@@ -385,5 +387,12 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
-    
+    #region Inventory
+
+    public static void AddItem_Static(Item i)
+    {
+        _player.playerInventory.AddItem(i);
+    }
+
+    #endregion
 }
