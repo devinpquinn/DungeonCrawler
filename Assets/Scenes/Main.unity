@@ -2087,13 +2087,7 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
---- !u!224 &716355074 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1402068064689444572, guid: d11fb6f70ec268c4896b815f92b32170,
-    type: 3}
-  m_PrefabInstance: {fileID: 1364239169}
-  m_PrefabAsset: {fileID: 0}
---- !u!43 &790947515
+--- !u!43 &709076599
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2256,6 +2250,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!224 &716355074 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1402068064689444572, guid: d11fb6f70ec268c4896b815f92b32170,
+    type: 3}
+  m_PrefabInstance: {fileID: 1364239169}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &907360461
 GameObject:
   m_ObjectHideFlags: 0
@@ -8205,8 +8205,8 @@ MonoBehaviour:
   - {x: -0.4367962, y: 0.31508517, z: 0}
   - {x: -0.372612, y: 0.25211978, z: 0}
   m_ShapePathHash: 1140657943
-  m_Mesh: {fileID: 790947515}
-  m_InstanceId: 27268
+  m_Mesh: {fileID: 709076599}
+  m_InstanceId: 30538
 --- !u!1 &2065192508
 GameObject:
   m_ObjectHideFlags: 0
@@ -8379,7 +8379,7 @@ MonoBehaviour:
   m_Content: {fileID: 359633041}
   m_Horizontal: 0
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
