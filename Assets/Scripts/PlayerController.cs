@@ -52,7 +52,10 @@ public class PlayerController : MonoBehaviour
     public RectTransform leftPosition;
     public RectTransform rightPosition;
 
-    public Inventory playerInventory;
+    private List<Item> inventory;
+
+    public GameObject itemPrefab;
+    public Transform inventoryItemParent;
 
     void Awake()
     {
@@ -178,12 +181,18 @@ public class PlayerController : MonoBehaviour
             //check for opening inventory
             else if (Input.GetKeyDown(KeyCode.Tab))
             {
+                //set state
                 myState = playerState.Inventory;
                 inventoryPanelRect.gameObject.SetActive(true);
+
+                //populate inventory
 
                 //reset cursor and tooltip
                 SetCursor("default");
                 TooltipUI.HideTooltip_Static();
+
+                //freeze body
+                body_anim.SetFloat("Speed", 0);
             }
         }
         else if(myState == playerState.Light)
@@ -232,10 +241,9 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Tab))
             {
+                //set state
                 myState = playerState.Body;
                 inventoryPanelRect.gameObject.SetActive(false);
-
-                //freeze body
             }
         }
     }
@@ -381,6 +389,7 @@ public class PlayerController : MonoBehaviour
         currentInteractable.Interact();
 
         //freeze body
+        body_anim.SetFloat("Speed", 0);
     }
 
     //done talking
@@ -393,9 +402,9 @@ public class PlayerController : MonoBehaviour
 
     #region Inventory
 
-    public static void AddItem_Static(Item i)
+    public static void AddItem(Item i)
     {
-        _player.playerInventory.AddItem(i);
+        //add item to inventory
     }
 
     #endregion
