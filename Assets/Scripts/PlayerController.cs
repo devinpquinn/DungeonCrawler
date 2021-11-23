@@ -419,7 +419,7 @@ public class PlayerController : MonoBehaviour
         //add item to inventory
     }
 
-    public static bool FindItem(Item i)
+    public static bool FindItem(string i)
     {
         return false;
     }
