@@ -419,8 +419,13 @@ public class PlayerController : MonoBehaviour
         //add item to inventory
     }
 
-    public static bool FindItem(string i)
+    public static void RemoveItem(string i)
     {
+        //remove item from inventory
+    }
+    public static bool CheckForItem(string i)
+    {
+        //check if player has item in inventory
         return false;
     }
 
