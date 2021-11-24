@@ -152,17 +152,6 @@ public class PlayerController : MonoBehaviour
                 {
                     //we found an interactable!
                     StartInteraction();
-
-                    if(Camera.main.WorldToScreenPoint(body.position).y > Camera.main.scaledPixelHeight / 2)
-                    {
-                        //move dialogue panel to bottom
-                        MoveDialoguePanelToBottom();
-                    }
-                    else
-                    {
-                        //move dialogue panel to top
-                        MoveDialoguePanelToTop();
-                    }
                 }
             }
 
@@ -276,6 +265,22 @@ public class PlayerController : MonoBehaviour
         dialoguePanelRect.anchoredPosition = bottomPosition.anchoredPosition;
     }
 
+    public void MoveInventoryPanelToLeft()
+    {
+        inventoryPanelRect.pivot = leftPosition.pivot;
+        inventoryPanelRect.anchorMax = leftPosition.anchorMax;
+        inventoryPanelRect.anchorMin = leftPosition.anchorMin;
+        inventoryPanelRect.anchoredPosition = leftPosition.anchoredPosition;
+    }
+
+    public void MoveInventoryPanelToRight()
+    {
+        inventoryPanelRect.pivot = rightPosition.pivot;
+        inventoryPanelRect.anchorMax = rightPosition.anchorMax;
+        inventoryPanelRect.anchorMin = rightPosition.anchorMin;
+        inventoryPanelRect.anchoredPosition = rightPosition.anchoredPosition;
+    }
+
     #region Transition
 
     public void LightOut()
@@ -376,6 +381,18 @@ public class PlayerController : MonoBehaviour
 
         currentInteractable.Interact();
 
+        //set dialogue panel position
+        if (Camera.main.WorldToScreenPoint(body.position).y > Camera.main.scaledPixelHeight / 2)
+        {
+            //move dialogue panel to bottom
+            MoveDialoguePanelToBottom();
+        }
+        else
+        {
+            //move dialogue panel to top
+            MoveDialoguePanelToTop();
+        }
+
         //freeze body
         body_anim.SetFloat("Speed", 0);
     }
@@ -397,9 +414,24 @@ public class PlayerController : MonoBehaviour
         inventoryPanelRect.gameObject.SetActive(true);
 
         //set position of inventory panel
+        if (Camera.main.WorldToScreenPoint(body.position).x > Camera.main.scaledPixelWidth / 2)
+        {
+            //move dialogue panel to bottom
+            MoveInventoryPanelToLeft();
+        }
+        else
+        {
+            //move dialogue panel to top
+            MoveInventoryPanelToRight();
+        }
 
         //populate inventory
-        if(_player.inventory.Count > 0)
+        foreach (Transform child in inventoryItemParent.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        if (_player.inventory.Count > 0)
         {
             for(int i = 0; i < _player.inventory.Count; i++)
             {
