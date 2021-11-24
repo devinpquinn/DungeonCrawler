@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -52,9 +53,9 @@ public class PlayerController : MonoBehaviour
     public RectTransform leftPosition;
     public RectTransform rightPosition;
 
-    private List<Item> inventory;
+    public List<Item> inventory;
 
-    public GameObject itemPrefab;
+    public GameObject itemDisplayPrefab;
     public Transform inventoryItemParent;
 
     void Awake()
@@ -398,6 +399,18 @@ public class PlayerController : MonoBehaviour
         //set position of inventory panel
 
         //populate inventory
+        if(_player.inventory.Count > 0)
+        {
+            for(int i = 0; i < _player.inventory.Count; i++)
+            {
+                Item thisItem = _player.inventory[i];
+                //instatiate item display prefab
+                GameObject thisItemDisplay = Instantiate(itemDisplayPrefab, inventoryItemParent);
+                thisItemDisplay.transform.Find("Image").GetComponent<Image>().sprite = thisItem.itemSprite;
+                thisItemDisplay.transform.Find("Name").GetComponent<TextMeshProUGUI>().SetText(thisItem.itemName);
+                thisItemDisplay.GetComponent<ItemDescription>().description = thisItem.itemDescription;
+            }
+        }
 
         //reset cursor and tooltip
         SetCursor("default");
@@ -417,15 +430,33 @@ public class PlayerController : MonoBehaviour
     public static void AddItem(Item i)
     {
         //add item to inventory
+        _player.inventory.Add(i);
     }
 
     public static void RemoveItem(string i)
     {
         //remove item from inventory
+        if(_player.inventory.Count > 0)
+        {
+            foreach(Item thisItem in _player.inventory)
+            {
+                if (thisItem.itemName.Equals(i))
+                {
+                    _player.inventory.Remove(thisItem);
+                }
+            }
+        }
     }
     public static bool CheckForItem(string i)
     {
         //check if player has item in inventory
+        foreach(Item thisItem in _player.inventory)
+        {
+            if(thisItem.itemName.Equals(i))
+            {
+                return true;
+            }
+        }
         return false;
     }
 
