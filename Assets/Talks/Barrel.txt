@@ -21,3 +21,7 @@ Player:[question=q][expression=?]
 [title=2y-start]
 The barrel wishes you the best of luck.
 [title=2y-end]
+
+[title=3-start]
+The barrel sees the mark of your kindness to barrelkind.
+[title=3-end]

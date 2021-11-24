@@ -416,12 +416,12 @@ public class PlayerController : MonoBehaviour
         //set position of inventory panel
         if (Camera.main.WorldToScreenPoint(body.position).x > Camera.main.scaledPixelWidth / 2)
         {
-            //move dialogue panel to bottom
+            //move dialogue panel to left
             MoveInventoryPanelToLeft();
         }
         else
         {
-            //move dialogue panel to top
+            //move dialogue panel to right
             MoveInventoryPanelToRight();
         }
 
