@@ -66,4 +66,9 @@ public class Interactable : MonoBehaviour
     {
         stateIndex++;
     }
+
+    public void AddItem(Item i)
+    {
+        PlayerController.AddItem(i);
+    }
 }
