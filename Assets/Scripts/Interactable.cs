@@ -9,18 +9,12 @@ public class Interactable : MonoBehaviour
     public bool inRange = false;
 
     //dialogue assets
-    public TextAsset myText;
     [HideInInspector]
     public RPGTalk myTalk;
+    public TextAsset myText;
 
-    //state management
-    public bool advanceStateAutomatically = false;
-    public string[] stateKeys;
     [HideInInspector]
-    public int stateIndex = 0;
-
-    //events
-    public List<UnityEvent> myEvents;
+    public bool interactedWith = false;
 
     private void Awake()
     {
@@ -44,31 +38,17 @@ public class Interactable : MonoBehaviour
         }
     }
 
-    public void Interact()
+    //do the interaction
+    public virtual void Interact()
     {
+        interactedWith = true;
         myTalk.txtToParse = myText;
-        myTalk.NewTalk(stateKeys[stateIndex]);
-
         myTalk.callback.AddListener(PlayerController.EndInteraction);
-
-        if (advanceStateAutomatically)
-        {
-            IncrementState();
-        } 
     }
 
-    public void SetState(int stateKey)
+    //called from text document
+    public virtual void DoEvent(string key)
     {
-        stateIndex = stateKey;
-    }
-
-    public void IncrementState()
-    {
-        stateIndex++;
-    }
-
-    public void AddItem(Item i)
-    {
-        PlayerController.AddItem(i);
+        //do the event designated by the text key
     }
 }

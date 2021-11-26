@@ -1595,17 +1595,11 @@ public class RPGTalk : MonoBehaviour
 
                     if (eventKeyString.Length > 0)
                     {
-                        int eventKeyNum = 0;
-                        int.TryParse(eventKeyString, out eventKeyNum);
-
                         //call the event?
                         if(PlayerController.GetInteractable() != null)
                         {
                             Interactable i = PlayerController.GetInteractable();
-                            if(i.myEvents.Count > eventKeyNum && i.myEvents[eventKeyNum] != null)
-                            {
-                                i.myEvents[eventKeyNum].Invoke();
-                            }
+                            //invoke
                         }
                     }
                     else
