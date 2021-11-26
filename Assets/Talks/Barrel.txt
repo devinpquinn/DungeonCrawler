@@ -14,7 +14,7 @@ Player:There, there, my cylindrical comrade.
 [title=back-start]
 The barrel waits expectantly.
 Player:[question=q][expression=?]
-[choice]1. Give the barrel a reassuring pat.<pat>
+[choice]{item}1. Give the barrel a reassuring pat.<pat>
 [choice]2. Leave the barrel be.
 [title=back-end]
 
