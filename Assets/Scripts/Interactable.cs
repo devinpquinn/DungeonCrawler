@@ -41,7 +41,6 @@ public class Interactable : MonoBehaviour
     //do the interaction
     public virtual void Interact()
     {
-        interactedWith = true;
         myTalk.txtToParse = myText;
         myTalk.callback.AddListener(PlayerController.EndInteraction);
     }

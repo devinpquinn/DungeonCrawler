@@ -1600,6 +1600,7 @@ public class RPGTalk : MonoBehaviour
                         {
                             Interactable i = PlayerController.GetInteractable();
                             //invoke
+                            i.DoEvent(eventKeyString);
                         }
                     }
                     else

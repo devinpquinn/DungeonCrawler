@@ -34,6 +34,7 @@ public class TestObject : Interactable
                 }
             }
         }
+        interactedWith = true;
     }
 
     public override void DoEvent(string key)
