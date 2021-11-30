@@ -37,7 +37,6 @@ public class PlayerController : MonoBehaviour
     public Texture2D cursorInteract;
 
     private int interactablesMask = 0;
-    private int inventoryMask = 0;
 
     public Interactable currentInteractable;
 
@@ -57,6 +56,9 @@ public class PlayerController : MonoBehaviour
 
     public GameObject itemDisplayPrefab;
     public Transform inventoryItemParent;
+
+    public GameObject itemDescriptionPanel;
+    public TextMeshProUGUI itemDescriptionText;
 
     void Awake()
     {
@@ -91,7 +93,6 @@ public class PlayerController : MonoBehaviour
         SetCursor("default");
 
         interactablesMask = LayerMask.GetMask("Interactable");
-        inventoryMask = LayerMask.GetMask("Inventory");
 
         inventoryPanelRect.gameObject.SetActive(false);
     }
@@ -436,11 +437,11 @@ public class PlayerController : MonoBehaviour
             for(int i = 0; i < _player.inventory.Count; i++)
             {
                 Item thisItem = _player.inventory[i];
-                //instatiate item display prefab
+                //instantiate item display prefab
                 GameObject thisItemDisplay = Instantiate(itemDisplayPrefab, inventoryItemParent);
                 thisItemDisplay.transform.Find("Image").GetComponent<Image>().sprite = thisItem.itemSprite;
                 thisItemDisplay.transform.Find("Name").GetComponent<TextMeshProUGUI>().SetText(thisItem.itemName);
-                thisItemDisplay.GetComponent<ItemDescription>().description = thisItem.itemDescription;
+                thisItemDisplay.GetComponent<ItemDescription>().myItemName = thisItem.itemName;
             }
         }
 
@@ -457,6 +458,18 @@ public class PlayerController : MonoBehaviour
         //set state
         myState = playerState.Body;
         inventoryPanelRect.gameObject.SetActive(false);
+        itemDescriptionPanel.SetActive(false);
+    }
+
+    public static void ShowItemDescription(string name)
+    {
+        _player.itemDescriptionPanel.SetActive(true);
+        _player.itemDescriptionText.SetText(GetItem(name).itemDescription);
+    }
+
+    public static void HideItemDescription()
+    {
+        _player.itemDescriptionPanel.SetActive(false);
     }
 
     public static void AddItem(Item i)
@@ -490,6 +503,18 @@ public class PlayerController : MonoBehaviour
             }
         }
         return false;
+    }
+
+    public static Item GetItem(string i)
+    {
+        foreach (Item thisItem in _player.inventory)
+        {
+            if (thisItem.itemName.Equals(i))
+            {
+                return thisItem;
+            }
+        }
+        return null;
     }
 
     #endregion

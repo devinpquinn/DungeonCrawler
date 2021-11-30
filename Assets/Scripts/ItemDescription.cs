@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class ItemDescription : MonoBehaviour
 {
-    public string description;
+    public string myItemName;
 
-    public void ShowItemTooltip()
+    public void ShowItemDescription()
     {
-        TooltipUI.ShowTooltip_Static(description);
+        PlayerController.ShowItemDescription(myItemName);
     }
 
-    public void HideItemTooltip()
+    public void HideItemDescription()
     {
-        TooltipUI.HideTooltip_Static();
+        PlayerController.HideItemDescription();
     }
 }
