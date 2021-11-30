@@ -197,21 +197,21 @@ public class PlayerController : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                if (currentInteractable != null && currentInteractable.myTalk.choicesParent.childCount > 0)
+                if (currentInteractable != null && currentInteractable.myTalk.choicesParent.childCount > 1)
                 {
                     currentInteractable.myTalk.choicesParent.GetChild(1).GetComponent<Button>().onClick.Invoke();
                 }
             }
             else if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                if (currentInteractable != null && currentInteractable.myTalk.choicesParent.childCount > 0)
+                if (currentInteractable != null && currentInteractable.myTalk.choicesParent.childCount > 2)
                 {
                     currentInteractable.myTalk.choicesParent.GetChild(2).GetComponent<Button>().onClick.Invoke();
                 }
             }
             else if (Input.GetKeyDown(KeyCode.Alpha4))
             {
-                if (currentInteractable != null && currentInteractable.myTalk.choicesParent.childCount > 0)
+                if (currentInteractable != null && currentInteractable.myTalk.choicesParent.childCount > 3)
                 {
                     currentInteractable.myTalk.choicesParent.GetChild(3).GetComponent<Button>().onClick.Invoke();
                 }

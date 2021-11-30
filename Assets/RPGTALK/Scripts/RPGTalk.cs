@@ -797,6 +797,9 @@ public class RPGTalk : MonoBehaviour
                     //This line was a question! Put the correct answers here
                     textUI.ChangeTextTo("");
                     enablePass = false;
+
+                    int choiceIndex = 0;
+
                     for (int i = 0; i < q.choices.Count; i++)
                     {
                         GameObject newChoice = (GameObject)Instantiate(choicePrefab, choicesParent);
@@ -805,30 +808,43 @@ public class RPGTalk : MonoBehaviour
                         {
                             string thisText = q.choices[i];
                             string correctText = thisText;
+
                             //make sure we will not want to make it to a new talk
                             correctText = LookForNewTalk(correctText);
                             //remove event tag
                             correctText = PruneEventTag(correctText);
 
                             //check for conditions before displaying this choice
+                            bool conditionsMet = true;
+
                             if (CheckChoiceCondition(correctText))
                             {
                                 //prune condition tags
                                 correctText = PruneConditionTag(correctText);
+                                choiceIndex++;
                             }
                             else
                             {
-                                newChoice.SetActive(false);
+                                Destroy(newChoice);
+                                conditionsMet = false;
                             }
 
-                            newChoice.transform.Find("Text").GetComponent<TextMeshProUGUI>().SetText(correctText);
-                            int choiceNumber = i;
-                            newChoiceBtn.onClick.AddListener(delegate { MadeAChoice(q.questionID, choiceNumber, thisText); });
-
-                            //check to see if that darn duplication bug is happening
-                            if (CheckForDuplicateChoice(correctText, i))
+                            //if conditions were met, continue
+                            if (conditionsMet)
                             {
-                                newChoice.SetActive(false);
+                                //number this choice
+                                string numToAdd = choiceIndex.ToString() + ". ";
+                                correctText = numToAdd + correctText;
+
+                                newChoice.transform.Find("Text").GetComponent<TextMeshProUGUI>().SetText(correctText);
+                                int choiceNumber = i;
+                                newChoiceBtn.onClick.AddListener(delegate { MadeAChoice(q.questionID, choiceNumber, thisText); });
+
+                                //check to see if that darn duplication bug is happening
+                                if (CheckForDuplicateChoice(correctText, i))
+                                {
+                                    newChoice.SetActive(false);
+                                }
                             }
 
                         }
@@ -2726,6 +2742,9 @@ public class RPGTalk : MonoBehaviour
                         //This line was a question! Put the correct answers here
                         textUI.ChangeTextTo("");
                         enablePass = false;
+
+                        int choiceIndex = 0;
+
                         for (int i = 0; i < q.choices.Count; i++)
                         {
                             GameObject newChoice = (GameObject)Instantiate(choicePrefab, choicesParent);
@@ -2741,28 +2760,37 @@ public class RPGTalk : MonoBehaviour
                                 correctText = PruneEventTag(correctText);
 
                                 //check for conditions before displaying this choice
+                                bool conditionsMet = true;
+
                                 if (CheckChoiceCondition(correctText))
                                 {
                                     //prune condition tags
                                     correctText = PruneConditionTag(correctText);
+                                    choiceIndex++;
                                 }
                                 else
                                 {
-                                    newChoice.SetActive(false);
+                                    Destroy(newChoice);
+                                    conditionsMet = false;
                                 }
 
-                                //newChoice.GetComponentInChildren<Text>().text = correctText;
-                                newChoice.transform.Find("Text").GetComponent<TextMeshProUGUI>().SetText(correctText);
-                                int choiceNumber = i;
-                                newChoiceBtn.onClick.AddListener(delegate { MadeAChoice(q.questionID, choiceNumber, thisText); });
-
-                                //check to see if that darn duplication bug is happening
-                                if (CheckForDuplicateChoice(correctText, i))
+                                //if conditions were met, continue
+                                if (conditionsMet)
                                 {
-                                    newChoice.SetActive(false);
-                                }
+                                    //number this choice
+                                    string numToAdd = choiceIndex.ToString() + ". ";
+                                    correctText = numToAdd + correctText;
 
-                                
+                                    newChoice.transform.Find("Text").GetComponent<TextMeshProUGUI>().SetText(correctText);
+                                    int choiceNumber = i;
+                                    newChoiceBtn.onClick.AddListener(delegate { MadeAChoice(q.questionID, choiceNumber, thisText); });
+
+                                    //check to see if that darn duplication bug is happening
+                                    if (CheckForDuplicateChoice(correctText, i))
+                                    {
+                                        newChoice.SetActive(false);
+                                    }
+                                }   
 
                             }
                             else
