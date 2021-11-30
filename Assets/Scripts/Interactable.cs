@@ -50,4 +50,10 @@ public class Interactable : MonoBehaviour
     {
         //do the event designated by the text key
     }
+
+    //check conditions for displaying a certain choice option
+    public virtual bool ConditionalChoice(string key)
+    {
+        return false;
+    }
 }

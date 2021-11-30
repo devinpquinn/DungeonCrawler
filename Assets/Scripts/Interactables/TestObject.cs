@@ -48,4 +48,16 @@ public class TestObject : Interactable
             barrelRenderer.sprite = doffedSprite;
         }
     }
+
+    public override bool ConditionalChoice(string key)
+    {
+        if(key == "yes")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

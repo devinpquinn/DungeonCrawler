@@ -810,6 +810,17 @@ public class RPGTalk : MonoBehaviour
                             //remove event tag
                             correctText = PruneEventTag(correctText);
 
+                            //check for conditions before displaying this choice
+                            if (CheckChoiceCondition(correctText))
+                            {
+                                //prune condition tags
+                                correctText = PruneConditionTag(correctText);
+                            }
+                            else
+                            {
+                                newChoice.SetActive(false);
+                            }
+
                             newChoice.transform.Find("Text").GetComponent<TextMeshProUGUI>().SetText(correctText);
                             int choiceNumber = i;
                             newChoiceBtn.onClick.AddListener(delegate { MadeAChoice(q.questionID, choiceNumber, thisText); });
@@ -1612,16 +1623,108 @@ public class RPGTalk : MonoBehaviour
                 {
                     Debug.LogWarning("Found a [newtalk] variable in the text but it didn't had start=x or break=y. Check The spelling");
                 }
+            }
+        }
+    }
 
-
-
-
-
+    //return true if condition is met or no condition is found
+    private bool CheckChoiceCondition(string line)
+    {
+        //check if the user have some newtalk and the line asks for one
+        if (line.IndexOf("[?=") != -1 && line.IndexOf("]") != -1)
+        {
+            //We do have one!
+            int initialBracket = line.IndexOf("[?=");
+            int finalBracket = -1;
+            if (initialBracket != -1)
+            {
+                finalBracket = line.IndexOf("]", initialBracket);
             }
 
+            //There still are any '[newtalk' and it is before a ']'?
+            if (initialBracket < finalBracket)
+            {
 
+                //Everything fine until now. Now let's check the start and break variables
+                int indexOfStart = line.IndexOf("[?=", initialBracket) + 3;
+                int endOfStart = line.IndexOf("]", indexOfStart);
+                if (endOfStart == -1)
+                {
+                    endOfStart = line.IndexOf("]", indexOfStart);
+                }
+
+                if (indexOfStart != -1 && endOfStart != -1)
+                {
+                    string conditionKeyString = line.Substring(indexOfStart, endOfStart - (indexOfStart));
+
+                    if (conditionKeyString.Length > 0)
+                    {
+                        if (PlayerController.GetInteractable() != null)
+                        {
+                            Interactable i = PlayerController.GetInteractable();
+                            return (i.ConditionalChoice(conditionKeyString));
+                        }
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning("Found a [newtalk] variable in the text but it didn't had start=x or break=y. Check The spelling");
+                }
+            }
+        }
+        return true;
+    }
+
+    private string PruneConditionTag(string line)
+    {
+        //check if the user have some newtalk and the line asks for one
+        if (line.IndexOf("[?=") != -1 && line.IndexOf("]") != -1)
+        {
+            //We do have one!
+            int initialBracket = line.IndexOf("[?=");
+            int finalBracket = -1;
+            if (initialBracket != -1)
+            {
+                finalBracket = line.IndexOf("]", initialBracket);
+            }
+
+            //There still are any '[newtalk' and it is before a ']'?
+            if (initialBracket < finalBracket)
+            {
+                //Everything fine until now. Now let's check the start and break variables
+                int indexOfStart = line.IndexOf("[?=", initialBracket) + 3;
+                int endOfStart = line.IndexOf("]", indexOfStart);
+                if (endOfStart == -1)
+                {
+                    endOfStart = line.IndexOf("]", indexOfStart);
+                }
+
+                if (indexOfStart != -1 && endOfStart != -1)
+                {
+                    string conditionKeyString = line.Substring(indexOfStart, endOfStart - (indexOfStart));
+
+                    if (conditionKeyString.Length > 0)
+                    {
+                        return line.Substring(0, initialBracket) +
+                            line.Substring(finalBracket + 1);
+                    }
+                    else
+                    {
+                        Debug.LogWarning("There was a problem in your start=x or break=y. Check The spelling");
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning("Found a [newtalk] variable in the text but it didn't had start=x or break=y. Check The spelling");
+                }
+            }
         }
 
+        return line;
     }
 
     private string PruneEventTag(string line)
@@ -2631,10 +2734,22 @@ public class RPGTalk : MonoBehaviour
                             {
                                 string thisText = q.choices[i];
                                 string correctText = thisText;
+
                                 //make sure we will not want to make it to a new talk
                                 correctText = LookForNewTalk(correctText);
                                 //remove event tag
                                 correctText = PruneEventTag(correctText);
+
+                                //check for conditions before displaying this choice
+                                if (CheckChoiceCondition(correctText))
+                                {
+                                    //prune condition tags
+                                    correctText = PruneConditionTag(correctText);
+                                }
+                                else
+                                {
+                                    newChoice.SetActive(false);
+                                }
 
                                 //newChoice.GetComponentInChildren<Text>().text = correctText;
                                 newChoice.transform.Find("Text").GetComponent<TextMeshProUGUI>().SetText(correctText);
@@ -2646,6 +2761,8 @@ public class RPGTalk : MonoBehaviour
                                 {
                                     newChoice.SetActive(false);
                                 }
+
+                                
 
                             }
                             else
