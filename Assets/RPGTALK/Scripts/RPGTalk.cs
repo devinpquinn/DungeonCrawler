@@ -854,6 +854,10 @@ public class RPGTalk : MonoBehaviour
                         }
 
                     }
+
+                    //select first choice option
+                    choicesParent.GetChild(0).GetComponent<Button>().Select();
+
                     break;
                 }
             }
@@ -2799,6 +2803,10 @@ public class RPGTalk : MonoBehaviour
                             }
 
                         }
+
+                        //select first choice option
+                        choicesParent.GetChild(0).GetComponent<Button>().Select();
+
                         break;
                     }
                 }
