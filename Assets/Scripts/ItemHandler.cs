@@ -8,7 +8,14 @@ public class ItemHandler : MonoBehaviour
 
     public void EquipItem()
     {
-        PlayerController.EquipItem(myItemName);
+        if(PlayerController.GetEquippedItem() == myItemName)
+        {
+            PlayerController.UnequipAllItems();
+        }
+        else
+        {
+            PlayerController.EquipItem(myItemName);
+        }
     }
 
     public void ShowItemDescription()
