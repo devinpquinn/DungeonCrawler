@@ -4,8 +4,7 @@ Player:Fear not, forlorn barrel. I am here now.
 Player:[question=q][expression=?]
 [choice]{item}Give the barrel a reassuring pat.<pat>
 [choice]Leave the barrel be.
-[choice][?=placeholder]Placeholder Item equipped.
-[choice][?=another]Another Test Item equipped.
+[choice][?=item:Placeholder Item]Placeholder Item equipped.
 [title=1st-end]
 
 [title=pat-start]
@@ -18,8 +17,7 @@ The barrel waits expectantly.
 Player:[question=q][expression=?]
 [choice]{item}Give the barrel a reassuring pat.<pat>
 [choice]Leave the barrel be.
-[choice][?=placeholder]Placeholder Item equipped.
-[choice][?=another]Another Test Item equipped.
+[choice][?=item:Placeholder Item]Placeholder Item equipped.
 [title=back-end]
 
 [title=back-pat-start]

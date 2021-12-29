@@ -51,22 +51,10 @@ public class TestObject : Interactable
 
     public override bool ConditionalChoice(string key)
     {
-        if(key == "another")
-        {
-            if(PlayerController.GetEquippedItem() == "Another Test Item")
-            {
-                return true;
-            }
-        }
-        else if (key == "placeholder")
-        {
-            if (PlayerController.GetEquippedItem() == "Placeholder Item")
-            {
-                return true;
-            }
-        }
+        //custom checks
 
-        return false;
+        //check for equipped item
+        return base.ConditionalChoice(key);
 
     }
 }

@@ -54,6 +54,14 @@ public class Interactable : MonoBehaviour
     //check conditions for displaying a certain choice option
     public virtual bool ConditionalChoice(string key)
     {
+        if(key.Contains("item:"))
+        {
+            string itemKey = key.Substring(key.IndexOf("item:") + 5);
+            if(PlayerController.GetEquippedItem() == itemKey)
+            {
+                return true;
+            }
+        }
         return false;
     }
 }
