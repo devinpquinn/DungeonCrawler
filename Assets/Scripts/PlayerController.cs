@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
     private Transform head_pointer;
 
     private CameraFollow camFollow;
+    private Transform bodyCameraTarget;
+    private Transform lightCameraTarget;
 
     [Header("Variables")]
 
@@ -108,7 +110,11 @@ public class PlayerController : MonoBehaviour
         head_pointer = head_anim.gameObject.transform.Find("Pointer");
 
         camFollow = transform.Find("Player Camera").GetComponent<CameraFollow>();
-        camFollow.player = body;
+
+        bodyCameraTarget = body.Find("Body Camera Target");
+        lightCameraTarget = lightBall.Find("LightBall Camera Target");
+
+        camFollow.player = bodyCameraTarget;
 
         SetCursor("default");
 
@@ -316,7 +322,7 @@ public class PlayerController : MonoBehaviour
         lightBall.gameObject.SetActive(true);
 
         //have camera follow light
-        camFollow.player = lightBall;
+        camFollow.player = lightCameraTarget;
     }
 
     public void FreeLight()
@@ -350,7 +356,7 @@ public class PlayerController : MonoBehaviour
         head_anim.Play("headLightIn");
 
         //set camera to follow body
-        camFollow.player = body;
+        camFollow.player = bodyCameraTarget;
     }
 
     public void ActivateHead()
