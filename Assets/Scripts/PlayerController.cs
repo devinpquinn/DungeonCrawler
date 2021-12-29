@@ -63,6 +63,9 @@ public class PlayerController : MonoBehaviour
     //currently equipped item
     private string equippedItem = null;
 
+    public Image itemThumbnail;
+    private GameObject itemThumbnailParent;
+
     void Awake()
     {
         //singleton
@@ -98,6 +101,8 @@ public class PlayerController : MonoBehaviour
         interactablesMask = LayerMask.GetMask("Interactable");
 
         inventoryPanelRect.gameObject.SetActive(false);
+
+        itemThumbnailParent = itemThumbnail.transform.parent.gameObject;
     }
 
     void Update()
@@ -395,6 +400,25 @@ public class PlayerController : MonoBehaviour
         {
             //move dialogue panel to top
             MoveDialoguePanelToTop();
+        }
+
+        //check if there is an equipped item to display
+        if(equippedItem == null)
+        {
+            itemThumbnailParent.SetActive(false);
+        }
+        else
+        {
+            itemThumbnailParent.SetActive(true);
+
+            //find image corresponding to equipped item
+            for (int i = 0; i < inventory.Count; i++)
+            {
+                if(inventory[i].itemName == equippedItem)
+                {
+                    itemThumbnail.sprite = inventory[i].itemSprite;
+                }
+            }
         }
 
         //freeze body
