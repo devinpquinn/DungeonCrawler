@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9154720981576732831}
   - component: {fileID: 8858951719831452839}
   m_Layer: 0
-  m_Name: Test Item
+  m_Name: Barrel's Gift
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,5 +45,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemSprite: {fileID: -3104913322825352370, guid: 05ef6f8a2a7dce14085a4f5f903efa5b,
     type: 3}
-  itemName: Test Item
-  itemDescription: Description goes here. It can be up to several sentences in length.
+  itemName: Barrel's Gift
+  itemDescription: A test item given by a kindly barrel.

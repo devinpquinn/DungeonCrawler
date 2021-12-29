@@ -60,6 +60,9 @@ public class PlayerController : MonoBehaviour
     public GameObject itemDescriptionPanel;
     public TextMeshProUGUI itemDescriptionText;
 
+    //currently equipped item
+    private string equippedItem = null;
+
     void Awake()
     {
         //singleton
@@ -441,7 +444,13 @@ public class PlayerController : MonoBehaviour
                 GameObject thisItemDisplay = Instantiate(itemDisplayPrefab, inventoryItemParent);
                 thisItemDisplay.transform.Find("Image").GetComponent<Image>().sprite = thisItem.itemSprite;
                 thisItemDisplay.transform.Find("Name").GetComponent<TextMeshProUGUI>().SetText(thisItem.itemName);
-                thisItemDisplay.GetComponent<ItemDescription>().myItemName = thisItem.itemName;
+                thisItemDisplay.GetComponent<ItemHandler>().myItemName = thisItem.itemName;
+            }
+
+            //check for equipped item to display
+            if (_player.equippedItem != null)
+            {
+                EquipItem(_player.equippedItem);
             }
         }
 
@@ -459,6 +468,56 @@ public class PlayerController : MonoBehaviour
         myState = playerState.Body;
         inventoryPanelRect.gameObject.SetActive(false);
         itemDescriptionPanel.SetActive(false);
+    }
+
+    public static void EquipItem(string itemName)
+    {
+        UnequipAllItems();
+
+        _player.equippedItem = itemName;
+
+        for (int i = 0; i < _player.inventoryItemParent.childCount; i++)
+        {
+            TextMeshProUGUI thisTMP = _player.inventoryItemParent.GetChild(i).Find("Name").GetComponent<TextMeshProUGUI>();
+            if (thisTMP.text == itemName)
+            {
+                _player.SetTMPToEquipped(thisTMP);
+            }
+        }
+    }
+
+    public static void UnequipAllItems()
+    {
+        _player.equippedItem = null;
+
+        for (int i = 0; i < _player.inventoryItemParent.childCount; i++)
+        {
+            //set display to default
+            TextMeshProUGUI thisTMP = _player.inventoryItemParent.GetChild(i).Find("Name").GetComponent<TextMeshProUGUI>();
+            _player.SetTMPToUnequipped(thisTMP);
+        }
+    }
+
+    public static string GetEquippedItem()
+    {
+        if(_player.equippedItem == null)
+        {
+            return "None";
+        }
+        else
+        {
+            return _player.equippedItem;
+        }
+    }
+
+    public void SetTMPToEquipped(TextMeshProUGUI thisTMP)
+    {
+        thisTMP.color = Color.yellow;
+    }
+
+    public void SetTMPToUnequipped(TextMeshProUGUI thisTMP)
+    {
+        thisTMP.color = Color.white;
     }
 
     public static void ShowItemDescription(string name)

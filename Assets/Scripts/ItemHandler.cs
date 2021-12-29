@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemDescription : MonoBehaviour
+public class ItemHandler : MonoBehaviour
 {
     public string myItemName;
+
+    public void EquipItem()
+    {
+        PlayerController.EquipItem(myItemName);
+    }
 
     public void ShowItemDescription()
     {
