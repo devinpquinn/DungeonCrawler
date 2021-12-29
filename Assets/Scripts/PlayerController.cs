@@ -25,6 +25,10 @@ public class PlayerController : MonoBehaviour
     private Animator head_anim;
     private Transform head_pointer;
 
+    private CameraFollow camFollow;
+
+    [Header("Variables")]
+
     public float moveSpeed = 3f;
     public float lightSpeed = 5f;
     public float rotationSpeed = 10f;
@@ -32,7 +36,10 @@ public class PlayerController : MonoBehaviour
 
     private static PlayerController _player;
     public static PlayerController Instance { get { return _player; } }
-    
+
+    //interaction stuff
+    [Header("Interaction")]
+
     public Texture2D cursorDefault;
     public Texture2D cursorInteract;
 
@@ -41,12 +48,16 @@ public class PlayerController : MonoBehaviour
     public Interactable currentInteractable;
 
     //dialogue
+    [Header("Dialogue")]
+
     public RectTransform dialoguePanelRect;
 
     public RectTransform topPosition;
     public RectTransform bottomPosition;
 
     //inventory
+    [Header("Inventory")]
+
     public RectTransform inventoryPanelRect;
 
     public RectTransform leftPosition;
@@ -95,6 +106,9 @@ public class PlayerController : MonoBehaviour
 
         head_anim = body.transform.Find("Head").GetComponent<Animator>();
         head_pointer = head_anim.gameObject.transform.Find("Pointer");
+
+        camFollow = transform.Find("Player Camera").GetComponent<CameraFollow>();
+        camFollow.player = body;
 
         SetCursor("default");
 
@@ -300,6 +314,9 @@ public class PlayerController : MonoBehaviour
 
         //activate light ball
         lightBall.gameObject.SetActive(true);
+
+        //have camera follow light
+        camFollow.player = lightBall;
     }
 
     public void FreeLight()
@@ -331,6 +348,9 @@ public class PlayerController : MonoBehaviour
         }
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
         head_anim.Play("headLightIn");
+
+        //set camera to follow body
+        camFollow.player = body;
     }
 
     public void ActivateHead()
@@ -346,7 +366,7 @@ public class PlayerController : MonoBehaviour
 
         //free head to turn
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
-        head_anim.Play("headSpin");
+        head_anim.Play("headSpin"); 
     }
 
     #endregion

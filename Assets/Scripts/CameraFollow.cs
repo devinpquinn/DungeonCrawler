@@ -8,11 +8,12 @@ public class CameraFollow : MonoBehaviour
 	public Vector3 offset = new Vector3(0, 1, -10);
 	public float speed = 1;
 
-	[SerializeField] CameraBounds2D bounds;
+	CameraBounds2D bounds;
 	Vector2 maxXPositions, maxYPositions;
 
     private void Awake()
     {
+		bounds = FindObjectOfType<CameraBounds2D>();
 		bounds.Initialize(GetComponent<Camera>());
 		maxXPositions = bounds.maxXlimit;
 		maxYPositions = bounds.maxYlimit;
