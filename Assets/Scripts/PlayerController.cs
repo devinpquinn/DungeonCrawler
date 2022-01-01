@@ -195,6 +195,9 @@ public class PlayerController : MonoBehaviour
                 //reset cursor and tooltip
                 SetCursor("default");
                 TooltipUI.HideTooltip_Static();
+
+                //hide cursor
+                Cursor.visible = false;
             }
 
             //check for opening inventory
@@ -372,7 +375,10 @@ public class PlayerController : MonoBehaviour
 
         //free head to turn
         head_anim.gameObject.GetComponent<SpriteRenderer>().flipX = false;
-        head_anim.Play("headSpin"); 
+        head_anim.Play("headSpin");
+
+        //enable cursor
+        Cursor.visible = true;
     }
 
     #endregion
