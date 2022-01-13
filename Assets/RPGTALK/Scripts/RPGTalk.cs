@@ -346,8 +346,8 @@ public class RPGTalk : MonoBehaviour
     string lastText = "";
 
     private RectTransform textRect;
-    private float widthWithoutPortrait = 1200f;
-    private float widthWithPortrait = 1000f;
+    private float widthWithoutPortrait = 1530;
+    private float widthWithPortrait = 1200;
 
     void Start()
     {
@@ -2400,26 +2400,6 @@ public class RPGTalk : MonoBehaviour
             if (textToDisplay.Length > textUI.GetCurrentText().Length)
             {
                 float basePitch = 1f;
-
-                string n = rpgtalkElements[cutscenePosition - 1].speakerName;
-                switch (n)
-                {
-                    case "Adaro":
-                        basePitch = 0.65f;
-                        break;
-                    case "Borrum":
-                        basePitch = 1f;
-                        break;
-                    case "Elsinore":
-                        basePitch = 1.2f;
-                        break;
-                    case "Thorn":
-                        basePitch = 0.95f;
-                        break;
-                    case "The Elder":
-                        basePitch = 0.85f;
-                        break;
-                }
 
                 float margin = 0.075f;
                 float amount = Random.Range(basePitch - margin, basePitch + margin);

@@ -114,9 +114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: alagard SDF
   m_EditorClassIdentifier: 
-  hashCode: -1818129988
+  hashCode: -1616901139
   material: {fileID: -8489657893798082292}
-  materialHashCode: 1863644444
+  materialHashCode: 986527789
   m_Version: 1.1.0
   m_SourceFontFileGUID: 839cebdc63517a649aacdc52ea7ad57d
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 839cebdc63517a649aacdc52ea7ad57d,
