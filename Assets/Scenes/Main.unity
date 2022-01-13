@@ -234,7 +234,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 100, y: 0}
-  m_SizeDelta: {x: 750, y: 950}
+  m_SizeDelta: {x: 750, y: 850}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &71470806
 GameObject:
@@ -1160,7 +1160,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -24, y: 0}
-  m_SizeDelta: {x: 24, y: 710}
+  m_SizeDelta: {x: 24, y: 610}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &288579814
 MonoBehaviour:
@@ -1204,7 +1204,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1987395190}
   m_HandleRect: {fileID: 1987395189}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -5161,7 +5161,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 750, y: 950}
+  m_SizeDelta: {x: 750, y: 850}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1261662922
 MonoBehaviour:
@@ -5455,7 +5455,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1507203300
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5474,7 +5474,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 600, y: 150}
+  m_SizeDelta: {x: 750, y: 200}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1507203301
 MonoBehaviour:
@@ -6017,8 +6017,8 @@ MonoBehaviour:
   itemDisplayPrefab: {fileID: 1248647413222163372, guid: ad1fa94bde22999468027ab4bafcecd6,
     type: 3}
   inventoryItemParent: {fileID: 2066428450}
-  itemDescriptionPanel: {fileID: 0}
-  itemDescriptionText: {fileID: 0}
+  itemDescriptionPanel: {fileID: 1507203299}
+  itemDescriptionText: {fileID: 1991854260}
   itemThumbnail: {fileID: 1829686942}
 --- !u!1 &1735000271
 GameObject:
@@ -8183,7 +8183,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 750, y: 800}
+  m_SizeDelta: {x: 750, y: 700}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1837794956
 MonoBehaviour:
@@ -8590,7 +8590,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 100}
+  m_SizeDelta: {x: 650, y: 144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1991854260
 MonoBehaviour:
@@ -8639,8 +8639,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
