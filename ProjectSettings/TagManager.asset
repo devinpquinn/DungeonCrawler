@@ -7,7 +7,7 @@ TagManager:
   - Interactable
   - Detector
   - DialogueManager
-  - Ground
+  - Step
   layers:
   - Default
   - TransparentFX
