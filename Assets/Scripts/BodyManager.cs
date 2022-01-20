@@ -43,7 +43,7 @@ public class BodyManager : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.1f, layerMask);
         if(hit.collider != null)
         {
-            Debug.Log("stepped on " + hit.collider.gameObject.name);
+            footstepSounds.PlayFootstepSound(hit.collider.name);
         }
     }
 }
