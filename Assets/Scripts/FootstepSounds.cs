@@ -9,6 +9,7 @@ public class FootstepSounds : MonoBehaviour
     public List<AudioClip> stoneSounds;
     public List<AudioClip> earthSounds;
     public List<AudioClip> grassSounds;
+    public List<AudioClip> woodSounds;
 
     private int lastIndex;
 
@@ -24,6 +25,9 @@ public class FootstepSounds : MonoBehaviour
                 break;
             case "Grass":
                 footstepSource.PlayOneShot(GetGrassSound());
+                break;
+            case "Wood":
+                footstepSource.PlayOneShot(GetWoodSound());
                 break;
         }
     }
@@ -47,7 +51,7 @@ public class FootstepSounds : MonoBehaviour
             key = Random.Range(0, earthSounds.Count);
         }
         lastIndex = key;
-        return stoneSounds[key];
+        return earthSounds[key];
     }
 
     public AudioClip GetGrassSound()
@@ -58,6 +62,17 @@ public class FootstepSounds : MonoBehaviour
             key = Random.Range(0, grassSounds.Count);
         }
         lastIndex = key;
-        return stoneSounds[key];
+        return grassSounds[key];
+    }
+
+    public AudioClip GetWoodSound()
+    {
+        int key = Random.Range(0, woodSounds.Count);
+        while (key == lastIndex)
+        {
+            key = Random.Range(0, woodSounds.Count);
+        }
+        lastIndex = key;
+        return woodSounds[key];
     }
 }

@@ -2162,8 +2162,13 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4ecf78535cddcc247beffe898466d5ad, type: 3}
   - {fileID: 8300000, guid: 252bfe2e6f18d3e4599f1fcfbbe4dfc7, type: 3}
   - {fileID: 8300000, guid: d3618f8540441e64d9473d68ccabd891, type: 3}
-  earthSounds: []
+  earthSounds:
+  - {fileID: 8300000, guid: b87802300cf1723429a1172679921b37, type: 3}
+  - {fileID: 8300000, guid: 383afafefed7f6d45b3d7071f581b5b1, type: 3}
+  - {fileID: 8300000, guid: 8304c848e269a1b4b81e01da48c2a4f0, type: 3}
+  - {fileID: 8300000, guid: 34204aea81c54214d9dfda32663b9995, type: 3}
   grassSounds: []
+  woodSounds: []
 --- !u!1 &125623536
 GameObject:
   m_ObjectHideFlags: 0
