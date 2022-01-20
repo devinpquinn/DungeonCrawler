@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class BodyManager : MonoBehaviour
 {
+    //player
     private PlayerController pc;
 
     //footstep sounds
+    private FootstepSounds footstepSounds;
 
     private void Awake()
     {
         pc = gameObject.transform.parent.GetComponent<PlayerController>();
+        footstepSounds = gameObject.GetComponent<FootstepSounds>();
     }
 
     public void LightOut()
@@ -33,14 +36,14 @@ public class BodyManager : MonoBehaviour
         pc.ActivateBody();
     }
 
-    public void FootstepSound()
+    public void PlayFootstep()
     {
-        //play material-appropriate footstep sound
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        //check for footstep material
-        //set footstep sound
+        //raycast to determine material currently being stepped on
+        int layerMask = (LayerMask.GetMask("Step"));
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.1f, layerMask);
+        if(hit.collider != null)
+        {
+            Debug.Log("stepped on " + hit.collider.gameObject.name);
+        }
     }
 }
