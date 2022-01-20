@@ -6,6 +6,8 @@ public class BodyManager : MonoBehaviour
 {
     private PlayerController pc;
 
+    //footstep sounds
+
     private void Awake()
     {
         pc = gameObject.transform.parent.GetComponent<PlayerController>();
@@ -29,5 +31,16 @@ public class BodyManager : MonoBehaviour
     public void ActivateBody()
     {
         pc.ActivateBody();
+    }
+
+    public void FootstepSound()
+    {
+        //play material-appropriate footstep sound
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //check for footstep material
+        //set footstep sound
     }
 }

@@ -2246,7 +2246,7 @@ GameObject:
   - component: {fileID: 619370611}
   - component: {fileID: 619370610}
   - component: {fileID: 619370612}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Dirt
   m_TagString: Step
   m_Icon: {fileID: 0}
