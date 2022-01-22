@@ -1675,6 +1675,7 @@ GameObject:
   - component: {fileID: 82907727}
   - component: {fileID: 82907728}
   - component: {fileID: 82907730}
+  - component: {fileID: 82907731}
   - component: {fileID: 82907729}
   m_Layer: 8
   m_Name: Body
@@ -1850,8 +1851,8 @@ MonoBehaviour:
   - {x: -0.37495422, y: -0.08753288, z: 0}
   - {x: -0.24995518, y: -0.08750427, z: 0}
   m_ShapePathHash: -1909955003
-  m_Mesh: {fileID: 364949713}
-  m_InstanceId: 15390
+  m_Mesh: {fileID: 446316977}
+  m_InstanceId: 25746
 --- !u!114 &82907727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2009,6 +2010,26 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 363fcec810ee8f646acab137a75566fe, type: 3}
   - {fileID: 8300000, guid: aeecbd21349d1b7478f470d6f6f5b468, type: 3}
   - {fileID: 8300000, guid: b834586811dafb14fb487d6d140213d6, type: 3}
+--- !u!114 &82907731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82907720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bce1d946ab4f5ea47b2c1423d6ad11fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapSource: {fileID: 82907729}
+  snapSounds:
+  - {fileID: 8300000, guid: 36b660c3f70158044bf02baf667f4ea3, type: 3}
+  - {fileID: 8300000, guid: 6280bcbf92970664e8ff571499698a06, type: 3}
+  - {fileID: 8300000, guid: b8af868c04dfc35449bd0b3b9742e8fc, type: 3}
+  - {fileID: 8300000, guid: 0b4b9f7a509fa354b8ba792cc6ce8212, type: 3}
+  - {fileID: 8300000, guid: be9337af104057c4d94937e4fa61b32a, type: 3}
+  - {fileID: 8300000, guid: 80dd225a2f6c75e43a9f1761743e35a5, type: 3}
 --- !u!1 &125623536
 GameObject:
   m_ObjectHideFlags: 0
@@ -2757,7 +2778,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288579812}
   m_CullTransparentMesh: 0
---- !u!43 &364949713
+--- !u!43 &446316977
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
