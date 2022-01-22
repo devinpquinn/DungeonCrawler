@@ -280,6 +280,12 @@ public class PlayerController : MonoBehaviour
             //set head sprite to face cursor
             float angle = 1 - (headRot.eulerAngles.z / 360);
             head_anim.SetFloat("Rotation", angle);
+
+            //check how much the head has turned
+            
+            //if the head is turning slowly: play a low intensity creak
+
+            //if the head is turning rapidly: play a high intensity creak
         }
         else if (myState == playerState.Light)
         {
