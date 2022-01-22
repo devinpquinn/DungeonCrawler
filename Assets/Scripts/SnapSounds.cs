@@ -8,9 +8,21 @@ public class SnapSounds : MonoBehaviour
 
     public List<AudioClip> snapSounds;
 
+    private HelmetSounds myHelmet;
+
+    private void Awake()
+    {
+        myHelmet = transform.GetComponentInChildren<HelmetSounds>();
+    }
+
     public void PlaySnapSound()
     {
         int key = Random.Range(0, snapSounds.Count);
         snapSource.PlayOneShot(snapSounds[key]);
+    }
+
+    public void DelegateHelmetOpen()
+    {
+        myHelmet.PlayHelmetOpen();
     }
 }
