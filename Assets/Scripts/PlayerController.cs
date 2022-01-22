@@ -19,6 +19,10 @@ public class PlayerController : MonoBehaviour
     private Transform lightBall;
     private Rigidbody2D rb_light;
     private Animator light_anim;
+    private AudioSource lightBallAudioSource;
+
+    public float minLightBallVolume = 0.2f;
+    public float maxLightBallVolume = 0.8f;
 
     public GameObject lightRemnant;
 
@@ -103,6 +107,8 @@ public class PlayerController : MonoBehaviour
         lightBall.localScale = new Vector3(0, 0, 0);
         rb_light = lightBall.GetComponent<Rigidbody2D>();
         light_anim = lightBall.GetComponent<Animator>();
+        lightBallAudioSource = lightBall.GetComponent<AudioSource>();
+        lightBallAudioSource.volume = minLightBallVolume;
 
         lightBall.gameObject.SetActive(false);
 
@@ -277,7 +283,13 @@ public class PlayerController : MonoBehaviour
         }
         else if (myState == playerState.Light)
         {
+            //move light ball
             rb_light.MovePosition(rb_light.position + movement.normalized * lightSpeed * Time.fixedDeltaTime);
+
+            //set light ball audio source volume based on movement speed
+            float lightVolumeTarget = minLightBallVolume + ((maxLightBallVolume - minLightBallVolume) * movement.normalized.magnitude);
+            float lerpedLightVolume = Mathf.Lerp(lightBallAudioSource.volume, lightVolumeTarget, 0.2f);
+            lightBallAudioSource.volume = lerpedLightVolume;
         }
     }
 
