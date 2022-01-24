@@ -5494,7 +5494,7 @@ MonoBehaviour:
     animatorOverwrite: {fileID: 0}
   UIPhoto: {fileID: 464768074}
   shouldStayOnScreen: 0
-  textAudio: {fileID: 0}
+  textAudio: {fileID: 8300000, guid: cf51ee894bcf551449d459e3c9076d4e, type: 3}
   passAudio: {fileID: 0}
   rpgAudioSorce: {fileID: 983292448}
   letterSource: {fileID: 22767814}
