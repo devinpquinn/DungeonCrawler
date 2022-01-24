@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoger: Player
   photo: {fileID: 21300000, guid: 39642a1d8d071c34189e277712b09c8b, type: 3}
+  voice: {fileID: 8300000, guid: 6ea7e02ab9f01f64495d467005a5e0e3, type: 3}
   expressions:
   - name: '?'
     photo: {fileID: 21300000, guid: 06e6399e3680e7340816ac20b71698c0, type: 3}
