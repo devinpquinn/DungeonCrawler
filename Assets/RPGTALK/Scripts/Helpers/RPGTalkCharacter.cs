@@ -19,6 +19,7 @@ namespace RPGTALK.Helper
     {
         public string dialoger;
         public Sprite photo;
+        public AudioClip voice = null;
 
         public Expression[] expressions;
     }

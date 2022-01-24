@@ -171,6 +171,7 @@ public class RPGTalk : MonoBehaviour
     /// Audio to be played while the character is talking
     /// </summary>
     public AudioClip textAudio;
+    private AudioClip baseTextAudio;
     /// <summary>
     /// Audio to be played when player passes the Talk
     /// </summary>
@@ -385,8 +386,9 @@ public class RPGTalk : MonoBehaviour
     //set / reset the text variables
     void ScrubVariables()
     {
-        
+        baseTextAudio = textAudio;
     }
+
     //Change txtToParse to be the correct for other language
     TextAsset CheckCurrentLanguage()
     {
@@ -764,6 +766,9 @@ public class RPGTalk : MonoBehaviour
 
         //check if we are expressing something
         expressing = IsExpressing(rpgtalkElements[0]);
+
+        //check for character-specific letter audio
+        CheckVoice(rpgtalkElements[cutscenePosition - 1]);
 
         //if we have an animator.. play it
         PlayAnimator(rpgtalkElements[0]);
@@ -1523,6 +1528,21 @@ public class RPGTalk : MonoBehaviour
         else
         {
             return null;
+        }
+    }
+
+    public void CheckVoice(RpgtalkElement element)
+    {
+        textAudio = baseTextAudio;
+        foreach (RPGTalkCharacterSettings character in characters)
+        {
+            if (character.character.dialoger == element.originalSpeakerName)
+            {
+                if (character.character.voice != null)
+                {
+                    textAudio = character.character.voice;
+                }
+            }
         }
     }
 
@@ -2699,6 +2719,9 @@ public class RPGTalk : MonoBehaviour
 
             //check if we are expressing something
             expressing = IsExpressing(rpgtalkElements[cutscenePosition - 1]);
+
+            //check for character-specific letter audio
+            CheckVoice(rpgtalkElements[cutscenePosition - 1]);
 
             //if we have an animator.. play it
             PlayAnimator(rpgtalkElements[cutscenePosition - 1]);
