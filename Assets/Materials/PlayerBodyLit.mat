@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerBody
+  m_Name: PlayerBodyLit
   m_Shader: {fileID: -6465566751694194690, guid: fd3cdff1f83515841986f8a2c7fe62e8,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
