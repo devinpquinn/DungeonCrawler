@@ -21,8 +21,8 @@ public class PlayerController : MonoBehaviour
     private Animator light_anim;
     private AudioSource lightBallAudioSource;
 
-    public float minLightBallVolume = 0.2f;
-    public float maxLightBallVolume = 0.8f;
+    private float minLightBallVolume = 0.2f;
+    private float maxLightBallVolume = 0.8f;
 
     public GameObject lightRemnant;
 
@@ -403,6 +403,8 @@ public class PlayerController : MonoBehaviour
 
     public void Die()
     {
+        dialoguePanelRect.gameObject.SetActive(false);
+
         myState = playerState.Death;
         camFollow.player = bodyCameraTarget;
 
