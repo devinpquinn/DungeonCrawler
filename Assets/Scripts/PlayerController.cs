@@ -6,7 +6,7 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
-    public enum playerState {Body, Light, Swapping, Interacting, Inventory};
+    public enum playerState {Body, Light, Swapping, Interacting, Inventory, Death};
 
     public playerState myState;
 
@@ -130,6 +130,8 @@ public class PlayerController : MonoBehaviour
 
         itemThumbnailParent = itemThumbnail.transform.parent.gameObject;
     }
+
+    #region Updates
 
     void Update()
     {
@@ -293,6 +295,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    #endregion
+
+    #region UI
+
     public void MoveDialoguePanelToTop()
     {
         dialoguePanelRect.pivot = topPosition.pivot;
@@ -324,6 +330,8 @@ public class PlayerController : MonoBehaviour
         inventoryPanelRect.anchorMin = rightPosition.anchorMin;
         inventoryPanelRect.anchoredPosition = rightPosition.anchoredPosition;
     }
+
+    #endregion
 
     #region Transition
 
@@ -391,6 +399,17 @@ public class PlayerController : MonoBehaviour
 
         //enable cursor
         Cursor.visible = true;
+    }
+
+    public void Die()
+    {
+        myState = playerState.Death;
+        camFollow.player = bodyCameraTarget;
+
+        head_anim.Play("headDie");
+
+        bodySprite.flipX = false;
+        body_anim.Play("bodyDie");
     }
 
     #endregion

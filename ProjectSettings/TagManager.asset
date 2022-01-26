@@ -8,6 +8,7 @@ TagManager:
   - Detector
   - DialogueManager
   - Step
+  - Death
   layers:
   - Default
   - TransparentFX

@@ -36,6 +36,14 @@ public class BodyManager : MonoBehaviour
         pc.ActivateBody();
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag.Equals("Death"))
+        {
+            pc.Die();
+        }
+    }
+
     public void PlayFootstep()
     {
         //raycast to determine material currently being stepped on
