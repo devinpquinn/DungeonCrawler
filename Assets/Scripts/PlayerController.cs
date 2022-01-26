@@ -403,7 +403,21 @@ public class PlayerController : MonoBehaviour
 
     public void Die()
     {
+        //interrupt ongoing interactions
         dialoguePanelRect.gameObject.SetActive(false);
+
+        //deactivate light if necessary
+        if(myState == playerState.Light)
+        {
+            //snap!
+            Instantiate(lightRemnant, lightBall.position + (Vector3)lightBall.GetComponent<CircleCollider2D>().offset, lightBall.rotation);
+
+            //return light to parent
+            lightBall.parent = lightHolder;
+            lightBall.localPosition = new Vector3(0, 0, 0);
+            lightBall.localScale = new Vector3(0, 0, 0);
+            lightBall.gameObject.SetActive(false);
+        }
 
         myState = playerState.Death;
         camFollow.player = bodyCameraTarget;
