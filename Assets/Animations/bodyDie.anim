@@ -85,8 +85,10 @@ AnimationClip:
     classID: 212
     script: {fileID: 0}
   - curve:
-    - time: 0
+    - time: 0.16666667
       value: {fileID: 2100000, guid: a006ff2b3e186e34e8513b729faf4c3e, type: 2}
+    - time: 0.25
+      value: {fileID: 2100000, guid: 81cf6985df0219449a55f3cf7eca320c, type: 2}
     attribute: m_Materials.Array.data[0]
     path: 
     classID: 212
@@ -129,6 +131,7 @@ AnimationClip:
     - {fileID: 6000324531871324456, guid: 769aae49000ab9841ac4ec31612805d5, type: 3}
     - {fileID: 6000324531871324456, guid: 769aae49000ab9841ac4ec31612805d5, type: 3}
     - {fileID: 2100000, guid: a006ff2b3e186e34e8513b729faf4c3e, type: 2}
+    - {fileID: 2100000, guid: 81cf6985df0219449a55f3cf7eca320c, type: 2}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
