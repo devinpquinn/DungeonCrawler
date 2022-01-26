@@ -11,6 +11,8 @@ public class FootstepSounds : MonoBehaviour
     public List<AudioClip> grassSounds;
     public List<AudioClip> woodSounds;
 
+    public AudioClip cloakFall;
+
     private int lastIndex;
 
     public void PlayFootstepSound(string stepMaterial)
@@ -74,5 +76,10 @@ public class FootstepSounds : MonoBehaviour
         }
         lastIndex = key;
         return woodSounds[key];
+    }
+
+    public void PlayCloakFall()
+    {
+        footstepSource.PlayOneShot(cloakFall);
     }
 }

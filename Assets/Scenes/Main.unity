@@ -2107,6 +2107,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 363fcec810ee8f646acab137a75566fe, type: 3}
   - {fileID: 8300000, guid: aeecbd21349d1b7478f470d6f6f5b468, type: 3}
   - {fileID: 8300000, guid: b834586811dafb14fb487d6d140213d6, type: 3}
+  cloakFall: {fileID: 8300000, guid: aa345b2bfcc9d4944bcdf736c0dcbeb8, type: 3}
 --- !u!114 &82907731
 MonoBehaviour:
   m_ObjectHideFlags: 0
