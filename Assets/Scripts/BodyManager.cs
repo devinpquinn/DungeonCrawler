@@ -10,6 +10,8 @@ public class BodyManager : MonoBehaviour
     //footstep sounds
     private FootstepSounds footstepSounds;
 
+    public AudioClip deathSound;
+
     private void Awake()
     {
         pc = gameObject.transform.parent.GetComponent<PlayerController>();
@@ -53,5 +55,16 @@ public class BodyManager : MonoBehaviour
         {
             footstepSounds.PlayFootstepSound(hit.collider.name);
         }
+    }
+
+    public void PlayBodyFall()
+    {
+        footstepSounds.PlayCloakFall();
+    }
+
+    public void PlayDeathSound()
+    {
+        AudioSource newSource = gameObject.AddComponent<AudioSource>();
+        newSource.PlayOneShot(deathSound);
     }
 }
