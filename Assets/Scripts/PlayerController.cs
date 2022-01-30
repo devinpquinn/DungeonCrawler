@@ -422,9 +422,9 @@ public class PlayerController : MonoBehaviour
         myState = playerState.Death;
         camFollow.player = bodyCameraTarget;
 
+        head_anim.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
         head_anim.Play("headDie");
 
-        bodySprite.flipX = false;
         body_anim.Play("bodyDie");
     }
 
