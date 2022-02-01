@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer bodySprite;
     private Rigidbody2D rb_body;
     private Animator body_anim;
+    private AudioSource bodyAudioSource;
 
     private Transform lightHolder;
     private Transform lightBall;
@@ -71,6 +72,9 @@ public class PlayerController : MonoBehaviour
 
     public List<Item> inventory;
 
+    public AudioClip inventoryOpenSound;
+    public AudioClip inventoryCloseSound;
+
     public GameObject itemDisplayPrefab;
     public Transform inventoryItemParent;
 
@@ -101,6 +105,7 @@ public class PlayerController : MonoBehaviour
         bodySprite = body.GetComponent<SpriteRenderer>();
         rb_body = body.GetComponent<Rigidbody2D>();
         body_anim = body.GetComponent<Animator>();
+        bodyAudioSource = body.GetComponent<AudioSource>();
 
         lightHolder = body.Find("LightHolder");
         lightBall = lightHolder.Find("LightBall");
@@ -405,6 +410,7 @@ public class PlayerController : MonoBehaviour
     {
         //interrupt ongoing interactions
         dialoguePanelRect.gameObject.SetActive(false);
+        inventoryPanelRect.gameObject.SetActive(false);
 
         //deactivate light if necessary
         if(myState == playerState.Light)
@@ -520,6 +526,9 @@ public class PlayerController : MonoBehaviour
         myState = playerState.Inventory;
         inventoryPanelRect.gameObject.SetActive(true);
 
+        //play sound
+        bodyAudioSource.PlayOneShot(inventoryOpenSound);
+
         //set position of inventory panel
         if (Camera.main.WorldToScreenPoint(body.position).x > Camera.main.scaledPixelWidth / 2)
         {
@@ -571,6 +580,9 @@ public class PlayerController : MonoBehaviour
         myState = playerState.Body;
         inventoryPanelRect.gameObject.SetActive(false);
         itemDescriptionPanel.SetActive(false);
+
+        //play sound
+        bodyAudioSource.PlayOneShot(inventoryCloseSound);
     }
 
     public static void EquipItem(string itemName)
