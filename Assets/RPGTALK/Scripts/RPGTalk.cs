@@ -2419,14 +2419,22 @@ public class RPGTalk : MonoBehaviour
         {
             if (textToDisplay.Length > textUI.GetCurrentText().Length)
             {
-                float basePitch = 1f;
+                string alphanumberic = "abcdefghijklmnopqrztuvwxyz1234567890";
+                if(alphanumberic.Contains(textToDisplay.Substring(textToDisplay.Length - 1).ToLower()))
+                {
+                    float basePitch = 1f;
 
-                float margin = 0.075f;
-                float amount = Random.Range(basePitch - margin, basePitch + margin);
+                    float margin = 0.075f;
+                    float amount = Random.Range(basePitch - margin, basePitch + margin);
 
-                letterSource.pitch = amount;
-                letterSource.clip = textAudio;
-                letterSource.Play();
+                    letterSource.pitch = amount;
+                    letterSource.clip = textAudio;
+                    letterSource.Play();
+                }
+                else
+                {
+                    letterSource.Stop();
+                }
             }
         }
 
