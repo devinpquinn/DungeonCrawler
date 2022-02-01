@@ -328,6 +328,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myItemName: 
+  equipSound: {fileID: 8300000, guid: 2815b525643665140bb8c526f7b6e1e0, type: 3}
+  unequipSound: {fileID: 8300000, guid: 78f101a7ee7c8ad429be25474ef8bfc8, type: 3}
 --- !u!114 &1248647413222163378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,18 +405,6 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 5825997094288327055}
-          m_MethodName: PlayOneShot
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 8300000, guid: 69d1d3e240f92b645864c5ce0f7ed7bd,
-              type: 3}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
