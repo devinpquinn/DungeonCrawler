@@ -596,7 +596,7 @@ public class PlayerController : MonoBehaviour
             TextMeshProUGUI thisTMP = _player.inventoryItemParent.GetChild(i).Find("Name").GetComponent<TextMeshProUGUI>();
             if (thisTMP.text == itemName)
             {
-                _player.SetTMPToEquipped(thisTMP);
+                _player.DisplayItemEquipped(_player.inventoryItemParent.GetChild(i).gameObject);
             }
         }
     }
@@ -608,8 +608,7 @@ public class PlayerController : MonoBehaviour
         for (int i = 0; i < _player.inventoryItemParent.childCount; i++)
         {
             //set display to default
-            TextMeshProUGUI thisTMP = _player.inventoryItemParent.GetChild(i).Find("Name").GetComponent<TextMeshProUGUI>();
-            _player.SetTMPToUnequipped(thisTMP);
+            _player.DisplayItemUnequipped(_player.inventoryItemParent.GetChild(i).gameObject);
         }
     }
 
@@ -623,6 +622,18 @@ public class PlayerController : MonoBehaviour
         {
             return _player.equippedItem;
         }
+    }
+
+    public void DisplayItemEquipped(GameObject myItem)
+    {
+        myItem.transform.Find("Name").GetComponent<TextMeshProUGUI>().color = Color.white;
+        myItem.transform.Find("Image").GetComponent<Image>().color = Color.white;
+    }
+
+    public void DisplayItemUnequipped(GameObject myItem)
+    {
+        myItem.transform.Find("Name").GetComponent<TextMeshProUGUI>().color = Color.gray;
+        myItem.transform.Find("Image").GetComponent<Image>().color = Color.blue;
     }
 
     public void SetTMPToEquipped(TextMeshProUGUI thisTMP)
