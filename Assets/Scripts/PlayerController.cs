@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
     private Transform head_pointer;
 
     private CinemachineVirtualCamera ccam;
+    private Transform camTarget;
     private Transform bodyCameraTarget;
     private Transform lightCameraTarget;
 
@@ -125,8 +126,10 @@ public class PlayerController : MonoBehaviour
 
         bodyCameraTarget = body.Find("Body Camera Target");
         lightCameraTarget = lightBall.Find("LightBall Camera Target");
+        camTarget = bodyCameraTarget.Find("Camera Target");
 
-        ccam.Follow = bodyCameraTarget;
+        //ccam.Follow = bodyCameraTarget;
+        FocusCam(bodyCameraTarget);
 
         SetCursor("default");
 
@@ -341,6 +344,12 @@ public class PlayerController : MonoBehaviour
 
     #region Transition
 
+    public static void FocusCam(Transform target)
+    {
+        _player.camTarget.parent = target;
+        _player.camTarget.transform.localPosition = new Vector2(0, 0);
+    }
+
     public void LightOut()
     {
         //play head animation
@@ -358,7 +367,8 @@ public class PlayerController : MonoBehaviour
         myState = playerState.Light;
 
         //have camera follow light
-        ccam.Follow = lightCameraTarget;
+        //ccam.Follow = lightCameraTarget;
+        FocusCam(lightCameraTarget);
     }
 
     public void LightIn()
@@ -385,7 +395,8 @@ public class PlayerController : MonoBehaviour
         head_anim.Play("headLightIn");
 
         //set camera to follow body
-        ccam.Follow = bodyCameraTarget;
+        //ccam.Follow = bodyCameraTarget;
+        FocusCam(bodyCameraTarget);
     }
 
     public void ActivateHead()
@@ -427,7 +438,8 @@ public class PlayerController : MonoBehaviour
         }
 
         myState = playerState.Death;
-        ccam.Follow = bodyCameraTarget;
+        //ccam.Follow = bodyCameraTarget;
+        FocusCam(bodyCameraTarget);
 
         head_anim.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
         head_anim.Play("headDie");
