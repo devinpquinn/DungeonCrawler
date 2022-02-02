@@ -7,6 +7,8 @@ using Cinemachine;
 
 public class PlayerController : MonoBehaviour
 {
+    #region Variables
+
     public enum playerState {Body, Light, Swapping, Interacting, Inventory, Death};
 
     public playerState myState;
@@ -31,7 +33,6 @@ public class PlayerController : MonoBehaviour
     private Animator head_anim;
     private Transform head_pointer;
 
-    private CinemachineVirtualCamera ccam;
     private Transform camTarget;
     private Transform bodyCameraTarget;
     private Transform lightCameraTarget;
@@ -89,6 +90,8 @@ public class PlayerController : MonoBehaviour
     public Image itemThumbnail;
     private GameObject itemThumbnailParent;
 
+    #endregion
+
     void Awake()
     {
         //singleton
@@ -122,13 +125,10 @@ public class PlayerController : MonoBehaviour
         head_anim = body.transform.Find("Head").GetComponent<Animator>();
         head_pointer = head_anim.gameObject.transform.Find("Pointer");
 
-        ccam = transform.Find("Player Camera").GetComponentInChildren<CinemachineVirtualCamera>();
-
         bodyCameraTarget = body.Find("Body Camera Target");
         lightCameraTarget = lightBall.Find("LightBall Camera Target");
         camTarget = bodyCameraTarget.Find("Camera Target");
 
-        //ccam.Follow = bodyCameraTarget;
         FocusCam(bodyCameraTarget);
 
         SetCursor("default");
@@ -367,7 +367,6 @@ public class PlayerController : MonoBehaviour
         myState = playerState.Light;
 
         //have camera follow light
-        //ccam.Follow = lightCameraTarget;
         FocusCam(lightCameraTarget);
     }
 
@@ -395,7 +394,6 @@ public class PlayerController : MonoBehaviour
         head_anim.Play("headLightIn");
 
         //set camera to follow body
-        //ccam.Follow = bodyCameraTarget;
         FocusCam(bodyCameraTarget);
     }
 
@@ -438,7 +436,6 @@ public class PlayerController : MonoBehaviour
         }
 
         myState = playerState.Death;
-        //ccam.Follow = bodyCameraTarget;
         FocusCam(bodyCameraTarget);
 
         head_anim.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
@@ -488,8 +485,11 @@ public class PlayerController : MonoBehaviour
 
         currentInteractable.Interact();
 
+        //focus camera on object
+        FocusCam(currentInteractable.transform);
+
         //set dialogue panel position
-        if (Camera.main.WorldToScreenPoint(body.position).y > Camera.main.scaledPixelHeight / 2)
+        if (Camera.main.WorldToScreenPoint(currentInteractable.transform.position).y > Camera.main.scaledPixelHeight / 2)
         {
             //move dialogue panel to bottom
             MoveDialoguePanelToBottom();
@@ -527,6 +527,7 @@ public class PlayerController : MonoBehaviour
     public static void EndInteraction()
     {
         _player.myState = playerState.Body;
+        FocusCam(_player.bodyCameraTarget);
     }
 
     #endregion
