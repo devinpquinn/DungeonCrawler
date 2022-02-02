@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Cinemachine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class PlayerController : MonoBehaviour
     private Animator head_anim;
     private Transform head_pointer;
 
-    //private CameraFollow camFollow;
+    private CinemachineVirtualCamera ccam;
     private Transform bodyCameraTarget;
     private Transform lightCameraTarget;
 
@@ -120,12 +121,12 @@ public class PlayerController : MonoBehaviour
         head_anim = body.transform.Find("Head").GetComponent<Animator>();
         head_pointer = head_anim.gameObject.transform.Find("Pointer");
 
-        //camFollow = transform.Find("Player Camera").GetComponent<CameraFollow>();
+        ccam = transform.Find("Player Camera").GetComponentInChildren<CinemachineVirtualCamera>();
 
         bodyCameraTarget = body.Find("Body Camera Target");
         lightCameraTarget = lightBall.Find("LightBall Camera Target");
 
-        //camFollow.player = bodyCameraTarget;
+        ccam.Follow = bodyCameraTarget;
 
         SetCursor("default");
 
@@ -348,9 +349,6 @@ public class PlayerController : MonoBehaviour
 
         //activate light ball
         lightBall.gameObject.SetActive(true);
-
-        //have camera follow light
-        //camFollow.player = lightCameraTarget;
     }
 
     public void FreeLight()
@@ -358,6 +356,9 @@ public class PlayerController : MonoBehaviour
         //allow light to roam freely
         lightBall.parent = null;
         myState = playerState.Light;
+
+        //have camera follow light
+        ccam.Follow = lightCameraTarget;
     }
 
     public void LightIn()
@@ -384,7 +385,7 @@ public class PlayerController : MonoBehaviour
         head_anim.Play("headLightIn");
 
         //set camera to follow body
-        //camFollow.player = bodyCameraTarget;
+        ccam.Follow = bodyCameraTarget;
     }
 
     public void ActivateHead()
@@ -426,7 +427,7 @@ public class PlayerController : MonoBehaviour
         }
 
         myState = playerState.Death;
-        //camFollow.player = bodyCameraTarget;
+        ccam.Follow = bodyCameraTarget;
 
         head_anim.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
         head_anim.Play("headDie");
