@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     private Animator head_anim;
     private Transform head_pointer;
 
-    private CameraFollow camFollow;
+    //private CameraFollow camFollow;
     private Transform bodyCameraTarget;
     private Transform lightCameraTarget;
 
@@ -120,12 +120,12 @@ public class PlayerController : MonoBehaviour
         head_anim = body.transform.Find("Head").GetComponent<Animator>();
         head_pointer = head_anim.gameObject.transform.Find("Pointer");
 
-        camFollow = transform.Find("Player Camera").GetComponent<CameraFollow>();
+        //camFollow = transform.Find("Player Camera").GetComponent<CameraFollow>();
 
         bodyCameraTarget = body.Find("Body Camera Target");
         lightCameraTarget = lightBall.Find("LightBall Camera Target");
 
-        camFollow.player = bodyCameraTarget;
+        //camFollow.player = bodyCameraTarget;
 
         SetCursor("default");
 
@@ -350,7 +350,7 @@ public class PlayerController : MonoBehaviour
         lightBall.gameObject.SetActive(true);
 
         //have camera follow light
-        camFollow.player = lightCameraTarget;
+        //camFollow.player = lightCameraTarget;
     }
 
     public void FreeLight()
@@ -384,7 +384,7 @@ public class PlayerController : MonoBehaviour
         head_anim.Play("headLightIn");
 
         //set camera to follow body
-        camFollow.player = bodyCameraTarget;
+        //camFollow.player = bodyCameraTarget;
     }
 
     public void ActivateHead()
@@ -426,7 +426,7 @@ public class PlayerController : MonoBehaviour
         }
 
         myState = playerState.Death;
-        camFollow.player = bodyCameraTarget;
+        //camFollow.player = bodyCameraTarget;
 
         head_anim.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
         head_anim.Play("headDie");
