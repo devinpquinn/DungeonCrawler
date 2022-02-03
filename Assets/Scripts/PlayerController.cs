@@ -647,7 +647,7 @@ public class PlayerController : MonoBehaviour
     public void DisplayItemUnequipped(GameObject myItem)
     {
         myItem.transform.Find("Name").GetComponent<TextMeshProUGUI>().color = Color.gray;
-        myItem.transform.Find("Image").GetComponent<Image>().color = Color.blue;
+        myItem.transform.Find("Image").GetComponent<Image>().color = Color.gray;
     }
 
     public void SetTMPToEquipped(TextMeshProUGUI thisTMP)
