@@ -15,4 +15,9 @@ public class HeadManager : MonoBehaviour
     {
         pc.ActivateHead();
     }
+
+    public void SetDead()
+    {
+        pc.myState = PlayerController.playerState.Dead;
+    }
 }

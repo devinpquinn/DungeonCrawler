@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Cinemachine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     #region Variables
 
-    public enum playerState {Body, Light, Swapping, Interacting, Inventory, Death};
+    public enum playerState {Body, Light, Swapping, Interacting, Inventory, Dying, Dead};
 
     public playerState myState;
 
@@ -36,6 +37,8 @@ public class PlayerController : MonoBehaviour
     private Transform camTarget;
     private Transform bodyCameraTarget;
     private Transform lightCameraTarget;
+
+    public bool fadeInAtStart;
 
     [Header("Variables")]
 
@@ -138,6 +141,12 @@ public class PlayerController : MonoBehaviour
         inventoryPanelRect.gameObject.SetActive(false);
 
         itemThumbnailParent = itemThumbnail.transform.parent.gameObject;
+
+        //fade in from black
+        if (fadeInAtStart)
+        {
+            FadeManager.FadeIn(0.4f);
+        }
     }
 
     #region Updates
@@ -270,6 +279,13 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Tab))
             {
                 HideInventory();
+            }
+        }
+        else if (myState == playerState.Dead)
+        {
+            if (Input.anyKeyDown)
+            {
+                DeathTransition();
             }
         }
     }
@@ -435,13 +451,25 @@ public class PlayerController : MonoBehaviour
             lightBall.gameObject.SetActive(false);
         }
 
-        myState = playerState.Death;
+        myState = playerState.Dying;
         FocusCam(bodyCameraTarget);
 
         head_anim.GetComponent<SpriteRenderer>().flipX = bodySprite.flipX;
         head_anim.Play("headDie");
 
         body_anim.Play("bodyDie");
+    }
+
+    public void DeathTransition()
+    {
+        StartCoroutine(DoDeathTransition());
+    }
+
+    IEnumerator DoDeathTransition()
+    {
+        FadeManager.FadeOut(1f);
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     #endregion
