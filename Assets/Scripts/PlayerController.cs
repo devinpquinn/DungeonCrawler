@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 {
     #region Variables
 
-    public enum playerState {Body, Light, Swapping, Interacting, Inventory, Dying, Dead};
+    public enum playerState {Body, Light, Swapping, Interacting, Inventory, Dying, Dead, Locked};
 
     public playerState myState;
 
@@ -462,6 +462,7 @@ public class PlayerController : MonoBehaviour
 
     public void DeathTransition()
     {
+        myState = playerState.Locked;
         StartCoroutine(DoDeathTransition());
     }
 
