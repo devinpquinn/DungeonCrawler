@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Testing Ground.unity
+    path: Assets/Scenes/Chaos Zone.unity
     guid: 2f14d192f98ed264194edd58057c4fdd
   m_configObjects: {}
