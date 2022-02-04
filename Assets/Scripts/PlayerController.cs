@@ -109,6 +109,7 @@ public class PlayerController : MonoBehaviour
 
         //variable fetching
         myState = playerState.Body;
+        Cursor.visible = true;
         body = transform.Find("Body");
         bodySprite = body.GetComponent<SpriteRenderer>();
         rb_body = body.GetComponent<Rigidbody2D>();
@@ -438,8 +439,11 @@ public class PlayerController : MonoBehaviour
         dialoguePanelRect.gameObject.SetActive(false);
         inventoryPanelRect.gameObject.SetActive(false);
 
+        //disable cursor
+        Cursor.visible = false;
+
         //deactivate light if necessary
-        if(myState == playerState.Light)
+        if (myState == playerState.Light)
         {
             //snap!
             Instantiate(lightRemnant, lightBall.position + (Vector3)lightBall.GetComponent<CircleCollider2D>().offset, lightBall.rotation);
