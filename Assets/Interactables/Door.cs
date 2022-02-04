@@ -8,12 +8,6 @@ public class Door : Interactable
     public string DestinationScene;
     public Vector2 DestinationPosition;
     public bool DestinationFacingRight;
-    private AudioSource DoorAudioSource;
-
-    private void Awake()
-    {
-        DoorAudioSource = GetComponent<AudioSource>();
-    }
 
     public override void Interact()
     {
@@ -29,9 +23,9 @@ public class Door : Interactable
             //use door
 
             //play door sound
-            DoorAudioSource.Play();
+            GetComponent<AudioSource>().Play();
 
-
+            //do door stuff
         }
     }
 
