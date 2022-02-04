@@ -1,0 +1,6 @@
+[title=approach-start]
+A plain wooden door.
+Player:[question=q][expression=?]
+[choice]{use}Open the door.
+[choice]Leave the door be.
+[title=approach-end]

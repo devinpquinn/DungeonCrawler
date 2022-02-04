@@ -717,13 +717,7 @@ public class RPGTalk : MonoBehaviour
                 //check for special text cases
                 textUI.TMPText.fontStyle = FontStyles.Normal;
 
-                string thisName = rpgtalkElements[0].speakerName;
-                switch(thisName)
-                {
-                    case "Player":
-                        textUI.TMPText.fontStyle = FontStyles.UpperCase;
-                        break;
-                }
+                //string thisName = rpgtalkElements[0].speakerName;
 
             }
             if (shouldUsePhotos)

@@ -1,6 +1,6 @@
 [title=1st-start]
 A lonely wooden barrel sits in the center of the room. It seems conspicuously out of place here, as if it were some sort of test object dropped carelessly into an unfinished environment.
-Player:Fear not, forlorn barrel. I am here now.
+Player:FEAR NOT, FORLORN BARREL. I AM HERE NOW.
 Player:[question=q][expression=?]
 [choice]{item}Give the barrel a reassuring pat.<pat>
 [choice]Leave the barrel be.
@@ -8,7 +8,7 @@ Player:[question=q][expression=?]
 [title=1st-end]
 
 [title=pat-start]
-Player:There, there, my cylindrical comrade.
+Player:THERE, THERE, MY CYLINDRICAL COMRADE.
 {lid}The barrel doffs its lid to you.
 [title=pat-end]
 
