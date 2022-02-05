@@ -763,13 +763,19 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator LoadGame()
     {
+        Debug.Log("<b>Loading...</b>");
+
         //load correct scene
         string targetSceneName = PlayerPrefs.GetString("playerScene");
+        
         SceneManager.LoadScene(targetSceneName);
         while(SceneManager.GetActiveScene().name != targetSceneName)
         {
             yield return null;
         }
+        
+
+        Debug.Log("<b>Loaded!</b>");
     }
 
     #endregion

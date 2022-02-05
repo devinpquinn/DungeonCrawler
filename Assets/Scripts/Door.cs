@@ -35,7 +35,9 @@ public class Door : Interactable
         //play door sound
         GetComponent<AudioSource>().Play();
 
-        DontDestroyOnLoad(this);
+        //preserve this object
+        transform.SetParent(null);
+        DontDestroyOnLoad(gameObject);
 
         //fade out
         FadeManager.FadeOut(0.4f);
@@ -57,7 +59,6 @@ public class Door : Interactable
             if (check.GetComponent<Checkpoint>().CheckpointID.Equals(DestinationCheckpoint))
             {
                 targetCheckpoint = check.GetComponent<Checkpoint>();
-                break;
             }
         }
 

@@ -9,6 +9,8 @@ public class Checkpoint : MonoBehaviour
 
     public void SaveCheckpoint()
     {
+        Debug.Log("<b>Saving...</b>");
         PlayerPrefs.SetString("playerScene", SceneManager.GetActiveScene().name);
+        Debug.Log("<b>Saved!</b>");
     }
 }
