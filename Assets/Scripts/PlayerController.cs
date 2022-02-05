@@ -105,6 +105,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             _player = this;
+
         }
 
         //variable fetching
@@ -767,13 +768,20 @@ public class PlayerController : MonoBehaviour
 
         //load correct scene
         string targetSceneName = PlayerPrefs.GetString("playerScene");
+
+        DontDestroyOnLoad(this);
         
         SceneManager.LoadScene(targetSceneName);
         while(SceneManager.GetActiveScene().name != targetSceneName)
         {
             yield return null;
         }
-        
+
+        //set player position
+        float posX = PlayerPrefs.GetFloat("playerPositionX");
+        float posY = PlayerPrefs.GetFloat("playerPositionY");
+        Instance.gameObject.transform.position = new Vector2(posX, posY);
+
 
         Debug.Log("<b>Loaded!</b>");
     }

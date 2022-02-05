@@ -11,6 +11,8 @@ public class Checkpoint : MonoBehaviour
     {
         Debug.Log("<b>Saving...</b>");
         PlayerPrefs.SetString("playerScene", SceneManager.GetActiveScene().name);
+        PlayerPrefs.SetFloat("playerPositionX", transform.position.x);
+        PlayerPrefs.SetFloat("playerPositionY", transform.position.y);
         Debug.Log("<b>Saved!</b>");
     }
 }
