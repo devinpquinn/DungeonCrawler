@@ -20,12 +20,52 @@ public class Door : Interactable
         if (key == "use")
         {
             //use door
-
-            //play door sound
-            GetComponent<AudioSource>().Play();
-
-            //do door stuff
+            StartCoroutine(DoDoor());
         }
+    }
+
+    IEnumerator DoDoor()
+    {
+        //set player busy
+        PlayerController.Instance.myState = PlayerController.playerState.Locked;
+
+        //play door sound
+        GetComponent<AudioSource>().Play();
+
+        DontDestroyOnLoad(this);
+
+        //fade out
+        FadeManager.FadeOut(0.4f);
+        yield return new WaitForSeconds(0.4f);
+
+        //load destination scene
+        SceneManager.LoadScene(DestinationScene);
+
+        while (SceneManager.GetActiveScene().name != DestinationScene)
+        {
+            yield return null;
+        }
+
+        //when new scene is loaded, look for correct destination
+        GameObject[] checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
+        Checkpoint targetCheckpoint = null;
+        foreach(GameObject check in checkpoints)
+        {
+            if (check.GetComponent<Checkpoint>().CheckpointID.Equals(DestinationCheckpoint))
+            {
+                targetCheckpoint = check.GetComponent<Checkpoint>();
+                break;
+            }
+        }
+
+        //found correct checkpoint: save
+        targetCheckpoint.SaveCheckpoint();
+
+        //...and load that checkpoint
+        PlayerController.Load();
+
+        //shouldn't need this door anymore
+        Destroy(gameObject);
     }
 
     public override bool ConditionalChoice(string key)

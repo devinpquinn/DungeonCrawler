@@ -472,9 +472,12 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator DoDeathTransition()
     {
+        //fade out
         FadeManager.FadeOut(1f);
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        //load last checkpoint
+        Load();
     }
 
     #endregion
@@ -747,6 +750,26 @@ public class PlayerController : MonoBehaviour
             }
         }
         return null;
+    }
+
+    #endregion
+
+    #region Saving & Loading
+
+    public static void Load()
+    {
+        _player.StartCoroutine(_player.LoadGame());
+    }
+
+    IEnumerator LoadGame()
+    {
+        //load correct scene
+        string targetSceneName = PlayerPrefs.GetString("playerScene");
+        SceneManager.LoadScene(targetSceneName);
+        while(SceneManager.GetActiveScene().name != targetSceneName)
+        {
+            yield return null;
+        }
     }
 
     #endregion
