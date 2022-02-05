@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class Door : Interactable
 {
     public string DestinationScene;
-    public Vector2 DestinationPosition;
-    public bool DestinationFacingRight;
+    public string DestinationCheckpoint;
 
     public override void Interact()
     {
