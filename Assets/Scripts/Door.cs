@@ -19,6 +19,9 @@ public class Door : Interactable
     {
         if (key == "use")
         {
+            //remove player enabling callback
+            myTalk.callback.RemoveListener(PlayerController.EndInteraction);
+
             //use door
             StartCoroutine(DoDoor());
         }
