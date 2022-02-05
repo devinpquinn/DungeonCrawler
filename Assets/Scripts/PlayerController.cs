@@ -757,31 +757,21 @@ public class PlayerController : MonoBehaviour
 
     #region Saving & Loading
 
-    public static void Load()
+    public void Save()
     {
-        _player.StartCoroutine(_player.LoadGame());
+
+    }
+
+    public void Load()
+    {
+        StartCoroutine(LoadGame());
     }
 
     IEnumerator LoadGame()
     {
         Debug.Log("<b>Loading...</b>");
 
-        //load correct scene
-        string targetSceneName = PlayerPrefs.GetString("playerScene");
-
-        DontDestroyOnLoad(this);
-        
-        SceneManager.LoadScene(targetSceneName);
-        while(SceneManager.GetActiveScene().name != targetSceneName)
-        {
-            yield return null;
-        }
-
-        //set player position
-        float posX = PlayerPrefs.GetFloat("playerPositionX");
-        float posY = PlayerPrefs.GetFloat("playerPositionY");
-        Instance.gameObject.transform.position = new Vector2(posX, posY);
-
+        yield return null;
 
         Debug.Log("<b>Loaded!</b>");
     }

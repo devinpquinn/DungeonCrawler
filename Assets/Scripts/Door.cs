@@ -39,6 +39,9 @@ public class Door : Interactable
         transform.SetParent(null);
         DontDestroyOnLoad(gameObject);
 
+        //preserve player inventory
+        List<Item> savedInventory = PlayerController.Instance.inventory;
+
         //fade out
         FadeManager.FadeOut(0.4f);
         yield return new WaitForSeconds(0.4f);
@@ -51,22 +54,20 @@ public class Door : Interactable
             yield return null;
         }
 
-        //when new scene is loaded, look for correct destination
-        GameObject[] checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
-        Checkpoint targetCheckpoint = null;
-        foreach(GameObject check in checkpoints)
+        //set player to correct position
+        foreach (GameObject check in GameObject.FindGameObjectsWithTag("Checkpoint"))
         {
-            if (check.GetComponent<Checkpoint>().CheckpointID.Equals(DestinationCheckpoint))
+            if (check.name.Equals("Checkpoint - " + DestinationCheckpoint))
             {
-                targetCheckpoint = check.GetComponent<Checkpoint>();
+                PlayerController.Instance.transform.position = check.transform.position;
+                break;
             }
         }
 
-        //found correct checkpoint: save
-        targetCheckpoint.SaveCheckpoint();
+        //set player inventory
+        PlayerController.Instance.inventory = savedInventory;
 
-        //...and load that checkpoint
-        PlayerController.Load();
+        //save game
 
         //shouldn't need this door anymore
         Destroy(gameObject);
