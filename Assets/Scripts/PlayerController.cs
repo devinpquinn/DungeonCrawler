@@ -764,16 +764,9 @@ public class PlayerController : MonoBehaviour
 
     public void Load()
     {
-        StartCoroutine(LoadGame());
-    }
-
-    IEnumerator LoadGame()
-    {
-        Debug.Log("<b>Loading...</b>");
-
-        yield return null;
-
-        Debug.Log("<b>Loaded!</b>");
+        GameObject loadObject = new GameObject();
+        LoadHandler loadScript = loadObject.AddComponent<LoadHandler>();
+        loadScript.Load();
     }
 
     #endregion

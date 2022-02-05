@@ -68,6 +68,7 @@ public class Door : Interactable
         PlayerController.Instance.inventory = savedInventory;
 
         //save game
+        PlayerController.Instance.Save();
 
         //shouldn't need this door anymore
         Destroy(gameObject);
