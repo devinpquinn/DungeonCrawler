@@ -759,7 +759,7 @@ public class PlayerController : MonoBehaviour
 
     public void Save()
     {
-
+        SaveSystem.SavePlayer(this);
     }
 
     public void Load()
