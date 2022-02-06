@@ -72,7 +72,12 @@ public class Door : Interactable
         //save game
         PlayerController.Instance.Save();
 
-        //shouldn't need this door anymore
+        //finish playing sound and destroy
+        while (GetComponent<AudioSource>().isPlaying)
+        {
+            yield return null;
+        }
+
         Destroy(gameObject);
     }
 
