@@ -41,7 +41,7 @@ public class Door : Interactable
 
         //preserve player info
         string savedItem = PlayerController.GetEquippedItem();
-        Inventory savedInventory = PlayerController.Instance.playerInventory;
+        Inventory savedInventory = PlayerController.Instance.inventory;
 
         //fade out
         FadeManager.FadeOut(0.4f);
@@ -66,7 +66,7 @@ public class Door : Interactable
         }
 
         //set player inventory
-        PlayerController.Instance.playerInventory = savedInventory;
+        PlayerController.Instance.inventory = savedInventory;
         PlayerController.EquipItem(savedItem);
 
         //save game

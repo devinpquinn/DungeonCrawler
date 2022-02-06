@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
     public RectTransform rightPosition;
 
     //public List<Item> inventory;
-    public Inventory playerInventory;
+    public Inventory inventory;
 
     public AudioClip inventoryOpenSound;
     public AudioClip inventoryCloseSound;
@@ -548,11 +548,11 @@ public class PlayerController : MonoBehaviour
             itemThumbnailParent.SetActive(true);
 
             //find image corresponding to equipped item
-            for (int i = 0; i < playerInventory.InventoryItems.Count; i++)
+            for (int i = 0; i < inventory.InventoryItems.Count; i++)
             {
-                if(playerInventory.InventoryItems[i].itemName == equippedItem)
+                if(inventory.InventoryItems[i].itemName == equippedItem)
                 {
-                    itemThumbnail.sprite = playerInventory.InventoryItems[i].itemSprite;
+                    itemThumbnail.sprite = inventory.InventoryItems[i].itemSprite;
                 }
             }
         }
@@ -599,9 +599,9 @@ public class PlayerController : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        for(int i = 0; i < playerInventory.InventoryItems.Count; i++)
+        for(int i = 0; i < inventory.InventoryItems.Count; i++)
         {
-            ItemObject thisItem = playerInventory.InventoryItems[i];
+            ItemObject thisItem = inventory.InventoryItems[i];
 
             //instantiate item display prefab
             GameObject thisItemDisplay = Instantiate(itemDisplayPrefab, inventoryItemParent);
@@ -668,7 +668,7 @@ public class PlayerController : MonoBehaviour
     {
         if(_player.equippedItem == null)
         {
-            return "None";
+            return null;
         }
         else
         {
@@ -712,19 +712,19 @@ public class PlayerController : MonoBehaviour
     public static void AddItem(ItemObject i)
     {
         //add item to inventory
-        _player.playerInventory.InventoryItems.Add(i);
+        _player.inventory.InventoryItems.Add(i);
     }
 
     public static void RemoveItem(string i)
     {
         //remove item from inventory
-        if(_player.playerInventory.InventoryItems.Count > 0)
+        if(_player.inventory.InventoryItems.Count > 0)
         {
-            foreach(ItemObject thisItem in _player.playerInventory.InventoryItems)
+            foreach(ItemObject thisItem in _player.inventory.InventoryItems)
             {
                 if (thisItem.itemName.Equals(i))
                 {
-                    _player.playerInventory.InventoryItems.Remove(thisItem);
+                    _player.inventory.InventoryItems.Remove(thisItem);
                 }
             }
         }
@@ -732,7 +732,7 @@ public class PlayerController : MonoBehaviour
     public static bool CheckForItem(string i)
     {
         //check if player has item in inventory
-        foreach(ItemObject thisItem in _player.playerInventory.InventoryItems)
+        foreach(ItemObject thisItem in _player.inventory.InventoryItems)
         {
             if(thisItem.itemName.Equals(i))
             {
@@ -744,7 +744,7 @@ public class PlayerController : MonoBehaviour
 
     public static ItemObject GetItem(string i)
     {
-        foreach (ItemObject thisItem in _player.playerInventory.InventoryItems)
+        foreach (ItemObject thisItem in _player.inventory.InventoryItems)
         {
             if (thisItem.itemName.Equals(i))
             {
@@ -756,7 +756,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-        playerInventory.InventoryItems.Clear();
+        inventory.InventoryItems.Clear();
     }
 
     #endregion

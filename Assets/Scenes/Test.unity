@@ -9586,7 +9586,7 @@ MonoBehaviour:
   inventoryPanelRect: {fileID: 37318197}
   leftPosition: {fileID: 502110078}
   rightPosition: {fileID: 846774790}
-  playerInventory: {fileID: 11400000, guid: 4aa9308d2da2cfc4993e7190d1c41b6b, type: 2}
+  inventory: {fileID: 11400000, guid: 4aa9308d2da2cfc4993e7190d1c41b6b, type: 2}
   inventoryOpenSound: {fileID: 8300000, guid: d61b237184c9204429766b8013b7c7a8, type: 3}
   inventoryCloseSound: {fileID: 8300000, guid: 6edc0dad11ceb4a489b897d188cf4f9a, type: 3}
   itemDisplayPrefab: {fileID: 1248647413222163372, guid: ad1fa94bde22999468027ab4bafcecd6,
