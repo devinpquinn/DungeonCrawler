@@ -5,7 +5,7 @@ using UnityEngine;
 public class TestObject : Interactable
 {
     private bool patted = false;
-    public Item gift;
+    public ItemObject gift;
     public SpriteRenderer barrelRenderer;
     public Sprite doffedSprite;
 

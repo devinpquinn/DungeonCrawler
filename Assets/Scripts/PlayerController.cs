@@ -76,7 +76,8 @@ public class PlayerController : MonoBehaviour
     public RectTransform leftPosition;
     public RectTransform rightPosition;
 
-    public List<Item> inventory;
+    //public List<Item> inventory;
+    public Inventory playerInventory;
 
     public AudioClip inventoryOpenSound;
     public AudioClip inventoryCloseSound;
@@ -547,11 +548,11 @@ public class PlayerController : MonoBehaviour
             itemThumbnailParent.SetActive(true);
 
             //find image corresponding to equipped item
-            for (int i = 0; i < inventory.Count; i++)
+            for (int i = 0; i < playerInventory.InventoryItems.Count; i++)
             {
-                if(inventory[i].itemName == equippedItem)
+                if(playerInventory.InventoryItems[i].itemName == equippedItem)
                 {
-                    itemThumbnail.sprite = inventory[i].itemSprite;
+                    itemThumbnail.sprite = playerInventory.InventoryItems[i].itemSprite;
                 }
             }
         }
@@ -598,6 +599,7 @@ public class PlayerController : MonoBehaviour
             Destroy(child.gameObject);
         }
 
+        /*
         if (_player.inventory.Count > 0)
         {
             for(int i = 0; i < _player.inventory.Count; i++)
@@ -615,6 +617,26 @@ public class PlayerController : MonoBehaviour
             {
                 EquipItem(_player.equippedItem);
             }
+        }
+        */
+
+        for(int i = 0; i < playerInventory.InventoryItems.Count; i++)
+        {
+            ItemObject thisItem = playerInventory.InventoryItems[i];
+
+            //instantiate item display prefab
+            GameObject thisItemDisplay = Instantiate(itemDisplayPrefab, inventoryItemParent);
+
+            //set prefab values
+            thisItemDisplay.transform.Find("Image").GetComponent<Image>().sprite = thisItem.itemSprite;
+            thisItemDisplay.transform.Find("Name").GetComponent<TextMeshProUGUI>().SetText(thisItem.itemName);
+            thisItemDisplay.GetComponent<ItemHandler>().myItemName = thisItem.itemName;
+        }
+
+        //check for equipped item to display
+        if (_player.equippedItem != null)
+        {
+            EquipItem(_player.equippedItem);
         }
 
         //reset cursor and tooltip
@@ -708,22 +730,22 @@ public class PlayerController : MonoBehaviour
         _player.itemDescriptionPanel.SetActive(false);
     }
 
-    public static void AddItem(Item i)
+    public static void AddItem(ItemObject i)
     {
         //add item to inventory
-        _player.inventory.Add(i);
+        _player.playerInventory.InventoryItems.Add(i);
     }
 
     public static void RemoveItem(string i)
     {
         //remove item from inventory
-        if(_player.inventory.Count > 0)
+        if(_player.playerInventory.InventoryItems.Count > 0)
         {
-            foreach(Item thisItem in _player.inventory)
+            foreach(ItemObject thisItem in _player.playerInventory.InventoryItems)
             {
                 if (thisItem.itemName.Equals(i))
                 {
-                    _player.inventory.Remove(thisItem);
+                    _player.playerInventory.InventoryItems.Remove(thisItem);
                 }
             }
         }
@@ -731,7 +753,7 @@ public class PlayerController : MonoBehaviour
     public static bool CheckForItem(string i)
     {
         //check if player has item in inventory
-        foreach(Item thisItem in _player.inventory)
+        foreach(ItemObject thisItem in _player.playerInventory.InventoryItems)
         {
             if(thisItem.itemName.Equals(i))
             {
@@ -741,9 +763,9 @@ public class PlayerController : MonoBehaviour
         return false;
     }
 
-    public static Item GetItem(string i)
+    public static ItemObject GetItem(string i)
     {
-        foreach (Item thisItem in _player.inventory)
+        foreach (ItemObject thisItem in _player.playerInventory.InventoryItems)
         {
             if (thisItem.itemName.Equals(i))
             {
