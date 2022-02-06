@@ -4,7 +4,6 @@ using UnityEngine;
 
 public abstract class ItemObject : ScriptableObject
 {
-    public GameObject itemPrefab;
     public string itemName;
     public Sprite itemSprite;
     [TextArea(5, 5)]

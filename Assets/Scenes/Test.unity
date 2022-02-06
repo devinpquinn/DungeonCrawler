@@ -8636,7 +8636,7 @@ MonoBehaviour:
   myTalk: {fileID: 0}
   myText: {fileID: 4900000, guid: 6b733225d67b2ce45ade2e2fe06a1ae5, type: 3}
   interactedWith: 0
-  gift: {fileID: 11400000, guid: be1ddff5dbc2a25499c9e4a4cfc8de81, type: 2}
+  gift: {fileID: 11400000, guid: b435f21455c360d45bee9df20ee8098b, type: 2}
   barrelRenderer: {fileID: 1876982276}
   doffedSprite: {fileID: -347783942955619289, guid: 05ef6f8a2a7dce14085a4f5f903efa5b,
     type: 3}

@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36cd915ddf5da9245acc396e4178febd, type: 3}
-  m_Name: Player Inventory
+  m_Script: {fileID: 11500000, guid: 43ee290e6ae48b548a9327b7579daae4, type: 3}
+  m_Name: Barrel's Gift
   m_EditorClassIdentifier: 
-  InventoryItems:
-  - {fileID: 11400000, guid: be1ddff5dbc2a25499c9e4a4cfc8de81, type: 2}
-  - {fileID: 11400000, guid: b435f21455c360d45bee9df20ee8098b, type: 2}
+  itemName: Barrel's Gift
+  itemSprite: {fileID: -7301003144278182386, guid: 05ef6f8a2a7dce14085a4f5f903efa5b,
+    type: 3}
+  itemDescription: A key given by a friendly barrel.
