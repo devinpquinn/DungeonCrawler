@@ -17,6 +17,7 @@ public class PlayerData
         //inventory goes here
 
         //equipped item goes here
+        playerEquipped = PlayerController.GetEquippedItem();
 
         playerPosition = new float[3];
         playerPosition[0] = player.transform.position.x;

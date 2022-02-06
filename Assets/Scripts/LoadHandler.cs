@@ -36,6 +36,9 @@ public class LoadHandler : MonoBehaviour
 
         //set player inventory
 
+        //set equipped item
+        PlayerController.EquipItem(data.playerEquipped);
+
         //when done, destroy this
         Destroy(gameObject);
     }
