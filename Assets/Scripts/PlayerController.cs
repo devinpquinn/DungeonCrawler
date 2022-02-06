@@ -754,6 +754,11 @@ public class PlayerController : MonoBehaviour
         return null;
     }
 
+    private void OnApplicationQuit()
+    {
+        playerInventory.InventoryItems.Clear();
+    }
+
     #endregion
 
     #region Saving & Loading
