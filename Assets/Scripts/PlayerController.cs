@@ -599,27 +599,6 @@ public class PlayerController : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        /*
-        if (_player.inventory.Count > 0)
-        {
-            for(int i = 0; i < _player.inventory.Count; i++)
-            {
-                Item thisItem = _player.inventory[i];
-                //instantiate item display prefab
-                GameObject thisItemDisplay = Instantiate(itemDisplayPrefab, inventoryItemParent);
-                thisItemDisplay.transform.Find("Image").GetComponent<Image>().sprite = thisItem.itemSprite;
-                thisItemDisplay.transform.Find("Name").GetComponent<TextMeshProUGUI>().SetText(thisItem.itemName);
-                thisItemDisplay.GetComponent<ItemHandler>().myItemName = thisItem.itemName;
-            }
-
-            //check for equipped item to display
-            if (_player.equippedItem != null)
-            {
-                EquipItem(_player.equippedItem);
-            }
-        }
-        */
-
         for(int i = 0; i < playerInventory.InventoryItems.Count; i++)
         {
             ItemObject thisItem = playerInventory.InventoryItems[i];
