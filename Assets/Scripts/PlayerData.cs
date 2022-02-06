@@ -8,12 +8,15 @@ public class PlayerData
 {
     public string playerScene;
     public float[] playerPosition;
+    public string playerEquipped;
 
     public PlayerData(PlayerController player)
     {
         playerScene = SceneManager.GetActiveScene().name;
 
         //inventory goes here
+
+        //equipped item goes here
 
         playerPosition = new float[3];
         playerPosition[0] = player.transform.position.x;

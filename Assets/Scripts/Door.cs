@@ -39,8 +39,9 @@ public class Door : Interactable
         transform.SetParent(null);
         DontDestroyOnLoad(gameObject);
 
-        //preserve player inventory
+        //preserve player info
         List<Item> savedInventory = PlayerController.Instance.inventory;
+        string savedItem = PlayerController.GetEquippedItem();
 
         //fade out
         FadeManager.FadeOut(0.4f);
@@ -66,6 +67,7 @@ public class Door : Interactable
 
         //set player inventory
         PlayerController.Instance.inventory = savedInventory;
+        PlayerController.EquipItem(savedItem);
 
         //save game
         PlayerController.Instance.Save();
