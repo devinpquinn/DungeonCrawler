@@ -17,7 +17,7 @@ public class Inventory : ScriptableObject, ISerializationCallbackReceiver
     {
         for(int i = 0; i < InventoryItems.Count; i++)
         {
-            
+            InventoryItems[i].item = database.GetItem[InventoryItems[i].ID];
         }
     }
 
