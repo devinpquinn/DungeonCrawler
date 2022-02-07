@@ -60,7 +60,15 @@ public class Door : Interactable
         {
             if (check.name.Equals("Checkpoint - " + DestinationCheckpoint))
             {
-                PlayerController.Instance.transform.position = check.transform.position;
+                GameObject playerObject = PlayerController.Instance.gameObject;
+
+                playerObject.transform.position = check.transform.position;
+
+                //reset camera position
+                Cinemachine.CinemachineVirtualCamera ccam = playerObject.transform.Find("Player Camera").Find("CM cam").GetComponent<Cinemachine.CinemachineVirtualCamera>();
+                ccam.enabled = false;
+                ccam.enabled = true;
+
                 break;
             }
         }
