@@ -550,9 +550,9 @@ public class PlayerController : MonoBehaviour
             //find image corresponding to equipped item
             for (int i = 0; i < inventory.InventoryItems.Count; i++)
             {
-                if(inventory.InventoryItems[i].itemName == equippedItem)
+                if(inventory.InventoryItems[i].item.itemName == equippedItem)
                 {
-                    itemThumbnail.sprite = inventory.InventoryItems[i].itemSprite;
+                    itemThumbnail.sprite = inventory.InventoryItems[i].item.itemSprite;
                 }
             }
         }
@@ -601,7 +601,7 @@ public class PlayerController : MonoBehaviour
 
         for(int i = 0; i < inventory.InventoryItems.Count; i++)
         {
-            ItemObject thisItem = inventory.InventoryItems[i];
+            ItemObject thisItem = inventory.InventoryItems[i].item;
 
             //instantiate item display prefab
             GameObject thisItemDisplay = Instantiate(itemDisplayPrefab, inventoryItemParent);
@@ -712,7 +712,7 @@ public class PlayerController : MonoBehaviour
     public static void AddItem(ItemObject i)
     {
         //add item to inventory
-        _player.inventory.InventoryItems.Add(i);
+        _player.inventory.AddItem(i);
     }
 
     public static void RemoveItem(string i)
@@ -720,9 +720,9 @@ public class PlayerController : MonoBehaviour
         //remove item from inventory
         if(_player.inventory.InventoryItems.Count > 0)
         {
-            foreach(ItemObject thisItem in _player.inventory.InventoryItems)
+            foreach(InventorySlot thisItem in _player.inventory.InventoryItems)
             {
-                if (thisItem.itemName.Equals(i))
+                if (thisItem.item.itemName.Equals(i))
                 {
                     _player.inventory.InventoryItems.Remove(thisItem);
                 }
@@ -732,9 +732,9 @@ public class PlayerController : MonoBehaviour
     public static bool CheckForItem(string i)
     {
         //check if player has item in inventory
-        foreach(ItemObject thisItem in _player.inventory.InventoryItems)
+        foreach(InventorySlot thisItem in _player.inventory.InventoryItems)
         {
-            if(thisItem.itemName.Equals(i))
+            if(thisItem.item.itemName.Equals(i))
             {
                 return true;
             }
@@ -744,11 +744,11 @@ public class PlayerController : MonoBehaviour
 
     public static ItemObject GetItem(string i)
     {
-        foreach (ItemObject thisItem in _player.inventory.InventoryItems)
+        foreach (InventorySlot thisItem in _player.inventory.InventoryItems)
         {
-            if (thisItem.itemName.Equals(i))
+            if (thisItem.item.itemName.Equals(i))
             {
-                return thisItem;
+                return thisItem.item;
             }
         }
         return null;

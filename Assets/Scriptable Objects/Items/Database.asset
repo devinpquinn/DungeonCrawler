@@ -9,11 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43ee290e6ae48b548a9327b7579daae4, type: 3}
-  m_Name: Bones
+  m_Script: {fileID: 11500000, guid: 49aa7c6d854c90d41b996962fc06041e, type: 3}
+  m_Name: Database
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 0}
-  itemName: Bones
-  itemSprite: {fileID: 6225558410346410498, guid: 05ef6f8a2a7dce14085a4f5f903efa5b,
-    type: 3}
-  itemDescription: An armful of bones. Nothing weird.
+  Items: []
