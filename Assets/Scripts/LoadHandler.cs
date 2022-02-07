@@ -26,15 +26,18 @@ public class LoadHandler : MonoBehaviour
             yield return null;
         }
 
+        PlayerController newPlayer = PlayerController.Instance;
+
         //set player position
         Vector3 playerPos;
         playerPos.x = data.playerPosition[0];
         playerPos.y = data.playerPosition[1];
         playerPos.z = data.playerPosition[2];
 
-        PlayerController.Instance.transform.position = playerPos;
+        newPlayer.transform.position = playerPos;
 
         //set player inventory
+        newPlayer.inventory.LoadInventory(data);
 
         //set equipped item
         PlayerController.EquipItem(data.playerEquipped);

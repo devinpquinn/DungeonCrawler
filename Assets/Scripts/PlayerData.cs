@@ -9,12 +9,19 @@ public class PlayerData
     public string playerScene;
     public float[] playerPosition;
     public string playerEquipped;
+    public List<int> playerItems;
 
     public PlayerData(PlayerController player)
     {
+        //scene goes here
         playerScene = SceneManager.GetActiveScene().name;
 
         //inventory goes here
+        playerItems = new List<int>();
+        for (int i = 0; i < player.inventory.InventoryItems.Count; i++)
+        {
+            playerItems.Add(player.inventory.InventoryItems[i].ID);
+        }
 
         //equipped item goes here
         playerEquipped = PlayerController.GetEquippedItem();
