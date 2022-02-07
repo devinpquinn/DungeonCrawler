@@ -65,7 +65,7 @@ public class Door : Interactable
                 playerObject.transform.position = check.transform.position;
 
                 //reset camera position
-                Cinemachine.CinemachineVirtualCamera ccam = playerObject.transform.Find("Player Camera").Find("CM cam").GetComponent<Cinemachine.CinemachineVirtualCamera>();
+                Cinemachine.CinemachineVirtualCamera ccam = playerObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
                 ccam.enabled = false;
                 ccam.enabled = true;
 

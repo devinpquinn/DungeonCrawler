@@ -36,6 +36,11 @@ public class LoadHandler : MonoBehaviour
 
         newPlayer.transform.position = playerPos;
 
+        //reset camera position
+        Cinemachine.CinemachineVirtualCamera ccam = newPlayer.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
+        ccam.enabled = false;
+        ccam.enabled = true;
+
         //set player inventory
         newPlayer.inventory.LoadInventory(data);
 
