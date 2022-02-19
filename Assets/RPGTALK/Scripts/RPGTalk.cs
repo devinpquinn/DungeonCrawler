@@ -350,6 +350,8 @@ public class RPGTalk : MonoBehaviour
     private float widthWithoutPortrait = 1530;
     private float widthWithPortrait = 1200;
 
+    private Color defaultPanelColor;
+
     void Start()
     {
 
@@ -387,6 +389,7 @@ public class RPGTalk : MonoBehaviour
     void ScrubVariables()
     {
         baseTextAudio = textAudio;
+        defaultPanelColor = showWithDialog[0].GetComponent<Image>().color;
     }
 
     //Change txtToParse to be the correct for other language
@@ -745,6 +748,15 @@ public class RPGTalk : MonoBehaviour
                         if (actualAnimator && animatorIntName != "")
                         {
                             actualAnimator.SetInteger(animatorIntName, i);
+                        }
+                        //change dialogue panel color
+                        if (characters[i].character.color == Color.clear)
+                        {
+                            showWithDialog[0].GetComponent<Image>().color = defaultPanelColor;
+                        }
+                        else
+                        {
+                            showWithDialog[0].GetComponent<Image>().color = characters[i].character.color;
                         }
                         break;
                     }
@@ -2706,6 +2718,15 @@ public class RPGTalk : MonoBehaviour
                             {
                                 actualAnimator.SetInteger(animatorIntName, i);
 
+                            }
+                            //change dialogue panel color
+                            if(characters[i].character.color == Color.clear)
+                            {
+                                showWithDialog[0].GetComponent<Image>().color = defaultPanelColor;
+                            }
+                            else
+                            {
+                                showWithDialog[0].GetComponent<Image>().color = characters[i].character.color;
                             }
                             break;
                         }
