@@ -714,6 +714,9 @@ public class RPGTalk : MonoBehaviour
                 dialogerObj.gameObject.SetActive(false);
 
                 textUI.TMPText.fontStyle = FontStyles.Normal;
+
+                //reset dialogue panel color
+                showWithDialog[0].GetComponent<Image>().color = defaultPanelColor;
             }
             else
             {
@@ -2681,6 +2684,9 @@ public class RPGTalk : MonoBehaviour
                     dialogerObj.gameObject.SetActive(false);
 
                     textUI.TMPText.fontStyle = FontStyles.Normal;
+
+                    //reset dialogue panel color
+                    showWithDialog[0].GetComponent<Image>().color = defaultPanelColor;
                 }
                 else
                 {
