@@ -1,4 +1,5 @@
 [title=1st-start]
+Handler:Testing my dialogue sounds here! Just saying a bunch of random stuff to see how I feel about the voice snippet.
 A lonely wooden barrel sits in the center of the room. It seems conspicuously out of place here, as if it were some sort of test object dropped carelessly into an unfinished environment.
 Player:FEAR NOT, FORLORN BARREL. I AM HERE NOW.
 Handler:My dialogue goes here too!
