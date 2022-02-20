@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 {
     #region Variables
 
-    public enum playerState {Body, Light, Swapping, Interacting, Inventory, Dying, Dead, Locked};
+    public enum playerState {Body, Light, Swapping, Interacting, Inventory, Dying, Dead, Locked, Immobilized};
 
     public playerState myState;
 
@@ -291,6 +291,39 @@ public class PlayerController : MonoBehaviour
                 DeathTransition();
             }
         }
+        else if(myState == playerState.Immobilized)
+        {
+            //check mouse position for interactable
+            Vector2 interactRay = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            RaycastHit2D interactHit = Physics2D.Raycast(interactRay, Vector2.zero, Mathf.Infinity, interactablesMask);
+
+            if (interactHit)
+            {
+                Interactable i = interactHit.collider.GetComponent<Interactable>();
+                if (i.inRange)
+                {
+                    SetCursor("interact");
+                    currentInteractable = i;
+                    TooltipUI.ShowTooltip_Static(i.gameObject.name);
+                }
+            }
+            else
+            {
+                SetCursor("default");
+                currentInteractable = null;
+                TooltipUI.HideTooltip_Static();
+            }
+
+            //on click, check for interactable
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                if (currentInteractable != null)
+                {
+                    //we found an interactable!
+                    StartInteraction();
+                }
+            }
+        }
     }
 
     void FixedUpdate()
@@ -320,6 +353,19 @@ public class PlayerController : MonoBehaviour
             float lightVolumeTarget = minLightBallVolume + ((maxLightBallVolume - minLightBallVolume) * movement.normalized.magnitude);
             float lerpedLightVolume = Mathf.Lerp(lightBallAudioSource.volume, lightVolumeTarget, 0.2f);
             lightBallAudioSource.volume = lerpedLightVolume;
+        }
+        else if(myState == playerState.Immobilized)
+        {
+            //turn head to face cursor
+            Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - head_pointer.transform.position;
+            difference.Normalize();
+            float rotation_z = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+            Quaternion headRot = Quaternion.Lerp(head_pointer.transform.rotation, Quaternion.Euler(0f, 0f, rotation_z), Time.deltaTime * rotationSpeed);
+            head_pointer.transform.rotation = headRot;
+
+            //set head sprite to face cursor
+            float angle = 1 - (headRot.eulerAngles.z / 360);
+            head_anim.SetFloat("Rotation", angle);
         }
     }
 
