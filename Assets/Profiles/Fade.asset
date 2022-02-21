@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-2155730543749156491
+--- !u!114 &-2185288794812024756
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -51,4 +51,4 @@ MonoBehaviour:
   m_Name: Fade
   m_EditorClassIdentifier: 
   components:
-  - {fileID: -2155730543749156491}
+  - {fileID: -2185288794812024756}

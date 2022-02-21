@@ -8,5 +8,6 @@ public class MenuScript : MonoBehaviour
     void Start()
     {
         PlayerController.Instance.myState = PlayerController.playerState.Immobilized;
+        FadeManager.FadeIn(1f);
     }
 }

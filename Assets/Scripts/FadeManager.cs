@@ -28,16 +28,19 @@ public class FadeManager : MonoBehaviour
 
     public static void FadeIn(float duration)
     {
+        instance.StopAllCoroutines();
         instance.StartCoroutine(instance.DoFadeIn(duration));
     }
 
     public static void FadeOut(float duration)
     {
+        instance.StopAllCoroutines();
         instance.StartCoroutine(instance.DoFadeOut(duration));
     }
 
     public static void CrossFade(float durationOut, float durationIn)
     {
+        instance.StopAllCoroutines();
         instance.StartCoroutine(instance.DoCrossFade(durationOut, durationIn));
     }
 
