@@ -6,10 +6,35 @@ using UnityEngine.SceneManagement;
 public class StartDoor : Interactable
 {
     public string firstScene;
+    public GameObject menuTexts;
 
     public override void Interact()
     {
-        StartCoroutine(DoStart());
+        myTalk.txtToParse = myText;
+        string path = Application.persistentDataPath + "/savedata.dev";
+        if (System.IO.File.Exists(path))
+        {
+            myTalk.NewTalk("warning");
+            menuTexts.SetActive(false);
+        }
+        else
+        {
+            StartCoroutine(DoStart());
+        }
+    }
+
+    public override void DoEvent(string key)
+    {
+        if (key == "start")
+        {
+            StartCoroutine(DoStart());
+        }
+        else if (key == "back")
+        {
+            PlayerController.Instance.myState = PlayerController.playerState.Immobilized;
+            PlayerController.RefocusCam();
+            menuTexts.SetActive(true);
+        }
     }
 
     IEnumerator DoStart()

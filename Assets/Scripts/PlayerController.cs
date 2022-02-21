@@ -415,6 +415,12 @@ public class PlayerController : MonoBehaviour
         _player.camTarget.transform.localPosition = new Vector2(0, 0);
     }
 
+    public static void RefocusCam()
+    {
+        _player.camTarget.parent = _player.bodyCameraTarget;
+        _player.camTarget.transform.localPosition = new Vector2(0, 0);
+    }
+
     public void LightOut()
     {
         //play head animation
