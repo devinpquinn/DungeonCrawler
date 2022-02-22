@@ -76,7 +76,6 @@ public class PlayerController : MonoBehaviour
     public RectTransform leftPosition;
     public RectTransform rightPosition;
 
-    //public List<Item> inventory;
     public Inventory inventory;
 
     public AudioClip inventoryOpenSound;
@@ -93,6 +92,11 @@ public class PlayerController : MonoBehaviour
 
     public Image itemThumbnail;
     private GameObject itemThumbnailParent;
+
+    [Header("Menu Stuff")]
+    public GameObject quitObject;
+    public Image quittingBar;
+    private float quitTimer = 0;
 
     #endregion
 
@@ -323,6 +327,29 @@ public class PlayerController : MonoBehaviour
                     StartInteraction();
                 }
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            quitObject.SetActive(true);
+            quittingBar.fillAmount = 0;
+        }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            quitTimer += Time.deltaTime;
+            quittingBar.fillAmount = quitTimer / 1.5f;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            quitTimer = 0;
+            quitObject.SetActive(false);
+        }
+
+        if(quitTimer >= 1.5f)
+        {
+            QuitToMenu();
         }
     }
 
@@ -825,6 +852,23 @@ public class PlayerController : MonoBehaviour
         GameObject loadObject = new GameObject();
         LoadHandler loadScript = loadObject.AddComponent<LoadHandler>();
         loadScript.Load();
+    }
+
+    #endregion
+
+    #region Menu Stuff
+
+    public void QuitToMenu()
+    {
+        StartCoroutine(DoQuitToMenu());
+    }
+
+    IEnumerator DoQuitToMenu()
+    {
+        myState = playerState.Locked;
+        FadeManager.FadeOut(1);
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene("Menu");
     }
 
     #endregion
