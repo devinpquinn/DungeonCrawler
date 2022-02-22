@@ -5,6 +5,7 @@ using UnityEngine;
 public class ContinueDoor : Interactable
 {
     public GameObject chains;
+    public MenuScript ms;
 
     private void Start()
     {
@@ -28,6 +29,7 @@ public class ContinueDoor : Interactable
     IEnumerator DoContinue()
     {
         FadeManager.FadeOut(1f);
+        ms.FadeOutAudio();
         yield return new WaitForSeconds(1f);
         PlayerController.Instance.Load();
     }

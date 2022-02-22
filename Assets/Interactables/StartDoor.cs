@@ -7,6 +7,7 @@ public class StartDoor : Interactable
 {
     public string firstScene;
     public GameObject menuTexts;
+    public MenuScript ms;
 
     public override void Interact()
     {
@@ -40,6 +41,7 @@ public class StartDoor : Interactable
     IEnumerator DoStart()
     {
         FadeManager.FadeOut(1f);
+        ms.FadeOutAudio();
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(firstScene);
     }
