@@ -148,7 +148,10 @@ public class PlayerController : MonoBehaviour
         inventoryPanelRect.gameObject.SetActive(false);
 
         itemThumbnailParent = itemThumbnail.transform.parent.gameObject;
+    }
 
+    private void Start()
+    {
         //fade in from black
         if (fadeInAtStart)
         {
