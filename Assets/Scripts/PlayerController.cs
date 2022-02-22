@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 {
     #region Variables
 
-    public enum playerState {Body, Light, Swapping, Interacting, Inventory, Dying, Dead, Locked, Immobilized};
+    public enum playerState { Body, Light, Swapping, Interacting, Inventory, Dying, Dead, Locked, Immobilized };
 
     public playerState myState;
 
@@ -76,7 +76,6 @@ public class PlayerController : MonoBehaviour
     public RectTransform leftPosition;
     public RectTransform rightPosition;
 
-    //public List<Item> inventory;
     public Inventory inventory;
 
     public AudioClip inventoryOpenSound;
@@ -93,6 +92,11 @@ public class PlayerController : MonoBehaviour
 
     public Image itemThumbnail;
     private GameObject itemThumbnailParent;
+
+    [Header("Menu Stuff")]
+    public GameObject quitObject;
+    public Image quittingBar;
+    private float quitTimer = 0;
 
     #endregion
 
@@ -159,13 +163,13 @@ public class PlayerController : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        if(myState == playerState.Body)
+        if (myState == playerState.Body)
         {
             //body movement
             body_anim.SetFloat("Speed", movement.sqrMagnitude);
-            if(movement.x < 0)
+            if (movement.x < 0)
             {
-                if(bodySprite.flipX == true)
+                if (bodySprite.flipX == true)
                 {
                     //flip light holder
                     lightHolder.localPosition = new Vector3(lightHolder.localPosition.x * -1, lightHolder.localPosition.y, lightHolder.localPosition.z);
@@ -206,7 +210,7 @@ public class PlayerController : MonoBehaviour
             //on click, check for interactable
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                if(currentInteractable != null)
+                if (currentInteractable != null)
                 {
                     //we found an interactable!
                     StartInteraction();
@@ -235,7 +239,7 @@ public class PlayerController : MonoBehaviour
                 ShowInventory();
             }
         }
-        else if(myState == playerState.Light)
+        else if (myState == playerState.Light)
         {
             //check for mode transition
             if (Input.GetKeyDown(KeyCode.Mouse1))
@@ -245,7 +249,7 @@ public class PlayerController : MonoBehaviour
                 body_anim.Play("bodyLightIn");
             }
         }
-        else if(myState == playerState.Interacting)
+        else if (myState == playerState.Interacting)
         {
             //check for button select with number keys
             if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -291,7 +295,7 @@ public class PlayerController : MonoBehaviour
                 DeathTransition();
             }
         }
-        else if(myState == playerState.Immobilized)
+        else if (myState == playerState.Immobilized)
         {
             //check mouse position for interactable
             Vector2 interactRay = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -324,12 +328,35 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            quitObject.SetActive(true);
+            quittingBar.fillAmount = 0;
+        }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            quitTimer += Time.deltaTime;
+            quittingBar.fillAmount = quitTimer / 1.5f;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            quitTimer = 0;
+            quitObject.SetActive(false);
+        }
+
+        if (quitTimer >= 1.5f)
+        {
+            QuitToMenu();
+        }
     }
 
     void FixedUpdate()
     {
         //player movement
-        if(myState == playerState.Body)
+        if (myState == playerState.Body)
         {
             rb_body.MovePosition(rb_body.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
 
@@ -354,7 +381,7 @@ public class PlayerController : MonoBehaviour
             float lerpedLightVolume = Mathf.Lerp(lightBallAudioSource.volume, lightVolumeTarget, 0.2f);
             lightBallAudioSource.volume = lerpedLightVolume;
         }
-        else if(myState == playerState.Immobilized)
+        else if (myState == playerState.Immobilized)
         {
             //turn head to face cursor
             Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - head_pointer.transform.position;
@@ -541,7 +568,7 @@ public class PlayerController : MonoBehaviour
     //set the mouse indicator
     public void SetCursor(string state)
     {
-        if(state == "default")
+        if (state == "default")
         {
             Cursor.SetCursor(cursorDefault, new Vector2(0, 0), CursorMode.Auto);
         }
@@ -558,7 +585,7 @@ public class PlayerController : MonoBehaviour
 
     public static void LeavingInteractable(Interactable i)
     {
-        if(_player.currentInteractable == i)
+        if (_player.currentInteractable == i)
         {
             _player.SetCursor("default");
             _player.currentInteractable = null;
@@ -591,7 +618,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //check if there is an equipped item to display
-        if(equippedItem == null)
+        if (equippedItem == null)
         {
             itemThumbnailParent.SetActive(false);
         }
@@ -602,7 +629,7 @@ public class PlayerController : MonoBehaviour
             //find image corresponding to equipped item
             for (int i = 0; i < inventory.InventoryItems.Count; i++)
             {
-                if(inventory.InventoryItems[i].item.itemName == equippedItem)
+                if (inventory.InventoryItems[i].item.itemName == equippedItem)
                 {
                     itemThumbnail.sprite = inventory.InventoryItems[i].item.itemSprite;
                 }
@@ -651,7 +678,7 @@ public class PlayerController : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        for(int i = 0; i < inventory.InventoryItems.Count; i++)
+        for (int i = 0; i < inventory.InventoryItems.Count; i++)
         {
             ItemObject thisItem = inventory.InventoryItems[i].item;
 
@@ -718,7 +745,7 @@ public class PlayerController : MonoBehaviour
 
     public static string GetEquippedItem()
     {
-        if(_player.equippedItem == null)
+        if (_player.equippedItem == null)
         {
             return null;
         }
@@ -770,9 +797,9 @@ public class PlayerController : MonoBehaviour
     public static void RemoveItem(string i)
     {
         //remove item from inventory
-        if(_player.inventory.InventoryItems.Count > 0)
+        if (_player.inventory.InventoryItems.Count > 0)
         {
-            foreach(InventorySlot thisItem in _player.inventory.InventoryItems)
+            foreach (InventorySlot thisItem in _player.inventory.InventoryItems)
             {
                 if (thisItem.item.itemName.Equals(i))
                 {
@@ -784,9 +811,9 @@ public class PlayerController : MonoBehaviour
     public static bool CheckForItem(string i)
     {
         //check if player has item in inventory
-        foreach(InventorySlot thisItem in _player.inventory.InventoryItems)
+        foreach (InventorySlot thisItem in _player.inventory.InventoryItems)
         {
-            if(thisItem.item.itemName.Equals(i))
+            if (thisItem.item.itemName.Equals(i))
             {
                 return true;
             }
@@ -825,6 +852,23 @@ public class PlayerController : MonoBehaviour
         GameObject loadObject = new GameObject();
         LoadHandler loadScript = loadObject.AddComponent<LoadHandler>();
         loadScript.Load();
+    }
+
+    #endregion
+
+    #region Menu Stuff
+
+    public void QuitToMenu()
+    {
+        StartCoroutine(DoQuitToMenu());
+    }
+
+    IEnumerator DoQuitToMenu()
+    {
+        myState = playerState.Locked;
+        FadeManager.FadeOut(1);
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene("Menu");
     }
 
     #endregion
