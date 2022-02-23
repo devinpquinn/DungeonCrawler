@@ -43,6 +43,7 @@ public class Interactable : MonoBehaviour
     {
         myTalk.txtToParse = myText;
         myTalk.callback.AddListener(PlayerController.EndInteraction);
+        interactedWith = true;
     }
 
     //called from text document

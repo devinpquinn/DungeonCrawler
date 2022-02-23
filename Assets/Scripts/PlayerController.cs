@@ -42,6 +42,8 @@ public class PlayerController : MonoBehaviour
 
     [Header("Variables")]
 
+    public bool lockToBody = false; //prevent player from going into light ball mode
+
     public float moveSpeed = 3f;
     public float lightSpeed = 5f;
     public float rotationSpeed = 10f;
@@ -221,7 +223,7 @@ public class PlayerController : MonoBehaviour
             }
 
             //check for mode transition
-            if (Input.GetKeyDown(KeyCode.Mouse1))
+            if (Input.GetKeyDown(KeyCode.Mouse1) && !lockToBody)
             {
                 //start transition to light mode
                 myState = playerState.Swapping;
