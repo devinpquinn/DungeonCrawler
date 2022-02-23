@@ -863,11 +863,15 @@ public class PlayerController : MonoBehaviour
 
     public void QuitToMenu()
     {
-        StartCoroutine(DoQuitToMenu());
+        if(SceneManager.GetActiveScene().name != "Menu")
+        {
+            StartCoroutine(DoQuitToMenu());
+        }
     }
 
     IEnumerator DoQuitToMenu()
     {
+        quitObject.transform.localScale = new Vector3(0, 0, 0);
         myState = playerState.Locked;
         FadeManager.FadeOut(1);
         yield return new WaitForSeconds(1);
