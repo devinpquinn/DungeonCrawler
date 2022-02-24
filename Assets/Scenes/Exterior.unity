@@ -23772,6 +23772,12 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -10
       objectReference: {fileID: 0}
+    - target: {fileID: 5353336259968845687, guid: 49468249f509ea9448a3eac70bf521ed,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a748d1f0a7ae8d84db451b9d4e4e4fea,
+        type: 3}
     - target: {fileID: 5353336260466532380, guid: 49468249f509ea9448a3eac70bf521ed,
         type: 3}
       propertyPath: m_BoundingShape2D
