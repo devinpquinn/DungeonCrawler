@@ -1,13 +1,14 @@
 [title=begin-start]
-Player:...
-Player:ONE DAY, BROTHERS AND SISTERS, I SHALL BE BY YOUR SIDE.
+Player:[speed=10]...[/speed]
+Player:[speed=30]ONE DAY, BROTHERS AND SISTERS, I SHALL BE BY YOUR SIDE.[/speed]
 [title=begin-end]
 
 [title=intro-start]
 Player:I REMEMBER WELL A NIGHT SUCH AS THIS.
 Player:WHEN FIRST I SET FOOT ON THIS BINDING EARTH... THIS HOLLOW, CRUMBLING LAND...
-Player:[expression=?]THIS *TRI-STATE AREA*.
-Player:'TWERE THE STEPS OF A FLEDGLING I TOOK... NOT EVEN KNEW I TO *MOVE WITH WASD*
+Player:[expression=?]THIS [jitter=6 angle=1]*TRI-STATE AREA*[/jitter].
+Player:'TWERE THE STEPS OF A FLEDGLING I TOOK...
+Player:I KNEW NOT EVEN HOW TO [jitter=6 angle=1]*USE WASD TO MOVE*[/jitter]
 [title=intro-end]
 
 [title=walked-start]

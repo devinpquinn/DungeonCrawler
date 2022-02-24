@@ -25,7 +25,7 @@ public class FirstStepsArea : MonoBehaviour
 
     private void Start()
     {
-        Invoke("First", 1);
+        Invoke("First", 2);
     }
 
     public void StartTalking(string key, UnityEngine.Events.UnityAction call)
