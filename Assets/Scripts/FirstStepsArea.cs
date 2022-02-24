@@ -109,6 +109,7 @@ public class FirstStepsArea : MonoBehaviour
         {
             yield return null;
         }
+        yield return new WaitForSeconds(0.5f);
         StartTalking("lighted", PlayerController.EndInteraction);
     }
 }
