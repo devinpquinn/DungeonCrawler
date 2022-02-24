@@ -7,14 +7,24 @@ Player:ONE DAY, BROTHERS AND SISTERS, I SHALL BE BY YOUR SIDE.
 Player:I REMEMBER WELL A NIGHT SUCH AS THIS.
 Player:WHEN FIRST I SET FOOT ON THIS BINDING EARTH... THIS HOLLOW, CRUMBLING LAND...
 Player:[expression=?]THIS [jitter=6 angle=1]*TRI-STATE AREA*[/jitter].
-Player:'TWERE THE STEPS OF A FLEDGLING I TOOK...
-Player:I KNEW NOT EVEN HOW TO [jitter=6 angle=1]*USE WASD TO MOVE*[/jitter]
+Player:AND THROUGH MY BEWILDERMENT RANG THE FATEFUL WORDS:
+Player:[jitter=6 angle=1]*USE WASD TO MOVE*[/jitter]
 [title=intro-end]
 
 [title=walked-start]
 Player:VERILY, MUCH ALIKE-- SAVE WHERE I ONCE DODDERED, NOW I STRUT, DARESAY.
+Handler:That's super, bud, really great-- but let's focus up, 'kay?
+Handler:Can you still hear me all right? Is your earpiece nice and secure?
+Player:YES. I HAVE PLACED IT INSIDE MY HELMET LIKE YOU YELLED AT ME TO DO.
+Player:AND MY VOICE, IT IS BEING TRANSMITTED TO YOU?
+Handler:It-- yes. Extremely. Oh my god, it is echoing so loud and so bad. Just.. straight up all caps.
+Handler:Okay, the entrance should be hidden somewhere nearby. Poke around, see if you can find it.
+Player:POKE I SHALL. AND ANYTHING THAT REQUIRES POKING, I SHALL CLICK WITH MY [jitter=6 angle=1]*LEFT MOUSE BUTTON*[/jitter].
+Player:INDEED, THE LEFT MOUSE BUTTON! NOT THE RIGHT. THAT DOES SOMETHING DIFFERENT.
 [title=walked-end]
 
 [title=lighted-start]
 Player:AN OUT-OF-BODY EXPERIENCE.
+Player:[expression=?]WHEN I AM NOT CONFINED TO THIS CLANKING SUIT, I MAY SCOUT AROUND WITHOUT FEAR OF DANGER... BUT, AS MERE LIGHT, CANNOT ACT.
+Player:(I AM SAYING ALL OF THIS OUT LOUD AND WITH NO RESTRAINT AS REGARDS MY VOLUME. AN INTERNAL MONOLOGUE IS THE COWARD'S WAY.)
 [title=lighted-end]
