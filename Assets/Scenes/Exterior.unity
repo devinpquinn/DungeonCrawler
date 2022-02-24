@@ -2029,6 +2029,7 @@ MonoBehaviour:
   myTalk: {fileID: 0}
   myText: {fileID: 4900000, guid: 2bae03e2661e98d4a91557642dc8ac6e, type: 3}
   starTargetAnim: {fileID: 1004667264}
+  cm: {fileID: 1354463959}
 --- !u!61 &1131760877
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2297,6 +2298,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1354463959 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5353336260466532386, guid: 49468249f509ea9448a3eac70bf521ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 5353336259540060989}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1641193962
 GameObject:
   m_ObjectHideFlags: 0

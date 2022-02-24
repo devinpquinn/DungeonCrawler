@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class FirstStepsArea : MonoBehaviour
 {
@@ -12,9 +13,14 @@ public class FirstStepsArea : MonoBehaviour
     //cutscene camera target
     public Animator starTargetAnim;
 
+    public CinemachineVirtualCamera cm;
+    private float defaultDeadZoneHeight;
+
     private void Awake()
     {
         myTalk = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<RPGTalk>();
+        defaultDeadZoneHeight = cm.GetCinemachineComponent<CinemachineFramingTransposer>().m_DeadZoneHeight;
+        cm.GetCinemachineComponent<CinemachineFramingTransposer>().m_DeadZoneHeight = 0;
     }
 
     private void Start()
@@ -55,6 +61,7 @@ public class FirstStepsArea : MonoBehaviour
     {
         StartTalking("intro", PlayerController.EndInteraction);
         PlayerController.RefocusCam();
+        cm.GetCinemachineComponent<CinemachineFramingTransposer>().m_DeadZoneHeight = defaultDeadZoneHeight;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
