@@ -15,6 +15,8 @@ MonoBehaviour:
   dialoger: Player
   photo: {fileID: 21300000, guid: a748d1f0a7ae8d84db451b9d4e4e4fea, type: 3}
   voice: {fileID: 8300000, guid: 6ea7e02ab9f01f64495d467005a5e0e3, type: 3}
+  textSpeed: 30
+  color: {r: 0, g: 0, b: 0, a: 0}
   expressions:
   - name: '?'
     photo: {fileID: 21300000, guid: 17a29d486b0d6d0428c2716956cdb958, type: 3}

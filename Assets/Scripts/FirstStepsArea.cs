@@ -16,6 +16,9 @@ public class FirstStepsArea : MonoBehaviour
     public CinemachineVirtualCamera cm;
     private float defaultDeadZoneHeight;
 
+    private bool didWalk = false;
+    private bool didLightOut = false;
+
     private void Awake()
     {
         myTalk = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<RPGTalk>();
@@ -26,6 +29,24 @@ public class FirstStepsArea : MonoBehaviour
     private void Start()
     {
         Invoke("First", 2);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            if (didWalk && !myTalk.showWithDialog[0].activeInHierarchy)
+            {
+                if (didLightOut)
+                {
+                    StartCoroutine(DidLight());
+                }
+                else
+                {
+                    didLightOut = true;
+                }
+            }
+        }
     }
 
     public void StartTalking(string key, UnityEngine.Events.UnityAction call)
@@ -77,6 +98,17 @@ public class FirstStepsArea : MonoBehaviour
         PlayerController.Instance.lockToBody = false;
 
         StartTalking("walked", PlayerController.EndInteraction);
-        Destroy(gameObject);
+        GetComponent<BoxCollider2D>().enabled = false;
+
+        didWalk = true;
+    }
+
+    IEnumerator DidLight()
+    {
+        while(PlayerController.Instance.myState != PlayerController.playerState.Body)
+        {
+            yield return null;
+        }
+        StartTalking("lighted", PlayerController.EndInteraction);
     }
 }

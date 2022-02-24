@@ -20,7 +20,7 @@ Player:AND MY VOICE, IT IS BEING TRANSMITTED TO YOU?
 Handler:It-- yes. Extremely. Oh my god, it is echoing so loud and so bad. Just.. straight up all caps.
 Handler:Okay, the entrance should be hidden somewhere nearby. Poke around, see if you can find it.
 Player:POKE I SHALL. AND ANYTHING THAT REQUIRES POKING, I SHALL CLICK WITH MY [jitter=6 angle=1]*LEFT MOUSE BUTTON*[/jitter].
-Player:INDEED, THE LEFT MOUSE BUTTON! NOT THE RIGHT. THAT DOES SOMETHING DIFFERENT.
+Player:INDEED, [jitter=6 angle=1]*LEFT MOUSE BUTTON*[/jitter]. NOT THE *RIGHT*. THAT DOES SOMETHING DIFFERENT.
 [title=walked-end]
 
 [title=lighted-start]
