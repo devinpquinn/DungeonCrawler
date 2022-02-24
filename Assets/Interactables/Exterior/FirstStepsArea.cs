@@ -18,6 +18,7 @@ public class FirstStepsArea : MonoBehaviour
 
     private bool didWalk = false;
     private bool didLightOut = false;
+    private bool didLightDialogue = false;
 
     private void Awake()
     {
@@ -33,17 +34,21 @@ public class FirstStepsArea : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        if (!didLightDialogue)
         {
-            if (didWalk && !myTalk.showWithDialog[0].activeInHierarchy)
+            if (Input.GetKeyDown(KeyCode.Mouse1))
             {
-                if (didLightOut)
+                if (didWalk && !myTalk.showWithDialog[0].activeInHierarchy)
                 {
-                    StartCoroutine(DidLight());
-                }
-                else
-                {
-                    didLightOut = true;
+                    if (didLightOut)
+                    {
+                        didLightDialogue = true;
+                        StartCoroutine(DidLight());
+                    }
+                    else
+                    {
+                        didLightOut = true;
+                    }
                 }
             }
         }
