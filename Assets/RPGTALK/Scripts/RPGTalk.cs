@@ -1543,13 +1543,21 @@ public class RPGTalk : MonoBehaviour
     public void CheckVoice(RpgtalkElement element)
     {
         textAudio = baseTextAudio;
+        actualTextSpeed = textSpeed;
         foreach (RPGTalkCharacterSettings character in characters)
         {
             if (character.character.dialoger == element.originalSpeakerName)
             {
+                //set correct text audio
                 if (character.character.voice != null)
                 {
                     textAudio = character.character.voice;
+                }
+
+                //set correct text speed
+                if (!element.dialogText.Contains("[speed="))
+                {
+                    actualTextSpeed = character.character.textSpeed;
                 }
             }
         }

@@ -20,6 +20,7 @@ namespace RPGTALK.Helper
         public string dialoger;
         public Sprite photo;
         public AudioClip voice = null;
+        public int textSpeed = 50;
         public Color color;
 
         public Expression[] expressions;

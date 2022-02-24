@@ -1,6 +1,6 @@
 [title=begin-start]
 Player:[speed=10]...[/speed]
-Player:[speed=30]ONE DAY, BROTHERS AND SISTERS, I SHALL BE BY YOUR SIDE.[/speed]
+Player:ONE DAY, BROTHERS AND SISTERS, I SHALL BE BY YOUR SIDE.
 [title=begin-end]
 
 [title=intro-start]
