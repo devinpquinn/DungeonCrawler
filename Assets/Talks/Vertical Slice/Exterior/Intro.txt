@@ -1,0 +1,19 @@
+[title=begin-start]
+Player:...
+Player:ONE DAY, BROTHERS AND SISTERS, I SHALL BE BY YOUR SIDE.
+[title=begin-end]
+
+[title=intro-start]
+Player:I REMEMBER WELL A NIGHT SUCH AS THIS.
+Player:WHEN FIRST I SET FOOT ON THIS BINDING EARTH... THIS HOLLOW, CRUMBLING LAND...
+Player:[expression=?]THIS *TRI-STATE AREA*.
+Player:'TWERE THE STEPS OF A FLEDGLING I TOOK... NOT EVEN KNEW I TO *MOVE WITH WASD*
+[title=intro-end]
+
+[title=walked-start]
+Player:VERILY, MUCH ALIKE-- SAVE WHERE I ONCE DODDERED, NOW I STRUT, DARESAY.
+[title=walked-end]
+
+[title=lighted-start]
+Player:AN OUT-OF-BODY EXPERIENCE.
+[title=lighted-end]

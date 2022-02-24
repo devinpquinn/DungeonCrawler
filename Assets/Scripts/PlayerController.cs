@@ -449,6 +449,7 @@ public class PlayerController : MonoBehaviour
 
     public static void RefocusCam()
     {
+        Camera.main.transform.Find("CM cam").GetComponent<CinemachineVirtualCamera>().Follow = _player.camTarget;
         _player.camTarget.parent = _player.bodyCameraTarget;
         _player.camTarget.transform.localPosition = new Vector2(0, 0);
     }
@@ -517,6 +518,12 @@ public class PlayerController : MonoBehaviour
 
         //enable cursor
         Cursor.visible = true;
+    }
+
+    public void StopWalkAnimation()
+    {
+        //freeze body
+        body_anim.SetFloat("Speed", 0);
     }
 
     public void Die()
