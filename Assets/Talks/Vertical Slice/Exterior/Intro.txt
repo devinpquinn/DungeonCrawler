@@ -17,7 +17,7 @@ Handler:That's super, bud, really great-- but let's focus up, 'kay?
 Handler:Can you still hear me all right? Is your earpiece nice and secure?
 Player:YES. I HAVE PLACED IT INSIDE MY HELMET LIKE YOU YELLED AT ME TO DO.
 Player:AND MY VOICE, IT IS BEING TRANSMITTED TO YOU?
-Handler:It-- yes. Extremely. Oh my god, it is echoing so loud and so bad. Just.. straight up all caps.
+Handler:It-- yes. Extremely. Oh my god, it is echoing so loud and so bad. Just... straight up all caps.
 Handler:Okay, the entrance should be hidden somewhere nearby. Poke around, see if you can find it.
 Player:POKE I SHALL. AND ANYTHING THAT REQUIRES POKING, I SHALL CLICK WITH MY [jitter=6 angle=1]*LEFT MOUSE BUTTON*[/jitter].
 Player:INDEED, [jitter=6 angle=1]*LEFT MOUSE BUTTON*[/jitter]. NOT THE *RIGHT*. THAT DOES SOMETHING DIFFERENT.
@@ -26,5 +26,5 @@ Player:INDEED, [jitter=6 angle=1]*LEFT MOUSE BUTTON*[/jitter]. NOT THE *RIGHT*. 
 [title=lighted-start]
 Player:AN OUT-OF-BODY EXPERIENCE.
 Player:[expression=?]WHEN I AM NOT CONFINED TO THIS CLANKING SUIT, I MAY SCOUT AROUND WITHOUT FEAR OF DANGER... BUT, AS MERE LIGHT, CANNOT ACT.
-Player:(I AM SAYING ALL OF THIS OUT LOUD AND WITH NO RESTRAINT AS REGARDS MY VOLUME. AN INTERNAL MONOLOGUE IS THE COWARD'S WAY.)
+Player:(I AM SAYING ALL OF THIS OUT LOUD. AN INTERNAL MONOLOGUE IS THE COWARD'S WAY.)
 [title=lighted-end]
