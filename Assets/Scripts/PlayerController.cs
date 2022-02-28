@@ -629,6 +629,10 @@ public class PlayerController : MonoBehaviour
             MoveDialoguePanelToTop();
         }
 
+        //hide inventory
+        inventoryPanelRect.gameObject.SetActive(false);
+        itemDescriptionPanel.SetActive(false);
+
         //check if there is an equipped item to display
         if (equippedItem == null)
         {

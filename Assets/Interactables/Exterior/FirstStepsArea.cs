@@ -61,6 +61,10 @@ public class FirstStepsArea : MonoBehaviour
         PlayerController.Instance.StopWalkAnimation();
         TooltipUI.HideTooltip_Static();
 
+        //hide inventory
+        PlayerController.Instance.inventoryPanelRect.gameObject.SetActive(false);
+        PlayerController.Instance.itemDescriptionPanel.SetActive(false);
+
         myTalk.txtToParse = myText;
 
         myTalk.callback.RemoveAllListeners();
