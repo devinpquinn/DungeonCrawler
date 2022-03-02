@@ -3993,6 +3993,7 @@ MonoBehaviour:
   lightRemnant: {fileID: 893507649999962575, guid: b9949658e4c64cf499114bc641b13605,
     type: 3}
   fadeInAtStart: 1
+  lockToBody: 0
   moveSpeed: 4
   lightSpeed: 6
   rotationSpeed: 10
@@ -4084,8 +4085,8 @@ TrailRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -307079931
-  m_SortingLayer: 0
+  m_SortingLayerID: -603275577
+  m_SortingLayer: 1
   m_SortingOrder: 5
   m_Time: 0.1
   m_Parameters:
