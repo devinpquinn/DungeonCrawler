@@ -1908,27 +1908,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HalloweenProps_7
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 192
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cf163ef047861920800000000000000
-      internalID: 2960702518255296456
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: HalloweenProps_8
       rect:
         serializedVersion: 2
@@ -2071,27 +2050,6 @@ TextureImporter:
       bones: []
       spriteID: 9891debd0774eb170800000000000000
       internalID: 8196066921912539529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HalloweenProps_21
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 176
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15da403446003a660800000000000000
-      internalID: 7395755443693595985
       vertices: []
       indices: 
       edges: []
@@ -2271,7 +2229,7 @@ TextureImporter:
         x: 112
         y: 160
         width: 16
-        height: 16
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

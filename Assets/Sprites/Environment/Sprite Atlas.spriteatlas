@@ -54,7 +54,6 @@ SpriteAtlas:
   - {fileID: -4876948342361109333, guid: a88b2693082857b46ab6cdefd69328e6, type: 3}
   - {fileID: 1919109720880734845, guid: a88b2693082857b46ab6cdefd69328e6, type: 3}
   - {fileID: 2092794407193011172, guid: a88b2693082857b46ab6cdefd69328e6, type: 3}
-  - {fileID: 2960702518255296456, guid: a88b2693082857b46ab6cdefd69328e6, type: 3}
   - {fileID: -3499827217961787947, guid: a88b2693082857b46ab6cdefd69328e6, type: 3}
   - {fileID: -3832567295683020339, guid: a88b2693082857b46ab6cdefd69328e6, type: 3}
   - {fileID: 3261430047497893455, guid: a88b2693082857b46ab6cdefd69328e6, type: 3}
@@ -109,7 +108,6 @@ SpriteAtlas:
   - {fileID: 6309455881164742605, guid: a88b2693082857b46ab6cdefd69328e6, type: 3}
   - {fileID: -4342073783704498891, guid: a88b2693082857b46ab6cdefd69328e6, type: 3}
   - {fileID: 2688045611067055387, guid: a88b2693082857b46ab6cdefd69328e6, type: 3}
-  - {fileID: 7395755443693595985, guid: a88b2693082857b46ab6cdefd69328e6, type: 3}
   - {fileID: 3258151308832693281, guid: a88b2693082857b46ab6cdefd69328e6, type: 3}
   - {fileID: 8196066921912539529, guid: a88b2693082857b46ab6cdefd69328e6, type: 3}
   - {fileID: -7954579929833493973, guid: a88b2693082857b46ab6cdefd69328e6, type: 3}
@@ -738,7 +736,6 @@ SpriteAtlas:
   - HalloweenProps_2
   - HalloweenProps_1
   - HalloweenProps_0
-  - HalloweenProps_7
   - HalloweenProps_6
   - HalloweenProps_5
   - HalloweenProps_4
@@ -793,7 +790,6 @@ SpriteAtlas:
   - HalloweenProps_82
   - HalloweenProps_22
   - HalloweenProps_18
-  - HalloweenProps_21
   - HalloweenProps_19
   - HalloweenProps_20
   - HalloweenProps_16
