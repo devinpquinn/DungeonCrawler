@@ -326,7 +326,6 @@ SpriteAtlas:
   - {fileID: -154001880438808706, guid: 05ef6f8a2a7dce14085a4f5f903efa5b, type: 3}
   - {fileID: 6997079694548358545, guid: 05ef6f8a2a7dce14085a4f5f903efa5b, type: 3}
   - {fileID: 8904526077363624667, guid: 05ef6f8a2a7dce14085a4f5f903efa5b, type: 3}
-  - {fileID: 2358315822674297569, guid: 05ef6f8a2a7dce14085a4f5f903efa5b, type: 3}
   - {fileID: -1657365805607377124, guid: 05ef6f8a2a7dce14085a4f5f903efa5b, type: 3}
   - {fileID: 2488030608659026674, guid: 05ef6f8a2a7dce14085a4f5f903efa5b, type: 3}
   - {fileID: -9009559042989758955, guid: 05ef6f8a2a7dce14085a4f5f903efa5b, type: 3}
@@ -1008,7 +1007,6 @@ SpriteAtlas:
   - DungeonProps_145
   - DungeonProps_153
   - DungeonProps_15
-  - DungeonProps_86
   - DungeonProps_87
   - DungeonProps_16
   - DungeonProps_84

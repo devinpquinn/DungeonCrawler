@@ -5060,7 +5060,7 @@ TextureImporter:
         serializedVersion: 2
         x: 304
         y: 208
-        width: 16
+        width: 32
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -5071,27 +5071,6 @@ TextureImporter:
       bones: []
       spriteID: 18db7a5c8002a9a50800000000000000
       internalID: 6528565831874887041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DungeonProps_86
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 208
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e24faeeebb6ab020800000000000000
-      internalID: 2358315822674297569
       vertices: []
       indices: 
       edges: []
