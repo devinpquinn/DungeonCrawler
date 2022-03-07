@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Scrawled Notes
   m_EditorClassIdentifier: 
   itemID: 0
-  itemName: 
-  itemSprite: {fileID: 0}
-  itemDescription: 
+  itemName: Scrawled Notes
+  itemSprite: {fileID: 4137826986462834961, guid: 05ef6f8a2a7dce14085a4f5f903efa5b,
+    type: 3}
+  itemDescription: A rough sketch of an eye-like symbol and a single word, OBOL.

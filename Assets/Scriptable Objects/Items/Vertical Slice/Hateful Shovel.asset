@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43ee290e6ae48b548a9327b7579daae4, type: 3}
-  m_Name: Hateful Spade
+  m_Name: Hateful Shovel
   m_EditorClassIdentifier: 
   itemID: 0
-  itemName: 
+  itemName: Hateful Shovel
   itemSprite: {fileID: 0}
-  itemDescription: 
+  itemDescription: A tool well suited for defiling places of rest.

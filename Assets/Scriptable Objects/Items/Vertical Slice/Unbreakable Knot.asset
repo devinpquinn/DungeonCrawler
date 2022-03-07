@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Unbreakable Knot
   m_EditorClassIdentifier: 
   itemID: 0
-  itemName: 
+  itemName: Unbreakable Knot
   itemSprite: {fileID: 0}
-  itemDescription: 
+  itemDescription: A ring that allows communication over great distances. Half of
+    a pair.

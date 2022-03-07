@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Owl Pellet
   m_EditorClassIdentifier: 
   itemID: 0
-  itemName: 
+  itemName: '"Owl" Pellet'
   itemSprite: {fileID: 0}
-  itemDescription: 
+  itemDescription: A wad of unidentifiable bones, fur, and teeth.

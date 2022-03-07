@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Trail Mix
   m_EditorClassIdentifier: 
   itemID: 0
-  itemName: 
+  itemName: Trail Mix
   itemSprite: {fileID: 0}
-  itemDescription: 
+  itemDescription: She said to take this in case I get hungry (I will not get hungry).

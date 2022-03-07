@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Iron Key
   m_EditorClassIdentifier: 
   itemID: 0
-  itemName: 
-  itemSprite: {fileID: 0}
-  itemDescription: 
+  itemName: Iron Key
+  itemSprite: {fileID: -7301003144278182386, guid: 05ef6f8a2a7dce14085a4f5f903efa5b,
+    type: 3}
+  itemDescription: Unlocks the cemetery gate. I should click on this item to equip
+    it.

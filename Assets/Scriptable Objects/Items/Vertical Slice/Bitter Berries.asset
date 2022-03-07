@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Bitter Berries
   m_EditorClassIdentifier: 
   itemID: 0
-  itemName: 
+  itemName: Bitter Berries
   itemSprite: {fileID: 0}
-  itemDescription: 
+  itemDescription: I don't know why I took these. I truly do not need to eat.
