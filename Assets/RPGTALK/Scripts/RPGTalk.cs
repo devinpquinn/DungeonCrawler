@@ -2400,6 +2400,13 @@ public class RPGTalk : MonoBehaviour
         //Select the right text to display
         string textToDisplay = rpgtalkElements[cutscenePosition - 1].dialogText.Substring(0, (int)currentChar);
 
+        //check for special auto pass character
+        if (textToDisplay.EndsWith("^"))
+        {
+            PlayNext();
+            return;
+        }
+
         //Check if there should be any rich text text beggining or ending at this position
         //Check from the bottom, because a tag might have been openned inside another
         for (int i = richText.Count - 1; i >= 0; i--)

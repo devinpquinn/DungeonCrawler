@@ -11,7 +11,7 @@ Player:[expression=?]THIS ACCURSED [jitter=6 angle=1]*TRI-STATE AREA*[/jitter].
 [title=intro-end]
 
 [title=walked-start]
-Player:I USED *WASD* TO TAKE MY FIRST STEPS--
+Player:I USED *WASD* TO TAKE MY FIRST STEPS^
 Handler:Hey, let's focus up, 'kay?
 Handler:Just a reminder, I can't really hear what you're saying unless you speak into the <u>special ring</u> I gave you. 
 Handler:So please, <i>please</i> do not lose that, or I won't be able to help you.
@@ -24,6 +24,6 @@ Player:INDEED, [jitter=6 angle=1]*LEFT MOUSE BUTTON*[/jitter]. NOT THE *RIGHT*. 
 [title=lighted-start]
 Player:AN OUT-OF-BODY EXPERIENCE.
 Player:[expression=?]WHEN I AM NOT CONFINED TO THIS CLANKING SUIT, I MAY SCOUT AROUND WITHOUT FEAR OF DANGER... BUT, AS MERE LIGHT, CANNOT ACT.
-Handler:What?
+Handler:What? If you're talking to me I can't^
 Player:(I AM SAYING ALL OF THIS OUT LOUD. AN INTERNAL MONOLOGUE IS THE COWARD'S WAY.)
 [title=lighted-end]
