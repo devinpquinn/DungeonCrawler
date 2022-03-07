@@ -20,6 +20,9 @@ public class FirstStepsArea : MonoBehaviour
     private bool didLightOut = false;
     private bool didLightDialogue = false;
 
+    //starting inventory
+    public ItemObject[] startingItems;
+
     private void Awake()
     {
         myTalk = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<RPGTalk>();
@@ -30,6 +33,10 @@ public class FirstStepsArea : MonoBehaviour
     private void Start()
     {
         Invoke("First", 2);
+        foreach(ItemObject i in startingItems)
+        {
+            PlayerController.AddItem(i);
+        }
     }
 
     private void Update()

@@ -11,7 +11,7 @@ Player:[expression=?]THIS ACCURSED [jitter=6 angle=1]*TRI-STATE AREA*[/jitter].
 [title=intro-end]
 
 [title=walked-start]
-Player:INDEED, I USED *WASD* TO TAKE MY FIRST STEPS, LIKE SO.
+Player:I USED *WASD* TO TAKE MY FIRST STEPS--
 Handler:Hey, let's focus up, 'kay?
 Handler:Just a reminder, I can't really hear what you're saying unless you speak into the <u>special ring</u> I gave you. 
 Handler:So please, <i>please</i> do not lose that, or I won't be able to help you.
