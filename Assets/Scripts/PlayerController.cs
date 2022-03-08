@@ -820,6 +820,7 @@ public class PlayerController : MonoBehaviour
                 if (thisItem.item.itemName.Equals(i))
                 {
                     _player.inventory.InventoryItems.Remove(thisItem);
+                    break;
                 }
             }
         }
