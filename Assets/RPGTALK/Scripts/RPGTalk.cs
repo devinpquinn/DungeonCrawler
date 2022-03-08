@@ -2152,14 +2152,18 @@ public class RPGTalk : MonoBehaviour
                     (passWithInputButton != "" && Input.GetButtonDown(passWithInputButton)) || (passWithKey != KeyCode.None && Input.GetKeyDown(passWithKey))
                 && currentChar > 3))
             {
+                //why is the above not working right? oh well
+                if(currentChar > 3)
+                {
+                    currentChar = rpgtalkElements[cutscenePosition - 1].dialogText.Length;
+                    PutRightTextToShow();
 
-                currentChar = rpgtalkElements[cutscenePosition - 1].dialogText.Length;
-                PutRightTextToShow();
+                    rpgAudioSorce.PlayOneShot(passAudio);
 
-                rpgAudioSorce.PlayOneShot(passAudio);
-
-                //Do what we have to do if the the text just ended
-                TextEnded();
+                    //Do what we have to do if the the text just ended
+                    TextEnded();
+                }
+                
             }
 
 

@@ -13,12 +13,12 @@ Player:[expression=?]THIS ACCURSED [jitter=6 angle=1]*TRI-STATE AREA*[/jitter].
 [title=walked-start]
 Player:I USED *WASD* TO TAKE MY FIRST STEPS^
 Handler:Hey, let's focus up, 'kay?
-Handler:Just a reminder, I can't really hear what you're saying unless you speak into the <u>special ring</u> I gave you. 
+Handler:Just a reminder, I can't really hear what you're saying unless you speak into the <i>special ring</i> I gave you. 
 Handler:So please, <i>please</i> do not lose that, or I won't be able to help you.
 Player:FEAR NOT. I HAVE TAPED IT SECURELY TO MY HAND JUST LIKE YOU YELLED AT ME TO DO.
 Handler:Great. Okay, the entrance should be hidden somewhere nearby. Poke around, see if you can find it.
 Player:POKE I SHALL. AND ANYTHING THAT REQUIRES POKING, I SHALL CLICK WITH MY [jitter=6 angle=1]*LEFT MOUSE BUTTON*[/jitter].
-Player:INDEED, [jitter=6 angle=1]*LEFT MOUSE BUTTON*[/jitter]. NOT THE *RIGHT*. THAT DOES SOMETHING <u>DIFFERENT</u>.
+Player:INDEED, [jitter=6 angle=1]*LEFT MOUSE BUTTON*[/jitter]. NOT THE *RIGHT*. THAT DOES SOMETHING <i>DIFFERENT</i>.
 [title=walked-end]
 
 [title=lighted-start]
