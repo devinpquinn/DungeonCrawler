@@ -6,7 +6,7 @@ Player:ONE DAY, BROTHERS AND SISTERS, I SHALL BE BY YOUR SIDE.
 [title=intro-start]
 Player:I REMEMBER WELL A NIGHT SUCH AS THIS.
 Player:WHEN FIRST I SET FOOT ON THIS BINDING EARTH... THIS HOLLOW, CRUMBLING LAND...
-Player:[expression=?]THIS ACCURSED [jitter=6 angle=1]*TRI-STATE AREA*[/jitter].
+Player:[expression=?]THIS ACCURSED *TRI-STATE AREA*.
 (Use *WASD* to take your first steps)
 [title=intro-end]
 
@@ -17,8 +17,8 @@ Handler:Just a reminder, I can't really hear what you're saying unless you speak
 Handler:So please, <i>please</i> do not lose that, or I won't be able to help you.
 Player:FEAR NOT. I HAVE TAPED IT SECURELY TO MY HAND JUST LIKE YOU YELLED AT ME TO DO.
 Handler:Great. Okay, the entrance should be hidden somewhere nearby. Poke around, see if you can find it.
-Player:POKE I SHALL. AND ANYTHING THAT REQUIRES POKING, I SHALL CLICK WITH MY [jitter=6 angle=1]*LEFT MOUSE BUTTON*[/jitter].
-Player:INDEED, [jitter=6 angle=1]*LEFT MOUSE BUTTON*[/jitter]. NOT THE *RIGHT*. THAT DOES SOMETHING <i>DIFFERENT</i>.
+Player:POKE I SHALL. AND ANYTHING THAT REQUIRES POKING, I SHALL CLICK WITH MY *<i>LEFT MOUSE BUTTON*</i>.
+Player:INDEED, *<i>LEFT MOUSE BUTTON</i>*. NOT THE *RIGHT*. THAT DOES SOMETHING <i>DIFFERENT</i>.
 [title=walked-end]
 
 [title=lighted-start]

@@ -1,7 +1,7 @@
 ----------GATE----------
 
 [title=gate-first-start]
-A point of egress through an insurmountably thigh-high barrier.
+A point of passage through an insurmountably thigh-high barrier.
 {checkForKey}
 [title=gate-first-end]
 
@@ -24,7 +24,7 @@ Handler:Nicely done.
 
 [title=gate-advice-start]
 Handler:Use the key, you lump.
-Handler:It's in your stuff. Press [jitter=6 angle=1]*Tab*[/jitter] to open and close your inventory (out of dialogue) and click on an item to equip it.
+Handler:It's in your stuff. Press *Tab* to open and close your inventory (out of dialogue) and click on an item to equip it.
 [title=gate-advice-end]
 
 ----------GATE----------
