@@ -618,15 +618,15 @@ public class PlayerController : MonoBehaviour
         FocusCam(currentInteractable.transform);
 
         //set dialogue panel position
-        if (Camera.main.WorldToScreenPoint(currentInteractable.transform.position).y > Camera.main.scaledPixelHeight / 2)
-        {
-            //move dialogue panel to bottom
-            MoveDialoguePanelToBottom();
-        }
-        else
+        if (currentInteractable.transform.position.y > bodyCameraTarget.transform.position.y)
         {
             //move dialogue panel to top
             MoveDialoguePanelToTop();
+        }
+        else
+        {
+            //move dialogue panel to bottom
+            MoveDialoguePanelToBottom();
         }
 
         //hide inventory
