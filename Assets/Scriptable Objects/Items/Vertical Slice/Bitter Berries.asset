@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 0
   itemName: Bitter Berries
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: 21300000, guid: 97d1024f48e5c4846abf325931b8ad2f, type: 3}
   itemDescription: I don't know why I took these. I truly do not need to eat.

@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 0
   itemName: Trail Mix
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: -5266745496976646593, guid: a88b2693082857b46ab6cdefd69328e6,
+    type: 3}
   itemDescription: She said to take this in case I get hungry (I will not get hungry).

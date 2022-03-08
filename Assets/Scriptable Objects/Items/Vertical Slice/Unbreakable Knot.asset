@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 0
   itemName: Unbreakable Knot
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: 21300000, guid: 34c6abdb807cdb44896ba2c4c1ab4f97, type: 3}
   itemDescription: A ring that allows communication over great distances. Half of
     a pair.
