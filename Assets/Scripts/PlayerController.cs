@@ -656,6 +656,28 @@ public class PlayerController : MonoBehaviour
         body_anim.SetFloat("Speed", 0);
     }
 
+    public void UpdateItemThumbnailExternal()
+    {
+        //check if there is an equipped item to display
+        if (equippedItem == null)
+        {
+            itemThumbnailParent.SetActive(false);
+        }
+        else
+        {
+            itemThumbnailParent.SetActive(true);
+
+            //find image corresponding to equipped item
+            for (int i = 0; i < inventory.InventoryItems.Count; i++)
+            {
+                if (inventory.InventoryItems[i].item.itemName == equippedItem)
+                {
+                    itemThumbnail.sprite = inventory.InventoryItems[i].item.itemSprite;
+                }
+            }
+        }
+    }
+
     //done talking
     public static void EndInteraction()
     {
@@ -820,6 +842,14 @@ public class PlayerController : MonoBehaviour
                 if (thisItem.item.itemName.Equals(i))
                 {
                     _player.inventory.InventoryItems.Remove(thisItem);
+
+                    //check if item is equipped
+                    if(_player.equippedItem != null && _player.equippedItem == i)
+                    {
+                        PlayerController.UnequipAllItems();
+                        _player.itemThumbnailParent.SetActive(false);
+                    }
+
                     break;
                 }
             }

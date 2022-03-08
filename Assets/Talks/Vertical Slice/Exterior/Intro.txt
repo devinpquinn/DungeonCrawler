@@ -7,7 +7,7 @@ Player:ONE DAY, BROTHERS AND SISTERS, I SHALL BE BY YOUR SIDE.
 Player:I REMEMBER WELL A NIGHT SUCH AS THIS.
 Player:WHEN FIRST I SET FOOT ON THIS BINDING EARTH... THIS HOLLOW, CRUMBLING LAND...
 Player:[expression=?]THIS ACCURSED *TRI-STATE AREA*.
-(Use *WASD* to take your first steps)
+(Use *WASD* to move)
 [title=intro-end]
 
 [title=walked-start]

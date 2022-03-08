@@ -72,6 +72,9 @@ public class FirstStepsArea : MonoBehaviour
         PlayerController.Instance.inventoryPanelRect.gameObject.SetActive(false);
         PlayerController.Instance.itemDescriptionPanel.SetActive(false);
 
+        //check if there is an equipped item to display
+        PlayerController.Instance.UpdateItemThumbnailExternal();
+
         myTalk.txtToParse = myText;
 
         myTalk.callback.RemoveAllListeners();

@@ -6,8 +6,8 @@ A point of passage through an insurmountably thigh-high barrier.
 [title=gate-first-end]
 
 [title=gate-no-item-start]
-(You have the key to this gate in your inventory. While not in dialogue, *Tab* opens and closes your inventory)
-(Click on an item in your inventory to equip it. Having a context-appropriate item equipped may give you special options in dialogue)
+(I have the key to this gate in my inventory. While not in dialogue, *Tab* opens and closes my inventory)
+(Click on an item in my inventory to equip it. Having a context-appropriate item equipped may give me special options in dialogue)
 [title=gate-no-item-end]
 
 [title=gate-item-start]
@@ -18,7 +18,7 @@ Player:[expression=?][question=q]
 [title=gate-item-end]
 
 [title=gate-opened-start]
-The gate swings open less than smoothly, its hinges creaking in the damp night air. In your efforts, you snap off the key in the old lock.{openGate}
+The gate swings open less than smoothly, its hinges creaking in the damp night air. In my efforts, I snap off the key in the old lock.{openGate}
 Handler:Nicely done.
 [title=gate-opened-end]
 
