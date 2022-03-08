@@ -1,0 +1,28 @@
+----------GATE----------
+
+[title=gate-first-start]
+A point of egress through an insurmountably thigh-high barrier.
+{checkForKey}
+[title=gate-first-end]
+
+[title=gate-no-item-start]
+(You have the key to this gate in your inventory. While not in dialogue, *Tab* opens and closes your inventory)
+(Click on an item in your inventory to equip it. Having a context-appropriate item equipped may give you special options in dialogue)
+[title=gate-no-item-end]
+
+[title=gate-item-start]
+Player:[expression=?][question=q]
+[choice][?=item:Iron Key][Iron Key] Unlock the gate.<gate-opened>
+[choice][?=item:Unbreakable Knot][Unbreakable Knot] Ask for advice.<gate-advice>
+[choice]Leave the gate be.
+[title=gate-item-end]
+
+[title=gate-opened-start]
+The gate swings open less than smoothly, its hinges creaking in the damp night air. In your efforts, you snap off the key in the old lock.{openGate}
+Handler:Nicely done.
+[title=gate-opened-end]
+
+[title=gate-advice-start]
+Handler:Use the key, you lump.
+Handler:It's in your stuff. Press [jitter=6 angle=1]*Tab*[/jitter] to open and close your inventory (out of dialogue) and click on an item to equip it.
+[title=gate-advice-end]

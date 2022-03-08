@@ -7,7 +7,7 @@ Player:ONE DAY, BROTHERS AND SISTERS, I SHALL BE BY YOUR SIDE.
 Player:I REMEMBER WELL A NIGHT SUCH AS THIS.
 Player:WHEN FIRST I SET FOOT ON THIS BINDING EARTH... THIS HOLLOW, CRUMBLING LAND...
 Player:[expression=?]THIS ACCURSED [jitter=6 angle=1]*TRI-STATE AREA*[/jitter].
-(Use WASD to take your first steps)
+(Use *WASD* to take your first steps)
 [title=intro-end]
 
 [title=walked-start]
@@ -25,5 +25,5 @@ Player:INDEED, [jitter=6 angle=1]*LEFT MOUSE BUTTON*[/jitter]. NOT THE *RIGHT*. 
 Player:AN OUT-OF-BODY EXPERIENCE.
 Player:[expression=?]WHEN I AM NOT CONFINED TO THIS CLANKING SUIT, I MAY SCOUT AROUND WITHOUT FEAR OF DANGER... BUT, AS MERE LIGHT, CANNOT ACT.
 Handler:What? If you're talking to me I can't^
-Player:(I AM SAYING ALL OF THIS OUT LOUD. AN INTERNAL MONOLOGUE IS THE COWARD'S WAY.)
+Player:(I AM SAYING ALL OF THIS OUT LOUD. AN INTERNAL MONOLOGUE IS THE COWARD'S WAY)
 [title=lighted-end]
