@@ -2447,8 +2447,8 @@ public class RPGTalk : MonoBehaviour
         {
             if (textToDisplay.Length > textUI.GetCurrentText().Length)
             {
-                string alphanumberic = "abcdefghijklmnopqrztuvwxyz1234567890";
-                if(alphanumberic.Contains(textToDisplay.Substring(textToDisplay.Length - 1).ToLower()))
+                string silentChars = ",.-?!;:()[]{}*& ";
+                if(!silentChars.Contains(textToDisplay.Substring(textToDisplay.Length - 1).ToLower()))
                 {
                     float basePitch = 1f;
 
