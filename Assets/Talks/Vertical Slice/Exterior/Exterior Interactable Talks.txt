@@ -26,3 +26,5 @@ Handler:Nicely done.
 Handler:Use the key, you lump.
 Handler:It's in your stuff. Press [jitter=6 angle=1]*Tab*[/jitter] to open and close your inventory (out of dialogue) and click on an item to equip it.
 [title=gate-advice-end]
+
+----------GATE----------
