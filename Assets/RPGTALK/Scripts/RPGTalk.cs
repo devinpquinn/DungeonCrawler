@@ -1577,6 +1577,7 @@ public class RPGTalk : MonoBehaviour
         //check if the user have some newtalk and the line asks for one
         if (line.IndexOf("<") != -1 && line.IndexOf(">") != -1)
         {
+            Debug.Log("found");
             //We do have one!
             int initialBracket = line.IndexOf("<");
             int finalBracket = -1;

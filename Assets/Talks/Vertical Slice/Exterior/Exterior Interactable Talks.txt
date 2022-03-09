@@ -19,7 +19,7 @@ Player:[expression=?][question=q]
 
 [title=gate-opened-start]
 The gate swings open less than smoothly, its hinges creaking in the damp night air. In my efforts, I snap off the key in the old lock.{openGate}
-Handler:Nicely done.
+Handler:Nice.
 [title=gate-opened-end]
 
 [title=gate-advice-start]
@@ -28,3 +28,28 @@ Handler:It's in your stuff. Press *Tab* to open and close your inventory (out of
 [title=gate-advice-end]
 
 ----------GATE----------
+
+----------SHOVEL----------
+
+[title=shovel-first-start]
+An old, somewhat rusty, short-handled shovel. Besides digging up berry bushes, this could also be useful for excavating secret passages.<shovel-q>
+[title=shovel-first-end]
+
+[title=shovel-q-start]
+Player:[expression=?][question=q]
+[choice]Take the shovel.<took-shovel>
+[choice][?=item:Unbreakable Knot][Unbreakable Knot] Could this be a trap?<shovel-advice>
+[choice] Step away.
+[title=shovel-q-end]
+
+[title=shovel-advice-start]
+Player:I HAVE A STRANGE HUNCH THAT PERHAPS THIS SHOVEL IS TRAPPED.
+Handler:Well, that's a stupid hunch. We won't need to worry abput traps until you actually get underground.
+Handler:...I think.
+[title=shovel-advice-end]
+
+[title=took-shovel-start]
+I pull the shovel from the earth and tuck it securely beneath my capacious cloak.{tookShovel}
+[title=took-shovel-end]
+
+----------SHOVEL----------
