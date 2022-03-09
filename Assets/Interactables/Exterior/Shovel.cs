@@ -32,6 +32,7 @@ public class Shovel : Interactable
             shovelSpriteRenderer.sprite = shovelTakenSprite;
             shovelSpriteRenderer.gameObject.GetComponent<ShadowCaster2D>().enabled = false;
             shovelSpriteRenderer.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            this.gameObject.layer = 0;
 
             PlayerController.AddItem(shovelItem);
         }
