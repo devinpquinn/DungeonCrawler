@@ -36,12 +36,13 @@ An old, somewhat rusty, short-handled shovel. Besides digging up berry bushes, t
 Player:[expression=?][question=q]
 [choice]Take the shovel.<took-shovel>
 [choice][?=item:Unbreakable Knot][Unbreakable Knot] Could this be a trap?<shovel-advice>
-[choice] Step away.
+[choice]Step away.
 [title=shovel-end]
 
 [title=shovel-advice-start]
-Player:I HAVE A STRANGE HUNCH THAT PERHAPS THIS SHOVEL IS TRAPPED.
-Handler:Well, that's a stupid hunch. We won't need to worry abput traps until you actually get underground.
+Player:THIS DISCARDED TOOL SEEMS ALMOST TOO CONVENIENT. 
+Player:[expression=?]PERHAPS IT IS TRAPPED, AND THE SPIRITS OF THE DEAD WILL RISE TO NIP AT MY HEELS AS SOON AS I TOUCH IT.
+Handler:Stop being ridiculous. We don't need to worry about traps until you actually get underground.
 Handler:...I think.
 [title=shovel-advice-end]
 
