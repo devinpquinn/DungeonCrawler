@@ -1662,6 +1662,14 @@ public class RPGTalk : MonoBehaviour
 
                     if (eventKeyString.Length > 0)
                     {
+                        //check for newtalk
+                        if (eventKeyString.StartsWith("@"))
+                        {
+                            eventKeyString = eventKeyString.Substring(1);
+                            NewTalk(eventKeyString);
+                            return;
+                        }
+
                         //call the event?
                         if(PlayerController.GetInteractable() != null)
                         {
