@@ -24,7 +24,7 @@ public class CemeteryGate : Interactable
 
     public override void DoEvent(string key)
     {
-
+        base.DoEvent(key);
         if(key == "openGate")
         {
             gateSpriteRenderer.sprite = openGateSprite;

@@ -25,6 +25,7 @@ public class Shovel : Interactable
 
     public override void DoEvent(string key)
     {
+        base.DoEvent(key);
         if(key == "tookShovel")
         {
             //edit original shovel object

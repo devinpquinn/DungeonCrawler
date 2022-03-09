@@ -48,6 +48,11 @@ public class Interactable : MonoBehaviour
     //called from text document
     public virtual void DoEvent(string key)
     {
+        if (key.StartsWith("@"))
+        {
+            key = key.Substring(1);
+            myTalk.NewTalk(key);
+        }
         //do the event designated by the text key
     }
 

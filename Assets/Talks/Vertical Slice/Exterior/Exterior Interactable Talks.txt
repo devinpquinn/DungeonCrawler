@@ -28,7 +28,8 @@ Handler:It's in your stuff. Press *Tab* to open and close your inventory (out of
 ----------SHOVEL----------
 
 [title=shovel-first-start]
-An old, somewhat rusty, short-handled shovel. Besides digging up berry bushes, this could also be useful for excavating secret passages. <shovel>
+An old, somewhat rusty, short-handled shovel. Besides digging up berry bushes, this could also be useful for excavating secret passages.
+{@shovel}
 [title=shovel-first-end]
 
 [title=shovel-start]
