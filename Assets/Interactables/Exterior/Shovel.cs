@@ -14,7 +14,7 @@ public class Shovel : Interactable
         base.Interact();
         if (interactedWith)
         {
-            myTalk.NewTalk("shovel-q");
+            myTalk.NewTalk("shovel");
         }
         else
         {

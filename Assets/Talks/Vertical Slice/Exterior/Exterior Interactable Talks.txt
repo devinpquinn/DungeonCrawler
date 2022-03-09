@@ -1,11 +1,7 @@
 ----------GATE----------
 
-[title=gate-first-start]
-A point of passage through an insurmountably thigh-high barrier.
-{checkForKey}
-[title=gate-first-end]
-
 [title=gate-no-item-start]
+A point of passage through an insurmountably thigh-high barrier.
 (I have the key to this gate in my inventory. While not in dialogue, *Tab* opens and closes my inventory)
 (Click on an item in my inventory to equip it. Having a context-appropriate item equipped may give me special options in dialogue)
 [title=gate-no-item-end]
@@ -32,15 +28,15 @@ Handler:It's in your stuff. Press *Tab* to open and close your inventory (out of
 ----------SHOVEL----------
 
 [title=shovel-first-start]
-An old, somewhat rusty, short-handled shovel. Besides digging up berry bushes, this could also be useful for excavating secret passages.<shovel-q>
+An old, somewhat rusty, short-handled shovel. Besides digging up berry bushes, this could also be useful for excavating secret passages. <shovel-q>
 [title=shovel-first-end]
 
-[title=shovel-q-start]
+[title=shovel-start]
 Player:[expression=?][question=q]
 [choice]Take the shovel.<took-shovel>
 [choice][?=item:Unbreakable Knot][Unbreakable Knot] Could this be a trap?<shovel-advice>
 [choice] Step away.
-[title=shovel-q-end]
+[title=shovel-end]
 
 [title=shovel-advice-start]
 Player:I HAVE A STRANGE HUNCH THAT PERHAPS THIS SHOVEL IS TRAPPED.

@@ -12,23 +12,20 @@ public class CemeteryGate : Interactable
     public override void Interact()
     {
         base.Interact();
-        myTalk.NewTalk("gate-first");
+        if (PlayerController.GetEquippedItem() != null)
+        {
+            myTalk.NewTalk("gate-item");
+        }
+        else
+        {
+            myTalk.NewTalk("gate-no-item");
+        }
     }
 
     public override void DoEvent(string key)
     {
-        if(key == "checkForKey")
-        {
-            if(PlayerController.GetEquippedItem() != null)
-            {
-                myTalk.NewTalk("gate-item");
-            }
-            else
-            {
-                myTalk.NewTalk("gate-no-item");
-            }
-        }
-        else if(key == "openGate")
+
+        if(key == "openGate")
         {
             gateSpriteRenderer.sprite = openGateSprite;
             gateCollider.enabled = false;
