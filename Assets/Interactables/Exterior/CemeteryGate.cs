@@ -14,12 +14,20 @@ public class CemeteryGate : Interactable
         base.Interact();
         if (PlayerController.GetEquippedItem() != null)
         {
-            myTalk.NewTalk("gate-item");
+            if (interactedWith)
+            {
+                myTalk.NewTalk("gate-item");
+            }
+            else
+            {
+                myTalk.NewTalk("gate-item-first");
+            }
         }
         else
         {
             myTalk.NewTalk("gate-no-item");
         }
+        interactedWith = true;
     }
 
     public override void DoEvent(string key)

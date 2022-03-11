@@ -6,6 +6,14 @@ A point of passage through an insurmountably thigh-high barrier.
 (Click on an item in my inventory to equip it. Having a context-appropriate item equipped may give me special options in dialogue)
 [title=gate-no-item-end]
 
+[title=gate-item-first-start]
+A point of passage through an insurmountably thigh-high barrier.
+Player:[expression=?][question=q]
+[choice][?=item:Iron Key][Iron Key] Unlock the gate.<gate-opened>
+[choice][?=item:Unbreakable Knot][Unbreakable Knot] Ask for advice.<gate-advice>
+[choice]Leave the gate be.
+[title=gate-item-first-end]
+
 [title=gate-item-start]
 Player:[expression=?][question=q]
 [choice][?=item:Iron Key][Iron Key] Unlock the gate.<gate-opened>
