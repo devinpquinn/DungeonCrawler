@@ -33,6 +33,9 @@ public class FirstStepsArea : MonoBehaviour
     private void Start()
     {
         Invoke("First", 2);
+
+        //set inventory
+        PlayerController.RemoveAllItems();
         foreach(ItemObject i in startingItems)
         {
             PlayerController.AddItem(i);

@@ -6,7 +6,6 @@ using UnityEngine.Experimental.Rendering.Universal;
 public class Shovel : Interactable
 {
     public SpriteRenderer shovelSpriteRenderer;
-    public Sprite shovelTakenSprite;
     public ItemObject shovelItem;
 
     public override void Interact()
@@ -28,7 +27,7 @@ public class Shovel : Interactable
         if(key == "tookShovel")
         {
             //edit original shovel object
-            shovelSpriteRenderer.sprite = shovelTakenSprite;
+            shovelSpriteRenderer.enabled = false;
             shovelSpriteRenderer.gameObject.GetComponent<ShadowCaster2D>().enabled = false;
             shovelSpriteRenderer.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             this.gameObject.layer = 0;

@@ -13,6 +13,11 @@ public class Inventory : ScriptableObject, ISerializationCallbackReceiver
         InventoryItems.Add(new InventorySlot(database.GetID[item], item));
     }
 
+    public void RemoveAllItems()
+    {
+        InventoryItems = new List<InventorySlot>();
+    }
+
     public void OnAfterDeserialize()
     {
         for (int i = 0; i < InventoryItems.Count; i++)

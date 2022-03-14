@@ -855,6 +855,12 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+    public static void RemoveAllItems()
+    {
+        _player.inventory.RemoveAllItems();
+    }
+
     public static bool CheckForItem(string i)
     {
         //check if player has item in inventory
