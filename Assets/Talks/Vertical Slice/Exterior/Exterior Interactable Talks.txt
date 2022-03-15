@@ -71,7 +71,7 @@ I pull the shovel from the earth and tuck it securely beneath my capacious cloak
 [title=obol-start]
 Player:[expression=?][question=q]
 [choice][?=item:Unbreakable Knot][Unbreakable Knot] Describe the marker. <obol-knot>
-[choice][?=item:Scrawled Notes][Scrawled Notes] Consult your notes. <obol-notes>
+[choice][?=item:Scrawled Notes][Scrawled Notes] Consult my notes. <obol-notes>
 [choice][?=item:Hateful Shovel][Hateful Shovel] Dig! <obol-shovel>
 [choice]Step away.
 [title=obol-end]
@@ -92,3 +92,23 @@ My shovel cracks through the old, soggy wood covering a cylindrical pit. A ladde
 [title=obol-shovel-end]
 
 ----------OBOL----------
+
+----------HOLE----------
+
+[title=hole-first-start]
+The ladder leads down into absolute blackness.
+{@hole}
+[title=hole-first-end]
+
+[title=hole-start]
+Player:[expression=?][question=q]
+[choice]Descend. <down>
+[choice]Step away from the beckoning dark.
+[title=hole-end]
+
+[title=down-start]
+Player:FAREWELL, STARLIGHT.
+{sceneTransition}
+[title=down-end]
+
+----------HOLE----------

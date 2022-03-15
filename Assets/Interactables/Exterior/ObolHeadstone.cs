@@ -9,7 +9,6 @@ public class ObolHeadstone : Interactable
     public bool CheckEquipped()
     {
         string itemCheck = PlayerController.GetEquippedItem();
-        Debug.Log(itemCheck);
         if (itemCheck == "Unbreakable Knot" || itemCheck == "Scrawled Notes" || itemCheck == "Hateful Shovel")
         {
             return true;
