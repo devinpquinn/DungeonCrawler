@@ -1,6 +1,5 @@
 [title=begin-start]
-Player:[speed=10]...[/speed]^
-(Click to advance dialogue)
+Player:[speed=10]... [/speed](Click to advance dialogue)
 Player:ONE DAY, BROTHERS AND SISTERS, I SHALL RETURN TO YOUR SIDE.
 Player:BUT FIRST, THIS LOWER DARK.
 [title=begin-end]
@@ -17,7 +16,7 @@ Player:MY DODDERING FIRST STEPS...
 Player:I USED *WASD* TO PROPEL THIS STRANGE BODY^
 Handler:Hey, let's focus up, 'kay?
 Handler:Just a reminder, I can't really hear what you're saying unless you speak into the *<i>special ring</i>* I gave you.
-Handler:So please, <i>please</i> do not lose that, or I won't be able to help you.
+Handler:Please, <i>please</i> do not lose that, or I won't be able to help you.
 Player:FEAR NOT. I HAVE TAPED IT SECURELY TO MY HAND JUST LIKE YOU YELLED AT ME TO DO.
 Handler:Great. Okay, the entrance should be hidden somewhere nearby. Poke around, see if you can find it.
 Player:POKE I SHALL. AND ANYTHING THAT REQUIRES POKING, I SHALL CLICK WITH MY *<i>LEFT MOUSE BUTTON*</i>.
