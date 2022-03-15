@@ -60,3 +60,35 @@ I pull the shovel from the earth and tuck it securely beneath my capacious cloak
 [title=took-shovel-end]
 
 ----------SHOVEL----------
+
+----------OBOL----------
+
+[title=obol-first-start]
+"OBOL - May you pass safely across night's river to the shores beyond"
+{checkObol}
+[title=obol-first-end]
+
+[title=obol-start]
+Player:[expression=?][question=q]
+[choice][?=item:Unbreakable Knot][Unbreakable Knot] Describe the marker. <obol-knot>
+[choice][?=item:Scrawled Notes][Scrawled Notes] Consult your notes. <obol-notes>
+[choice][?=item:Hateful Shovel][Hateful Shovel] Dig! <obol-shovel>
+[choice]Step away.
+[title=obol-end]
+
+[title=obol-knot-start]
+Handler:Yep, that's the one. The way in should be right beneath your feet.
+[title=obol-knot-end]
+
+[title=obol-notes-start]
+Player:IT IS INDEED A MATCH. THIS, THEN, IS THE STONE THAT MARKS THE WAY.
+[title=obol-notes-end]
+
+[title=obol-shovel-start]
+Player:SHALL I?
+Handler:You shall.
+The earth around this stone is firm, but the trapdoor, as I soon discover, is not buried deep. {dug}
+My shovel cracks through the old, soggy wood covering a cylindrical pit. A ladder leads down into the darkness.
+[title=obol-shovel-end]
+
+----------OBOL----------
