@@ -88,7 +88,7 @@ Player:IT IS INDEED A MATCH. THIS, THEN, IS THE STONE THAT MARKS THE WAY.
 Player:SHALL I?
 Handler:You shall.
 The earth around this stone is firm, but the trapdoor, as I soon discover, is not buried deep. {dug}
-My shovel cracks through the old, soggy wood covering a cylindrical pit. A ladder leads down into the darkness.
+My shovel cracks through the old, soggy wood covering a cylindrical pit. A ladder of uncertain length leads down into the darkness.
 [title=obol-shovel-end]
 
 ----------OBOL----------
@@ -96,7 +96,7 @@ My shovel cracks through the old, soggy wood covering a cylindrical pit. A ladde
 ----------HOLE----------
 
 [title=hole-first-start]
-The ladder leads down into absolute blackness.
+The ladder, and absolute blackness, awaits.
 {@hole}
 [title=hole-first-end]
 
@@ -107,7 +107,7 @@ Player:[expression=?][question=q]
 [title=hole-end]
 
 [title=down-start]
-Player:FAREWELL, STARLIGHT.
+Player:SO LONG, STARLIGHT.
 {sceneTransition}
 [title=down-end]
 
