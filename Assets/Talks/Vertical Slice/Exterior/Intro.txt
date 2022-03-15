@@ -1,5 +1,5 @@
 [title=begin-start]
-Player:[speed=10]... [/speed](Click to advance dialogue)
+Player:[speed=6]... [/speed]
 Player:ONE DAY, BROTHERS AND SISTERS, I SHALL RETURN TO YOUR SIDE.
 Player:BUT FIRST, THIS LOWER DARK.
 [title=begin-end]
