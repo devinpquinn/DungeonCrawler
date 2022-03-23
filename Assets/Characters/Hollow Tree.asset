@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d46921e71e9f04ccb83ec685be24573c, type: 3}
+  m_Name: Hollow Tree
+  m_EditorClassIdentifier: 
+  dialoger: Hollow Tree
+  photo: {fileID: 21300000, guid: d8c8a3fc84a4efb4e8fa20eb4b874065, type: 3}
+  voice: {fileID: 0}
+  textSpeed: 50
+  color: {r: 0, g: 0, b: 0, a: 0}
+  expressions: []

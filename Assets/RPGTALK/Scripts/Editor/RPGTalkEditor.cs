@@ -134,7 +134,7 @@ public class RPGTalkEditor : Editor
             {
                 if (rpgTalk.characters != null)
                 {
-                    for (int i = 0; i < rpgTalk.characters.Length; i++)
+                    for (int i = 0; i < rpgTalk.characters.Count; i++)
                     {
                         EditorGUILayout.LabelField("Who is this character?");
                         EditorGUILayout.BeginHorizontal();
@@ -168,13 +168,13 @@ public class RPGTalkEditor : Editor
                     serializedObject.FindProperty("characters").InsertArrayElementAtIndex(serializedObject.FindProperty("characters").arraySize);
                 }
             }
-            if (GUILayout.Button(hideCharacters ? "Show " + rpgTalk.characters.Length + " characters" : "Hide Characters"))
+            if (GUILayout.Button(hideCharacters ? "Show " + rpgTalk.characters.Count + " characters" : "Hide Characters"))
             {
                 hideCharacters = !hideCharacters;
             }
             EditorGUILayout.EndHorizontal();
 
-            if (rpgTalk.shouldFollow && rpgTalk.characters.Length == 0)
+            if (rpgTalk.shouldFollow && rpgTalk.characters.Count == 0)
             {
                 EditorGUILayout.HelpBox("You need to set a Character and its Transform so that the Canvas can follow someone", MessageType.Error, true);
             }

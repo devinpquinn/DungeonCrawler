@@ -152,7 +152,8 @@ public class RPGTalk : MonoBehaviour
     /// <summary>
     /// A list of all Characters available in the talks with settings of stuff that should be on the scene
     /// </summary>
-    public RPGTalkCharacterSettings[] characters;
+    //public RPGTalkCharacterSettings[] characters;
+    public List<RPGTalkCharacterSettings> characters;
 
     /// <summary>
     /// An UI element with the Image property that the photo should be applied to
@@ -728,7 +729,7 @@ public class RPGTalk : MonoBehaviour
             }
             if (shouldUsePhotos)
             {
-                for (int i = 0; i < characters.Length; i++)
+                for (int i = 0; i < characters.Count; i++)
                 {
                     //If we fond the character that is talking
                     if (characters[i].character.dialoger == rpgtalkElements[0].originalSpeakerName)
@@ -2729,7 +2730,7 @@ public class RPGTalk : MonoBehaviour
                 }
                 if (shouldUsePhotos)
                 {
-                    for (int i = 0; i < characters.Length; i++)
+                    for (int i = 0; i < characters.Count; i++)
                     {
                         if (characters[i].character.dialoger == currentRpgtalkElement.originalSpeakerName)
                         {
@@ -2986,7 +2987,7 @@ public class RPGTalk : MonoBehaviour
         //resets anyone that is being followed
         following = null;
         followingOffset = Vector3.zero;
-        if (shouldFollow && characters.Length > 0)
+        if (shouldFollow && characters.Count > 0)
         {
             foreach (RPGTalkCharacterSettings character in characters)
             {

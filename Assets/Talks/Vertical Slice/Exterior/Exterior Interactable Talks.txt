@@ -23,6 +23,7 @@ Player:[expression=?][question=q]
 
 [title=gate-opened-start]
 The gate swings open less than smoothly, its hinges creaking in the damp night air. In my efforts, I snap off the key in the old lock.{openGate}
+<i>[Item lost - Iron Key]</i>
 Handler:Nice.
 [title=gate-opened-end]
 
@@ -57,6 +58,7 @@ Handler:...I think.
 
 [title=took-shovel-start]
 I pull the shovel from the earth and tuck it securely beneath my capacious cloak.{tookShovel}
+<i>[Item added - Hateful Shovel]</i>
 [title=took-shovel-end]
 
 ----------SHOVEL----------
@@ -115,7 +117,39 @@ Player:SO LONG, STARLIGHT.
 
 ----------HOLLOW TREE----------
 
+[title=tree-first-start]
+Hollow Tree:A pair of beady eyes looks out at me from within the trunk of this gnarled tree.
+Hollow Tree:The creature that lives here is shaped like an owl. It hoots, softly. A sound perfectly resembling that which an owl might make.
+{@tree}
+[title=tree-first-end]
 
+[title=tree-start]
+Hollow Tree:The owl-shaped creature is hungry.
+Player:[expression=?][question=q]
+[choice][?=item:Unbreakable Knot][Unbreakable Knot] Describe the "owl." <tree-knot>
+[choice][?=item:Trail Mix][Trail Mix] Offer my trail mix. <tree-fed>
+[choice][?=item:Bitter Berries][Bitter Berries] Offer berries. <tree-berries>
+[choice]Leave the creature be.
+[title=tree-end]
+
+[title=tree-knot-start]
+Player:THERE IS A LITTLE FELLOW IN HERE. JUST A LITTLE FELLOW.
+Handler:Leave it. Could be a lookout, for all we know.
+[title=tree-knot-end]
+
+[title=tree-fed-start]
+I offer what morsels of food I have to the owlish form in the darkness. It snaps them gratefully from my gloved palm with a satisfied chirrup.{owlItem}
+In return, it hacks up a mangled wad of fur and tiny bones. Loath to refuse this gift, I squelch it into my pocket.
+Player:A FAIR AND JUST EXCHANGE, O CREATURE.
+<i>[Item lost - Trail Mix]</i>
+<i>[Item added - "Owl" Pellet]</i>
+[title=tree-fed-end]
+
+[title=tree-berries-start]
+The creature recoils violently from the handful of berries I proffer, hissing.
+In its panic to retreat into the bowels of the tree, it hacks up a mangled wad of fur and tiny bones.
+<i>[Item added - "Owl" Pellet]</i> {owlItem}
+[title=tree-berries-end]
 
 ----------HOLLOW TREE----------
 

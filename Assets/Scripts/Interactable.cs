@@ -64,4 +64,11 @@ public class Interactable : MonoBehaviour
         }
         return false;
     }
+
+    public void AddCharacter(RPGTALK.Helper.RPGTalkCharacter charToAdd)
+    {
+        RPGTALK.Helper.RPGTalkCharacterSettings settings = new RPGTALK.Helper.RPGTalkCharacterSettings();
+        settings.character = charToAdd;
+        myTalk.characters.Add(settings);
+    }
 }
