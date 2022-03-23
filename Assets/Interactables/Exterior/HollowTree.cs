@@ -18,7 +18,22 @@ public class HollowTree : Interactable
         base.Interact();
         if (interactedWith)
         {
-            myTalk.NewTalk("tree");
+            if (PlayerController.GetEquippedItem() != null)
+            {
+                string equippedItem = PlayerController.GetEquippedItem();
+                if (equippedItem == "Unbreakable Knot" || equippedItem == "Trail Mix" || equippedItem == "Bitter Berries")
+                {
+                    myTalk.NewTalk("tree");
+                }
+                else
+                {
+                    myTalk.NewTalk("tree-no-item");
+                }
+            }
+            else
+            {
+                myTalk.NewTalk("tree-no-item");
+            }
         }
         else
         {
@@ -40,6 +55,25 @@ public class HollowTree : Interactable
 
             treeAnim.Play("hollowTreeNoEyes");
             gameObject.layer = 0;
+        }
+        else if(key == "checkTreeItem")
+        {
+            if(PlayerController.GetEquippedItem() != null)
+            {
+                string equippedItem = PlayerController.GetEquippedItem();
+                if(equippedItem == "Unbreakable Knot" || equippedItem == "Trail Mix" || equippedItem == "Bitter Berries")
+                {
+                    myTalk.NewTalk("tree");
+                }
+                else
+                {
+                    myTalk.NewTalk("tree-no-item");
+                }
+            }
+            else
+            {
+                myTalk.NewTalk("tree-no-item");
+            }
         }
     }
 }

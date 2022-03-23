@@ -118,13 +118,17 @@ Player:SO LONG, STARLIGHT.
 ----------HOLLOW TREE----------
 
 [title=tree-first-start]
-Hollow Tree:A pair of beady eyes looks out at me from within the trunk of this gnarled tree.
-Hollow Tree:The creature that lives here is shaped like an owl. It hoots, softly. A sound perfectly resembling that which an owl might make.
-{@tree}
+A pair of beady eyes looks out at me from within the trunk of this gnarled tree.
+The creature that lives here is shaped like an owl. It hoots, softly. A sound perfectly resembling that which an owl might make.
+{checkTreeItem}
 [title=tree-first-end]
 
+[title=tree-no-item-start]
+The owl-shaped creature is hungry.
+[title=tree-no-item-end]
+
 [title=tree-start]
-Hollow Tree:The owl-shaped creature is hungry.
+The owl-shaped creature is hungry.
 Player:[expression=?][question=q]
 [choice][?=item:Unbreakable Knot][Unbreakable Knot] Describe the "owl." <tree-knot>
 [choice][?=item:Trail Mix][Trail Mix] Offer my trail mix. <tree-fed>
