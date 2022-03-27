@@ -186,17 +186,26 @@ Player:TO HAVE.
 
 ----------BERRY BUSH----------
 
-----------BERRY BENCH----------
+----------BERRY BENCH & BUSH HOLE----------
 
+[title=berry-bench-start]
+The plaque on this bench reads - "G + N: May these modest brambles bear fruit such as our love has borne"
+[title=berry-bench-end]
 
+[title=bush-hole-start]
+This bush, once fruitful, has been dug up. Not even the roots remain.
+[title=bush-hole-end]
 
-----------BERRY BENCH----------
+----------BERRY BENCH & BUSH HOLE----------
 
-----------STUMP & STUMP BENCH----------
+----------STUMP BENCH----------
 
+[title=stump-bench-start]
+The plaque on this bench reads - "<s>Agnes</s> Maisie - Let these sturdy oaks stand firm together as we shall, always"
+Neither tree is an oak.
+[title=stump-bench-end]
 
-
-----------STUMP & STUMP BENCH----------
+----------STUMP BENCH----------
 
 ----------MOUSEOLEUM----------
 
