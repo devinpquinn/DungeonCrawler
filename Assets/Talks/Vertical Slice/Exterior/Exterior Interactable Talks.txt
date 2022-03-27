@@ -159,7 +159,30 @@ In its panic to retreat into the bowels of the tree, it hacks up a mangled wad o
 
 ----------BERRY BUSH----------
 
+[title=berries-start]
+Small scarlet berries stipple this scraggly shrub.
+{@berries-q}
+[title=berries-end]
 
+[title=berries-q-start]
+Player:[expression=?][question=q]
+[choice][?=item:Unbreakable Knot][Unbreakable Knot] Ask about berries. <berries-knot>
+[choice]Pick a few berries.
+[choice]Step away.
+[title=berries-q-end]
+
+[title=berries-knot-start]
+Handler:Careful, those might be poisonous.
+Handler:Wait... you don't even eat.
+{@berries-q}
+[title=berries-knot-end]
+
+[title=took-berries-start]
+I swiftly pluck and pocket a juicy handful.
+Handler:Why?
+Player:TO HAVE.
+<i>[Item added - Bitter Berries]</i> {berryItem}
+[title=took-berries-end]
 
 ----------BERRY BUSH----------
 
@@ -177,7 +200,22 @@ In its panic to retreat into the bowels of the tree, it hacks up a mangled wad o
 
 ----------MOUSEOLEUM----------
 
+[title=maus-start]
+This structure is too small for me to enter, but my gaze starkly illuminates its innards, walls lined with tiny recesses.
+It is the burial hall of dozens of beloved rodents-- a "Mouse-oleum," if you will.
+Player:I WILL NOT. {checkMaus}
+[title=maus-end]
 
+[title=maus-q-start]
+Player:[expression=?][question=q]
+[choice][?=item:Unbreakable Knot][Unbreakable Knot] Report in. <maus-knot>
+[choice]Step away.
+[title=maus-q-end]
+
+[title=maus-knot-start]
+Player:COULD THE PASSAGE WE SEEK LIE WITHIN?
+Handler:If you don't see anything that matches our notes, keep looking. Tempting, though.
+[title=maus-knot-end]
 
 ----------MOUSEOLEUM----------
 
