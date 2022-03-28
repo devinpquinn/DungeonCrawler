@@ -11974,6 +11974,7 @@ GameObject:
   m_Component:
   - component: {fileID: 393153055}
   - component: {fileID: 393153056}
+  - component: {fileID: 393153057}
   m_Layer: 12
   m_Name: Headstone
   m_TagString: Untagged
@@ -12021,6 +12022,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.87824786, y: 0.9441967}
   m_EdgeRadius: 0
+--- !u!114 &393153057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393153054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d28a59a5d51c41a25ae465c9f32cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inRange: 0
+  myTalk: {fileID: 0}
+  myText: {fileID: 4900000, guid: 592e85083e9b9d844b8d47aa304cd42b, type: 3}
+  interactedWith: 0
+  title: tomb-8
 --- !u!43 &398718240
 Mesh:
   m_ObjectHideFlags: 0
@@ -18947,6 +18965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 583902097}
   - component: {fileID: 583902098}
+  - component: {fileID: 583902099}
   m_Layer: 12
   m_Name: Headstone
   m_TagString: Untagged
@@ -18994,6 +19013,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.87824786, y: 0.9441967}
   m_EdgeRadius: 0
+--- !u!114 &583902099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583902096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d28a59a5d51c41a25ae465c9f32cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inRange: 0
+  myTalk: {fileID: 0}
+  myText: {fileID: 4900000, guid: 592e85083e9b9d844b8d47aa304cd42b, type: 3}
+  interactedWith: 0
+  title: tomb-2
 --- !u!43 &584377086
 Mesh:
   m_ObjectHideFlags: 0
@@ -24437,6 +24473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 745938852}
   - component: {fileID: 745938853}
+  - component: {fileID: 745938854}
   m_Layer: 12
   m_Name: Bench
   m_TagString: Untagged
@@ -24484,6 +24521,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8749862, y: 0.56913567}
   m_EdgeRadius: 0
+--- !u!114 &745938854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745938851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d28a59a5d51c41a25ae465c9f32cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inRange: 0
+  myTalk: {fileID: 0}
+  myText: {fileID: 4900000, guid: 592e85083e9b9d844b8d47aa304cd42b, type: 3}
+  interactedWith: 0
+  title: berry-bench
 --- !u!4 &749911392 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4553768636217280747, guid: bf1d34da8a1b0bb41ab57b673d81c541,
@@ -28931,6 +28985,7 @@ GameObject:
   m_Component:
   - component: {fileID: 921506877}
   - component: {fileID: 921506878}
+  - component: {fileID: 921506879}
   m_Layer: 12
   m_Name: Headstone
   m_TagString: Untagged
@@ -28978,6 +29033,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.866333}
   m_EdgeRadius: 0
+--- !u!114 &921506879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921506876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d28a59a5d51c41a25ae465c9f32cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inRange: 0
+  myTalk: {fileID: 0}
+  myText: {fileID: 4900000, guid: 592e85083e9b9d844b8d47aa304cd42b, type: 3}
+  interactedWith: 0
+  title: tomb-5
 --- !u!43 &922569584
 Mesh:
   m_ObjectHideFlags: 0
@@ -34193,6 +34265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1059158576}
   - component: {fileID: 1059158577}
+  - component: {fileID: 1059158578}
   m_Layer: 12
   m_Name: Disturbed Earth
   m_TagString: Untagged
@@ -34240,6 +34313,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.68857646, y: 0.37410927}
   m_EdgeRadius: 0
+--- !u!114 &1059158578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059158575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d28a59a5d51c41a25ae465c9f32cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inRange: 0
+  myTalk: {fileID: 0}
+  myText: {fileID: 4900000, guid: 592e85083e9b9d844b8d47aa304cd42b, type: 3}
+  interactedWith: 0
+  title: bush-hole
 --- !u!1 &1062513682
 GameObject:
   m_ObjectHideFlags: 0
@@ -36199,6 +36289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1092515388}
   - component: {fileID: 1092515389}
+  - component: {fileID: 1092515390}
   m_Layer: 12
   m_Name: Headstone
   m_TagString: Untagged
@@ -36246,6 +36337,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.87824786, y: 0.44051552}
   m_EdgeRadius: 0
+--- !u!114 &1092515390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092515387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d28a59a5d51c41a25ae465c9f32cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inRange: 0
+  myTalk: {fileID: 0}
+  myText: {fileID: 4900000, guid: 592e85083e9b9d844b8d47aa304cd42b, type: 3}
+  interactedWith: 0
+  title: tomb-9
 --- !u!1 &1109415984
 GameObject:
   m_ObjectHideFlags: 0
@@ -64990,6 +65098,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1499076505}
   - component: {fileID: 1499076506}
+  - component: {fileID: 1499076507}
   m_Layer: 12
   m_Name: Berry Bush
   m_TagString: Untagged
@@ -65037,6 +65146,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.87670374, y: 0.8356037}
   m_EdgeRadius: 0
+--- !u!114 &1499076507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499076504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 014a3d1650bd78748a58aa788a738faf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inRange: 0
+  myTalk: {fileID: 0}
+  myText: {fileID: 4900000, guid: 592e85083e9b9d844b8d47aa304cd42b, type: 3}
+  interactedWith: 0
+  gift: {fileID: 11400000, guid: 986ea6c143c2aae48a3b1dcde50ebdbc, type: 2}
+  bushRenderer: {fileID: 1412271463}
+  bushAfter: {fileID: 21300000, guid: 789072b340b386749891c0740ac9d637, type: 3}
 --- !u!1 &1501943164
 GameObject:
   m_ObjectHideFlags: 0
@@ -66265,6 +66393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1520578301}
   - component: {fileID: 1520578302}
+  - component: {fileID: 1520578303}
   m_Layer: 12
   m_Name: Bench
   m_TagString: Untagged
@@ -66312,6 +66441,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8749862, y: 0.56913567}
   m_EdgeRadius: 0
+--- !u!114 &1520578303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520578300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d28a59a5d51c41a25ae465c9f32cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inRange: 0
+  myTalk: {fileID: 0}
+  myText: {fileID: 4900000, guid: 592e85083e9b9d844b8d47aa304cd42b, type: 3}
+  interactedWith: 0
+  title: stump-bench
 --- !u!43 &1522343031
 Mesh:
   m_ObjectHideFlags: 0
@@ -69223,6 +69369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1607131798}
   - component: {fileID: 1607131799}
+  - component: {fileID: 1607131800}
   m_Layer: 12
   m_Name: Headstone
   m_TagString: Untagged
@@ -69270,6 +69417,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7470498, y: 1.4442062}
   m_EdgeRadius: 0
+--- !u!114 &1607131800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607131797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d28a59a5d51c41a25ae465c9f32cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inRange: 0
+  myTalk: {fileID: 0}
+  myText: {fileID: 4900000, guid: 592e85083e9b9d844b8d47aa304cd42b, type: 3}
+  interactedWith: 0
+  title: tomb-7
 --- !u!43 &1609202336
 Mesh:
   m_ObjectHideFlags: 0
@@ -69443,6 +69607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1610124910}
   - component: {fileID: 1610124911}
+  - component: {fileID: 1610124912}
   m_Layer: 12
   m_Name: Headstone
   m_TagString: Untagged
@@ -69490,6 +69655,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9328842}
   m_EdgeRadius: 0
+--- !u!114 &1610124912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610124909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d28a59a5d51c41a25ae465c9f32cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inRange: 0
+  myTalk: {fileID: 0}
+  myText: {fileID: 4900000, guid: 592e85083e9b9d844b8d47aa304cd42b, type: 3}
+  interactedWith: 0
+  title: tomb-4
 --- !u!1 &1616443991
 GameObject:
   m_ObjectHideFlags: 0
@@ -77309,6 +77491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1661636603}
   - component: {fileID: 1661636604}
+  - component: {fileID: 1661636605}
   m_Layer: 12
   m_Name: Headstone
   m_TagString: Untagged
@@ -77356,6 +77539,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.87824786, y: 0.9441967}
   m_EdgeRadius: 0
+--- !u!114 &1661636605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661636602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d28a59a5d51c41a25ae465c9f32cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inRange: 0
+  myTalk: {fileID: 0}
+  myText: {fileID: 4900000, guid: 592e85083e9b9d844b8d47aa304cd42b, type: 3}
+  interactedWith: 0
+  title: tomb-3
 --- !u!43 &1661642290
 Mesh:
   m_ObjectHideFlags: 0
@@ -77675,6 +77875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1677166268}
   - component: {fileID: 1677166269}
+  - component: {fileID: 1677166270}
   m_Layer: 12
   m_Name: Headstone
   m_TagString: Untagged
@@ -77722,6 +77923,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7470498, y: 1.4442062}
   m_EdgeRadius: 0
+--- !u!114 &1677166270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677166267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d28a59a5d51c41a25ae465c9f32cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inRange: 0
+  myTalk: {fileID: 0}
+  myText: {fileID: 4900000, guid: 592e85083e9b9d844b8d47aa304cd42b, type: 3}
+  interactedWith: 0
+  title: tomb-10
 --- !u!1 &1678233430
 GameObject:
   m_ObjectHideFlags: 0
@@ -88667,6 +88885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1768894977}
   - component: {fileID: 1768894978}
+  - component: {fileID: 1768894979}
   m_Layer: 12
   m_Name: Headstone
   m_TagString: Untagged
@@ -88714,6 +88933,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7470498, y: 1.4442062}
   m_EdgeRadius: 0
+--- !u!114 &1768894979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768894976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d28a59a5d51c41a25ae465c9f32cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inRange: 0
+  myTalk: {fileID: 0}
+  myText: {fileID: 4900000, guid: 592e85083e9b9d844b8d47aa304cd42b, type: 3}
+  interactedWith: 0
+  title: tomb-1
 --- !u!1 &1770712850
 GameObject:
   m_ObjectHideFlags: 0
@@ -90000,6 +90236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1825244714}
   - component: {fileID: 1825244715}
+  - component: {fileID: 1825244716}
   m_Layer: 12
   m_Name: Headstone
   m_TagString: Untagged
@@ -90047,6 +90284,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9328842}
   m_EdgeRadius: 0
+--- !u!114 &1825244716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825244713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d28a59a5d51c41a25ae465c9f32cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inRange: 0
+  myTalk: {fileID: 0}
+  myText: {fileID: 4900000, guid: 592e85083e9b9d844b8d47aa304cd42b, type: 3}
+  interactedWith: 0
+  title: tomb-6
 --- !u!1 &1834811812
 GameObject:
   m_ObjectHideFlags: 0

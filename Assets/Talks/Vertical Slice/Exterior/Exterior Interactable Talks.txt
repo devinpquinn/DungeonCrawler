@@ -167,21 +167,21 @@ Small scarlet berries stipple this scraggly shrub.
 [title=berries-q-start]
 Player:[expression=?][question=q]
 [choice][?=item:Unbreakable Knot][Unbreakable Knot] Ask about berries. <berries-knot>
-[choice]Pick a few berries.
+[choice]Pick a few berries. <took-berries>
 [choice]Step away.
 [title=berries-q-end]
 
 [title=berries-knot-start]
-Handler:Careful, those might be poisonous.
-Handler:Wait... you don't even eat.
+Handler:Careful. Those might be poisonous.
+Handler:Wait... you don't even eat--
 {@berries-q}
 [title=berries-knot-end]
 
 [title=took-berries-start]
-I swiftly pluck and pocket a juicy handful.
+I swiftly pluck and pocket a juicy handful. {berryItem}
 Handler:Why?
 Player:TO HAVE.
-<i>[Item added - Bitter Berries]</i> {berryItem}
+<i>[Item added - Bitter Berries]</i>
 [title=took-berries-end]
 
 ----------BERRY BUSH----------
