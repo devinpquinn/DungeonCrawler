@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Live/Menu.unity
     guid: 10697b22f39141345b41cdc115fdfca0
   - enabled: 1
+    path: Assets/Scenes/Live/PregameScreen.unity
+    guid: eeec0d5c2b6b6fc47a0abb658eca4779
+  - enabled: 1
     path: Assets/Scenes/Live/Exterior.unity
     guid: 2f7fd3be09be03b419890945b4966200
   - enabled: 1
