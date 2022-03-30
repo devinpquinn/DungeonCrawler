@@ -8,6 +8,8 @@ public class Door : Interactable
     public string DestinationScene;
     public string DestinationCheckpoint;
 
+    public float transitionTime = 0.4f;
+
     public override void Interact()
     {
         base.Interact();
@@ -45,7 +47,7 @@ public class Door : Interactable
 
         //fade out
         FadeManager.FadeOut(0.4f);
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(transitionTime);
 
         //load destination scene
         SceneManager.LoadScene(DestinationScene);
@@ -56,20 +58,34 @@ public class Door : Interactable
         }
 
         //set player to correct position
-        foreach (GameObject check in GameObject.FindGameObjectsWithTag("Checkpoint"))
+        if (DestinationCheckpoint == null)
         {
-            if (check.name.Equals("Checkpoint - " + DestinationCheckpoint))
+            GameObject playerObject = PlayerController.Instance.gameObject;
+
+            playerObject.transform.position = GameObject.FindGameObjectWithTag("Checkpoint").transform.position;
+
+            //reset camera position
+            Cinemachine.CinemachineVirtualCamera ccam = playerObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
+            ccam.enabled = false;
+            ccam.enabled = true;
+        }
+        else
+        {
+            foreach (GameObject check in GameObject.FindGameObjectsWithTag("Checkpoint"))
             {
-                GameObject playerObject = PlayerController.Instance.gameObject;
+                if (check.name.Equals("Checkpoint - " + DestinationCheckpoint))
+                {
+                    GameObject playerObject = PlayerController.Instance.gameObject;
 
-                playerObject.transform.position = check.transform.position;
+                    playerObject.transform.position = check.transform.position;
 
-                //reset camera position
-                Cinemachine.CinemachineVirtualCamera ccam = playerObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
-                ccam.enabled = false;
-                ccam.enabled = true;
+                    //reset camera position
+                    Cinemachine.CinemachineVirtualCamera ccam = playerObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
+                    ccam.enabled = false;
+                    ccam.enabled = true;
 
-                break;
+                    break;
+                }
             }
         }
 

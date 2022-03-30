@@ -5,12 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class LadderHole : Interactable
 {
-    private AudioSource mySource;
+    public string destinationScene = null;
+    public string destinationCheckpoint = null;
 
-    private void Start()
-    {
-        mySource = GetComponent<AudioSource>();
-    }
+    public AudioClip doorSound;
 
     public override void Interact()
     {
@@ -32,13 +30,86 @@ public class LadderHole : Interactable
         {
             myTalk.callback.RemoveAllListeners();
             myTalk.EndTalk();
-            FadeManager.FadeOut(1);
-            Invoke("TransitionScene", 1);
+            StartCoroutine(DoDoor());
         }
     }
 
-    public void TransitionScene()
+    IEnumerator DoDoor()
     {
-        //SceneManager.LoadScene("Dungeon-1");
+        //set player busy
+        PlayerController.Instance.myState = PlayerController.playerState.Locked;
+
+        //play door sound
+        GetComponent<AudioSource>().clip = doorSound;
+        GetComponent<AudioSource>().spatialBlend = 0;
+        GetComponent<AudioSource>().Play();
+
+        //preserve this object
+        transform.SetParent(null);
+        DontDestroyOnLoad(gameObject);
+
+        //preserve player info
+        string savedItem = PlayerController.GetEquippedItem();
+        Inventory savedInventory = PlayerController.Instance.inventory;
+
+        //fade out
+        FadeManager.FadeOut(0.4f);
+        yield return new WaitForSeconds(9.5f);
+
+        //load destination scene
+        SceneManager.LoadScene(destinationScene);
+
+        while (SceneManager.GetActiveScene().name != destinationScene)
+        {
+            yield return null;
+        }
+
+        //set player to correct position
+        if(destinationCheckpoint == null)
+        {
+            GameObject playerObject = PlayerController.Instance.gameObject;
+
+            playerObject.transform.position = GameObject.FindGameObjectWithTag("Checkpoint").transform.position;
+
+            //reset camera position
+            Cinemachine.CinemachineVirtualCamera ccam = playerObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
+            ccam.enabled = false;
+            ccam.enabled = true;
+        }
+        else
+        {
+            foreach (GameObject check in GameObject.FindGameObjectsWithTag("Checkpoint"))
+            {
+                if (check.name.Equals("Checkpoint - " + destinationCheckpoint))
+                {
+                    GameObject playerObject = PlayerController.Instance.gameObject;
+
+                    playerObject.transform.position = check.transform.position;
+
+                    //reset camera position
+                    Cinemachine.CinemachineVirtualCamera ccam = playerObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
+                    ccam.enabled = false;
+                    ccam.enabled = true;
+
+                    break;
+                }
+            }
+        }
+        
+
+        //set player inventory
+        PlayerController.Instance.inventory = savedInventory;
+        PlayerController.EquipItem(savedItem);
+
+        //save game
+        PlayerController.Instance.Save();
+
+        //finish playing sound and destroy
+        while (GetComponent<AudioSource>().isPlaying)
+        {
+            yield return null;
+        }
+
+        Destroy(gameObject);
     }
 }
