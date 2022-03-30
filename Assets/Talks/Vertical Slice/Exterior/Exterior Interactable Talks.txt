@@ -2,8 +2,8 @@
 
 [title=gate-no-item-start]
 A point of passage through an insurmountably thigh-high barrier.
-(I have the key to this gate in my inventory. While not in dialogue, *Tab* opens and closes my inventory)
-(Click on an item in my inventory to equip it. Having a context-appropriate item equipped may give me special options in dialogue)
+(I have the key to this gate in my inventory. While not in dialogue, *Tab* opens and closes my inventory.)
+(Click on an item in my inventory to equip it. Having a context-appropriate item equipped may give me special options in dialogue.)
 [title=gate-no-item-end]
 
 [title=gate-item-first-start]
@@ -23,7 +23,7 @@ Player:[expression=?][question=q]
 
 [title=gate-opened-start]
 The gate swings open less than smoothly, its hinges creaking in the damp night air. In my efforts, I snap off the key in the old lock.{openGate}
-<i>[Item lost - Iron Key]</i>
+<i>[Item lost - Iron Key.]</i>
 Handler:Nice.
 [title=gate-opened-end]
 
@@ -58,7 +58,7 @@ Handler:...I think.
 
 [title=took-shovel-start]
 I pull the shovel from the earth and tuck it securely beneath my capacious cloak.{tookShovel}
-<i>[Item added - Hateful Shovel]</i>
+<i>[Item added - Hateful Shovel.]</i>
 [title=took-shovel-end]
 
 ----------SHOVEL----------
@@ -66,7 +66,7 @@ I pull the shovel from the earth and tuck it securely beneath my capacious cloak
 ----------OBOL----------
 
 [title=obol-first-start]
-"OBOL - May you pass safely across night's river to the shores beyond"
+"OBOL - May you pass safely across night's river to the shores beyond."
 {checkObol}
 [title=obol-first-end]
 
@@ -145,14 +145,14 @@ Handler:Leave it. Could be a lookout, for all we know.
 I offer what morsels of food I have to the owlish form in the darkness. It snaps them gratefully from my gloved palm with a satisfied chirrup.{owlItem}
 In return, it hacks up a mangled wad of fur and tiny bones. Loath to refuse this gift, I squelch it into my pocket.
 Player:A FAIR AND JUST EXCHANGE, O CREATURE.
-<i>[Item lost - Trail Mix]</i>
-<i>[Item added - "Owl" Pellet]</i>
+<i>[Item lost - Trail Mix.]</i>
+<i>[Item added - "Owl" Pellet.]</i>
 [title=tree-fed-end]
 
 [title=tree-berries-start]
 The creature recoils violently from the handful of berries I proffer, hissing.
 In its panic to retreat into the bowels of the tree, it hacks up a mangled wad of fur and tiny bones.
-<i>[Item added - "Owl" Pellet]</i> {owlItem}
+<i>[Item added - "Owl" Pellet.]</i> {owlItem}
 [title=tree-berries-end]
 
 ----------HOLLOW TREE----------
@@ -181,7 +181,7 @@ Handler:Wait... you don't even eat--
 I swiftly pluck and pocket a juicy handful. {berryItem}
 Handler:Why?
 Player:TO HAVE.
-<i>[Item added - Bitter Berries]</i>
+<i>[Item added - Bitter Berries.]</i>
 [title=took-berries-end]
 
 ----------BERRY BUSH----------
@@ -189,7 +189,7 @@ Player:TO HAVE.
 ----------BERRY BENCH & BUSH HOLE----------
 
 [title=berry-bench-start]
-The plaque on this bench reads - "G + N - May these modest brambles bear fruit such as our love has borne"
+The plaque on this bench reads - "G + N - May these modest brambles bear fruit such as our love has borne."
 [title=berry-bench-end]
 
 [title=bush-hole-start]
@@ -201,7 +201,7 @@ This bush, once fruitful, has been dug up. Not even the roots remain.
 ----------STUMP BENCH----------
 
 [title=stump-bench-start]
-The plaque on this bench reads - "<s>Agnes</s> Maisie - Let these sturdy oaks stand firm together as we shall, always"
+The plaque on this bench reads - "<s>Agnes</s> Maisie - Let these sturdy oaks stand firm together as we shall, always."
 Neither tree is an oak.
 [title=stump-bench-end]
 
@@ -231,11 +231,11 @@ Handler:If you don't see anything that matches our notes, keep looking. Tempting
 ----------HEADSTONES----------
 
 [title=tomb-1-start]
-"RORY - My sausage-shaped lad. Friend to all, bane of squirrels"
+"RORY - My sausage-shaped lad. Friend to all, bane of squirrels."
 [title=tomb-1-end]
 
 [title=tomb-2-start]
-"BUCKET - Though our time together was brief, I will always remember you"
+"BUCKET - Though our time together was brief, I will always remember you."
 [title=tomb-2-end]
 
 [title=tomb-3-start]
@@ -243,7 +243,7 @@ What markings this headstone bore are illegible, eroded away by time and weather
 [title=tomb-3-end]
 
 [title=tomb-4-start]
-"SOCKS - The greatest gift"
+"SOCKS - The greatest gift."
 [title=tomb-4-end]
 
 [title=tomb-5-start]
@@ -251,23 +251,23 @@ What markings this headstone bore are illegible, eroded away by time and weather
 [title=tomb-5-end]
 
 [title=tomb-6-start]
-"PROFESSOR - A studious fellow"
+"PROFESSOR - A studious fellow."
 [title=tomb-6-end]
 
 [title=tomb-7-start]
-"MUFFIN & BISCUIT - The girls"
+"MUFFIN & BISCUIT - The girls."
 [title=tomb-7-end]
 
 [title=tomb-8-start]
-"LEAH - Now you are young again"
+"LEAH - Now you are young again."
 [title=tomb-8-end]
 
 [title=tomb-9-start]
-"DAISY AND PEPPER - The correct shape"
+"DAISY AND PEPPER - The correct shape."
 [title=tomb-9-end]
 
 [title=tomb-10-start]
-"MILO - No notes"
+"MILO - No notes."
 [title=tomb-10-end]
 
 ----------HEADSTONES----------

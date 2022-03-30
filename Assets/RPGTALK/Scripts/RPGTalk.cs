@@ -2511,15 +2511,24 @@ public class RPGTalk : MonoBehaviour
             //does it signal a pause?
             if (textToDisplay.EndsWith(".") || textToDisplay.EndsWith("!") || textToDisplay.EndsWith("?"))
             {
-                pauseTimer = 0.25f;
+                if(!rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith("\"") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith(")") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith("]"))
+                {
+                    pauseTimer = 0.25f;
+                }
             }
             else if (textToDisplay.EndsWith(","))
             {
-                pauseTimer = 0.1f;
+                if (!rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith("\"") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith(")") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith("]"))
+                {
+                    pauseTimer = 0.1f;
+                }
             }
             else if (textToDisplay.EndsWith("--") || textToDisplay.EndsWith(";") || textToDisplay.EndsWith(":"))
             {
-                pauseTimer = 0.2f;
+                if (!rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith("\"") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith(")") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith("]"))
+                {
+                    pauseTimer = 0.2f;
+                }
             }
         }
 
