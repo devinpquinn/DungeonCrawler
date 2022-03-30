@@ -25,6 +25,7 @@ public class MenuScript : MonoBehaviour
             ambientAudio.volume -= Time.deltaTime;
             yield return null;
         }
+        ambientAudio.volume = 0;
         yield return null;
     }
 }
