@@ -189,7 +189,7 @@ Player:TO HAVE.
 ----------BERRY BENCH & BUSH HOLE----------
 
 [title=berry-bench-start]
-The plaque on this bench reads - "G + N: May these modest brambles bear fruit such as our love has borne"
+The plaque on this bench reads - "G + N - May these modest brambles bear fruit such as our love has borne"
 [title=berry-bench-end]
 
 [title=bush-hole-start]
@@ -230,44 +230,44 @@ Handler:If you don't see anything that matches our notes, keep looking. Tempting
 
 ----------HEADSTONES----------
 
-[tomb-1-start]
+[title=tomb-1-start]
 "RORY - My sausage-shaped lad. Friend to all, bane of squirrels"
-[tomb-1-end]
+[title=tomb-1-end]
 
-[tomb-2-start]
+[title=tomb-2-start]
 "BUCKET - Though our time together was brief, I will always remember you"
-[tomb-2-end]
+[title=tomb-2-end]
 
-[tomb-3-start]
-What markings remain on this headstone are illegible, eroded away by time and weather. Only the love remains.
-[tomb-3-end]
+[title=tomb-3-start]
+What markings this headstone bore are illegible, eroded away by time and weather. Only the love remains.
+[title=tomb-3-end]
 
-[tomb-4-start]
+[title=tomb-4-start]
 "SOCKS - The greatest gift"
-[tomb-4-end]
+[title=tomb-4-end]
 
-[tomb-5-start]
+[title=tomb-5-start]
 "SPANKY - Spanky!"
-[tomb-5-end]
+[title=tomb-5-end]
 
-[tomb-6-start]
+[title=tomb-6-start]
 "PROFESSOR - A studious fellow"
-[tomb-6-end]
+[title=tomb-6-end]
 
-[tomb-7-start]
+[title=tomb-7-start]
 "MUFFIN & BISCUIT - The girls"
-[tomb-7-end]
+[title=tomb-7-end]
 
-[tomb-8-start]
+[title=tomb-8-start]
 "LEAH - Now you are young again"
-[tomb-8-end]
+[title=tomb-8-end]
 
-[tomb-9-start]
+[title=tomb-9-start]
 "DAISY AND PEPPER - The correct shape"
-[tomb-9-end]
+[title=tomb-9-end]
 
-[tomb-10-start]
+[title=tomb-10-start]
 "MILO - No notes"
-[tomb-10-end]
+[title=tomb-10-end]
 
 ----------HEADSTONES----------
