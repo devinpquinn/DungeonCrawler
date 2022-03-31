@@ -40,6 +40,7 @@ public class LadderHole : Interactable
     {
         //set player busy
         PlayerController.Instance.myState = PlayerController.playerState.Locked;
+        PlayerController.Instance.SetCursor("default");
 
         //play door sound
         GetComponent<AudioSource>().clip = doorSound;
