@@ -212,7 +212,8 @@ Neither tree is an oak.
 [title=maus-start]
 This structure is too small for me to enter, but my gaze starkly illuminates its innards, walls lined with tiny recesses.
 It is the burial hall of dozens of beloved rodents-- a "Mouse-oleum," if you will.
-Player:I WILL NOT. {checkMaus}
+Player:I WILL NOT. 
+{checkMaus}
 [title=maus-end]
 
 [title=maus-q-start]

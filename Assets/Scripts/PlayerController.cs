@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     private AudioSource lightBallAudioSource;
 
     private float minLightBallVolume = 0.2f;
-    private float maxLightBallVolume = 0.8f;
+    private float maxLightBallVolume = 0.7f;
 
     public GameObject lightRemnant;
 
