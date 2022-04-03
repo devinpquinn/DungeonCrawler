@@ -12,7 +12,7 @@ public class CemeteryGate : Interactable
     public override void Interact()
     {
         base.Interact();
-        if (PlayerController.GetEquippedItem() != null)
+        if ((PlayerController.GetEquippedItem() != null) && (PlayerController.GetEquippedItem() == "Unbreakable Knot" || PlayerController.GetEquippedItem() == "Iron Key"))
         {
             if (interactedWith)
             {

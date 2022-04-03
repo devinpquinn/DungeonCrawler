@@ -2979,7 +2979,7 @@ public class RPGTalk : MonoBehaviour
         yield return new WaitForEndOfFrame();
         if(isPlaying || isAnimating)
         {
-            yield break;
+            //yield break;
         }
         GameObject dialogueDisplay = showWithDialog[0];
         dialogueDisplay.GetComponent<Animator>().Play("dialogueOut");
