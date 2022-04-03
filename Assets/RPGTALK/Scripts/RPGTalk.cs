@@ -1774,8 +1774,10 @@ public class RPGTalk : MonoBehaviour
 
                     if (conditionKeyString.Length > 0)
                     {
-                        return line.Substring(0, initialBracket) +
-                            line.Substring(finalBracket + 1);
+                        conditionKeyString = conditionKeyString.Substring(conditionKeyString.IndexOf("item:") + 5);
+                        string itemNameString = "<smallcaps>[" + conditionKeyString + "]</smallcaps> ";
+                        return itemNameString + (line.Substring(0, initialBracket) +
+                            line.Substring(finalBracket + 1));
                     }
                     else
                     {

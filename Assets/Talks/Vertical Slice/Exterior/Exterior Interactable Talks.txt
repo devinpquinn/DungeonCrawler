@@ -9,15 +9,15 @@ A point of passage through an insurmountably thigh-high barrier.
 [title=gate-item-first-start]
 A point of passage through an insurmountably thigh-high barrier.
 Player:[expression=?][question=q]
-[choice][?=item:Iron Key][Iron Key] Unlock the gate.<gate-opened>
-[choice][?=item:Unbreakable Knot][Unbreakable Knot] Ask for advice.<gate-advice>
+[choice][?=item:Iron Key]Unlock the gate.<gate-opened>
+[choice][?=item:Unbreakable Knot]Ask for advice.<gate-advice>
 [choice]Leave the gate be.
 [title=gate-item-first-end]
 
 [title=gate-item-start]
 Player:[expression=?][question=q]
-[choice][?=item:Iron Key][Iron Key] Unlock the gate.<gate-opened>
-[choice][?=item:Unbreakable Knot][Unbreakable Knot] Ask for advice.<gate-advice>
+[choice][?=item:Iron Key]Unlock the gate.<gate-opened>
+[choice][?=item:Unbreakable Knot]Ask for advice.<gate-advice>
 [choice]Leave the gate be.
 [title=gate-item-end]
 
@@ -44,7 +44,7 @@ An old, somewhat rusty, short-handled shovel. Besides digging up berry bushes, t
 [title=shovel-start]
 Player:[expression=?][question=q]
 [choice]Take the shovel.<took-shovel>
-[choice][?=item:Unbreakable Knot][Unbreakable Knot] Could this be a trap?<shovel-advice>
+[choice][?=item:Unbreakable Knot]Could this be a trap?<shovel-advice>
 [choice]Step away.
 [title=shovel-end]
 
@@ -72,9 +72,9 @@ I pull the shovel from the earth and tuck it securely beneath my capacious cloak
 
 [title=obol-start]
 Player:[expression=?][question=q]
-[choice][?=item:Unbreakable Knot][Unbreakable Knot] Describe the marker. <obol-knot>
-[choice][?=item:Scrawled Notes][Scrawled Notes] Consult my notes. <obol-notes>
-[choice][?=item:Hateful Shovel][Hateful Shovel] Dig! <obol-shovel>
+[choice][?=item:Unbreakable Knot]Describe the marker. <obol-knot>
+[choice][?=item:Scrawled Notes]Consult my notes. <obol-notes>
+[choice][?=item:Hateful Shovel]Dig! <obol-shovel>
 [choice]Step away.
 [title=obol-end]
 
@@ -130,9 +130,9 @@ The owl-shaped creature is hungry.
 [title=tree-start]
 The owl-shaped creature is hungry.
 Player:[expression=?][question=q]
-[choice][?=item:Unbreakable Knot][Unbreakable Knot] Describe the "owl." <tree-knot>
-[choice][?=item:Trail Mix][Trail Mix] Offer my trail mix. <tree-fed>
-[choice][?=item:Bitter Berries][Bitter Berries] Offer berries. <tree-berries>
+[choice][?=item:Unbreakable Knot]Describe the "owl." <tree-knot>
+[choice][?=item:Trail Mix]Offer my trail mix. <tree-fed>
+[choice][?=item:Bitter Berries]Offer berries. <tree-berries>
 [choice]Leave the creature be.
 [title=tree-end]
 
@@ -166,7 +166,7 @@ Small scarlet berries stipple this scraggly shrub.
 
 [title=berries-q-start]
 Player:[expression=?][question=q]
-[choice][?=item:Unbreakable Knot][Unbreakable Knot] Ask about berries. <berries-knot>
+[choice][?=item:Unbreakable Knot]Ask about berries. <berries-knot>
 [choice]Pick a few berries. <took-berries>
 [choice]Step away.
 [title=berries-q-end]
@@ -218,7 +218,7 @@ Player:I WILL NOT.
 
 [title=maus-q-start]
 Player:[expression=?][question=q]
-[choice][?=item:Unbreakable Knot][Unbreakable Knot] Report in. <maus-knot>
+[choice][?=item:Unbreakable Knot]Report in. <maus-knot>
 [choice]Step away.
 [title=maus-q-end]
 
