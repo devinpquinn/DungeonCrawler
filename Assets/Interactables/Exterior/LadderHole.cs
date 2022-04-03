@@ -63,7 +63,7 @@ public class LadderHole : Interactable
 
         //fade out
         FadeManager.FadeOut(0.4f);
-        yield return new WaitForSeconds(9.5f);
+        yield return new WaitForSeconds(10f);
 
         //load destination scene
         SceneManager.LoadScene(destinationScene);
