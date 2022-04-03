@@ -2943,7 +2943,14 @@ public class RPGTalk : MonoBehaviour
                 }
                 for (int i = 0; i < showWithDialog.Length; i++)
                 {
-                    showWithDialog[i].SetActive(false);
+                    if(i == 0)
+                    {
+                        StartCoroutine(HideDialogueCanvas());
+                    }
+                    else
+                    {
+                        showWithDialog[i].SetActive(false);
+                    }
                 }
             }
             if (callback != null)
@@ -2965,6 +2972,19 @@ public class RPGTalk : MonoBehaviour
         }
 
 
+    }
+
+    IEnumerator HideDialogueCanvas()
+    {
+        yield return new WaitForEndOfFrame();
+        if(isPlaying || isAnimating)
+        {
+            yield break;
+        }
+        GameObject dialogueDisplay = showWithDialog[0];
+        dialogueDisplay.GetComponent<Animator>().Play("dialogueOut");
+        yield return new WaitForSeconds(0.25f);
+        dialogueDisplay.SetActive(false);
     }
 
     //Wait a frame to make the isPlaying false, so we try not to play a area and pass a talk at the same time
