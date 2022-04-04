@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 75510605}
   - component: {fileID: 75510604}
   - component: {fileID: 75510603}
+  - component: {fileID: 75510602}
   m_Layer: 5
   m_Name: MenuCanvas2
   m_TagString: Untagged
@@ -140,6 +141,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &75510602
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75510601}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dca25baa6c3173b44b1932050f76f3e0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &75510603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,7 +259,7 @@ GameObject:
   - component: {fileID: 181834656}
   - component: {fileID: 181834655}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Card1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -333,11 +353,11 @@ RectTransform:
   m_Father: {fileID: 75510606}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1280, y: 500}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &330513175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,7 +556,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7cc9daaa024e01f42a08c1e6e57ee3f2, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -702,6 +722,7 @@ GameObject:
   - component: {fileID: 500005733}
   - component: {fileID: 500005735}
   - component: {fileID: 500005734}
+  - component: {fileID: 500005736}
   m_Layer: 5
   m_Name: EmpressCard
   m_TagString: Untagged
@@ -765,6 +786,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500005732}
   m_CullTransparentMesh: 0
+--- !u!95 &500005736
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500005732}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9d326c22a6cfeb348a99f6addbc72cab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &623072249
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,7 +1012,7 @@ GameObject:
   - component: {fileID: 697733822}
   - component: {fileID: 697733821}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Card2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1361,6 +1401,7 @@ GameObject:
   - component: {fileID: 1565334476}
   - component: {fileID: 1565334478}
   - component: {fileID: 1565334477}
+  - component: {fileID: 1565334479}
   m_Layer: 5
   m_Name: StarCard
   m_TagString: Untagged
@@ -1424,6 +1465,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565334475}
   m_CullTransparentMesh: 0
+--- !u!95 &1565334479
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565334475}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5906d5ca1475d7f438de1e039faa903e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1732632818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,7 +1633,7 @@ GameObject:
   - component: {fileID: 1963274585}
   - component: {fileID: 1963274584}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: Card3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
