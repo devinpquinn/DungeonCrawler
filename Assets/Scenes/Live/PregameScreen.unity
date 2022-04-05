@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &75510602
 Animator:
   serializedVersion: 3
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -554,6 +554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 384060743}
   - component: {fileID: 384060742}
+  - component: {fileID: 384060744}
   m_Layer: 0
   m_Name: Ambient Audio
   m_TagString: Untagged
@@ -671,6 +672,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &384060744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384060741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26eb2b7296898054f9337fa84596f322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetVolume: 1
 --- !u!1 &488886758
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,6 +1529,7 @@ MonoBehaviour:
   bottomText: {fileID: 356429025}
   cursorDefault: {fileID: 2800000, guid: aff6fba59c022424cb7cf4bd61b8c9d9, type: 3}
   cursorInteract: {fileID: 2800000, guid: 77b2e2d8bfb3f5647841617bfbed047b, type: 3}
+  audioObject: {fileID: 384060741}
 --- !u!4 &761815516
 Transform:
   m_ObjectHideFlags: 0

@@ -11,6 +11,11 @@ public class MenuCanvas2Handler : MonoBehaviour
         pm.StarAnimation();
     }
 
+    public void DoEmpressAnimation()
+    {
+        pm.EmpressAnimation();
+    }
+
     public void Interesting()
     {
         pm.UpdateBottomText("Interesting.");
@@ -19,5 +24,26 @@ public class MenuCanvas2Handler : MonoBehaviour
     public void DrawAgain()
     {
         pm.UpdateTopText("Draw another.");
+        pm.cardButton.gameObject.SetActive(true);
+    }
+
+    public void TheEmpress()
+    {
+        pm.UpdateBottomText("The Empress.");
+    }
+
+    public void VeryWell()
+    {
+        pm.UpdateTopText("Very well.");
+    }
+
+    public void LetsBegin()
+    {
+        pm.UpdateBottomText("Let us begin.");
+    }
+
+    public void DoEndPregame()
+    {
+        pm.EndPregame();
     }
 }

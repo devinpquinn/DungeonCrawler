@@ -20,9 +20,13 @@ public class PregameManager : MonoBehaviour
     public Texture2D cursorDefault;
     public Texture2D cursorInteract;
 
+    public GameObject audioObject;
+
     private void Start()
     {
         SetCursor("default");
+        firstCanvas.SetActive(true);
+        secondCanvas.SetActive(false);
     }
 
     public void SetCursor(string state)
@@ -46,7 +50,8 @@ public class PregameManager : MonoBehaviour
     public void DrewStar()
     {
         cardButton.onClick.RemoveAllListeners();
-        cardButton.enabled = false;
+        cardButton.onClick.AddListener(DrewEmpress);
+        cardButton.gameObject.SetActive(false);
         secondCanvas.GetComponent<Animator>().Play("drewStar");
     }
 
@@ -55,9 +60,16 @@ public class PregameManager : MonoBehaviour
         starAnim.Play("starAnimated");
     }
 
+    public void DrewEmpress()
+    {
+        cardButton.onClick.RemoveAllListeners();
+        cardButton.gameObject.SetActive(false);
+        secondCanvas.GetComponent<Animator>().Play("drewEmpress");
+    }
+
     public void EmpressAnimation()
     {
-        starAnim.Play("empressAnimated");
+        empressAnim.Play("empressAnimated");
     }
 
     public void UpdateTopText(string newText)
@@ -68,5 +80,18 @@ public class PregameManager : MonoBehaviour
     public void UpdateBottomText(string newText)
     {
         bottomText.text = newText;
+    }
+
+    public void EndPregame()
+    {
+        StartCoroutine(DoEndPregame());
+    }
+
+    IEnumerator DoEndPregame()
+    {
+        FadeManager.FadeOut(0.4f);
+        audioObject.AddComponent<FadeOutAudio>();
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene("Exterior");
     }
 }
