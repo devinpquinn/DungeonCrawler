@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class MenuCanvas1Handler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public PregameManager pm;
 
-    // Update is called once per frame
-    void Update()
+    public void DoSecondCanvas()
     {
-        
+        pm.SecondCanvas();
     }
 }
