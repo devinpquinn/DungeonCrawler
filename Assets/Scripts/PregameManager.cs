@@ -52,6 +52,7 @@ public class PregameManager : MonoBehaviour
         cardButton.onClick.RemoveAllListeners();
         cardButton.onClick.AddListener(DrewEmpress);
         cardButton.gameObject.SetActive(false);
+        SetCursor("default");
         secondCanvas.GetComponent<Animator>().Play("drewStar");
     }
 
@@ -64,6 +65,7 @@ public class PregameManager : MonoBehaviour
     {
         cardButton.onClick.RemoveAllListeners();
         cardButton.gameObject.SetActive(false);
+        SetCursor("default");
         secondCanvas.GetComponent<Animator>().Play("drewEmpress");
     }
 
