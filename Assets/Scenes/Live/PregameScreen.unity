@@ -476,7 +476,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -898,6 +898,8 @@ GameObject:
   - component: {fileID: 597635247}
   - component: {fileID: 597635246}
   - component: {fileID: 597635245}
+  - component: {fileID: 597635248}
+  - component: {fileID: 597635249}
   m_Layer: 5
   m_Name: CardButton
   m_TagString: Untagged
@@ -1015,6 +1017,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 597635243}
   m_CullTransparentMesh: 0
+--- !u!114 &597635248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597635243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e57e1662372c44f939e034c3997a63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pm: {fileID: 761815515}
+--- !u!114 &597635249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597635243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 761815515}
+          m_MethodName: SetCursor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: interact
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 761815515}
+          m_MethodName: SetCursor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: default
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &623072249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,6 +1509,12 @@ MonoBehaviour:
   firstCanvas: {fileID: 722343257}
   secondCanvas: {fileID: 75510601}
   cardButton: {fileID: 597635245}
+  starAnim: {fileID: 1565334479}
+  empressAnim: {fileID: 500005736}
+  topText: {fileID: 2027266734}
+  bottomText: {fileID: 356429025}
+  cursorDefault: {fileID: 2800000, guid: aff6fba59c022424cb7cf4bd61b8c9d9, type: 3}
+  cursorInteract: {fileID: 2800000, guid: 77b2e2d8bfb3f5647841617bfbed047b, type: 3}
 --- !u!4 &761815516
 Transform:
   m_ObjectHideFlags: 0
