@@ -215,7 +215,7 @@ public class PlayerController : MonoBehaviour
             //on click, check for interactable
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                if (currentInteractable != null)
+                if (currentInteractable != null && !currentInteractable.myTalk.showWithDialog[0].activeInHierarchy)
                 {
                     //we found an interactable!
                     StartInteraction();
@@ -326,7 +326,7 @@ public class PlayerController : MonoBehaviour
             //on click, check for interactable
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                if (currentInteractable != null)
+                if (currentInteractable != null && !currentInteractable.myTalk.showWithDialog[0].activeInHierarchy)
                 {
                     //we found an interactable!
                     StartInteraction();
