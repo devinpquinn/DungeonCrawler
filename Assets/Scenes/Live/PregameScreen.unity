@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 75510602}
   - component: {fileID: 75510607}
   - component: {fileID: 75510608}
+  - component: {fileID: 75510609}
   m_Layer: 5
   m_Name: MenuCanvas2
   m_TagString: Untagged
@@ -359,6 +360,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &75510609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75510601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad25222b31436414cbe944850f9bafcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: d35a3a5f9c93d98458aba7263136a139, type: 3}
 --- !u!1 &181834653
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,7 +683,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8b34ab700c5e3bb48b3c9fd908665e8f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ab57feb43ae8bc3438d5086439b63652, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1192,7 +1206,7 @@ MonoBehaviour:
           m_MethodName: PlayOneShot
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 8300000, guid: aaaa8f66feb409645bae3b2b1fe10674,
+            m_ObjectArgument: {fileID: 8300000, guid: 13256d60d78a5b44e9aaa68ce03a391f,
               type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
             m_IntArgument: 0
