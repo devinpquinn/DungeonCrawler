@@ -10,7 +10,7 @@ public class LadderHole : Interactable
 
     public AudioClip doorSound;
 
-    public List<AudioSource> audiosToFade;
+    public GameObject audioToFade;
 
     public override void Interact()
     {
@@ -48,10 +48,7 @@ public class LadderHole : Interactable
         GetComponent<AudioSource>().Play();
 
         //fade out other audios
-        foreach(AudioSource src in audiosToFade)
-        {
-            src.gameObject.AddComponent<FadeOutAudio>();
-        }
+        audioToFade.GetComponent<Animator>().enabled = true;
 
         //preserve this object
         transform.SetParent(null);
