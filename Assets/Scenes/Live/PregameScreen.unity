@@ -577,7 +577,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The Star.
+  m_text: The Fallen Star.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5aa45daebad64fd4ca7087b53542c9d7, type: 2}
   m_sharedMaterial: {fileID: -8489657893798082292, guid: 5aa45daebad64fd4ca7087b53542c9d7,

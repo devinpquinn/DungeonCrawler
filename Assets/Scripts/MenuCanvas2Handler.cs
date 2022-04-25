@@ -29,7 +29,7 @@ public class MenuCanvas2Handler : MonoBehaviour
 
     public void TheEmpress()
     {
-        pm.UpdateBottomText("The Empress.");
+        pm.UpdateBottomText("The Princess.");
     }
 
     public void Hmm()
@@ -39,7 +39,7 @@ public class MenuCanvas2Handler : MonoBehaviour
 
     public void VeryWell()
     {
-        pm.UpdateTopText("Very well.");
+        pm.UpdateTopText("Very well...");
     }
 
     public void LetsBegin()
