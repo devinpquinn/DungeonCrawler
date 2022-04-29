@@ -44,7 +44,6 @@ An old, somewhat rusty, short-handled shovel. Besides digging up berry bushes, t
 [title=shovel-start]
 Player:[expression=?][question=q]
 [choice]Take the shovel.<took-shovel>
-[choice][?=item:Unbreakable Knot]Could this be a trap?<shovel-advice>
 [choice]Step away.
 [title=shovel-end]
 
@@ -137,7 +136,7 @@ Player:[expression=?][question=q]
 [title=tree-end]
 
 [title=tree-knot-start]
-Player:THERE IS A LITTLE FELLOW IN HERE. JUST A LITTLE FELLOW.
+Player:THERE IS A LITTLE FELLOW IN HERE.
 Handler:Leave it. Could be a lookout, for all we know.
 [title=tree-knot-end]
 
@@ -212,7 +211,7 @@ Neither tree is an oak.
 [title=maus-start]
 This structure is too small for me to enter, but my gaze starkly illuminates its innards, walls lined with tiny recesses.
 It is the burial hall of dozens of beloved rodents-- a "Mouse-oleum," if you will.
-Player:I WILL NOT. 
+Player:I WILL NOT.
 {checkMaus}
 [title=maus-end]
 
@@ -226,6 +225,11 @@ Player:[expression=?][question=q]
 Player:COULD THE PASSAGE WE SEEK LIE WITHIN?
 Handler:If you don't see anything that matches our notes, keep looking. Tempting, though.
 [title=maus-knot-end]
+
+[title=maus-again-start]
+The marble barrow of rats, mice, gerbils, hamsters, and more.
+{checkMaus}
+[title=maus-again-end]
 
 ----------MOUSEOLEUM----------
 
