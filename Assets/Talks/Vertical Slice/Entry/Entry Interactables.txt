@@ -1,0 +1,38 @@
+----------LADDER----------
+
+[title=ladder-start]
+The surprisingly long ladder spears upward into a tiny circle of night sky still visible above.
+Its damp old wood is rotten, and suffered greatly upon my descent, cracking and creaking mightily. I will not be able to return this way, nor climb the earthen shaft by other measures.
+Player:HOW CONVENIENTLY INCONVENIENT.
+[title=ladder-end]
+
+[title=ladder-again-start]
+A timeworn ladder, too decrepit to climb.
+[title=ladder-again-end]
+
+----------LADDER----------
+
+----------STORAGE----------
+
+[title=storage-start]
+Crates, barrels, vases and urns, caked with undisturbed dust.
+Each and every container is filled with pale, fine-grained sand.
+Player:NOTHING.
+Handler:Shame. I was really hoping our Wish would be just sitting in a box in the first chamber.
+Player:<i>OUR</i> WISH?
+Handler:[expression=!][speed=6]... [/speed]
+[title=storage-end]
+
+[title=storage-again-start]
+Rubbish. Vessels of sand.
+[title=storage-again-end]
+
+----------STORAGE----------
+
+----------FURNITURE----------
+
+[title=furniture-start]
+A fractal tower of tables and stools, stacked until they disappear into infinitessimal infinity.
+[title=furniture-end]
+
+----------FURNITURE----------
