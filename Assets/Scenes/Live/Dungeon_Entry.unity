@@ -582,7 +582,7 @@ Transform:
   m_Children:
   - {fileID: 174755317}
   m_Father: {fileID: 1036829619}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!210 &96131843
 SortingGroup:
@@ -975,6 +975,7 @@ GameObject:
   - component: {fileID: 176250197}
   - component: {fileID: 176250196}
   - component: {fileID: 176250199}
+  - component: {fileID: 176250200}
   m_Layer: 0
   m_Name: DungeonProps_32
   m_TagString: Untagged
@@ -1086,6 +1087,32 @@ MonoBehaviour:
   m_ShapePathHash: 78167421
   m_Mesh: {fileID: 1611986752}
   m_InstanceId: 16358
+--- !u!61 &176250200
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176250195}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.38000923}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.62408984}
+  m_EdgeRadius: 0
 --- !u!1 &178495485
 GameObject:
   m_ObjectHideFlags: 0
@@ -2149,7 +2176,7 @@ Transform:
   m_Children:
   - {fileID: 1142640867}
   m_Father: {fileID: 1036829619}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!210 &420021687
 SortingGroup:
@@ -2293,7 +2320,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 835379897}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &441302483
 MonoBehaviour:
@@ -2631,7 +2658,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 835379897}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &522807788
 MonoBehaviour:
@@ -4606,7 +4633,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 835379897}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &688348790
 MonoBehaviour:
@@ -4800,6 +4827,7 @@ GameObject:
   - component: {fileID: 718571702}
   - component: {fileID: 718571701}
   - component: {fileID: 718571703}
+  - component: {fileID: 718571704}
   m_Layer: 0
   m_Name: DungeonProps_109
   m_TagString: Untagged
@@ -4869,7 +4897,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 835379897}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &718571703
 MonoBehaviour:
@@ -4909,6 +4937,32 @@ MonoBehaviour:
   m_ShapePathHash: -501645503
   m_Mesh: {fileID: 1953414663}
   m_InstanceId: 16488
+--- !u!61 &718571704
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718571700}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.25071818}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 0.6210917}
+  m_EdgeRadius: 0
 --- !u!43 &765446819
 Mesh:
   m_ObjectHideFlags: 0
@@ -5103,6 +5157,7 @@ Transform:
   - {fileID: 176250198}
   - {fileID: 1409598049}
   - {fileID: 2005093233}
+  - {fileID: 1998376864}
   - {fileID: 1036829619}
   - {fileID: 1254307352}
   - {fileID: 1929781712}
@@ -6319,6 +6374,7 @@ GameObject:
   - component: {fileID: 1036829618}
   - component: {fileID: 1036829617}
   - component: {fileID: 1036829620}
+  - component: {fileID: 1036829621}
   m_Layer: 0
   m_Name: DungeonProps_36
   m_TagString: Untagged
@@ -6399,12 +6455,11 @@ Transform:
   m_LocalPosition: {x: 3.14, y: -2.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1998376864}
   - {fileID: 1884644115}
   - {fileID: 96131842}
   - {fileID: 420021686}
   m_Father: {fileID: 835379897}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1036829620
 MonoBehaviour:
@@ -6432,6 +6487,32 @@ MonoBehaviour:
   m_ShapePathHash: -2006428451
   m_Mesh: {fileID: 1918453035}
   m_InstanceId: 16542
+--- !u!61 &1036829621
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036829616}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.69326735}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 0.9836626}
+  m_EdgeRadius: 0
 --- !u!1 &1142640866
 GameObject:
   m_ObjectHideFlags: 0
@@ -6793,7 +6874,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 835379897}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1193332780
 MonoBehaviour:
@@ -6917,6 +6998,7 @@ GameObject:
   - component: {fileID: 1254307351}
   - component: {fileID: 1254307350}
   - component: {fileID: 1254307353}
+  - component: {fileID: 1254307354}
   m_Layer: 0
   m_Name: HalloweenProps_4
   m_TagString: Untagged
@@ -7000,7 +7082,7 @@ Transform:
   - {fileID: 710912388}
   - {fileID: 981567362}
   m_Father: {fileID: 835379897}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1254307353
 MonoBehaviour:
@@ -7028,6 +7110,32 @@ MonoBehaviour:
   m_ShapePathHash: 887142445
   m_Mesh: {fileID: 1263079841}
   m_InstanceId: 16586
+--- !u!61 &1254307354
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254307349}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.21912408}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 0.56175184}
+  m_EdgeRadius: 0
 --- !u!43 &1263079841
 Mesh:
   m_ObjectHideFlags: 0
@@ -7396,6 +7504,7 @@ GameObject:
   - component: {fileID: 1409598048}
   - component: {fileID: 1409598050}
   - component: {fileID: 1409598051}
+  - component: {fileID: 1409598052}
   m_Layer: 0
   m_Name: DungeonProps_32 (1)
   m_TagString: Untagged
@@ -7507,6 +7616,32 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
+--- !u!61 &1409598052
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409598047}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.38000923}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.62408984}
+  m_EdgeRadius: 0
 --- !u!43 &1425549224
 Mesh:
   m_ObjectHideFlags: 0
@@ -7750,7 +7885,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 835379897}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1438112033
 MonoBehaviour:
@@ -8033,7 +8168,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 835379897}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1556922810
 MonoBehaviour:
@@ -8329,6 +8464,7 @@ GameObject:
   - component: {fileID: 1625055853}
   - component: {fileID: 1625055852}
   - component: {fileID: 1625055854}
+  - component: {fileID: 1625055855}
   m_Layer: 0
   m_Name: DungeonProps_109 (2)
   m_TagString: Untagged
@@ -8398,7 +8534,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 835379897}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1625055854
 MonoBehaviour:
@@ -8438,6 +8574,32 @@ MonoBehaviour:
   m_ShapePathHash: 1994369701
   m_Mesh: {fileID: 1425549224}
   m_InstanceId: 16632
+--- !u!61 &1625055855
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625055851}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.30215418, y: 0.033033848}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8129265, y: 1.5310583}
+  m_EdgeRadius: 0
 --- !u!1 &1641193962
 GameObject:
   m_ObjectHideFlags: 0
@@ -9647,7 +9809,7 @@ Transform:
   m_Children:
   - {fileID: 230786141}
   m_Father: {fileID: 1036829619}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!210 &1884644116
 SortingGroup:
@@ -9946,6 +10108,7 @@ GameObject:
   - component: {fileID: 1929781711}
   - component: {fileID: 1929781710}
   - component: {fileID: 1929781713}
+  - component: {fileID: 1929781714}
   m_Layer: 0
   m_Name: HalloweenProps_4 (1)
   m_TagString: Untagged
@@ -10028,7 +10191,7 @@ Transform:
   m_Children:
   - {fileID: 958316743}
   m_Father: {fileID: 835379897}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1929781713
 MonoBehaviour:
@@ -10056,6 +10219,32 @@ MonoBehaviour:
   m_ShapePathHash: 887142445
   m_Mesh: {fileID: 684281161}
   m_InstanceId: 16686
+--- !u!61 &1929781714
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929781709}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.21912408}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 0.56175184}
+  m_EdgeRadius: 0
 --- !u!43 &1953414663
 Mesh:
   m_ObjectHideFlags: 0
@@ -10230,6 +10419,7 @@ GameObject:
   - component: {fileID: 1998376864}
   - component: {fileID: 1998376865}
   - component: {fileID: 1998376866}
+  - component: {fileID: 1998376867}
   m_Layer: 0
   m_Name: DungeonProps_84
   m_TagString: Untagged
@@ -10245,11 +10435,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998376863}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6359819, y: 0.40509772, z: 0}
+  m_LocalPosition: {x: 1.5040182, y: -2.0249023, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1036829619}
-  m_RootOrder: 0
+  m_Father: {fileID: 835379897}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1998376865
 SpriteRenderer:
@@ -10328,6 +10518,32 @@ MonoBehaviour:
   m_ShapePathHash: 1045405465
   m_Mesh: {fileID: 851588518}
   m_InstanceId: 16696
+--- !u!61 &1998376867
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998376863}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.37799048}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 0.4969163}
+  m_EdgeRadius: 0
 --- !u!1 &2005093230
 GameObject:
   m_ObjectHideFlags: 0
@@ -10339,6 +10555,7 @@ GameObject:
   - component: {fileID: 2005093233}
   - component: {fileID: 2005093232}
   - component: {fileID: 2005093231}
+  - component: {fileID: 2005093234}
   m_Layer: 0
   m_Name: DungeonProps_33
   m_TagString: Untagged
@@ -10449,6 +10666,32 @@ Transform:
   m_Father: {fileID: 835379897}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2005093234
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005093230}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.3702049}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.875, y: 0.641488}
+  m_EdgeRadius: 0
 --- !u!1 &2011555078
 GameObject:
   m_ObjectHideFlags: 0
@@ -10460,6 +10703,7 @@ GameObject:
   - component: {fileID: 2011555080}
   - component: {fileID: 2011555079}
   - component: {fileID: 2011555081}
+  - component: {fileID: 2011555082}
   m_Layer: 0
   m_Name: HalloweenProps_5
   m_TagString: Untagged
@@ -10530,7 +10774,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 835379897}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2011555081
 MonoBehaviour:
@@ -10558,6 +10802,32 @@ MonoBehaviour:
   m_ShapePathHash: 887142445
   m_Mesh: {fileID: 956208746}
   m_InstanceId: 16712
+--- !u!61 &2011555082
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011555078}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.21912408}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 0.56175184}
+  m_EdgeRadius: 0
 --- !u!1 &2040776563
 GameObject:
   m_ObjectHideFlags: 0
@@ -10721,7 +10991,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 835379897}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2127290742
 MonoBehaviour:
