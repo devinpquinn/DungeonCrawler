@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Live/Exterior.unity
     guid: 2f7fd3be09be03b419890945b4966200
   - enabled: 1
-    path: Assets/Scenes/Live/Dungeon_Entry.unity
+    path: Assets/Scenes/Live/Entry.unity
     guid: 0c5c66e10aa62cf4da4eee8d8d273e3c
   m_configObjects: {}
