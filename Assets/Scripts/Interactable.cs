@@ -45,6 +45,31 @@ public class Interactable : MonoBehaviour
         myTalk.callback.AddListener(PlayerController.EndInteraction);
     }
 
+    public virtual void StartTalking(string key, UnityEngine.Events.UnityAction call)
+    {
+        PlayerController.Instance.myState = PlayerController.playerState.Interacting;
+        PlayerController.Instance.SetCursor("interact");
+        PlayerController.Instance.StopWalkAnimation();
+        TooltipUI.HideTooltip_Static();
+
+        //hide inventory
+        PlayerController.Instance.inventoryPanelRect.gameObject.SetActive(false);
+        PlayerController.Instance.itemDescriptionPanel.SetActive(false);
+
+        //check if there is an equipped item to display
+        PlayerController.Instance.UpdateItemThumbnailExternal();
+
+        myTalk.txtToParse = myText;
+
+        myTalk.callback.RemoveAllListeners();
+        if (call != null)
+        {
+            myTalk.callback.AddListener(call);
+        }
+
+        myTalk.NewTalk(key);
+    }
+
     //called from text document
     public virtual void DoEvent(string key)
     {
