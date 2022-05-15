@@ -29,12 +29,12 @@ public class MenuCanvas2Handler : MonoBehaviour
 
     public void TheEmpress()
     {
-        pm.UpdateBottomText("The Pearl.");
+        pm.UpdateBottomText("The Bargain.");
     }
 
     public void Hmm()
     {
-        pm.UpdateBottomText("I see.");
+        pm.UpdateBottomText("How fitting.");
     }
 
     public void VeryWell()

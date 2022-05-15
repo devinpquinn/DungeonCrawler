@@ -44,7 +44,7 @@ An old, somewhat rusty, short-handled shovel. Besides digging up berry bushes, t
 [title=shovel-start]
 Player:[expression=?][question=q]
 [choice]Take the shovel.<took-shovel>
-[choice]Step away.
+[choice]Leave the shovel.
 [title=shovel-end]
 
 [title=shovel-advice-start]
