@@ -1270,7 +1270,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "This game is in early development. \nAll components are not final."
+  m_text: "This game is in development. \nAll components are hideously incomplete."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5aa45daebad64fd4ca7087b53542c9d7, type: 2}
   m_sharedMaterial: {fileID: -8489657893798082292, guid: 5aa45daebad64fd4ca7087b53542c9d7,
