@@ -70,6 +70,9 @@ public class LadderHole : Interactable
             yield return null;
         }
 
+        //avoid duplicate audio listener
+        gameObject.GetComponentInChildren<AudioListener>().enabled = false;
+
         //set player to correct position
         if(destinationCheckpoint == null)
         {

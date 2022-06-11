@@ -2,5 +2,5 @@
 A plain wooden door.
 Player:[question=q][expression=?]
 [choice]{use}Open the door.
-[choice]Leave the door be.
+[choice]Step away from the door.
 [title=approach-end]
