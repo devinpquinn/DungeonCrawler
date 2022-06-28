@@ -27,6 +27,12 @@ public class LoadHandler : MonoBehaviour
         }
 
         PlayerController newPlayer = PlayerController.Instance;
+        Cinemachine.CinemachineVirtualCamera ccam = newPlayer.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
+
+        if (newPlayer.staticCamera)
+        {
+            newPlayer.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>().transform.parent.SetParent(null);
+        }
 
         //set player position
         Vector3 playerPos;
@@ -37,8 +43,7 @@ public class LoadHandler : MonoBehaviour
         newPlayer.transform.position = playerPos;
 
         //reset camera position
-        Cinemachine.CinemachineVirtualCamera ccam = newPlayer.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
-        if(ccam.enabled == true)
+        if(ccam.enabled == true && !newPlayer.staticCamera)
         {
             ccam.enabled = false;
             ccam.enabled = true;
