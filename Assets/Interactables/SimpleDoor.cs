@@ -52,23 +52,18 @@ public class SimpleDoor : Interactable
         gameObject.GetComponentInChildren<AudioListener>().enabled = false;
 
         //set player to correct position
+        GameObject playerObject = PlayerController.Instance.gameObject;
+        Cinemachine.CinemachineVirtualCamera ccam = playerObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
+        ccam.enabled = false;
+
         if (DestinationCheckpoint == null)
         {
-            GameObject playerObject = PlayerController.Instance.gameObject;
 
             playerObject.transform.position = GameObject.FindGameObjectWithTag("Checkpoint").transform.position;
 
             //reset camera position
-            string sceneName = SceneManager.GetActiveScene().name;
-            Cinemachine.CinemachineVirtualCamera ccam = playerObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
-            ccam.enabled = false;
-            if (sceneName != "Entry")
-            {
-                if (ccam.enabled)
-                {
-                    ccam.enabled = true;
-                }
-            }
+            ccam.enabled = true;
+            
         }
         else
         {
@@ -76,13 +71,9 @@ public class SimpleDoor : Interactable
             {
                 if (check.name.Equals("Checkpoint - " + DestinationCheckpoint))
                 {
-                    GameObject playerObject = PlayerController.Instance.gameObject;
-
                     playerObject.transform.position = check.transform.position;
 
                     //reset camera position
-                    Cinemachine.CinemachineVirtualCamera ccam = playerObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
-                    ccam.enabled = false;
                     ccam.enabled = true;
 
                     break;
