@@ -58,12 +58,7 @@ public class SimpleDoor : Interactable
 
         if (DestinationCheckpoint == null)
         {
-
             playerObject.transform.position = GameObject.FindGameObjectWithTag("Checkpoint").transform.position;
-
-            //reset camera position
-            ccam.enabled = true;
-            
         }
         else
         {
@@ -73,13 +68,13 @@ public class SimpleDoor : Interactable
                 {
                     playerObject.transform.position = check.transform.position;
 
-                    //reset camera position
-                    ccam.enabled = true;
-
                     break;
                 }
             }
         }
+
+        //reset camera position
+        ccam.enabled = true;
 
         //set player inventory
         PlayerController.Instance.inventory = savedInventory;
