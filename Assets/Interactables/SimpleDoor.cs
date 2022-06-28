@@ -56,6 +56,11 @@ public class SimpleDoor : Interactable
         Cinemachine.CinemachineVirtualCamera ccam = playerObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
         ccam.enabled = false;
 
+        if (PlayerController.Instance.staticCamera)
+        {
+            ccam.transform.parent.SetParent(null);
+        }
+
         if (DestinationCheckpoint == null)
         {
             playerObject.transform.position = GameObject.FindGameObjectWithTag("Checkpoint").transform.position;
@@ -74,7 +79,10 @@ public class SimpleDoor : Interactable
         }
 
         //reset camera position
-        ccam.enabled = true;
+        if (!PlayerController.Instance.staticCamera)
+        {
+            ccam.enabled = true;
+        }
 
         //set player inventory
         PlayerController.Instance.inventory = savedInventory;

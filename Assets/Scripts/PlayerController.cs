@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
     [Header("Variables")]
 
     public bool lockToBody = false; //prevent player from going into light ball mode
+    public bool staticCamera = false; //set to true if the camera should not move in this scene
 
     public float moveSpeed = 3f;
     public float lightSpeed = 5f;
