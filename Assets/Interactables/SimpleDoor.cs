@@ -59,9 +59,16 @@ public class SimpleDoor : Interactable
             playerObject.transform.position = GameObject.FindGameObjectWithTag("Checkpoint").transform.position;
 
             //reset camera position
+            string sceneName = SceneManager.GetActiveScene().name;
             Cinemachine.CinemachineVirtualCamera ccam = playerObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
             ccam.enabled = false;
-            ccam.enabled = true;
+            if (sceneName != "Entry")
+            {
+                if (ccam.enabled)
+                {
+                    ccam.enabled = true;
+                }
+            }
         }
         else
         {

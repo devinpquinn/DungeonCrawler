@@ -2797,7 +2797,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9839cf7119a0d864a94b621a69225293, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.25
   m_Pitch: 1
@@ -5124,7 +5124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1357201309}
   m_Layer: 0
-  m_Name: Checkpoint
+  m_Name: Checkpoint - Entry
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6489,6 +6489,85 @@ Transform:
   m_Father: {fileID: 104190617}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1767277722
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4691055840186420906, guid: 86db379f61dd7a84587f2567d53e611a,
+        type: 3}
+      propertyPath: DestinationScene
+      value: Entry
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691055840186420906, guid: 86db379f61dd7a84587f2567d53e611a,
+        type: 3}
+      propertyPath: DestinationCheckpoint
+      value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524933155749374761, guid: 86db379f61dd7a84587f2567d53e611a,
+        type: 3}
+      propertyPath: m_Name
+      value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524933155749374762, guid: 86db379f61dd7a84587f2567d53e611a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524933155749374762, guid: 86db379f61dd7a84587f2567d53e611a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524933155749374762, guid: 86db379f61dd7a84587f2567d53e611a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524933155749374762, guid: 86db379f61dd7a84587f2567d53e611a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524933155749374762, guid: 86db379f61dd7a84587f2567d53e611a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524933155749374762, guid: 86db379f61dd7a84587f2567d53e611a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524933155749374762, guid: 86db379f61dd7a84587f2567d53e611a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524933155749374762, guid: 86db379f61dd7a84587f2567d53e611a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524933155749374762, guid: 86db379f61dd7a84587f2567d53e611a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524933155749374762, guid: 86db379f61dd7a84587f2567d53e611a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524933155749374762, guid: 86db379f61dd7a84587f2567d53e611a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 86db379f61dd7a84587f2567d53e611a, type: 3}
 --- !u!1 &1858468916
 GameObject:
   m_ObjectHideFlags: 0
