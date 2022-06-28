@@ -5124,7 +5124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1357201309}
   m_Layer: 0
-  m_Name: Checkpoint - Entry
+  m_Name: Checkpoint - West
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6504,7 +6504,7 @@ PrefabInstance:
     - target: {fileID: 4691055840186420906, guid: 86db379f61dd7a84587f2567d53e611a,
         type: 3}
       propertyPath: DestinationCheckpoint
-      value: Door
+      value: North
       objectReference: {fileID: 0}
     - target: {fileID: 7524933155749374761, guid: 86db379f61dd7a84587f2567d53e611a,
         type: 3}

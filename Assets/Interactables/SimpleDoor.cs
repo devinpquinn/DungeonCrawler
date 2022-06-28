@@ -43,6 +43,9 @@ public class SimpleDoor : Interactable
         //load destination scene
         SceneManager.LoadScene(DestinationScene);
 
+        //hide to avoid being hovered over while still active
+        transform.localScale = new Vector3(0, 0, 0);
+
         while (SceneManager.GetActiveScene().name != DestinationScene)
         {
             yield return null;

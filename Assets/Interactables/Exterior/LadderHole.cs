@@ -65,6 +65,9 @@ public class LadderHole : Interactable
         //load destination scene
         SceneManager.LoadScene(destinationScene);
 
+        //hide to avoid being hovered over while still active
+        transform.localScale = new Vector3(0, 0, 0);
+
         while (SceneManager.GetActiveScene().name != destinationScene)
         {
             yield return null;
@@ -74,16 +77,18 @@ public class LadderHole : Interactable
         gameObject.GetComponentInChildren<AudioListener>().enabled = false;
 
         //set player to correct position
-        if(destinationCheckpoint == null)
+        GameObject playerObject = PlayerController.Instance.gameObject;
+        Cinemachine.CinemachineVirtualCamera ccam = playerObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
+        ccam.enabled = false;
+
+        if (PlayerController.Instance.staticCamera)
         {
-            GameObject playerObject = PlayerController.Instance.gameObject;
+            ccam.transform.parent.SetParent(null);
+        }
 
+        if (destinationCheckpoint == null)
+        {
             playerObject.transform.position = GameObject.FindGameObjectWithTag("Checkpoint").transform.position;
-
-            //reset camera position
-            Cinemachine.CinemachineVirtualCamera ccam = playerObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
-            ccam.enabled = false;
-            ccam.enabled = true;
         }
         else
         {
@@ -91,20 +96,18 @@ public class LadderHole : Interactable
             {
                 if (check.name.Equals("Checkpoint - " + destinationCheckpoint))
                 {
-                    GameObject playerObject = PlayerController.Instance.gameObject;
-
                     playerObject.transform.position = check.transform.position;
-
-                    //reset camera position
-                    Cinemachine.CinemachineVirtualCamera ccam = playerObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
-                    ccam.enabled = false;
-                    ccam.enabled = true;
 
                     break;
                 }
             }
         }
-        
+
+        //reset camera position
+        if (!PlayerController.Instance.staticCamera)
+        {
+            ccam.enabled = true;
+        }
 
         //set player inventory
         PlayerController.Instance.inventory = savedInventory;
