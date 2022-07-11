@@ -6,7 +6,7 @@ Player:BUT FIRST, THIS LOWER DARK.
 
 [title=intro-start]
 Player:I REMEMBER WELL THAT BITTER NIGHT.
-Player:STRUCK FROM THE EVER-TURNING FIRMAMENT... FALLEN AS AN EMBER TO THIS ACCURSED *TRI-STATE AREA*.
+Player:STRUCK FROM THE EVER-TURNING FIRMAMENT... FALLEN AS AN EMBER TO THIS HOLLOW EARTH.
 Player:SCOOP'T BY <i>HER</i> HAND INTO HELM AND CLOAK, ERE I FLICKER OUT.
 Player:MY DODDERING FIRST STEPS...
 (Use *WASD* to move.)
@@ -15,9 +15,9 @@ Player:MY DODDERING FIRST STEPS...
 [title=walked-start]
 Player:I USED *WASD* TO PROPEL THIS STRANGE BODY^
 Handler:Hey, let's focus up, 'kay?
-Handler:Just a reminder, I can't really hear what you're saying unless you use that *<i>special ring</i>* I gave you. Hold it up to your-- your head area.
-Handler:Please, <i>please</i> do not lose that, or I won't be able to help you.
-Player:FEAR NOT. I HAVE BOUND IT SECURELY TO MY HAND JUST LIKE YOU YELLED AT ME TO DO.
+Handler:If you want to talk to me, use the *<i>Unbreakable Knot</i>*. I can't really hear you otherwise, so let's keep the chatter to a minimum, yeah?
+Handler:As long as you have the Knot on your person, I can see what you see, at least. Please, <i>please</i> do not lose that, or I won't be able to help you.
+Player:FEAR NOT. I HAVE NESTLED IT SECURELY IN THE MIDDLE OF MY INVENTORY, JUST LIKE YOU YELLED AT ME TO DO.
 Handler:Great. Okay, the entrance should be hidden somewhere nearby. Poke around, see if you can find it.
 Player:POKE I SHALL. AND ANYTHING THAT REQUIRES POKING, I SHALL CLICK WITH MY *<i>LEFT MOUSE BUTTON*</i>.
 Player:INDEED, *<i>LEFT MOUSE BUTTON</i>*. NOT THE *RIGHT*. THAT DOES SOMETHING <i>DIFFERENT</i>.
