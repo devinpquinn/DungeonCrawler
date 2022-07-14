@@ -33,6 +33,7 @@ public class RPGTalk : MonoBehaviour
     /// The object setted by the user to see if we can obtain a TMP_Translator out of it
     /// </summary>
     public GameObject textUIObj;
+    private TextMeshProUGUI dialogueTextObj;
 
     /// <summary>
     /// The UI element that holds a Text component. TMP_Translator deal with differences in regular UI to TMP
@@ -391,6 +392,7 @@ public class RPGTalk : MonoBehaviour
     {
         baseTextAudio = textAudio;
         defaultPanelColor = showWithDialog[0].GetComponent<Image>().color;
+        dialogueTextObj = textUIObj.GetComponent<TextMeshProUGUI>();
     }
 
     //Change txtToParse to be the correct for other language
@@ -2401,8 +2403,45 @@ public class RPGTalk : MonoBehaviour
             }
         }
 
+        //check when the text ends with a space
+        //find index of next space character
+        //set dummy text to length of substring ending at next space character
+        //check if that text's preferred width would be greater than the text's size
+        //if so, add break
 
+        if (rpgtalkElements[cutscenePosition - 1].dialogText.Substring(0, (int)currentChar).EndsWith(" "))
+        {
+            //full text of element we're currently displaying
+            string currentElementText = rpgtalkElements[cutscenePosition - 1].dialogText;
+            //current line of text we're displaying
+            string currentText = currentElementText.Substring(0, (int)currentChar);
+            if (currentText.Contains("\\n"))
+            {
+                currentText = currentText.Substring(currentText.LastIndexOf("\\n"));
+            }
+            //the rest of the text we're not displaying yet
+            string restOfString = currentElementText.Substring((int)currentChar);
+            //check if rest of text has a space in it
+            if (restOfString.Contains(" "))
+            {
+                restOfString = restOfString.Substring(0, restOfString.IndexOf(" "));
+            }
+            //our string when it reaches the next space or the end
+            string extendedString = currentText + restOfString;
 
+            //temporarily extend text to restOfString
+            textUI.ChangeTextTo(extendedString);
+            float currentDialogueAreaWidth = widthWithoutPortrait;
+            if(rpgtalkElements[cutscenePosition - 1].speakerName != null)
+            {
+                currentDialogueAreaWidth = widthWithPortrait;
+            }
+            if (dialogueTextObj.preferredWidth > currentDialogueAreaWidth)
+            {
+                rpgtalkElements[cutscenePosition - 1].dialogText = currentElementText.Substring(0, (int)currentChar) + "\\n" + currentElementText.Substring((int)currentChar);
+            }
+            //textUI.ChangeTextTo(currentElementText.Substring(0, (int)currentChar));
+        }
 
         //Check if a line break is starting to appear
         if (rpgtalkElements[cutscenePosition - 1].dialogText.Length > currentChar + 2 &&
