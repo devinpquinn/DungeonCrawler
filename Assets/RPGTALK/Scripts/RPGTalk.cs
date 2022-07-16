@@ -2439,6 +2439,16 @@ public class RPGTalk : MonoBehaviour
             if (dialogueTextObj.preferredWidth > currentDialogueAreaWidth)
             {
                 rpgtalkElements[cutscenePosition - 1].dialogText = currentElementText.Substring(0, (int)currentChar) + "\\n" + currentElementText.Substring((int)currentChar);
+
+                //TODO: update rich text positions
+                for(int i = richText.Count - 1; i >= 0; i--)
+                {
+                    if (richText[i].lineWithTheRichText == cutscenePosition - 1 && currentChar < richText[i].initialTagPosition)
+                    {
+                        richText[i].initialTagPosition += 2;
+                        richText[i].finalTagPosition += 2;
+                    }
+                }
             }
             //textUI.ChangeTextTo(currentElementText.Substring(0, (int)currentChar));
         }

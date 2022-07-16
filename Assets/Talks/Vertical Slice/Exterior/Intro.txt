@@ -1,5 +1,5 @@
 [title=begin-start]
-Player:[speed=6]... [/speed]
+Player:[speed=6]. . . [/speed]
 Player:ONE DAY, BROTHERS AND SISTERS, I SHALL RETURN TO YOUR SIDE.
 Player:BUT FIRST, THIS LOWER DARK.
 [title=begin-end]
@@ -17,7 +17,7 @@ Player:I USED *WASD* TO PROPEL THIS STRANGE BODY^
 Handler:Hey, let's focus up, 'kay?
 Handler:If you want to talk to me, use the <i>Unbreakable Knot</i>. I can't really hear you otherwise, so let's keep the chatter to a minimum, yeah?
 Handler:As long as you have the Knot on your person, I can see what you see, at least. Please, <i>please</i> do not lose that, or I won't be able to help you.
-Player:FEAR NOT. I HAVE NESTLED IT SECURELY IN THE MIDDLE OF MY INVENTORY, JUST LIKE YOU YELLED AT ME TO DO.
+Player:FEAR NOT. I HAVE NESTLED IT SECURELY IN THE MIDDLE OF MY INVENTORY LIKE YOU YELLED AT ME TO DO.
 Handler:Great. Okay, the entrance should be hidden somewhere nearby. Poke around, see if you can find it.
 Player:POKE I SHALL. AND ANYTHING THAT REQUIRES POKING, I SHALL CLICK WITH MY *<i>LEFT MOUSE BUTTON*</i>.
 Player:INDEED, *<i>LEFT MOUSE BUTTON</i>*. NOT THE *RIGHT*. THAT DOES SOMETHING <i>DIFFERENT</i>.
