@@ -2428,6 +2428,10 @@ public class RPGTalk : MonoBehaviour
             }
             //our string when it reaches the next space or the end
             string extendedString = currentText + restOfString;
+            if (extendedString.Contains("\\n"))
+            {
+                extendedString = extendedString.Replace("\\n", "");
+            }
 
             //temporarily extend text to restOfString
             textUI.ChangeTextTo(extendedString);
@@ -2450,7 +2454,6 @@ public class RPGTalk : MonoBehaviour
                     }
                 }
             }
-            //textUI.ChangeTextTo(currentElementText.Substring(0, (int)currentChar));
         }
 
         //Check if a line break is starting to appear
