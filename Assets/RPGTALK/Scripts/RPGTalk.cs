@@ -2565,21 +2565,21 @@ public class RPGTalk : MonoBehaviour
             //does it signal a pause?
             if (textToDisplay.EndsWith(".") || textToDisplay.EndsWith("!") || textToDisplay.EndsWith("?"))
             {
-                if(!rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith("\"") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith(")") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith("]"))
+                if(!rpgtalkElements[cutscenePosition - 1].dialogText.Substring((int) currentChar).StartsWith("\"") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring((int) currentChar).StartsWith(")") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring((int) currentChar).StartsWith("]"))
                 {
                     pauseTimer = 0.25f;
                 }
             }
             else if (textToDisplay.EndsWith(","))
             {
-                if (!rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith("\"") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith(")") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith("]"))
+                if (!rpgtalkElements[cutscenePosition - 1].dialogText.Substring((int) currentChar).StartsWith("\"") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring((int) currentChar).StartsWith(")") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring((int) currentChar).StartsWith("]"))
                 {
                     pauseTimer = 0.1f;
                 }
             }
             else if (textToDisplay.EndsWith("--") || textToDisplay.EndsWith(";") || textToDisplay.EndsWith(":"))
             {
-                if (!rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith("\"") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith(")") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring(textToDisplay.Length).StartsWith("]"))
+                if (!rpgtalkElements[cutscenePosition - 1].dialogText.Substring((int) currentChar).StartsWith("\"") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring((int) currentChar).StartsWith(")") && !rpgtalkElements[cutscenePosition - 1].dialogText.Substring((int) currentChar).StartsWith("]"))
                 {
                     pauseTimer = 0.2f;
                 }
