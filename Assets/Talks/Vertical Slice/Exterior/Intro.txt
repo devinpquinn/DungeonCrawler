@@ -15,7 +15,7 @@ Player:MY DODDERING FIRST STEPS...
 [title=walked-start]
 Player:I USED *WASD* TO PROPEL THIS STRANGE BODY^
 Handler:Hey, let's focus up, 'kay?
-Handler:If you want to talk to me, use the *<i>Unbreakable Knot</i>*. I can't really hear you otherwise, so let's keep the chatter to a minimum, yeah?
+Handler:If you want to talk to me, use the <i>Unbreakable Knot</i>. I can't really hear you otherwise, so let's keep the chatter to a minimum, yeah?
 Handler:As long as you have the Knot on your person, I can see what you see, at least. Please, <i>please</i> do not lose that, or I won't be able to help you.
 Player:FEAR NOT. I HAVE NESTLED IT SECURELY IN THE MIDDLE OF MY INVENTORY, JUST LIKE YOU YELLED AT ME TO DO.
 Handler:Great. Okay, the entrance should be hidden somewhere nearby. Poke around, see if you can find it.
