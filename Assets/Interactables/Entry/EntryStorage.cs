@@ -7,14 +7,14 @@ public class EntryStorage : Interactable
     public override void Interact()
     {
         base.Interact();
-        if (interactedWith)
+        if (Progress.storage_met)
         {
             myTalk.NewTalk("storage-again");
         }
         else
         {
             myTalk.NewTalk("storage");
-            interactedWith = true;
+            Progress.storage_met = true;
         }
     }
 }
