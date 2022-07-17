@@ -28,6 +28,7 @@ public class StartDoor : Interactable
     {
         if (key == "start")
         {
+            SaveSystem.ResetPlayer();
             StartCoroutine(DoStart());
         }
         else if (key == "back")
