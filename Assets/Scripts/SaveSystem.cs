@@ -8,6 +8,8 @@ public static class SaveSystem
 {
     public static void SavePlayer(PlayerController player)
     {
+        Debug.Log("Saved!");
+
         BinaryFormatter formatter = new BinaryFormatter();
 
         string path = Application.persistentDataPath + "/savedata.dev";
@@ -21,6 +23,8 @@ public static class SaveSystem
 
     public static PlayerData LoadPlayer()
     {
+        Debug.Log("Loaded!");
+
         string path = Application.persistentDataPath + "/savedata.dev";
         if (File.Exists(path))
         {

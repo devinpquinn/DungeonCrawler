@@ -7,14 +7,14 @@ public class EntryLadder : Interactable
     public override void Interact()
     {
         base.Interact();
-        if (Progress.ladder_met)
+        if (Progress.data.Contains("ladder_met"))
         {
             myTalk.NewTalk("ladder-again");
         }
         else
         {
             myTalk.NewTalk("ladder");
-            Progress.ladder_met = true;
+            Progress.data.Add("ladder_met");
         }
     }
 }

@@ -10,6 +10,7 @@ public class PlayerData
     public float[] playerPosition;
     public string playerEquipped;
     public List<int> playerItems;
+    public List<string> playerProgress;
 
     public PlayerData(PlayerController player)
     {
@@ -30,5 +31,8 @@ public class PlayerData
         playerPosition[0] = player.transform.position.x;
         playerPosition[1] = player.transform.position.y;
         playerPosition[2] = player.transform.position.z;
+
+        //progress data goes here
+        playerProgress = Progress.data;
     }
 }

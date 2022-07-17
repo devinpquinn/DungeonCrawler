@@ -55,6 +55,9 @@ public class LoadHandler : MonoBehaviour
         //set equipped item
         PlayerController.EquipItem(data.playerEquipped);
 
+        //set progress values
+        Progress.data = data.playerProgress;
+
         //when done, destroy this
         Destroy(gameObject);
     }
