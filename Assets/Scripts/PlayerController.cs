@@ -556,6 +556,9 @@ public class PlayerController : MonoBehaviour
         head_anim.Play("headDie");
 
         body_anim.Play("bodyDie");
+
+        //increment death counter
+        Progress.deaths++;
     }
 
     public void DeathTransition()

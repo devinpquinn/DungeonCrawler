@@ -10,6 +10,7 @@ public class PlayerData
     public float[] playerPosition;
     public string playerEquipped;
     public List<int> playerItems;
+    public int playerDeaths;
     public List<string> playerProgress;
 
     public PlayerData(PlayerController player)
@@ -34,5 +35,6 @@ public class PlayerData
 
         //progress data goes here
         playerProgress = Progress.data;
+        playerDeaths = Progress.deaths;
     }
 }

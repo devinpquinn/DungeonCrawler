@@ -57,6 +57,7 @@ public class LoadHandler : MonoBehaviour
 
         //set progress values
         Progress.data = data.playerProgress;
+        Progress.deaths = data.playerDeaths;
 
         //when done, destroy this
         Destroy(gameObject);
